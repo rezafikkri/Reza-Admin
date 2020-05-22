@@ -1,0 +1,67 @@
+/* Navbar Top */
+.navbar--white {
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+	font-family: open_sanssemibold, sans-serif;
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+
+	& .navbar-brand {
+		color: $blue-reiran;
+	}
+
+	.nav-item .nav-link {
+		color: #333;
+		padding: 0px 15px;
+
+		&:hover {
+			color: $blue-reiran;
+		}
+
+		&.nav-link--red-hover:hover {
+			color: $red-reiran;
+		}
+	}
+}
+
+.navbar__notification {
+	position: relative;
+
+	& a {
+		margin-top: 2px;
+	}
+}
+
+@mixin navbar-notification-color($background-color, $part-class-color) {
+	&.navbar__notification-number--#{$part-class-color} {
+		background-color: $background-color;
+		color: white;
+	}
+}
+
+span.navbar__notification-number {
+	position: absolute;
+	font-size: 8pt;
+	display: inline-block;
+	padding: 1px;
+	padding-top: 0px;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	text-align: center;
+	right: 4px;
+	top: -5px;
+	border: 2px solid #fff;
+
+	@include navbar-notification-color($red-reiran, 'red');
+	@include navbar-notification-color($blue-reiran, 'blue');
+	@include navbar-notification-color($orange-reiran, 'orange');
+	@include navbar-notification-color($green-reiran, 'green');
+}
+
+.navbar__avatar img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 3px;
+	border: 1px solid #ddd;
+}

@@ -2,3 +2,20 @@
 	Reiran-Admin v1.0
 	Copyright 2020 Reiran
 */
+
+$blue-reiran: #2597e0;
+$green-reiran: #1bd741;
+$orange-reiran: #f9a022;
+$red-reiran: #dd2525;
+
+@import "font-face.scss";
+
+html, body {
+	font-family: open_sansregular, sans-serif;
+}
+
+body {
+	background-color: #fcfcfc;
+}
+
+@import "navbar-top.scss";

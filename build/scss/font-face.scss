@@ -1,0 +1,17 @@
+@mixin font-face($font-name, $font-family){
+	@font-face {
+	    font-family: $font-family;
+	    src: url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.eot');
+	    src: url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.eot?#iefix') format('embedded-opentype'),
+	         url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.woff') format('woff'),
+	         url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.ttf') format('truetype'),
+	         url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.svg#open_sansbold') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+}
+
+@include font-face('opensans_bold_macroman/OpenSans-Bold-webfont','open_sansbold');
+@include font-face('opensans_regular_macroman/OpenSans-Regular-webfont','open_sansregular');
+@include font-face('opensans_semibold_macroman/OpenSans-Semibold-webfont','open_sanssemibold');
