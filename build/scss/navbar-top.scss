@@ -1,9 +1,13 @@
 /* Navbar Top */
 .navbar--white {
+	position: fixed;
+	left: 0;
+	right: 0;
 	background-color: white;
 	border-bottom: 1px solid #ddd;
 	font-family: open_sanssemibold, sans-serif;
 	box-shadow: 0 0 5px rgba(0,0,0,.1);
+	z-index: 101;
 
 	& .navbar__sidebar-toggler {
 		font-size: 1.25rem;

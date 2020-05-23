@@ -7,9 +7,11 @@ $blue-reiran: #2597e0;
 $green-reiran: #1bd741;
 $orange-reiran: #f9a022;
 $red-reiran: #dd2525;
+$pt-sidebar-main-konten: 80px;
 
 @import "font-face.scss";
 
+/* General Style */
 html, body {
 	font-family: open_sansregular, sans-serif;
 }
@@ -18,4 +20,13 @@ body {
 	background-color: #fcfcfc;
 }
 
+strong {
+	font-family: open_sansbold, sans-serif;
+}
+
+.main-konten {
+	padding-top: $pt-sidebar-main-konten;
+}
+
 @import "navbar-top.scss";
+@import "sidebar.scss";
