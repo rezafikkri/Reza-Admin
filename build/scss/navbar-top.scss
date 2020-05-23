@@ -5,13 +5,19 @@
 	font-family: open_sanssemibold, sans-serif;
 	box-shadow: 0 0 5px rgba(0,0,0,.1);
 
+	& .navbar__sidebar-toggler {
+		font-size: 1.25rem;
+		color: #333;
+		padding-right: 24px;
+	}
+
 	& .navbar-brand {
 		color: $blue-reiran;
 	}
 
-	.nav-item .nav-link {
+	& .nav-item .nav-link {
 		color: #333;
-		padding: 0px 15px;
+		padding: 0px 12px;
 
 		&:hover {
 			color: $blue-reiran;
@@ -21,13 +27,19 @@
 			color: $red-reiran;
 		}
 	}
-}
 
-.navbar__notification {
-	position: relative;
+	& .nav-item:last-child .nav-link {
+		padding-right: 0px;
+	}
 
-	& a {
-		margin-top: 2px;
+	@media (max-width: 575px) {
+		& .collapse .navbar-nav {
+			flex-direction: row;
+			justify-content: center;
+			margin-top: 7px;
+			border-top: 1px solid #ddd;
+			padding-top: 15px;
+		}
 	}
 }
 
@@ -35,6 +47,14 @@
 	&.navbar__notification-number--#{$part-class-color} {
 		background-color: $background-color;
 		color: white;
+	}
+}
+
+.navbar__notification {
+	position: relative;
+
+	& a {
+		margin-top: 2px;
 	}
 }
 
@@ -48,7 +68,7 @@ span.navbar__notification-number {
 	height: 19px;
 	border-radius: 50%;
 	text-align: center;
-	right: 4px;
+	left: 0px;
 	top: -5px;
 	border: 2px solid #fff;
 

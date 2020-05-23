@@ -3,6 +3,7 @@
 	    font-family: $font-family;
 	    src: url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.eot');
 	    src: url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.eot?#iefix') format('embedded-opentype'),
+	    	 url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.woff2') format('woff2'),
 	         url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.woff') format('woff'),
 	         url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.ttf') format('truetype'),
 	         url('../font/open-sans-fontfacekit/web fonts/'+$font-name+'.svg#open_sansbold') format('svg');
