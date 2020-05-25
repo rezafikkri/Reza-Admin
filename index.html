@@ -27,7 +27,7 @@
 	<!-- navbar top -->
 	<nav class="navbar navbar-expand-sm navbar--white">
 		<a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
-		<a class="navbar-brand" href="#"><img src="dist/img/logo_reiran.png" width="119" class="ml-4" alt="logo reiran"></a>
+		<a class="navbar-brand" href="#"><img src="dist/img/logo_reiran.png" width="119" class="ml-md-4" alt="logo reiran"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="fa fa-navicon"></span>
 		</button>
@@ -58,28 +58,64 @@
 		</div>
 	</nav>
 
-	<div class="container-fluid">
+	<!-- sidebar -->
+	<nav class="sidebar">
+		<ul class="sidebar__ul">
+			<li class="sidebar__item"><a class="nav-link sidebar--active" href=""><span class="fa fa-home"></span> Dashaboard</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-large"></span> Widgets</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-bar-chart-o"></span> Charts</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-desktop"></span> UI Elements</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-pencil-square-o"></span> Forms</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-list"></span> Tables</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-building"></span> Example</a></li>
+
+			<li class="sidebar__item sidebar--new-div">Important for read</li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-book"></span> Documentation</a></li>
+		</ul>
+	</nav>
+
+	<!-- main konten -->
+	<main class="main-konten">
 		<div class="row">
-			<nav class="col-md-3 col-lg-2 sidebar">
-				<ul class="sidebar__ul">
-					<li class="sidebar__item"><a class="nav-link sidebar--active" href=""><span class="fa fa-home"></span> Dashaboard</a></li>
-					<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-large"></span> Widgets</a></li>
-					<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-bar-chart-o"></span> Charts</a></li>
-					<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-desktop"></span> UI Elements</a></li>
-					<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-pencil-square-o"></span> Forms</a></li>
-					<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-list"></span> Tables</a></li>
-					<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-building"></span> Example</a></li>
+			<header class="col-md-12 mb-2">
+				<h4>Dashaboard</h4>
+			</header>
 
-					<li class="sidebar__item sidebar--new-div">Important for read</li>
-					<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-book"></span> Documentation</a></li>
-				</ul>
-			</nav>
-			<main class="main-konten col-md-9 ml-sm-auto col-lg-10 px-md-4">
-				<h3>Dashaboard</h3>
-			</main>
-
+			<div class="col-md-4">
+				<div class="info-box info-box--blue">
+					<div class="info-box__icon"><span class="fa fa-shopping-cart"></span></div>
+					<div class="info-box__ket">
+						<h2>Products</h2>
+						<h1>520</h1>
+						<p>12 Minutes ago</p>
+					</div>
+					<a title="Detail Products" class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="info-box info-box--green">
+					<div class="info-box__icon"><span class="fa fa-users"></span></div>
+					<div class="info-box__ket">
+						<h2>Members</h2>
+						<h1>700</h1>
+						<p>30 Minutes ago</p>
+					</div>
+					<a class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="info-box info-box--orange">
+					<div class="info-box__icon"><span class="fa fa-shopping-bag"></span></div>
+					<div class="info-box__ket">
+						<h2>Orders</h2>
+						<h1>120</h1>
+						<p>2 Minutes ago</p>
+					</div>
+					<a class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
+				</div>
+			</div>
 		</div><!-- row -->
-	</div>
+	</main>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reiran Admin JS -->

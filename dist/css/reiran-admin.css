@@ -37,11 +37,19 @@ strong {
   font-family: open_sansbold, sans-serif; }
 
 .main-konten {
-  padding-top: 80px; }
+  margin-top: 80px;
+  margin-left: 228px;
+  padding: 0px 16px;
+  position: relative;
+  transition: 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01); }
+  @media (max-width: 767.98px) {
+    .main-konten {
+      margin-left: 0px; } }
 
 /* Navbar Top */
 .navbar--white {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   background-color: white;
@@ -119,6 +127,7 @@ span.navbar__notification-number {
   top: 0;
   bottom: 0;
   left: 0;
+  width: 228px;
   z-index: 100;
   background-color: #2597e0;
   padding: 80px 0 0;
@@ -166,5 +175,111 @@ span.navbar__notification-number {
     color: #333; }
     .sidebar__item .sidebar--active:hover {
       color: #333; }
+
+/* info box */
+.info-box {
+  background-color: white;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden; }
+  .info-box__icon {
+    flex-basis: 40%; }
+  .info-box__ket {
+    flex-basis: 60%; }
+    .info-box__ket h1 {
+      font-size: 25pt;
+      font-family: open_sansbold; }
+    .info-box__ket h2 {
+      font-size: 20pt;
+      font-family: open_sanssemibold; }
+    .info-box__ket p {
+      font-size: 10pt; }
+  .info-box--blue {
+    border: 1px solid #dbf1ff; }
+  .info-box--blue .info-box__icon span {
+    font-size: 20pt;
+    padding: 32%;
+    border-radius: 50%;
+    background-color: #edf8ff;
+    color: #2597e0; }
+  .info-box--blue .info-box__btn-detail {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #59b7f2, #2597e0);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px; }
+    .info-box--blue .info-box__btn-detail span {
+      transform: translate(0px, 0px);
+      transition: .1s ease-in-out; }
+    .info-box--blue .info-box__btn-detail:hover {
+      text-decoration: none;
+      background-image: linear-gradient(90deg, #59b7f2, #167ebf); }
+      .info-box--blue .info-box__btn-detail:hover span {
+        transform: translate(2px, 0px); }
+  .info-box--green {
+    border: 1px solid #c6ffd0; }
+  .info-box--green .info-box__icon span {
+    font-size: 20pt;
+    padding: 32%;
+    border-radius: 50%;
+    background-color: #edfff0;
+    color: #1bd741; }
+  .info-box--green .info-box__btn-detail {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #35e859, #1bd741);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px; }
+    .info-box--green .info-box__btn-detail span {
+      transform: translate(0px, 0px);
+      transition: .1s ease-in-out; }
+    .info-box--green .info-box__btn-detail:hover {
+      text-decoration: none;
+      background-image: linear-gradient(90deg, #35e859, #16aa31); }
+      .info-box--green .info-box__btn-detail:hover span {
+        transform: translate(2px, 0px); }
+  .info-box--orange {
+    border: 1px solid #ffeddd; }
+  .info-box--orange .info-box__icon span {
+    font-size: 20pt;
+    padding: 32%;
+    border-radius: 50%;
+    background-color: #fff8ef;
+    color: #f9a022; }
+  .info-box--orange .info-box__btn-detail {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #ffbd60, #f9a022);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px; }
+    .info-box--orange .info-box__btn-detail span {
+      transform: translate(0px, 0px);
+      transition: .1s ease-in-out; }
+    .info-box--orange .info-box__btn-detail:hover {
+      text-decoration: none;
+      background-image: linear-gradient(90deg, #ffbd60, #d67c00); }
+      .info-box--orange .info-box__btn-detail:hover span {
+        transform: translate(2px, 0px); }
 
 /*# sourceMappingURL=reiran-admin.css.map */
