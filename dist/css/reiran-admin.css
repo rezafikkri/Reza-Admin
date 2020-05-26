@@ -188,7 +188,7 @@ span.navbar__notification-number {
   .info-box__icon {
     flex-basis: 40%; }
   .info-box__ket {
-    flex-basis: 60%; }
+    flex-basis: 50%; }
     .info-box__ket h1 {
       font-size: 25pt;
       font-family: open_sansbold; }
@@ -197,6 +197,23 @@ span.navbar__notification-number {
       font-family: open_sanssemibold; }
     .info-box__ket p {
       font-size: 10pt; }
+  @media (max-width: 1100px) {
+    .info-box {
+      flex-direction: column;
+      text-align: center; }
+    .info-box__icon, .info-box__ket {
+      align-self: stretch; }
+    .info-box__icon {
+      margin-bottom: 20px; } }
+  @media (max-width: 767.98px) {
+    .info-box {
+      flex-direction: row;
+      text-align: left;
+      align-items: center; }
+    .info-box__icon, .info-box__ket {
+      align-self: auto; }
+    .info-box__icon {
+      margin-bottom: 0px; } }
   .info-box--blue {
     border: 1px solid #dbf1ff; }
   .info-box--blue .info-box__icon span {
@@ -225,6 +242,24 @@ span.navbar__notification-number {
       background-image: linear-gradient(90deg, #59b7f2, #167ebf); }
       .info-box--blue .info-box__btn-detail:hover span {
         transform: translate(2px, 0px); }
+  @media (max-width: 1100px) {
+    .info-box--blue .info-box__icon span {
+      padding: 22%; }
+    .info-box--blue .info-box__btn-detail {
+      position: static;
+      border-radius: 50px;
+      padding: 10px 30px; } }
+  @media (max-width: 850px) {
+    .info-box--blue .info-box__icon span {
+      padding: 40%; } }
+  @media (max-width: 767.98px) {
+    .info-box--blue .info-box__icon span {
+      padding: 32%; }
+    .info-box--blue .info-box__btn-detail {
+      position: absolute;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding: 10px; } }
   .info-box--green {
     border: 1px solid #c6ffd0; }
   .info-box--green .info-box__icon span {
@@ -253,6 +288,24 @@ span.navbar__notification-number {
       background-image: linear-gradient(90deg, #35e859, #16aa31); }
       .info-box--green .info-box__btn-detail:hover span {
         transform: translate(2px, 0px); }
+  @media (max-width: 1100px) {
+    .info-box--green .info-box__icon span {
+      padding: 22%; }
+    .info-box--green .info-box__btn-detail {
+      position: static;
+      border-radius: 50px;
+      padding: 10px 30px; } }
+  @media (max-width: 850px) {
+    .info-box--green .info-box__icon span {
+      padding: 40%; } }
+  @media (max-width: 767.98px) {
+    .info-box--green .info-box__icon span {
+      padding: 32%; }
+    .info-box--green .info-box__btn-detail {
+      position: absolute;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding: 10px; } }
   .info-box--orange {
     border: 1px solid #ffeddd; }
   .info-box--orange .info-box__icon span {
@@ -281,5 +334,23 @@ span.navbar__notification-number {
       background-image: linear-gradient(90deg, #ffbd60, #d67c00); }
       .info-box--orange .info-box__btn-detail:hover span {
         transform: translate(2px, 0px); }
+  @media (max-width: 1100px) {
+    .info-box--orange .info-box__icon span {
+      padding: 22%; }
+    .info-box--orange .info-box__btn-detail {
+      position: static;
+      border-radius: 50px;
+      padding: 10px 30px; } }
+  @media (max-width: 850px) {
+    .info-box--orange .info-box__icon span {
+      padding: 40%; } }
+  @media (max-width: 767.98px) {
+    .info-box--orange .info-box__icon span {
+      padding: 32%; }
+    .info-box--orange .info-box__btn-detail {
+      position: absolute;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding: 10px; } }
 
 /*# sourceMappingURL=reiran-admin.css.map */
