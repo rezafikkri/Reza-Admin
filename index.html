@@ -12,6 +12,8 @@
 	<meta property="og:image" content="">
 	<meta property="description" content="Open source responsive admin template with bootstrap framework">
 
+	<title>Free Bootstrap Admin Template . Reiran Admin</title>
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 	<!-- Font awesome -->
@@ -20,8 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/reiran-admin.css">
 	<!-- Favicon -->
 	<link rel="icon" href="dist/img/favicon-(80x80).png">
-
-	<title>Free Bootstrap Admin Template . Reiran Admin</title>
 </head>
 <body>		
 	<!-- navbar top -->
@@ -78,7 +78,7 @@
 	<main class="main-konten">
 		<div class="row">
 			<header class="col-md-12 mb-2">
-				<h4>Dashaboard</h4>
+				<h5>Dashaboard</h5>
 			</header>
 
 			<div class="mb-3 col-md-4">
@@ -114,6 +114,19 @@
 					<a class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
 				</section>
 			</div>
+
+			<div class="mb-3 col-md-8">
+				<h5>Visitors</h5>
+				<section class="chart">
+					<canvas id="visitor_chart"></canvas>
+				</section>
+			</div>
+			<div class="mb-5 col-md-4">
+				<h5>Browser Usage</h5>
+				<section class="chart">
+					<canvas id="browser_usage_chart"></canvas>					
+				</section>
+			</div>
 		</div><!-- row -->
 	</main>
 
@@ -121,6 +134,68 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reiran Admin JS -->
     <script src="dist/js/jquery-3.5.1.slim.min.js"></script>
     <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/Chart.js/Chart.bundle.min.js"></script>
     <script src="dist/js/reiran-admin.js"></script>
+
+	<script type="text/javascript">
+		// visitor charts
+		const visitorChart = document.querySelector("#visitor_chart").getContext('2d');
+		let configVisitorChart = {
+			type: 'line',
+		    data: {
+		        labels: ['Ahad, 11','Senin, 12','Selasa, 13','Rabu, 14','Kamis, 15','Jum\'at'],
+		        datasets: [{
+		            label: 'Visitors',
+		            data: [10,6,7,5,1,14],
+		            fill: 'boundary',
+		            backgroundColor: 'rgba(37,151,224,.7)',
+		            borderColor: '#2597e0'
+		        }]
+		    },
+		    options: {
+		    	maintainAspectRatio: false,
+		    	legend: {
+		    		display: false
+		        },
+		        title: {
+		        	display: true,
+		        	text: 'Visitors Januari 2020',
+		        	fontSize: 14
+		        }
+		    }
+		}
+		new Chart(visitorChart, configVisitorChart);
+
+		// browser usage
+		const browserUsageChart = document.querySelector("#browser_usage_chart").getContext('2d');
+		let configBrowserUsageChart = {
+			type: 'pie',
+		    data: {
+		        labels: ['Chrome','Mozilla','Uc Browser','Opera Mini'],
+		        datasets: [{
+		            data: [10,6,7,5],
+		            backgroundColor: [
+		            	"#1bd741",
+	                    "#2597e0",
+	                    "#f9a022",
+	                    "#dd2525"
+		            ]
+		        }]
+		    },
+		    options: {
+		    	maintainAspectRatio: false,
+		    	responsive: true,
+		    	legend: {
+		    		display: true
+		        },
+		        title: {
+		        	display: true,
+		        	text: 'Browser Usage Januari 2020',
+		        	fontSize: 14
+		        }
+		    }
+		}
+		new Chart(browserUsageChart, configBrowserUsageChart);
+	</script>
 </body>
 </html>

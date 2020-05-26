@@ -130,7 +130,7 @@
 		}
 	}
 
-	@include info-box(#dbf1ff, #edf8ff, $blue-reiran, #59b7f2, #167ebf, blue);
-	@include info-box(#c6ffd0, #edfff0, $green-reiran, #35e859, #16aa31, green);
-	@include info-box(#ffeddd, #fff8ef, $orange-reiran, #ffbd60, #d67c00, orange);
+	@include info-box(#dbf1ff, #edf8ff, $blue-reiran, #59b7f2, #167ebf, 'blue');
+	@include info-box(#c6ffd0, #edfff0, $green-reiran, #35e859, #16aa31, 'green');
+	@include info-box(#ffeddd, #fff8ef, $orange-reiran, #ffbd60, #d67c00, 'orange');
 }
