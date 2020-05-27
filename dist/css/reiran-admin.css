@@ -36,9 +36,15 @@ body {
 strong {
   font-family: open_sansbold, sans-serif; }
 
+time {
+  display: inline-block; }
+
+.main-konten,
+footer {
+  margin-left: 228px; }
+
 .main-konten {
   margin-top: 80px;
-  margin-left: 228px;
   padding: 0px 16px;
   position: relative;
   transition: 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01); }
@@ -176,6 +182,88 @@ span.navbar__notification-number {
     .sidebar__item .sidebar--active:hover {
       color: #333; }
 
+/* header */
+header.header-konten {
+  display: flex;
+  justify-content: space-between; }
+  header.header-konten .breadcrumb {
+    background-color: transparent;
+    padding: 0px; }
+  header.header-konten h5 {
+    display: inline-block; }
+
+/* footer */
+footer.footer-konten {
+  background-color: white;
+  padding: 20px 15px;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between; }
+  footer.footer-konten p {
+    margin: 0px; }
+
+/* input */
+input.form,
+select.form,
+textarea.form {
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 12pt;
+  background-color: white;
+  color: #333;
+  width: 100%; }
+
+input.form--blue:focus,
+textarea.form--blue:focus,
+select.form--blue:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #80bdff; }
+
+input::placeholder,
+textarea::placeholder {
+  color: #757575; }
+
+.input-group {
+  display: inline-block;
+  position: relative; }
+  .input-group a {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+    display: inline-block;
+    padding: 0px 10px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    color: #333; }
+    .input-group a:hover {
+      color: #2597e0; }
+
+/* loading */
+.loading-circle {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #eaeaea;
+  border-radius: 50%;
+  position: relative; }
+  .loading-circle div {
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    border: 5px solid #2597e0;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: loading-circle-rotate 1s linear infinite; }
+@keyframes loading-circle-rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 /* info box */
 .info-box {
   background-color: white;
@@ -360,5 +448,79 @@ span.navbar__notification-number {
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   background-color: white; }
+
+/* card */
+.card {
+  border-color: #e8e8e8; }
+  .card__badge {
+    padding: 5px;
+    align-self: flex-start;
+    margin-top: 5px;
+    position: relative; }
+    .card__badge::before {
+      content: "";
+      position: absolute;
+      height: 29.2px;
+      border: 10px solid transparent;
+      right: -20px;
+      top: 0; }
+    .card__badge h6 {
+      margin: 0px;
+      color: white; }
+  .card__badge--orange {
+    background-color: #f9a022; }
+    .card__badge--orange::before {
+      border-left-color: #f9a022; }
+  .card__badge--blue {
+    background-color: #2597e0; }
+    .card__badge--blue::before {
+      border-left-color: #2597e0; }
+  .card__badge--green {
+    background-color: #1bd741; }
+    .card__badge--green::before {
+      border-left-color: #1bd741; }
+  .card__badge--red {
+    background-color: #dd2525; }
+    .card__badge--red::before {
+      border-left-color: #dd2525; }
+  .card__ket h3 {
+    font-family: open_sansbold; }
+  .card__ket time {
+    font-size: 10pt; }
+  .card__action {
+    background-color: #f7f7f7;
+    border-top: 1px solid #f2f2f2;
+    padding: 5px 10px; }
+    .card__action a {
+      padding: 10px;
+      color: #333;
+      font-size: 14pt; }
+      .card__action a:hover:not(.card__action--not-link) {
+        color: #2597e0; }
+    .card__action .card__action--not-link {
+      font-size: 12pt; }
+    .card__action--not-link span {
+      font-size: 14pt; }
+
+/* table */
+table.table {
+  margin-bottom: 0px;
+  background-color: white; }
+  table.table tr th, table.table tr td {
+    padding: 14px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    line-height: 20px;
+    font-size: 12pt; }
+  table.table tr td a {
+    font-size: 14pt;
+    color: #333; }
+    table.table tr td a:hover {
+      color: #2597e0; }
+  table.table tr.table--blue {
+    background-color: #e5f1ff; }
+    table.table tr.table--blue th, table.table tr.table--blue td {
+      border-color: #88c6ea; }
 
 /*# sourceMappingURL=reiran-admin.css.map */

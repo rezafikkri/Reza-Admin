@@ -1,0 +1,30 @@
+/* loading */
+.loading-circle {
+	width: 30px;
+	height: 30px;
+	border: 5px solid #eaeaea;
+	border-radius: 50%;
+	position: relative;
+
+	& div {
+		position: absolute;
+		top: -5px;
+		bottom: -5px;
+		right: -5px;
+		left: -5px;
+		border: 5px solid $blue-reiran;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-radius: 50%;
+		animation: loading-circle-rotate 1s linear infinite;
+	}
+
+	@keyframes loading-circle-rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+}

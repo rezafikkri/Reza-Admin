@@ -1,0 +1,12 @@
+/* footer */
+footer.footer-konten {
+	background-color: white;
+	padding: 20px 15px;
+	border-top: 1px solid $default-border-color;
+	display: flex;
+	justify-content: space-between;
+
+	& p {
+		margin: 0px;
+	}
+}

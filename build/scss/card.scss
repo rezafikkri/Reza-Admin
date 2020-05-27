@@ -1,0 +1,72 @@
+/* card */
+@mixin card_badge($color, $name-color) {
+	&__badge--#{$name-color} {
+		background-color: $color;
+
+		&::before {
+			border-left-color: $color;
+		}
+	}
+}
+
+.card {
+	border-color: $default-border-color;
+
+	&__badge {
+		padding: 5px;
+		align-self: flex-start;
+		margin-top: 5px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			height: 29.2px;
+			border: 10px solid transparent;
+			right: -20px;
+			top: 0;
+		}
+
+		& h6 {
+			margin: 0px;
+			color: white;
+		}
+	}
+
+	@include card_badge($orange-reiran, 'orange');
+	@include card_badge($blue-reiran, 'blue');
+	@include card_badge($green-reiran, 'green');
+	@include card_badge($red-reiran, 'red');
+
+	&__ket h3 {
+		font-family: open_sansbold;
+	}
+
+	&__ket time {
+		font-size: 10pt;
+	}
+
+	&__action {
+		background-color: #f7f7f7;
+		border-top: 1px solid #f2f2f2;
+		padding: 5px 10px;
+
+		& a {
+			padding: 10px;
+			color: #333;
+			font-size: 14pt;
+
+			&:hover:not(.card__action--not-link) {
+				color: $blue-reiran;
+			}
+		}
+
+		& &--not-link {
+			font-size: 12pt;
+		}
+
+		&--not-link span {
+			font-size: 14pt;
+		}
+	}
+}

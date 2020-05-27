@@ -1,0 +1,50 @@
+/* input */
+@mixin form-focus-mixin($name-color, $box-shadow-color, $border-color) {
+	input.form--#{$name-color}:focus,
+	textarea.form--#{$name-color}:focus,
+	select.form--#{$name-color}:focus {
+		box-shadow: 0 0 0 0.2rem $box-shadow-color;
+		border-color: $border-color;
+	}
+}
+
+input.form,
+select.form,
+textarea.form {
+	padding: 5px 10px;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	padding: 10px 16px;
+	font-size: 12pt;
+	background-color: white;
+	color: #333;
+	width: 100%;
+}
+
+@include form-focus-mixin('blue', rgba(0, 123, 255, 0.25), #80bdff);
+
+input::placeholder,
+textarea::placeholder {
+	color: #757575;
+}
+
+.input-group {
+	display: inline-block;
+	position: relative;
+
+	& a {
+		position: absolute;
+		right: 0;
+		top: 10px;
+		bottom: 10px;
+		display: inline-block;
+		padding: 0px 10px;
+		text-align: center;
+		border-left: 1px solid #ddd;
+		color: #333;
+
+		&:hover {
+			color: $blue-reiran;
+		}
+	}
+}

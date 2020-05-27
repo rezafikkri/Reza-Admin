@@ -1,0 +1,14 @@
+/* header */
+header.header-konten {
+	display: flex;
+	justify-content: space-between;
+
+	& .breadcrumb {
+		background-color: transparent;
+		padding: 0px;
+	}
+
+	& h5 {
+		display: inline-block;
+	}
+}

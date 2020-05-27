@@ -8,6 +8,7 @@ $green-reiran: #1bd741;
 $orange-reiran: #f9a022;
 $red-reiran: #dd2525;
 $pt-sidebar-main-konten: 80px;
+$default-border-color: #e8e8e8;
 
 @import "font-face.scss";
 
@@ -24,9 +25,17 @@ strong {
 	font-family: open_sansbold, sans-serif;
 }
 
+time {
+	display: inline-block;
+}
+
+.main-konten,
+footer {
+	margin-left: 228px;
+}
+
 .main-konten {
 	margin-top: $pt-sidebar-main-konten;
-	margin-left: 228px;
 	padding: 0px 16px;
 	position: relative;
 	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
@@ -40,5 +49,11 @@ strong {
 
 @import "navbar-top.scss";
 @import "sidebar.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "input.scss";
+@import "loading.scss";
 @import "info-box.scss";
 @import "chart.scss";
+@import "card.scss";
+@import "table.scss";

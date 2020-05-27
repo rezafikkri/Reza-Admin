@@ -77,10 +77,15 @@
 	<!-- main konten -->
 	<main class="main-konten">
 		<div class="row">
-			<header class="col-md-12 mb-2">
+			<header class="header-konten col-md-12 mb-2">
 				<h5>Dashaboard</h5>
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="">Home</a></li>
+					<li class="breadcrumb-item active">Dashaboard</li>
+				</ul>
 			</header>
 
+			<!-- info box -->
 			<div class="mb-3 col-md-4">
 				<section class="info-box info-box--blue">
 					<div class="info-box__icon"><span class="fa fa-shopping-cart"></span></div>
@@ -115,20 +120,128 @@
 				</section>
 			</div>
 
+			<!-- charts -->
 			<div class="mb-3 col-md-8">
 				<h5>Visitors</h5>
 				<section class="chart">
 					<canvas id="visitor_chart"></canvas>
 				</section>
 			</div>
-			<div class="mb-5 col-md-4">
+			<div class="mb-3 col-md-4">
 				<h5>Browser Usage</h5>
 				<section class="chart">
 					<canvas id="browser_usage_chart"></canvas>					
 				</section>
 			</div>
+
+			<!-- card -->
+			<div class="mb-3 col-md-4">
+				<section class="card">
+					<div class="card__image">
+						<img class="card-img-top" src="dist/img/laptop.jpg" alt="perempuan mengetik">
+					</div>
+					<div class="card__badge card__badge--green">
+						<h6>Laptop</h6>
+					</div>
+					<div class="card-body card__ket">
+						<h3>Apple MacBook Pro</h3>
+						<h5 class="mb-3">Rp 30.570.000</h5>
+						
+						<p class="mb-3">Image by <a href="https://pixabay.com/id/users/StartupStockPhotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=593327">StartupStockPhotos</a> from <a href="https://pixabay.com/id/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=593327">Pixabay</a>, Laptop is powerfull.</p>
+
+						<time>2 Minutes ago</time>
+					</div>
+					<div class="card__action">
+						<a href=""><span class="fa fa-trash"></span></a>
+						<a href=""><span class="fa fa-edit"></span></a>
+
+						<a class="card__action--not-link"><span class="fa fa-shopping-bag mr-1"></span> 50</a>
+					</div>
+				</section>
+			</div>
+
+			<div class="mb-3 col-md-8">
+				<h5>Table Products</h5>
+
+				<div class="row mb-3 mt-3">
+					<div class="col-6">
+						<div class="input-group mr-3">
+							<input type="text" class="form form--blue" name="search" placeholder="Keyword ...">
+							<a href=""><span class="fa fa-search"></span></a>
+						</div>
+					</div>
+					<div class="col-6">
+						<select name="Limit" class="form form--blue">
+							<option selected="" disabled="">Limit</option>
+						</select>
+					</div>
+				</div>
+
+				<table class="table mb-3">
+						<tr class="table--blue">
+							<th colspan="2">Action</th>
+							<th>Product Name</th>
+							<th>Price</th>
+						</tr>
+						<tr>
+							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
+							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+							<td>Apple MacBook Pro</td>
+							<td>Rp 30.570.000</td>
+						</tr>
+						<tr>
+							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
+							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+							<td>Acer OneZ40</td>
+							<td>Rp 4.570.000</td>
+						</tr>
+						<tr>
+							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
+							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+							<td>Dell</td>
+							<td>Rp 1.570.000</td>
+						</tr>
+						<tr>
+							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
+							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+							<td>Asus Rox</td>
+							<td>Rp 30.570.000</td>
+						</tr>
+						<tr>
+							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
+							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+							<td>Samsung</td>
+							<td>Rp 3.570.000</td>
+						</tr>
+						<tr>
+							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
+							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+							<td>Thosiba</td>
+							<td>Rp 5.570.000</td>
+						</tr>
+				</table>
+
+				<a href="#" class="show-more-btn">Show more <span class="fa fa-angle-down"></span></a>
+				<div class="row justify-content-center d-none">
+					<div class="loading-circle">
+						<div></div>
+					</div>
+				</div>
+			</div>
+
 		</div><!-- row -->
 	</main>
+
+	<footer class="footer-konten mt-5">
+		<p>Copyright &copy; <strong>Reiran</strong> 2020</p>
+		<p>Version 1.0</p>
+	</footer>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reiran Admin JS -->
@@ -143,7 +256,7 @@
 		let configVisitorChart = {
 			type: 'line',
 		    data: {
-		        labels: ['Ahad, 11','Senin, 12','Selasa, 13','Rabu, 14','Kamis, 15','Jum\'at'],
+		        labels: ['Sunday, 11','Monday, 12','Tuesday, 13','Wednesday, 14','Thursday, 15','Friday, 16'],
 		        datasets: [{
 		            label: 'Visitors',
 		            data: [10,6,7,5,1,14],
@@ -159,7 +272,7 @@
 		        },
 		        title: {
 		        	display: true,
-		        	text: 'Visitors Januari 2020',
+		        	text: 'Visitors January 2020',
 		        	fontSize: 14
 		        }
 		    }
@@ -190,12 +303,32 @@
 		        },
 		        title: {
 		        	display: true,
-		        	text: 'Browser Usage Januari 2020',
+		        	text: 'Browser Usage January 2020',
 		        	fontSize: 14
 		        }
 		    }
 		}
 		new Chart(browserUsageChart, configBrowserUsageChart);
+
+		// show more btn
+		const showMoreBtn = document.querySelector("a.show-more-btn");
+		if(showMoreBtn !== null) {
+			showMoreBtn.addEventListener('click', function(e) {
+				// not aktifkan fungsi default link
+				e.preventDefault();
+
+				let targetShowBtnMore = e.target;
+				if(!targetShowBtnMore.classList.contains("show-more-btn")) targetShowBtnMore = e.target.parentElement;
+				if(targetShowBtnMore.classList.contains("show-more-btn")) {
+					targetShowBtnMore.nextElementSibling.classList.remove("d-none");
+					targetShowBtnMore.classList.add("d-none");
+					setTimeout(function(){
+						targetShowBtnMore.nextElementSibling.classList.add("d-none");
+						targetShowBtnMore.classList.remove("d-none");
+					}, 1000);
+				}
+			});
+		}
 	</script>
 </body>
 </html>
