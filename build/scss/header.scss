@@ -11,4 +11,10 @@ header.header-konten {
 	& h5 {
 		display: inline-block;
 	}
+
+	@media (max-width: 575.98px) {
+		& {
+			flex-direction: column;
+		}
+	}
 }

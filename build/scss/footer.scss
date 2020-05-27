@@ -9,4 +9,10 @@ footer.footer-konten {
 	& p {
 		margin: 0px;
 	}
+
+	@media (max-width: 767.98px) {
+		& {
+			margin-left: 0px;
+		}
+	}
 }

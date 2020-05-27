@@ -64,10 +64,23 @@
 			<li class="sidebar__item"><a class="nav-link sidebar--active" href=""><span class="fa fa-home"></span> Dashaboard</a></li>
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-large"></span> Widgets</a></li>
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-bar-chart-o"></span> Charts</a></li>
-			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-desktop"></span> UI Elements</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-desktop"></span> UI Elements <span class="fa fa-angle-right sidebar__span-dropdown"></span></a>
+				<ul class="sidebar__dropdown">
+					<li class="sidebar__dropdown-item"><a href="">Buttons</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Icons</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Modals</a></li>
+				</ul>
+			</li>
+
+
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-pencil-square-o"></span> Forms</a></li>
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-list"></span> Tables</a></li>
-			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-building"></span> Example</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-building"></span> Example <span class="fa fa-angle-right sidebar__span-dropdown"></span></a>
+				<ul class="sidebar__dropdown">
+					<li class="sidebar__dropdown-item"><a href="">Form login</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Form Register</a></li>
+				</ul>
+			</li>
 
 			<li class="sidebar__item sidebar--new-div">Important for read</li>
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-book"></span> Documentation</a></li>
@@ -134,6 +147,82 @@
 				</section>
 			</div>
 
+			<!-- table -->
+			<div class="mb-3 col-md-8">
+				<h5>Table Products</h5>
+
+				<div class="row mb-3 mt-3">
+					<div class="col-6">
+						<div class="input-group mr-3">
+							<input type="text" class="form form--blue" name="search" placeholder="Keyword ...">
+							<a href=""><span class="fa fa-search"></span></a>
+						</div>
+					</div>
+					<div class="col-6">
+						<select name="Limit" class="form form--blue">
+							<option selected="" disabled="">Limit</option>
+						</select>
+					</div>
+				</div>
+
+				<table class="table mb-3">
+					<tr class="table--blue">
+						<th colspan="2">Action</th>
+						<th>Product Name</th>
+						<th>Price</th>
+					</tr>
+					<tr>
+						<td width="10"><a href="" class="text-hover-red"><span class="fa fa-trash"></span></a></td>
+						<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+						<td>Apple MacBook Pro</td>
+						<td>Rp 30.570.000</td>
+					</tr>
+					<tr>
+						<td width="10"><a href="" class="text-hover-red"><span class="fa fa-trash"></span></a></td>
+						<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+						<td>Acer OneZ40</td>
+						<td>Rp 4.570.000</td>
+					</tr>
+					<tr>
+						<td width="10"><a href="" class="text-hover-red"><span class="fa fa-trash"></span></a></td>
+						<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+						<td>Dell</td>
+						<td>Rp 1.570.000</td>
+					</tr>
+					<tr>
+						<td width="10"><a href="" class="text-hover-red"><span class="fa fa-trash"></span></a></td>
+						<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+						<td>Asus Rox</td>
+						<td>Rp 30.570.000</td>
+					</tr>
+					<tr>
+						<td width="10"><a href="" class="text-hover-red"><span class="fa fa-trash"></span></a></td>
+						<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+						<td>Samsung</td>
+						<td>Rp 3.570.000</td>
+					</tr>
+					<tr>
+						<td width="10"><a href="" class="text-hover-red"><span class="fa fa-trash"></span></a></td>
+						<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+						<td>Thosiba</td>
+						<td>Rp 5.570.000</td>
+					</tr>
+				</table>
+
+				<a href="#" class="show-more-btn">Show more <span class="fa fa-angle-down"></span></a>
+				<div class="row justify-content-center d-none">
+					<div class="loading-circle">
+						<div></div>
+					</div>
+				</div>
+			</div>
+
 			<!-- card -->
 			<div class="mb-3 col-md-4">
 				<section class="card">
@@ -158,81 +247,6 @@
 						<a class="card__action--not-link"><span class="fa fa-shopping-bag mr-1"></span> 50</a>
 					</div>
 				</section>
-			</div>
-
-			<div class="mb-3 col-md-8">
-				<h5>Table Products</h5>
-
-				<div class="row mb-3 mt-3">
-					<div class="col-6">
-						<div class="input-group mr-3">
-							<input type="text" class="form form--blue" name="search" placeholder="Keyword ...">
-							<a href=""><span class="fa fa-search"></span></a>
-						</div>
-					</div>
-					<div class="col-6">
-						<select name="Limit" class="form form--blue">
-							<option selected="" disabled="">Limit</option>
-						</select>
-					</div>
-				</div>
-
-				<table class="table mb-3">
-						<tr class="table--blue">
-							<th colspan="2">Action</th>
-							<th>Product Name</th>
-							<th>Price</th>
-						</tr>
-						<tr>
-							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
-							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
-
-							<td>Apple MacBook Pro</td>
-							<td>Rp 30.570.000</td>
-						</tr>
-						<tr>
-							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
-							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
-
-							<td>Acer OneZ40</td>
-							<td>Rp 4.570.000</td>
-						</tr>
-						<tr>
-							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
-							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
-
-							<td>Dell</td>
-							<td>Rp 1.570.000</td>
-						</tr>
-						<tr>
-							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
-							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
-
-							<td>Asus Rox</td>
-							<td>Rp 30.570.000</td>
-						</tr>
-						<tr>
-							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
-							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
-
-							<td>Samsung</td>
-							<td>Rp 3.570.000</td>
-						</tr>
-						<tr>
-							<td width="10"><a href=""><span class="fa fa-trash"></span></a></td>
-							<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
-
-							<td>Thosiba</td>
-							<td>Rp 5.570.000</td>
-						</tr>
-				</table>
-
-				<a href="#" class="show-more-btn">Show more <span class="fa fa-angle-down"></span></a>
-				<div class="row justify-content-center d-none">
-					<div class="loading-circle">
-						<div></div>
-					</div>
-				</div>
 			</div>
 
 		</div><!-- row -->

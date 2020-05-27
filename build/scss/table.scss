@@ -3,6 +3,10 @@ table.table {
 	margin-bottom: 0px;
 	background-color: white;
 
+	& tr:hover {
+		background-color: #f7f7f7;
+	}
+
 	& tr th, 
 	& tr td {
 		padding: 14px;

@@ -82,7 +82,62 @@
 		&:hover {
 			color: #333;
 		}
+	}	
+}
+
+.sidebar__btn-dropdown {
+	position: relative;
+
+	&--active {
+		background-color: #2388c6;
+	}
+}
+
+.sidebar__span-dropdown {
+	position: absolute;
+	right: 16px;
+	top: 35%;
+
+	&--rotate {
+		transform: rotateZ(90deg);
+	}
+}
+
+.sidebar__dropdown {
+	list-style-type: none;
+	background-color: #1a7cba;
+	padding-left: 40px;
+	display: none;
+
+	&--show {
+		display: block;
 	}
 
-	
+	&-item a {
+		display: block;
+		padding: 5px 0px;
+		color: #b5e2ff;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			height: 2px;
+			width: 5px;
+			top: 50%;
+			left: -20px;
+			background-color: #b5e2ff;
+		}
+	}
+
+	&-item a:hover {
+		background-color: transparent;
+		text-decoration: none;
+		color: white;
+		transition: unset;
+
+		&::before {
+			background-color: white;
+		}
+	}
 }
