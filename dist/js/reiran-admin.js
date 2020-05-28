@@ -27,3 +27,12 @@ if(sidebar !== null) {
 		}
 	});
 }
+
+/* navbar toggler */
+const btnNavbarToggler = document.querySelector("button.navbar-toggler");
+if(btnNavbarToggler !== null) {
+	btnNavbarToggler.addEventListener('click', function(){
+		const navbarTarget = document.querySelector(`div${btnNavbarToggler.getAttribute("target")}`);
+		navbarTarget.classList.toggle("d-block");
+	});
+}
