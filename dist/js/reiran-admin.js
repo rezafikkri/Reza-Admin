@@ -16,11 +16,11 @@ if(navbarSidebarToggler !== null) {
 /* sidebar dropdown */
 if(sidebar !== null) {
 	sidebar.addEventListener('click', function(e){
-		e.preventDefault();
-
 		let targetDropdown = e.target;
 		if(!targetDropdown.classList.contains("sidebar__btn-dropdown")) targetDropdown = e.target.parentElement;
 		if(targetDropdown.classList.contains("sidebar__btn-dropdown")) {
+			e.preventDefault();
+			
 			targetDropdown.classList.toggle("sidebar__btn-dropdown--active");
 			targetDropdown.querySelector("span.sidebar__span-dropdown").classList.toggle("sidebar__span-dropdown--rotate");
 			targetDropdown.nextElementSibling.classList.toggle("sidebar__dropdown--show");

@@ -1,10 +1,16 @@
 /* card */
-@mixin card_badge($color, $name-color) {
-	&__badge--#{$name-color} {
-		background-color: $color;
+@mixin card($background-color-badge, $background-color-card-action, $name-color) {
+	&--#{$name-color} {
+		& .card__badge {
+			background-color: $background-color-badge;
 
-		&::before {
-			border-left-color: $color;
+			&::before {
+				border-left-color: $background-color-badge;
+			}	
+		}
+
+		& .card__action {
+			background-color: $background-color-card-action;
 		}
 	}
 }
@@ -17,12 +23,14 @@
 		align-self: flex-start;
 		margin-top: 5px;
 		position: relative;
+		background-color: #4c4c4c;
 
 		&::before {
 			content: "";
 			position: absolute;
 			height: 29.2px;
 			border: 10px solid transparent;
+			border-left-color: #4c4c4c;
 			right: -20px;
 			top: 0;
 		}
@@ -32,11 +40,6 @@
 			color: white;
 		}
 	}
-
-	@include card_badge($orange-reiran, 'orange');
-	@include card_badge($blue-reiran, 'blue');
-	@include card_badge($green-reiran, 'green');
-	@include card_badge($red-reiran, 'red');
 
 	&__ket h3 {
 		font-family: open_sansbold;
@@ -69,4 +72,9 @@
 			font-size: 14pt;
 		}
 	}
+
+	@include card($orange-reiran, #fffbf7, 'orange');
+	@include card($blue-reiran, #f7fcff, 'blue');
+	@include card($green-reiran, #f7fff8, 'green');
+	@include card($red-reiran, #fff7f7, 'red');
 }

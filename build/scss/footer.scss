@@ -6,6 +6,10 @@ footer.footer-konten {
 	display: flex;
 	justify-content: space-between;
 
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 228px);
+
 	& p {
 		margin: 0px;
 	}

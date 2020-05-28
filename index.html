@@ -61,10 +61,10 @@
 	<!-- sidebar -->
 	<aside class="sidebar">
 		<ul class="sidebar__ul">
-			<li class="sidebar__item"><a class="nav-link sidebar--active" href=""><span class="fa fa-home"></span> Dashaboard</a></li>
-			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-large"></span> Widgets</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar--active" href="index.html"><span class="fa fa-home"></span> Dashaboard</a></li>
+			<li class="sidebar__item"><a class="nav-link" href="page/widgets.html"><span class="fa fa-th-large"></span> Widgets</a></li>
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-bar-chart-o"></span> Charts</a></li>
-			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-desktop"></span> UI Elements <span class="fa fa-angle-right sidebar__span-dropdown"></span></a>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-desktop"></span> UI Elements <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
 				<ul class="sidebar__dropdown">
 					<li class="sidebar__dropdown-item"><a href="">Buttons</a></li>
 					<li class="sidebar__dropdown-item"><a href="">Icons</a></li>
@@ -75,7 +75,7 @@
 
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-pencil-square-o"></span> Forms</a></li>
 			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-list"></span> Tables</a></li>
-			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-building"></span> Example <span class="fa fa-angle-right sidebar__span-dropdown"></span></a>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-building"></span> Example <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
 				<ul class="sidebar__dropdown">
 					<li class="sidebar__dropdown-item"><a href="">Form login</a></li>
 					<li class="sidebar__dropdown-item"><a href="">Form Register</a></li>
@@ -93,7 +93,7 @@
 			<header class="header-konten col-md-12 mb-2">
 				<h5>Dashaboard</h5>
 				<ul class="breadcrumb">
-					<li class="breadcrumb-item"><a href="">Home</a></li>
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
 					<li class="breadcrumb-item active">Dashaboard</li>
 				</ul>
 			</header>
@@ -225,11 +225,11 @@
 
 			<!-- card -->
 			<div class="mb-3 col-md-4">
-				<section class="card">
+				<section class="card card--green">
 					<div class="card__image">
 						<img class="card-img-top" src="dist/img/laptop.jpg" alt="perempuan mengetik">
 					</div>
-					<div class="card__badge card__badge--green">
+					<div class="card__badge">
 						<h6>Laptop</h6>
 					</div>
 					<div class="card-body card__ket">
@@ -241,7 +241,7 @@
 						<time>2 Minutes ago</time>
 					</div>
 					<div class="card__action">
-						<a href=""><span class="fa fa-trash"></span></a>
+						<a href="" class="text-hover-red"><span class="fa fa-trash"></span></a>
 						<a href=""><span class="fa fa-edit"></span></a>
 
 						<a class="card__action--not-link"><span class="fa fa-shopping-bag mr-1"></span> 50</a>
@@ -252,7 +252,7 @@
 		</div><!-- row -->
 	</main>
 
-	<footer class="footer-konten mt-5">
+	<footer class="footer-konten">
 		<p>Copyright &copy; <strong>Reiran</strong> 2020</p>
 		<p>Version 1.0</p>
 	</footer>

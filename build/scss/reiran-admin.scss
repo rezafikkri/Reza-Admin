@@ -19,6 +19,8 @@ html, body {
 
 body {
 	background-color: #fcfcfc;
+	position: relative;
+	min-height: 100vh;
 }
 
 strong {
@@ -35,8 +37,8 @@ footer {
 }
 
 .main-konten {
-	margin-top: $pt-sidebar-main-konten;
-	padding: 0px 16px;
+	padding: $pt-sidebar-main-konten 16px;
+	padding-bottom: 100px;
 	position: relative;
 	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 
