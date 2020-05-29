@@ -1,0 +1,52 @@
+/* button */
+@mixin btn-normal($color-name, $base-color, $color-gradient-bottom, $color-gradient-bottom-hover) {
+	&--#{$color-name} {
+		border: 1px solid $color-gradient-bottom;
+		background-color: $base-color;
+		background-image: linear-gradient($base-color, $color-gradient-bottom);
+
+		&:hover {
+			background-image: linear-gradient($base-color, $color-gradient-bottom-hover);
+		}
+	}
+}
+
+@mixin btn-outline($color-name, $base-color, $color-gradient-bottom) {
+	&--#{$color-name}-outline {
+		border: 1px solid $color-gradient-bottom;
+		color: $color-gradient-bottom;
+		&:hover {
+			color: #fff;
+			background-color: $base-color;
+			background-image: linear-gradient($base-color, $color-gradient-bottom);
+		}
+	}
+}
+
+.btn {
+	padding: 8px 16px;
+	color: #fff;
+	font-size: 12pt;
+
+	&:hover {
+		color: #fff;
+	}
+
+	@include btn-normal('gray', #a8a8a8, #8e8e8e, #777777);
+	@include btn-normal('blue', $blue-reiran, #1c87c9, #1474a8);
+	@include btn-normal('green', $green-reiran, #19c13a, #14aa30);
+	@include btn-normal('orange', $orange-reiran, #e88b12, #d17112);
+	@include btn-normal('red', $red-reiran, #d11b1b, #b51515);
+
+	@include btn-outline('gray', #a8a8a8, #8e8e8e);
+	@include btn-outline('blue', $blue-reiran, #1c87c9);
+	@include btn-outline('green', $green-reiran, #19c13a);
+	@include btn-outline('orange', $orange-reiran, #e88b12);
+	@include btn-outline('red', $red-reiran, #d11b1b);
+
+	&[disabled],
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}

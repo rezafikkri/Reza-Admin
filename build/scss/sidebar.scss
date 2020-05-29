@@ -116,8 +116,9 @@
 	&-item a {
 		display: block;
 		padding: 5px 0px;
-		color: #bbd8ea;
+		color: #ccdde5;
 		position: relative;
+		transition: unset;
 
 		&::before {
 			content: "";
@@ -126,18 +127,21 @@
 			width: 5px;
 			top: 50%;
 			left: -20px;
-			background-color: #bbd8ea;
+			background-color: #ccdde5;
 		}
-	}
 
-	&-item a:hover {
-		background-color: transparent;
-		text-decoration: none;
-		color: white;
-		transition: unset;
+		&:hover {
+			background-color: transparent;
+			text-decoration: none;
+			color: white;
 
-		&::before {
-			background-color: white;
+			&::before {
+				background-color: white;
+			}
+		}
+
+		&.sidebar__dropdown--active {
+			color: white;
 		}
 	}
 }

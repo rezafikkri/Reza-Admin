@@ -6,7 +6,7 @@
 $blue-reiran: #2597e0;
 $green-reiran: #1bd741;
 $orange-reiran: #f9a022;
-$red-reiran: #dd2525;
+$red-reiran: #ea2a2a;
 $pt-sidebar-main-konten: 80px;
 $default-border-color: #e8e8e8;
 
@@ -47,6 +47,13 @@ footer {
 			margin-left: 0px;
 		}
 	}
+
+	&__box {
+		padding: 15px;
+		background-color: white;
+		border: 1px solid $default-border-color;
+		border-radius: 4px;
+	}
 }
 
 @import "navbar-top.scss";
@@ -59,4 +66,5 @@ footer {
 @import "chart.scss";
 @import "card.scss";
 @import "table.scss";
+@import "button.scss";
 @import "utilities.scss";

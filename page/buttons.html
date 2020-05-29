@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Social network metas -->
+	<meta property="og:title" content="Reiran Admin . Buttons">
+	<meta property="og:url" content="">
+	<meta property="image" content="">
+	<meta property="og:image" content="">
+	<meta property="description" content="Open source responsive admin template with bootstrap framework">
+
+	<title>Reiran Admin . Buttons</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reiran Admin CSS -->
+	<link rel="stylesheet" type="text/css" href="../dist/css/reiran-admin.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../dist/img/favicon-(80x80).png">
+</head>
+<body>		
+	<!-- navbar top -->
+	<nav class="navbar navbar-expand-sm navbar--white">
+		<a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+		<a class="navbar-brand" href="#"><img src="../dist/img/new_logo.png" width="119" class="ml-md-4" alt="logo reiran"></a>
+		<button class="navbar-toggler" target="#navbarNav" type="button">
+		    <span class="fa fa-navicon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item navbar__notification">
+					<a class="nav-link" href="#">
+						<span class="fa fa-bookmark"></span>
+						<span class="navbar__notification-number navbar__notification-number--blue">2</span>
+					</a>
+				</li>
+				<li class="nav-item navbar__notification">
+					<a class="nav-link " href="#">
+						<span class="fa fa-bell"></span>
+						<span class="navbar__notification-number navbar__notification-number--orange">2</span>
+					</a>
+				</li>
+				<li class="nav-item navbar__avatar">
+					<a class="nav-link" href="#">
+						<img src="../dist/img/reza.jpg" alt="avatar image">
+						<span>Reza Sariful Fikri</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link--red-hover" href="#"><span class="fa fa-sign-out"></span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- sidebar -->
+	<aside class="sidebar">
+		<ul class="sidebar__ul">
+			<li class="sidebar__item"><a class="nav-link" href="../index.html"><span class="fa fa-home"></span> Dashaboard</a></li>
+			<li class="sidebar__item"><a class="nav-link" href="widgets.html"><span class="fa fa-th-large"></span> Widgets</a></li>
+			<li class="sidebar__item"><a class="nav-link" href="charts.html"><span class="fa fa-bar-chart-o"></span> Charts</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown sidebar--active" href="#"><span class="fa fa-desktop"></span> UI Elements <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+				<ul class="sidebar__dropdown sidebar__dropdown--show">
+					<li class="sidebar__dropdown-item"><a class="sidebar__dropdown--active" href="buttons.html">Buttons</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Icons</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Modals</a></li>
+				</ul>
+			</li>
+
+
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-pencil-square-o"></span> Forms</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-list"></span> Tables</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-building"></span> Example <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+				<ul class="sidebar__dropdown">
+					<li class="sidebar__dropdown-item"><a href="">Form login</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Form Register</a></li>
+				</ul>
+			</li>
+
+			<li class="sidebar__item sidebar--new-div">Important for read</li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-book"></span> Documentation</a></li>
+		</ul>
+	</aside>
+
+	<!-- main konten -->
+	<main class="main-konten">
+		<div class="row">
+			<header class="header-konten col-md-12 mb-2">
+				<div class="header-konten__text">
+					<h4>Buttons</h4>
+				</div>
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+					<li class="breadcrumb-item active">Buttons</li>
+				</ul>
+			</header>
+
+			<div class="col-md-12">
+				<div class="main-konten__box">
+					<p class="mb-1">Button Normal</p>
+					<a href="#" class="btn btn--gray m-2">Gray Normal</a>
+					<a href="#" class="btn btn--blue m-2">Blue Normal</a>
+					<a href="#" class="btn btn--green m-2">Green Normal</a>
+					<a href="#" class="btn btn--orange m-2">Orange Normal</a>
+					<a href="#" class="btn btn--red m-2">Red Normal</a>
+
+					<p class="mb-1 mt-4">Button Outline</p>
+					<a href="#" class="btn btn--gray-outline m-2">Gray Outline</a>
+					<a href="#" class="btn btn--blue-outline m-2">Blue Outline</a>
+					<a href="#" class="btn btn--green-outline m-2">Green Outline</a>
+					<a href="#" class="btn btn--orange-outline m-2">Orange Outline</a>
+					<a href="#" class="btn btn--red-outline m-2">Red Outline</a>
+
+					<p class="mb-1 mt-4">Button Disabled</p>
+					<a class="btn btn--gray disabled m-2" href="">Gray Disabled</a>
+					<button class="btn btn--blue m-2" disabled="">Blue Disabled</button>
+					<button class="btn btn--green m-2" disabled="">Green Disabled</button>
+					<button class="btn btn--orange m-2" disabled="">Orange Disabled</button>
+					<button class="btn btn--red m-2" disabled="">Red Disabled</button>
+
+					<button class="btn btn--gray-outline m-2" disabled="">Gray Outline</button>
+					<button class="btn btn--blue-outline m-2" disabled="">Blue Outline</button>
+					<button class="btn btn--green-outline m-2" disabled="">Green Outline</button>
+					<button class="btn btn--orange-outline m-2" disabled="">Orange Outline</button>
+					<button class="btn btn--red-outline m-2" disabled="">Red Outline</button>
+				</div>
+			</div>
+		</div><!-- row -->
+	</main>
+
+	<footer class="footer-konten">
+		<p>Copyright &copy; <strong>Reiran</strong> 2020</p>
+		<p>Version 1.0</p>
+	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reiran Admin JS -->
+    <script src="../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/reiran-admin.js"></script>
+</body>
+</html>
