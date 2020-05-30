@@ -1,0 +1,22 @@
+/* css only for page icons.html */
+.icons a {
+	display: inline-block;
+	overflow: hidden;
+	padding: 5px 0px;
+	color: #333;
+}
+
+.icons a:hover {
+	color: #007bff;
+}
+
+.icons a span {
+	margin-right: 8px;
+	color: #333;
+	width: 25px;
+	text-align: right;
+}
+
+.icons a span.fa-spin {
+	width: auto;
+}

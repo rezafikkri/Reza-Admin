@@ -231,17 +231,32 @@ span.navbar__notification-number {
       color: white; }
 
 /* header */
-header.header-konten {
+.header-konten__title {
   display: flex;
   justify-content: space-between; }
-  header.header-konten .breadcrumb {
-    background-color: transparent;
-    padding: 0px; }
-  header.header-konten h5 {
-    display: inline-block; }
+  .header-konten__title h1 {
+    flex: 1; }
+  .header-konten__title h2 {
+    flex: 1; }
+  .header-konten__title h3 {
+    flex: 1; }
+  .header-konten__title h4 {
+    flex: 1; }
+  .header-konten__title h5 {
+    flex: 1; }
+  .header-konten__title h6 {
+    flex: 1; }
+  .header-konten__title .breadcrumb {
+    flex: 1;
+    justify-content: flex-end; }
   @media (max-width: 575.98px) {
-    header.header-konten {
-      flex-direction: column; } }
+    .header-konten__title {
+      flex-direction: column-reverse; }
+    .header-konten__title .breadcrumb {
+      justify-content: flex-start; } }
+.header-konten .breadcrumb {
+  background-color: transparent;
+  padding: 0px; }
 
 /* footer */
 footer.footer-konten {
