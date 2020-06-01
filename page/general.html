@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Social network metas -->
+	<meta property="og:title" content="Reiran Admin . General">
+	<meta property="og:url" content="">
+	<meta property="image" content="">
+	<meta property="og:image" content="">
+	<meta property="description" content="Open source responsive admin template with bootstrap framework">
+
+	<title>Reiran Admin . General</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reiran Admin CSS -->
+	<link rel="stylesheet" type="text/css" href="../dist/css/reiran-admin.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../dist/img/favicon-(80x80).png">
+</head>
+<body>		
+	<!-- navbar top -->
+	<nav class="navbar navbar-expand-sm navbar--white">
+		<a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+		<a class="navbar-brand" href="#"><img src="../dist/img/new_logo.png" width="119" class="ml-md-4" alt="logo reiran"></a>
+		<button class="navbar-toggler" target="#navbarNav" type="button">
+		    <span class="fa fa-navicon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item navbar__notification">
+					<a class="nav-link" href="#">
+						<span class="fa fa-bookmark"></span>
+						<span class="navbar__notification-number navbar__notification-number--blue">2</span>
+					</a>
+				</li>
+				<li class="nav-item navbar__notification">
+					<a class="nav-link " href="#">
+						<span class="fa fa-bell"></span>
+						<span class="navbar__notification-number navbar__notification-number--orange">2</span>
+					</a>
+				</li>
+				<li class="nav-item navbar__avatar">
+					<a class="nav-link" href="#">
+						<img src="../dist/img/reza.jpg" alt="avatar image">
+						<span>Reza Sariful Fikri</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link--red-hover" href="#"><span class="fa fa-sign-out"></span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- sidebar -->
+	<aside class="sidebar">
+		<ul class="sidebar__ul">
+			<li class="sidebar__item"><a class="nav-link" href="../index.html"><span class="fa fa-home"></span> Dashaboard</a></li>
+			<li class="sidebar__item"><a class="nav-link" href="widgets.html"><span class="fa fa-th-large"></span> Widgets</a></li>
+			<li class="sidebar__item"><a class="nav-link" href="charts.html"><span class="fa fa-bar-chart-o"></span> Charts</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown sidebar--active" href="#"><span class="fa fa-desktop"></span> UI Elements <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+				<ul class="sidebar__dropdown sidebar__dropdown--show">
+					<li class="sidebar__dropdown-item"><a class="sidebar__dropdown--active" href="general.html">General</a></li>
+					<li class="sidebar__dropdown-item"><a href="buttons.html">Buttons</a></li>
+					<li class="sidebar__dropdown-item"><a href="icons.html">Icons</a></li>
+				</ul>
+			</li>
+
+
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-pencil-square-o"></span> Forms</a></li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-th-list"></span> Tables</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-building"></span> Example <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+				<ul class="sidebar__dropdown">
+					<li class="sidebar__dropdown-item"><a href="">Form login</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Form Register</a></li>
+				</ul>
+			</li>
+
+			<li class="sidebar__item sidebar--new-div">Important for read</li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-book"></span> Documentation</a></li>
+		</ul>
+	</aside>
+
+	<!-- main -->
+	<main class="main">
+		<div class="row">
+			<header class="main__header col-md-12 mb-2">
+				<div class="main__title">
+					<h4>General</h4>
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+						<li class="breadcrumb-item active">General</li>
+					</ul>
+				</div>				
+			</header>
+
+			<div class="col-md-12">
+				<div class="main__box">
+					<h5>Alerts</h5>
+					<hr>
+
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<section class="alert alert--danger">
+								<div class="alert__icon">
+									<span class="fa fa-ban"></span>
+								</div>
+								<div class="alert__description">
+									Danger alert preview. This alert is dismissable.
+								</div>
+								<div class="alert__action">
+									<a class="alert__close-btn">&times;</a>
+								</div>
+							</section><!-- alert -->
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<section class="alert alert--info">
+								<div class="alert__icon">
+									<span class="fa fa-info-circle"></span>
+								</div>
+								<div class="alert__description">
+									Danger alert preview. This alert is dismissable.
+								</div>
+								<div class="alert__action">
+									<a class="alert__close-btn">&times;</a>
+								</div>
+							</section><!-- alert -->
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<section class="alert alert--warning alert-dismissible">
+								<div class="alert__icon">
+									<span class="fa fa-warning"></span>
+								</div>
+								<div class="alert__description">
+									Danger alert preview. This alert is dismissable.
+								</div>
+								<div class="alert__action">
+									<a class="alert__close-btn">&times;</a>
+								</div>
+							</section><!-- alert -->
+						</div>
+
+						<div class="col-md-6 mb-3">
+							<section class="alert alert--success">
+								<div class="alert__icon">
+									<span class="fa fa-check-circle"></span>
+								</div>
+								<div class="alert__description">
+									Danger alert preview. This alert is dismissable.
+								</div>
+								<div class="alert__action">
+									<a class="alert__close-btn">&times;</a>
+								</div>
+							</section><!-- alert -->
+						</div>
+					</div><!-- row -->
+
+					<h5 class="mt-4">Modals</h5>
+					<hr>
+					<!-- modal success -->
+					<a href="#" class="btn btn--green mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-success">Launch Modal Success</a>
+					<div class="modal modal--success" id="modal-success">
+						<div class="modal__content">
+							<div class="modal__title mb-5">
+								<span class="fa fa-check mb-2"></span>
+								<h3>Data Created</h3>
+							</div>
+							<div class="modal__description mb-5">
+								<p>Congratulation, your data created.</p>
+							</div>
+							<div class="modal__action">
+								<a href="#" class="btn btn--green close-modal">Ok, Close modal!</a>
+							</div>
+						</div>
+					</div>
+					<!-- modal success end -->
+
+					<!-- modal info -->
+					<a href="#" class="btn btn--blue mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-info">Launch Modal Info</a>
+					<div class="modal modal--info" id="modal-info">
+						<div class="modal__content">
+							<div class="modal__title mb-5">
+								<span class="fa fa-info mb-2"></span>
+								<h3>Data info</h3>
+							</div>
+							<div class="modal__description mb-5">
+								<p>This data has been deleted.</p>
+							</div>
+							<div class="modal__action">
+								<a href="#" class="btn btn--blue close-modal">Ok, I understand!</a>
+							</div>
+						</div>
+					</div>
+					<!-- modal info end -->
+
+					<!-- modal danger -->
+					<a href="#" class="btn btn--red mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-danger">Launch Modal Danger</a>
+					<div class="modal modal--danger" id="modal-danger">
+						<div class="modal__content">
+							<div class="modal__title mb-5">
+								<span class="fa fa-trash mb-2"></span>
+								<h3>Deletion Confirm</h3>
+							</div>
+							<div class="modal__description mb-5">
+								<p>Are you sure delete this data? you will delete data permanent.</p>
+								<input type="text" class="form form--blue" name="password" placeholder="Enter your password ...">
+							</div>
+							<div class="modal__action">
+								<a href="#" class="btn btn--link mr-md-3 close-modal">Cancel!</a>
+								<a href="#" class="btn btn--red">Delete!</a>
+							</div>
+						</div>
+					</div>
+					<!-- modal danger end -->
+
+					<!-- modal warning -->
+					<a href="#" class="btn btn--orange mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-warning">Launch Modal Warning</a>
+					<div class="modal modal--warning" id="modal-warning">
+						<div class="modal__content">
+							<div class="modal__title mb-5">
+								<span class="fa fa-warning mb-2"></span>
+								<h3>Login Warning</h3>
+							</div>
+							<div class="modal__description mb-5">
+								<p>Your account login in new devices. <a href="">Click here if not you!.</a></p>
+							</div>
+							<div class="modal__action">
+								<a href="#" class="btn btn--orange close-modal">Ok, I understand!</a>
+							</div>
+						</div>
+					</div>
+					<!-- modal warning end -->
+				</div>
+			</div>
+		</div><!-- row -->
+	</main>
+
+	<!-- footer -->
+	<footer class="footer">
+		<p>Copyright &copy; <strong>Reiran</strong> 2020. All rights reserved</p>
+		<p>Version 1.0</p>
+	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reiran Admin JS -->
+    <script src="../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/reiran-admin.js"></script>
+
+    <!-- show hide modal -->
+    <script type="text/javascript">
+    	const mainKontenBox = document.querySelector(".main__box");
+    	if(mainKontenBox !== null) {
+    		mainKontenBox.addEventListener('click', function(e){
+    			let btnShowModal = e.target;
+    			if(btnShowModal.classList.contains("btn-show-modal")) {
+    				e.preventDefault();
+
+    				// stop body scrolling
+    				document.querySelector("body").classList.add("stop-scrolling");
+
+    				// show modal
+    				const targetModal = btnShowModal.getAttribute("target-modal");
+    				const modal = document.querySelector(targetModal);
+    				modal.classList.add("modal--fade-in");
+    			}
+
+    			let btnCloseModal = e.target;
+    			if(btnCloseModal.classList.contains("close-modal")) {
+    				e.preventDefault();
+
+    				// body scrolling
+    				document.querySelector("body").classList.add("stop-scrolling");
+
+    				// hide modal
+    				btnCloseModal.parentElement.parentElement.parentElement.classList.remove("modal--fade-in");
+    			}
+    		});
+    	}
+    </script>
+</body>
+</html>

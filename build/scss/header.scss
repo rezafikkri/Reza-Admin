@@ -1,34 +1,28 @@
 /* header */
-.header-konten {
-	&__title {
-		display: flex;
-		justify-content: space-between;
+.main__title {
+	display: flex;
+	justify-content: space-between;
 
-
-		@for $i from 1 through 6 {
-			& h#{$i} {
-				flex: 1;
-			}
-		}
-
-		& .breadcrumb {
+	@for $i from 1 through 6 {
+		& h#{$i} {
 			flex: 1;
-			justify-content: flex-end;
-		}
-
-		@media (max-width: 575.98px) {
-			& {
-				flex-direction: column-reverse;
-			}
-
-			& .breadcrumb {
-				justify-content: flex-start;
-			}
 		}
 	}
 
 	& .breadcrumb {
+		flex: 1;
+		justify-content: flex-end;
 		background-color: transparent;
 		padding: 0px;
+	}
+
+	@media (max-width: 575.98px) {
+		& {
+			flex-direction: column-reverse;
+		}
+
+		& .breadcrumb {
+			justify-content: flex-start;
+		}
 	}
 }

@@ -23,6 +23,10 @@ body {
 	min-height: 100vh;
 }
 
+body.stop-scrolling {
+	overflow: hidden;
+}
+
 strong {
 	font-family: open_sansbold, sans-serif;
 }
@@ -31,12 +35,12 @@ time {
 	display: inline-block;
 }
 
-.main-konten,
+.main,
 footer {
 	margin-left: 228px;
 }
 
-.main-konten {
+.main {
 	padding: $pt-sidebar-main-konten 16px;
 	padding-bottom: 100px;
 	position: relative;
@@ -67,4 +71,6 @@ footer {
 @import "card.scss";
 @import "table.scss";
 @import "button.scss";
+@import "alert.scss";
+@import "modal.scss";
 @import "utilities.scss";

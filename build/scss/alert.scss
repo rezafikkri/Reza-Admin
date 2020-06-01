@@ -1,0 +1,91 @@
+/* alert */
+@mixin alert($alert-name, $base-color, $border-color, $icon-color, $icon-before-bg-color, $description-color, $action-color, $action-color-hover){
+	&--#{$alert-name} {
+		background-color: $base-color;
+		border: 1px solid $border-color;
+
+		& .alert__icon {
+			color: $icon-color;
+			&::before {
+				background-color: $icon-before-bg-color;
+			}
+		}
+
+		& .alert__description {
+			color: $description-color;
+		}
+
+		& .alert__action {
+			color: $action-color;
+			&:hover {
+				color: $action-color-hover;
+			}
+		}
+	}
+}
+
+.alert {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border-radius: 4px;
+	padding: 2px 15px;
+	margin-bottom: 0px;
+
+	&__icon {
+		flex-basis: 50px;
+		font-size: 20pt;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 35px;
+			top: 5px;
+			bottom: 5px;
+			width: 1px;
+		}
+	}
+
+	&__description {
+		flex: 8.5;
+	}
+
+	&__action {
+		flex-basis: 20px;
+		text-align: right;
+		font-family: open_sansbold, sans-serif;
+		font-size: 16pt;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	@include alert('danger', $red-reiran, #e22424, #ff5b5b, #cc1e1e, #ffefef, #9b0f0f, #750707);
+	@include alert('info', $blue-reiran, #2190d1, #5bc0ff, #1784c4, #eff9ff, #0e6093, #07446b);
+	@include alert('warning', $orange-reiran, #ed9821, #ffbc70, #d3871d, #fff8ef, #965b09, #724304);
+	@include alert('success', $green-reiran, #1ec93a, #41f25e, #15bf37, #f2fff3, #0e9128, #076819);
+
+	&--fixed-rb {
+		position: fixed;
+		z-index: 99;
+		bottom: 10px;
+		right: 10px;
+		width: 600px;
+		box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+
+		@media (max-width: 991.98px) {
+			& {
+				width: auto;
+				left: calc(228px + 10px);
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			& {
+				left: 10px;
+			}
+		}
+	}
+}

@@ -1,15 +1,14 @@
 const sidebar = document.querySelector("aside.sidebar");
+const main = document.querySelector("main.main");
 
 /* show hide menu sidebar */
 const navbarSidebarToggler = document.querySelector("a.navbar__sidebar-toggler");
-const mainKonten = document.querySelector("main.main-konten");
 if(navbarSidebarToggler !== null) {
 	navbarSidebarToggler.addEventListener('click', function(e){
 		// not aktifkan fungsi default link
 		e.preventDefault();
 
 		sidebar.classList.toggle("sidebar--show-sm");
-		mainKonten.classList.toggle("main-konten--show-sidebar");
 	});
 }
 
@@ -34,5 +33,15 @@ if(btnNavbarToggler !== null) {
 	btnNavbarToggler.addEventListener('click', function(){
 		const navbarTarget = document.querySelector(`div${btnNavbarToggler.getAttribute("target")}`);
 		navbarTarget.classList.toggle("d-block");
+	});
+}
+
+/* alert close */
+if(main !== null) {
+	main.addEventListener('click', function(e){
+		const btnClose = e.target;
+		if(btnClose.classList.contains("alert__close-btn")) {
+			btnClose.parentElement.parentElement.remove();
+		}
 	});
 }
