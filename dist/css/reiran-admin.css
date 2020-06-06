@@ -848,7 +848,8 @@ small {
 
 /* card */
 .card {
-  border-color: #e8e8e8; }
+  border-color: #e8e8e8;
+  position: relative; }
   .card__badge {
     padding: 5px;
     align-self: flex-start;
@@ -908,6 +909,17 @@ small {
       border-left-color: #ea2a2a; }
   .card--red .card__action {
     background-color: #fff7f7; }
+  .card .loading-circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(245, 245, 245, 0.9);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /* table */
 table.table {

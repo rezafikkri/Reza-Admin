@@ -17,6 +17,7 @@
 
 .card {
 	border-color: $default-border-color;
+	position: relative;
 
 	&__badge {
 		padding: 5px;
@@ -77,4 +78,17 @@
 	@include card($blue-reiran, #f7fcff, 'blue');
 	@include card($green-reiran, #f7fff8, 'green');
 	@include card($red-reiran, #fff7f7, 'red');
+
+	& .loading-circle {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba(245,245,245,.9);
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
