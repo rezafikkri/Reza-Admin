@@ -62,4 +62,21 @@
 		pointer-events: none;
 		opacity: 0.5;
 	}
+
+	&-loading {
+		position: relative;
+		display: inline-block;
+
+		& .loading-circle {
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			right: 0px;
+			left: 0px;
+			background-color: rgba(252,252,252,.9);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }

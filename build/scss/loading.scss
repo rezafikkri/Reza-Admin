@@ -27,12 +27,13 @@
 		bottom: -5px;
 		right: -5px;
 		left: -5px;
-		border: 5px solid #a8a8a8;
+		border: 5px solid transparent;
 		border-left-color: transparent;
 		border-bottom-color: transparent;
 		animation: loading-circle-rotate 1s linear infinite;
 	}
 
+	@include color-loading-circle('gray', #a8a8a8);
 	@include color-loading-circle('blue', $blue-reiran);
 	@include color-loading-circle('red', $red-reiran);
 	@include color-loading-circle('green', $green-reiran);
@@ -62,7 +63,7 @@
 		left: 0;
 		right: 0;
 		z-index: 9999;
-		background-color: rgba(252,252,252,.8);
+		background-color: rgba(252,252,252,.9);
 		display: flex;
 		justify-content: center;
 		align-items: center;
