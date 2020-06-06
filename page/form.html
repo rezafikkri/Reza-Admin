@@ -105,7 +105,7 @@
 			<div class="col-md-6">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="main__box mb-4">
+					<section class="main__box mb-4">
 						<h5>Quick Example</h5>
 						<hr>
 						
@@ -122,11 +122,11 @@
 						<input type="file" name="" class="form form--focus-blue mt-3">
 						<a href="#" class="btn btn--gray mt-4 mr-2">Cancel</a>
 						<button class="btn btn--blue mt-4">Send <span class="fa fa-send"></span></button>
-					</div><!-- main__box -->
+					</section><!-- main__box -->
 				</div>
 
 				<div class="col-md-12">
-					<div class="main__box mb-4">
+					<section class="main__box mb-4">
 						<h5>Input With Message Info</h5>
 						<hr>
 
@@ -150,11 +150,11 @@
 							<input type="text" name="input_warning" placeholder="Input Warning ..." class="form form--focus-orange form--warning" value="Data Example">
 							<small class="text--orange">Data must minimal 5 character!</small>
 						</div>
-					</div><!-- main__box -->
+					</section><!-- main__box -->
 				</div>
 
 				<div class="col-md-12">
-					<div class="main__box mb-4">
+					<section class="main__box mb-4">
 						<h5>Input Addon</h5>
 						<hr>
 						<div class="input-group mb-3">
@@ -184,129 +184,131 @@
 						<div class="input-group">
 							<div class="input-group__prepend">
 								<a href="#" class="btn btn--blue"><span class="fa fa-envelope"></span></a>
-								<span class="input-group__text">@</span>
 							</div>
 							<input type="text" name="addon_2" placeholder="Addon 3 ..." class="form form--focus-blue">
+							<div class="input-group__append">
+								<span class="input-group__text">@reiran.com</span>
+							</div>
 						</div>
-					</div><!-- main__box -->
+					</section><!-- main__box -->
 				</div>
 			</div><!-- row -->
 			</div>
 
 			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-12 mb-4">
-						<div class="main__box">
-							<h5>General Element</h5>
-							<hr>
+			<div class="row">
+				<div class="col-md-12 mb-4">
+					<section class="main__box">
+						<h5>General Element</h5>
+						<hr>
 								
-							<div class="form-group">
-								<label>Input</label>
-								<input type="text" name="input" placeholder="Input ..." class="form form--focus-blue" aria-describeby="input-help">
-								<small id="input-help" class="form-text text-muted">Input help message</small>
-							</div>
-							<div class="form-group">
-								<label>Input Disabled</label>
-								<input type="text" name="input" placeholder="Input Disabled ..." class="form" disabled="">
-							</div>
-							<div class="form-group">
-								<label>Textarea</label>
-								<textarea name="input" class="form form--focus-blue" placeholder="Textarea ..."></textarea>
-							</div>
-							<div class="form-group">
-								<label>Textarea Disabled</label>
-								<textarea name="input" class="form" placeholder="Textarea Disabled ..." disabled=""></textarea>
-							</div>
-							<div class="form-group">
-								<label>Select Disabled</label>
-								<select name="input" disabled="" class="form">
-									<option disabled="" selected="">Select Disabled</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label>Input</label>
-								<label class="label--right">Right label</label>
-								<input type="text" name="input" class="form form--focus-blue" placeholder="Input ...">
-							</div>
+						<div class="form-group">
+							<label>Input</label>
+							<input type="text" name="input" placeholder="Input ..." class="form form--focus-blue" aria-describeby="input-help">
+							<small id="input-help" class="form-text text-muted">Input help message</small>
+						</div>
+						<div class="form-group">
+							<label>Input Disabled</label>
+							<input type="text" name="input" placeholder="Input Disabled ..." class="form" disabled="">
+						</div>
+						<div class="form-group">
+							<label>Textarea</label>
+							<textarea name="input" class="form form--focus-blue" placeholder="Textarea ..."></textarea>
+						</div>
+						<div class="form-group">
+							<label>Textarea Disabled</label>
+							<textarea name="input" class="form" placeholder="Textarea Disabled ..." disabled=""></textarea>
+						</div>
+						<div class="form-group">
+							<label>Select Disabled</label>
+							<select name="input" disabled="" class="form">
+								<option disabled="" selected="">Select Disabled</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Input</label>
+							<label class="label--right">Right label</label>
+							<input type="text" name="input" class="form form--focus-blue" placeholder="Input ...">
+						</div>
 
-							<div class="form-row">
-								<div class="form-group col-md-6 col-sm-6">
-									<label>Input 1</label>
-									<input type="text" name="input 1" class="form form--focus-blue" placeholder="Input 1 ...">
-								</div>
-								<div class="form-group col-md-6 col-sm-6">
-									<label>Input 2</label>
-									<input type="text" name="input 1" class="form form--focus-blue" placeholder="Input 2 ...">
-								</div>
+						<div class="form-row">
+							<div class="form-group col-md-6 col-sm-6">
+								<label>Input 1</label>
+								<input type="text" name="input 1" class="form form--focus-blue" placeholder="Input 1 ...">
 							</div>
+							<div class="form-group col-md-6 col-sm-6">
+								<label>Input 2</label>
+								<input type="text" name="input 1" class="form form--focus-blue" placeholder="Input 2 ...">
+							</div>
+						</div>
 
-							<!-- checkbox -->
-							<div class="form-check">
-								<input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
-								<label for="input_check" class="label--check">Checkbox</label>
-								<small class="text-muted">Must be checked!</small>
-							</div>
-							<div class="form-check">
-								<input type="checkbox" name="input_check" id="input_check_disabled" class="form form--focus-blue" disabled="">
-								<label for="input_check_disabled" class="label--check">Disabled Checkbox</label>
-							</div>
-							<div class="form-check form-check--not-label">
-								<input type="checkbox" name="input_check_disabled" class="form form--focus-blue">
-							</div>
+						<!-- checkbox -->
+						<div class="form-check">
+							<input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
+							<label for="input_check" class="label--check">Checkbox</label>
+							<small class="text-muted">Must be checked!</small>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" name="input_check" id="input_check_disabled" class="form form--focus-blue" disabled="">
+							<label for="input_check_disabled" class="label--check">Disabled Checkbox</label>
+						</div>
+						<div class="form-check form-check--not-label">
+							<input type="checkbox" name="input_check_disabled" class="form form--focus-blue">
+						</div>
 
-							<!-- radio -->
-							<div class="form-check">
-								<input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
-								<label for="input_radio" class="label--check">Radio</label>
-							</div>
-							<div class="form-check">
-								<input type="radio" name="input_radio_disabled" id="input_radio_disabled" class="form form--focus-blue" disabled="">
-								<label for="input_radio_disabled" class="label--check">Radio Disabled</label>
-							</div>
-							<div class="form-check form-check--not-label">
-								<input type="radio" name="input_radio" class="form form--focus-blue">
-							</div>
+						<!-- radio -->
+						<div class="form-check">
+							<input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
+							<label for="input_radio" class="label--check">Radio</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" name="input_radio_disabled" id="input_radio_disabled" class="form form--focus-blue" disabled="">
+							<label for="input_radio_disabled" class="label--check">Radio Disabled</label>
+						</div>
+						<div class="form-check form-check--not-label">
+							<input type="radio" name="input_radio" class="form form--focus-blue">
+						</div>
 
-							<!-- inline checkbox and radio -->
-							<div class="form-check form-check--inline">
-								<input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
-								<label for="input_check" class="label--check">Inline Checkbox</label>
-							</div>
-							<div class="form-check form-check--inline">
-								<input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
-								<label for="input_radio" class="label--check">Inline Radio</label>
-							</div>
-						</div><!-- main__box -->
-					</div>
+						<!-- inline checkbox and radio -->
+						<div class="form-check form-check--inline">
+							<input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
+							<label for="input_check" class="label--check">Inline Checkbox</label>
+						</div>
+						<div class="form-check form-check--inline">
+							<input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
+							<label for="input_radio" class="label--check">Inline Radio</label>
+						</div>
+					</section><!-- main__box -->
+				</div>
 
-					<div class="col-md-12">
-						<div class="main__box">
-							<h5>Input With Custom Focus</h5>
-							<hr>
+				<div class="col-md-12">
+					<section class="main__box">
+						<h5>Input With Custom Focus</h5>
+						<hr>
 
-							<div class="form-group">
-								<label>Focus Blue</label>
-								<input type="text" name="focus_blue" placeholder="Focus Blue ..." class="form form--focus-blue">
-								<small class="text-muted">Click on input to see focus effect</small>
-							</div>
-							<div class="form-group">
-								<label>Focus Green</label>
-								<input type="text" name="focus_green" placeholder="Focus Green ..." class="form form--focus-green">
-								<small class="text-muted">Click on input to see focus effect</small>
-							</div>
-							<div class="form-group">
-								<label>Focus Red</label>
-								<input type="text" name="focus_red" placeholder="Focus Red ..." class="form form--focus-red">
-								<small class="text-muted">Click on input to see focus effect</small>
-							</div>
-							<div class="form-group">
-								<label>Focus Orange</label>
-								<input type="text" name="focus_Orange" placeholder="Focus Orange ..." class="form form--focus-orange">
-								<small class="text-muted">Click on input to see focus effect</small>
-							</div>
-						</div><!-- main__box -->
-					</div>
-				</div><!-- row -->
+						<div class="form-group">
+							<label>Focus Blue</label>
+							<input type="text" name="focus_blue" placeholder="Focus Blue ..." class="form form--focus-blue">
+							<small class="text-muted">Click on input to see focus effect</small>
+						</div>
+						<div class="form-group">
+							<label>Focus Green</label>
+							<input type="text" name="focus_green" placeholder="Focus Green ..." class="form form--focus-green">
+							<small class="text-muted">Click on input to see focus effect</small>
+						</div>
+						<div class="form-group">
+							<label>Focus Red</label>
+							<input type="text" name="focus_red" placeholder="Focus Red ..." class="form form--focus-red">
+							<small class="text-muted">Click on input to see focus effect</small>
+						</div>
+						<div class="form-group">
+							<label>Focus Orange</label>
+							<input type="text" name="focus_Orange" placeholder="Focus Orange ..." class="form form--focus-orange">
+							<small class="text-muted">Click on input to see focus effect</small>
+						</div>
+					</section><!-- main__box -->
+				</div>
+			</div><!-- row -->
 			</div>
 		</div><!-- row -->
 	</main>
