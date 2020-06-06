@@ -524,7 +524,11 @@ small {
       border-bottom-right-radius: 4px; }
   .input-group .form {
     border-radius: 0px;
-    position: relative; }
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 4;
+    flex-basis: auto;
+    width: 0%; }
   .input-group .form:first-child {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -537,23 +541,59 @@ small {
     border-bottom-right-radius: 4px; }
 
 /* loading */
-.loading-circle {
+.loading-circle__fill, .loading-circle__fill::after {
+  border-radius: 50%; }
+.loading-circle__fill {
+  position: relative;
   width: 30px;
   height: 30px;
-  border: 5px solid #eaeaea;
   border-radius: 50%;
-  position: relative; }
-  .loading-circle div {
-    position: absolute;
-    top: -5px;
-    bottom: -5px;
-    right: -5px;
-    left: -5px;
-    border: 5px solid #2597e0;
-    border-left-color: transparent;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    animation: loading-circle-rotate 1s linear infinite; }
+  border: 5px solid #eaeaea; }
+.loading-circle__fill::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  border: 5px solid #a8a8a8;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  animation: loading-circle-rotate 1s linear infinite; }
+.loading-circle--blue .loading-circle__fill::after {
+  border-top-color: #2597e0;
+  border-right-color: #2597e0; }
+.loading-circle--red .loading-circle__fill::after {
+  border-top-color: #ea2a2a;
+  border-right-color: #ea2a2a; }
+.loading-circle--green .loading-circle__fill::after {
+  border-top-color: #1bd741;
+  border-right-color: #1bd741; }
+.loading-circle--orange .loading-circle__fill::after {
+  border-top-color: #f9a022;
+  border-right-color: #f9a022; }
+.loading-circle--lg .loading-circle__fill, .loading-circle--lg .loading-circle__fill::after {
+  border-width: 10px; }
+.loading-circle--lg .loading-circle__fill {
+  width: 60px;
+  height: 60px; }
+.loading-circle--lg .loading-circle__fill::after {
+  top: -10px;
+  bottom: -10px;
+  right: -10px;
+  left: -10px; }
+.loading-circle--fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgba(252, 252, 252, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 @keyframes loading-circle-rotate {
   0% {
     transform: rotate(0deg); }

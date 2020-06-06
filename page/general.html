@@ -243,6 +243,95 @@
 
 					<h5 class="mt-4">Loadings</h5>
 					<hr>
+					<div class="row">
+						<!-- loading circle default -->
+						<div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle loading-circle--lg">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<!-- loading circle default end -->
+						<!-- loading circle blue -->
+						<div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle loading-circle--blue">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle loading-circle--lg loading-circle--blue">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<!-- loading circle blue end -->
+						<!-- loading circle red -->
+						<div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle loading-circle--red">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle loading-circle--lg loading-circle--red">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<!-- loading circle red end -->
+						<!-- loading circle green -->
+						<div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle loading-circle--green">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+							<div class="loading-circle loading-circle--lg loading-circle--green">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<!-- loading circle green end -->
+						<!-- loading circle orange -->
+						<div class="col-lg-1 col-md-2 col-sm-2 mb-2 mt-3">
+							<div class="loading-circle loading-circle--orange">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 mb-2 mt-3">
+							<div class="loading-circle loading-circle--lg loading-circle--orange">
+								<div class="loading-circle__fill"></div>
+							</div>
+						</div>
+						<!-- loading circle orange end -->
+					</div><!-- row -->
+
+					<h5 class="mt-5">Loadings Fixed</h5>
+					<hr>
+					<a href="#" class="btn btn--gray mr-3 mt-2 mb-2 show-loading-circle" target-loading="#loading-default">Launch Loading Default Fixed</a>
+					<div class="loading-circle loading-circle--lg loading-circle--fixed d-none" id="loading-default">
+						<div class="loading-circle__fill"></div>
+					</div>
+
+					<a href="#" class="btn btn--green mr-3 mt-2 mb-2 show-loading-circle" target-loading="#loading-green">Launch Loading Green Fixed</a>
+					<div class="loading-circle loading-circle--lg loading-circle--green loading-circle--fixed d-none" id="loading-green">
+						<div class="loading-circle__fill"></div>
+					</div>
+
+					<a href="#" class="btn btn--blue mr-3 mt-2 mb-2 show-loading-circle" target-loading="#loading-blue">Launch Loading Blue Fixed</a>
+					<div class="loading-circle loading-circle--lg loading-circle--blue loading-circle--fixed d-none" id="loading-blue">
+						<div class="loading-circle__fill"></div>
+					</div>
+
+					<a href="#" class="btn btn--red mr-3 mt-2 mb-2 show-loading-circle" target-loading="#loading-red">Launch Loading Red Fixed</a>
+					<div class="loading-circle loading-circle--lg loading-circle--red loading-circle--fixed d-none" id="loading-red">
+						<div class="loading-circle__fill"></div>
+					</div>
+
+					<a href="#" class="btn btn--orange mr-3 mt-2 mb-2 show-loading-circle" target-loading="#loading-orange">Launch Loading Orange Fixed</a>
+					<div class="loading-circle loading-circle--lg loading-circle--orange loading-circle--fixed d-none" id="loading-orange">
+						<div class="loading-circle__fill"></div>
+					</div>
 				</section>
 			</div>
 		</div><!-- row -->
@@ -260,11 +349,11 @@
     <script src="../dist/js/bootstrap.bundle.min.js"></script>
     <script src="../dist/js/reiran-admin.js"></script>
 
-    <!-- show hide modal -->
     <script type="text/javascript">
-    	const mainKontenBox = document.querySelector(".main__box");
-    	if(mainKontenBox !== null) {
-    		mainKontenBox.addEventListener('click', function(e){
+    	const mainBox = document.querySelector(".main__box");
+    	if(mainBox !== null) {
+    		mainBox.addEventListener('click', function(e){
+    			/* show hide modal */
     			let btnShowModal = e.target;
     			if(btnShowModal.classList.contains("btn-show-modal")) {
     				e.preventDefault();
@@ -282,12 +371,34 @@
     			if(btnCloseModal.classList.contains("close-modal")) {
     				e.preventDefault();
 
-    				// body scrolling
-    				document.querySelector("body").classList.add("stop-scrolling");
+    				// make body scrolling agian
+    				document.querySelector("body").classList.remove("stop-scrolling");
 
     				// hide modal
     				btnCloseModal.parentElement.parentElement.parentElement.classList.remove("modal--fade-in");
     			}
+    			/* show hide modal end */
+
+    			/* show hide loading circle fixed */
+    			let btnShowLoadingCircle = e.target;
+    			if(btnShowLoadingCircle.classList.contains("show-loading-circle")) {
+    				e.preventDefault();
+
+    				// stop body scrolling
+    				document.querySelector("body").classList.add("stop-scrolling");
+
+    				const targetLoading = btnShowLoadingCircle.getAttribute("target-loading");
+    				const loading = document.querySelector(targetLoading);
+    				loading.classList.remove("d-none");
+
+    				// if more from 5 second add class d-none again
+    				setTimeout(function(){
+						loading.classList.add("d-none");  
+						// stop body scrolling again
+    					document.querySelector("body").classList.remove("stop-scrolling");  					
+    				}, 1000);
+    			}
+    			/* show hide loading circle fixed end */
     		});
     	}
     </script>

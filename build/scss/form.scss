@@ -194,6 +194,10 @@ small {
 	& .form {
 		border-radius: 0px;
 		position: relative;
+		flex-grow: 1;
+		flex-shrink: 4;
+		flex-basis: auto;
+		width: 0%;
 	}
 
 	& .form:first-child {
