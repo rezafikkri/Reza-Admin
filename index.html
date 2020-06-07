@@ -337,10 +337,8 @@
 				if(!targetShowBtnMore.classList.contains("show-more-btn")) targetShowBtnMore = e.target.parentElement;
 				if(targetShowBtnMore.classList.contains("show-more-btn")) {
 					targetShowBtnMore.nextElementSibling.classList.remove("d-none");
-					targetShowBtnMore.classList.add("d-none");
 					setTimeout(function(){
 						targetShowBtnMore.nextElementSibling.classList.add("d-none");
-						targetShowBtnMore.classList.remove("d-none");
 					}, 1000);
 				}
 			});
