@@ -1,5 +1,5 @@
 /* input */
-@mixin form-focus-mixin($name-color, $box-shadow-color, $border-color) {
+@mixin form-focus($name-color, $box-shadow-color, $border-color) {
 	input.form--focus-#{$name-color}:focus,
 	textarea.form--focus-#{$name-color}:focus,
 	select.form--focus-#{$name-color}:focus {
@@ -10,7 +10,7 @@
 	}
 }
 
-@mixin form-info-mixin($name-info, $border-color) {
+@mixin form-info($name-info, $border-color) {
 	input.form.form--#{$name-info},
 	textarea.form.form--#{$name-info},
 	select.form.form--#{$name-info} {
@@ -18,7 +18,7 @@
 	}
 }
 
-@mixin text-color-mixin($name-color, $color) {
+@mixin text-color($name-color, $color) {
 	.text--#{$name-color} {
 		color: $color;
 	}
@@ -49,15 +49,15 @@ select[disabled].form {
 	color: #b7b7b7;
 }
 
-@include form-focus-mixin('blue', rgba(0, 157, 255, 0.25), #60adff);
-@include form-focus-mixin('green', rgba(0, 255, 51, 0.25), #56d36d);
-@include form-focus-mixin('red', rgba(255, 0, 0, 0.20), #f97070);
-@include form-focus-mixin('orange', rgba(255, 154, 22, 0.26), #ffa94f);
+@include form-focus('blue', rgba(0, 157, 255, 0.25), #60adff);
+@include form-focus('green', rgba(0, 255, 51, 0.25), #56d36d);
+@include form-focus('red', rgba(255, 0, 0, 0.20), #f97070);
+@include form-focus('orange', rgba(255, 154, 22, 0.26), #ffa94f);
 
-@include form-info-mixin('success', #56d36d);
-@include form-info-mixin('info', #60adff);
-@include form-info-mixin('danger', #f97070);
-@include form-info-mixin('warning', #ffa94f);
+@include form-info('success', #56d36d);
+@include form-info('info', #60adff);
+@include form-info('danger', #f97070);
+@include form-info('warning', #ffa94f);
 
 select { 
 &.form {
@@ -90,10 +90,10 @@ small {
 	font-size: 10pt;
 }
 
-@include text-color-mixin('green', #15c639);
-@include text-color-mixin('blue', #198ad1);
-@include text-color-mixin('red', #d62020);
-@include text-color-mixin('orange', #ff990a);
+@include text-color('green', #15c639);
+@include text-color('blue', #198ad1);
+@include text-color('red', #d62020);
+@include text-color('orange', #ff990a);
 
 .form-check {
 	padding-left: 20px;

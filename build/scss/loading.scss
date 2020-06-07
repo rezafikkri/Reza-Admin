@@ -1,5 +1,5 @@
 /* loading */
-@mixin color-loading-circle($name-color, $border-color) {
+@mixin loading-circle-color($name-color, $border-color) {
 	&--#{$name-color} &__fill::after {
 		border-top-color: $border-color;
 		border-right-color: $border-color;
@@ -33,11 +33,11 @@
 		animation: loading-circle-rotate 1s linear infinite;
 	}
 
-	@include color-loading-circle('gray', #a8a8a8);
-	@include color-loading-circle('blue', $blue-reiran);
-	@include color-loading-circle('red', $red-reiran);
-	@include color-loading-circle('green', $green-reiran);
-	@include color-loading-circle('orange', $orange-reiran);
+	@include loading-circle-color('gray', #a8a8a8);
+	@include loading-circle-color('blue', $blue-reiran);
+	@include loading-circle-color('red', $red-reiran);
+	@include loading-circle-color('green', $green-reiran);
+	@include loading-circle-color('orange', $orange-reiran);
 
 	&--lg &__fill,
 	&--lg &__fill::after {

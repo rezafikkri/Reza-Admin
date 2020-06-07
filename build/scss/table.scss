@@ -1,23 +1,37 @@
 /* table */
-table.table {
+@mixin table-color($color-name, $bg-color, $border-color) {
+	&--#{$color-name} thead tr {
+		background-color: $bg-color;
+		& th {
+			border-color: $border-color;
+		}
+	}
+}
+
+.table {
 	margin-bottom: 0px;
 	background-color: white;
 
-	& tr:hover {
-		background-color: #f7f7f7;
-	}
-
-	& tr th, 
-	& tr td {
+	& thead tr th, 
+	& tbody tr td {
 		padding: 14px;
 		text-align: left;
 		vertical-align: middle;
-		border: 1px solid #ddd;
+		border: 1px solid #e2e2e2;
 		line-height: 20px;
 		font-size: 12pt;
 	}
 
-	& tr td a {
+	& thead tr th {
+		border-bottom-width: 2px;
+	}
+
+	& tbody tr:hover {
+		background-color: #f7f7f7;
+	}
+
+	& thead tr th a,
+	& tbody tr td a {
 		font-size: 14pt;
 		color: #333;
 
@@ -26,12 +40,24 @@ table.table {
 		}
 	}
 
-	& tr.table--blue {
-		background-color: #e5f1ff;
+	@include table-color('gray', #f9f9f9, #e2e2e2);
+	@include table-color('blue', #f2f8ff, #c4e2f2);
+	@include table-color('green', #f4fcf5, #c2edcb);
 
-		& th, 
-		& td {
-			border-color: #88c6ea;
+	&-box {
+		position: relative;
+
+		& .loading-circle {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 9999;
+			background-color: rgba(252,252,252,.9);
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 }

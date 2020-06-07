@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Social network metas -->
+	<meta property="og:title" content="Reiran Admin . Tables">
+	<meta property="og:url" content="">
+	<meta property="image" content="">
+	<meta property="og:image" content="">
+	<meta property="description" content="Open source responsive admin template with bootstrap framework">
+
+	<title>Reiran Admin . Tables</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reiran Admin CSS -->
+	<link rel="stylesheet" type="text/css" href="../dist/css/reiran-admin.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../dist/img/favicon-(80x80).png">
+</head>
+<body>		
+	<!-- navbar top -->
+	<nav class="navbar navbar-expand-sm navbar--white">
+		<a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+		<a class="navbar-brand" href="#"><img src="../dist/img/new_logo.png" width="119" class="ml-md-4" alt="logo reiran"></a>
+		<button class="navbar-toggler" target="#navbarNav" type="button">
+		    <span class="fa fa-navicon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item navbar__notification">
+					<a class="nav-link" href="#">
+						<span class="fa fa-bookmark"></span>
+						<span class="navbar__notification-number navbar__notification-number--blue">2</span>
+					</a>
+				</li>
+				<li class="nav-item navbar__notification">
+					<a class="nav-link " href="#">
+						<span class="fa fa-bell"></span>
+						<span class="navbar__notification-number navbar__notification-number--orange">2</span>
+					</a>
+				</li>
+				<li class="nav-item navbar__avatar">
+					<a class="nav-link" href="#">
+						<img src="../dist/img/reza.jpg" alt="avatar image">
+						<span>Reza Sariful Fikri</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link--red-hover" href="#"><span class="fa fa-sign-out"></span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- sidebar -->
+	<aside class="sidebar">
+		<ul class="sidebar__ul">
+			<li class="sidebar__item"><a class="nav-link" href="../index.html"><span class="fa fa-home"></span> Dashaboard</a></li>
+			<li class="sidebar__item"><a class="nav-link" href="widgets.html"><span class="fa fa-th-large"></span> Widgets</a></li>
+			<li class="sidebar__item"><a class="nav-link" href="charts.html"><span class="fa fa-bar-chart-o"></span> Charts</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-desktop"></span> UI Elements <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+				<ul class="sidebar__dropdown">
+					<li class="sidebar__dropdown-item"><a href="general.html">General</a></li>
+					<li class="sidebar__dropdown-item"><a href="buttons.html">Buttons</a></li>
+					<li class="sidebar__dropdown-item"><a href="icons.html">Icons</a></li>
+				</ul>
+			</li>
+
+
+			<li class="sidebar__item"><a class="nav-link" href="forms.html"><span class="fa fa-pencil-square-o"></span> Forms</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar--active" href="tables.html"><span class="fa fa-th-list"></span> Tables</a></li>
+			<li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-building"></span> Example <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+				<ul class="sidebar__dropdown">
+					<li class="sidebar__dropdown-item"><a href="">Login Page</a></li>
+					<li class="sidebar__dropdown-item"><a href="">Register Page</a></li>
+					<li class="sidebar__dropdown-item"><a href="">404 Error Page</a></li>
+					<li class="sidebar__dropdown-item"><a href="">500 Error Page</a></li>
+				</ul>
+			</li>
+
+			<li class="sidebar__item sidebar--new-div">Important for read</li>
+			<li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-book"></span> Documentation</a></li>
+		</ul>
+	</aside>
+
+	<!-- main konten -->
+	<main class="main">
+		<div class="row">
+			<header class="main__header col-md-12 mb-2">
+				<div class="main__title">
+					<h4>Tables</h4>
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+						<li class="breadcrumb-item active">Tables</li>
+					</ul>
+				</div>				
+			</header>
+
+			<div class="col-md-12"><h5>Tables With Color</h5></div>
+			<div class="col-md-12 mb-4">
+				<section class="main__box">
+					<h5>Table Gray</h5>
+					<hr>
+					<table class="table table--gray">
+						<thead>
+							<tr>
+								<th width="10">No</th>
+								<th>Name Product</th>
+								<th>Price</th>
+								<th>Qty</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Example handphone 1</td>
+								<td>Rp 2.200.000</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td class="text-center">2</td>
+								<td>Example handphone 2</td>
+								<td>Rp 2.000.000</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td class="text-center">3</td>
+								<td>Example handphone 3</td>
+								<td>Rp 1.200.000</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="text-right">Total</td>
+								<td>Rp 5.400.000</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+			<div class="col-md-6 mb-4">
+				<section class="main__box">
+					<h5>Table Blue</h5>
+					<hr>
+					<div class="input-group mb-3">
+						<input type="text" name="addon_3" placeholder="Search with name ..." class="form form--focus-blue">
+						<div class="input-group__append">
+							<a href="#" class="btn btn--blue"><span class="fa fa-search"></span></a>
+						</div>
+					</div>
+					<table class="table table--blue mb-3">
+						<thead>
+							<tr>
+								<th colspan="2">Action</th>
+								<th>Product Name</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+								<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+								<td>Example handphone 1</td>
+								<td>Rp 2.200.000</td>
+							</tr>
+							<tr>
+								<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+								<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+								<td>Example handphone 2</td>
+								<td>Rp 2.000.000</td>
+							</tr>
+							<tr>
+								<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+								<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+								<td>Example handphone 3</td>
+								<td>Rp 1.200.000</td>
+							</tr>
+							<tr>
+								<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+								<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+								<td>Example handphone 4</td>
+								<td>Rp 500.000</td>
+							</tr>
+						</tbody>
+					</table>
+					<a href="#" class="font--size-12">Show more <span class="fa fa-angle-down"></span></a>
+				</section>
+			</div>
+			<div class="col-md-6 mb-4">
+				<section class="main__box">
+					<h5>Table Green</h5>
+					<hr>
+					<select class="form form--focus-green mb-3">
+						<option disabled="" selected="">Limit</option>
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+					</select>
+					<table class="table table--green">
+						<thead>
+							<tr>
+								<th width="10">No</th>
+								<th>Name Product</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Hati</td>
+								<td>Murdani</td>
+							</tr>
+							<tr>
+								<td class="text-center">2</td>
+								<td>Dian</td>
+								<td>Pranata</td>
+							</tr>
+							<tr>
+								<td class="text-center">3</td>
+								<td>Adelina</td>
+								<td>Damayanti</td>
+							</tr>
+							<tr>
+								<td class="text-center">5</td>
+								<td colspan="2">Elmala</td>
+							</tr>
+							<tr>
+								<td class="text-center">4</td>
+								<td>Reza Sariful</td>
+								<td>Fikri</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+
+			<div class="col-md-12"><h5 class="mt-2">Table With Loading</h5></div>
+			<div class="col-md-6 mb-4">
+				<section class="main__box">
+					<h5>Table Loading Circle Blue</h5>
+					<hr>
+					<div class="table-box">
+						<div class="loading-circle loading-circle--lg loading-circle--blue">
+							<div class="loading-circle__fill"></div>
+						</div>
+						<div class="input-group mb-3">
+							<input type="text" name="addon_3" placeholder="Search with name ..." class="form form--focus-blue">
+							<div class="input-group__append">
+								<a href="#" class="btn btn--blue"><span class="fa fa-search"></span></a>
+							</div>
+						</div>
+						<table class="table table--blue">
+							<thead>
+								<tr>
+									<th colspan="2">Action</th>
+									<th>Product Name</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 1</td>
+									<td>Rp 2.200.000</td>
+								</tr>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 2</td>
+									<td>Rp 2.000.000</td>
+								</tr>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 3</td>
+									<td>Rp 1.200.000</td>
+								</tr>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 4</td>
+									<td>Rp 500.000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- table-box -->
+				</section>
+			</div>
+			<div class="col-md-6 mb-4">
+				<section class="main__box">
+					<h5>Table Loading Circle Green</h5>
+					<hr>
+					<div class="table-box">
+						<div class="loading-circle loading-circle--lg loading-circle--green">
+							<div class="loading-circle__fill"></div>
+						</div>
+						<table class="table table--green">
+							<thead>
+								<tr>
+									<th colspan="2">Action</th>
+									<th>Product Name</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 1</td>
+									<td>Rp 2.200.000</td>
+								</tr>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 2</td>
+									<td>Rp 2.000.000</td>
+								</tr>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 3</td>
+									<td>Rp 1.200.000</td>
+								</tr>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 4</td>
+									<td>Rp 500.000</td>
+								</tr>
+								<tr>
+									<td width="10"><a href="" class="text--hover-red"><span class="fa fa-trash"></span></a></td>
+									<td width="10"><a href=""><span class="fa fa-edit"></span></a></td>
+
+									<td>Example handphone 5</td>
+									<td>Rp 200.000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- table-box -->
+				</section>
+			</div>
+		</div><!-- row -->
+	</main>
+
+	<!-- footer -->
+	<footer class="footer mt-5">
+		<p>Copyright &copy; Reiran 2020. All rights reserved</p>
+		<p>Version 1.0</p>
+	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reiran Admin JS -->
+    <script src="../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/reiran-admin.js"></script>
+</body>
+</html>

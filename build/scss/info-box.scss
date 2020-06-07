@@ -1,10 +1,10 @@
 /* info box */
-@mixin info-box($border-color, $bg-span, $base-color, $color-gradient-l, $color-gradient-r-hover, $name-class-color) {
-	&--#{$name-class-color} {
+@mixin info-box-color($border-color, $bg-span, $base-color, $color-gradient-l, $color-gradient-r-hover, $name-color) {
+	&--#{$name-color} {
 		border: 1px solid $border-color;
 	}
 
-	&--#{$name-class-color} &__icon span {
+	&--#{$name-color} &__icon span {
 		font-size: 20pt;
 		padding: 32%;
 		border-radius: 50%;
@@ -12,7 +12,7 @@
 		color: $base-color;
 	}
 
-	&--#{$name-class-color} &__btn-detail {
+	&--#{$name-color} &__btn-detail {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -40,11 +40,11 @@
 	}
 
 	@media (max-width: 1199.98px) {
-		&--#{$name-class-color} &__icon span {
+		&--#{$name-color} &__icon span {
 			padding: 22%;
 		}
 
-		&--#{$name-class-color} &__btn-detail {
+		&--#{$name-color} &__btn-detail {
 			position: static;
 			border-radius: 50px;
 			padding: 10px 30px;
@@ -52,17 +52,17 @@
 	}
 
 	@media (max-width: 850px) {
-		&--#{$name-class-color} &__icon span {
+		&--#{$name-color} &__icon span {
 			padding: 40%;
 		}
 	}
 
 	@media (max-width: 767.98px) {
-		&--#{$name-class-color} &__icon span {
+		&--#{$name-color} &__icon span {
 			padding: 32%;
 		}
 
-		&--#{$name-class-color} &__btn-detail {
+		&--#{$name-color} &__btn-detail {
 			position: absolute;
 			border-top-right-radius: 0px;
 			border-bottom-right-radius: 0px;
@@ -130,8 +130,8 @@
 		}
 	}
 
-	@include info-box(#dbf1ff, #edf8ff, $blue-reiran, #59b7f2, #167ebf, 'blue');
-	@include info-box(#c6ffd0, #edfff0, $green-reiran, #35e859, #16aa31, 'green');
-	@include info-box(#ffeddd, #fff8ef, $orange-reiran, #ffbd60, #d67c00, 'orange');
-	@include info-box(#ffe5e5, #fff2f2, $red-reiran, #ff5959, #ce1616, 'red');
+	@include info-box-color(#dbf1ff, #edf8ff, $blue-reiran, #59b7f2, #167ebf, 'blue');
+	@include info-box-color(#c6ffd0, #edfff0, $green-reiran, #35e859, #16aa31, 'green');
+	@include info-box-color(#ffeddd, #fff8ef, $orange-reiran, #ffbd60, #d67c00, 'orange');
+	@include info-box-color(#ffe5e5, #fff2f2, $red-reiran, #ff5959, #ce1616, 'red');
 }

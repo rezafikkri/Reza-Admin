@@ -922,27 +922,50 @@ small {
     align-items: center; }
 
 /* table */
-table.table {
+.table {
   margin-bottom: 0px;
   background-color: white; }
-  table.table tr:hover {
-    background-color: #f7f7f7; }
-  table.table tr th, table.table tr td {
+  .table thead tr th, .table tbody tr td {
     padding: 14px;
     text-align: left;
     vertical-align: middle;
-    border: 1px solid #ddd;
+    border: 1px solid #e2e2e2;
     line-height: 20px;
     font-size: 12pt; }
-  table.table tr td a {
+  .table thead tr th {
+    border-bottom-width: 2px; }
+  .table tbody tr:hover {
+    background-color: #f7f7f7; }
+  .table thead tr th a, .table tbody tr td a {
     font-size: 14pt;
     color: #333; }
-    table.table tr td a:hover {
+    .table thead tr th a:hover, .table tbody tr td a:hover {
       color: #2597e0; }
-  table.table tr.table--blue {
-    background-color: #e5f1ff; }
-    table.table tr.table--blue th, table.table tr.table--blue td {
-      border-color: #88c6ea; }
+  .table--gray thead tr {
+    background-color: #f9f9f9; }
+    .table--gray thead tr th {
+      border-color: #e2e2e2; }
+  .table--blue thead tr {
+    background-color: #f2f8ff; }
+    .table--blue thead tr th {
+      border-color: #c4e2f2; }
+  .table--green thead tr {
+    background-color: #f4fcf5; }
+    .table--green thead tr th {
+      border-color: #c2edcb; }
+  .table-box {
+    position: relative; }
+    .table-box .loading-circle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background-color: rgba(252, 252, 252, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 /* alert */
 .alert {
@@ -1158,5 +1181,8 @@ table.table {
 /* utilities */
 .text--hover-red:hover {
   color: #ea2a2a !important; }
+
+.font--size-12 {
+  font-size: 12pt !important; }
 
 /*# sourceMappingURL=reiran-admin.css.map */
