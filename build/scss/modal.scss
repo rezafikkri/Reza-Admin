@@ -1,5 +1,5 @@
 /* modal */
-@mixin modal-content($modal-name, $base-color, $title-icon-bg-color) {
+@mixin modal-content-color($modal-name, $base-color, $title-icon-bg-color) {
 	@for $i from 1 through 6 {
 		&--#{$modal-name} &__title h#{$i} {
 			color: $base-color;
@@ -35,10 +35,10 @@
 		}
 	}
 
-	@include modal-content('danger', $red-reiran, #fff2f2);
-	@include modal-content('success', $green-reiran, #edfff0);
-	@include modal-content('info', $blue-reiran, #edf8ff);
-	@include modal-content('warning', $orange-reiran, #fff8ef);
+	@include modal-content-color('danger', $red-reiran, #fff2f2);
+	@include modal-content-color('success', $green-reiran, #edfff0);
+	@include modal-content-color('info', $blue-reiran, #edf8ff);
+	@include modal-content-color('warning', $orange-reiran, #fff8ef);
 
 	&__title {
 		text-align: center;

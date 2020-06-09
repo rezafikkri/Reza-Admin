@@ -1,5 +1,5 @@
 /* input */
-@mixin form-focus($name-color, $box-shadow-color, $border-color) {
+@mixin form-focus-color($name-color, $box-shadow-color, $border-color) {
 	input.form--focus-#{$name-color}:focus,
 	textarea.form--focus-#{$name-color}:focus,
 	select.form--focus-#{$name-color}:focus {
@@ -10,7 +10,7 @@
 	}
 }
 
-@mixin form-info($name-info, $border-color) {
+@mixin form-info-color($name-info, $border-color) {
 	input.form.form--#{$name-info},
 	textarea.form.form--#{$name-info},
 	select.form.form--#{$name-info} {
@@ -49,15 +49,22 @@ select[disabled].form {
 	color: #b7b7b7;
 }
 
-@include form-focus('blue', rgba(0, 157, 255, 0.25), #60adff);
-@include form-focus('green', rgba(0, 255, 51, 0.25), #56d36d);
-@include form-focus('red', rgba(255, 0, 0, 0.20), #f97070);
-@include form-focus('orange', rgba(255, 154, 22, 0.26), #ffa94f);
+@include form-focus-color('blue', rgba(0, 157, 255, 0.25), #60adff);
+@include form-focus-color('green', rgba(0, 255, 51, 0.25), #56d36d);
+@include form-focus-color('red', rgba(255, 0, 0, 0.20), #f97070);
+@include form-focus-color('orange', rgba(255, 154, 22, 0.26), #ffa94f);
 
-@include form-info('success', #56d36d);
-@include form-info('info', #60adff);
-@include form-info('danger', #f97070);
-@include form-info('warning', #ffa94f);
+@include form-info-color('success', #56d36d);
+@include form-info-color('info', #60adff);
+@include form-info-color('danger', #f97070);
+@include form-info-color('warning', #ffa94f);
+
+input.form:invalid,
+textarea.form:invalid,
+select.form:invalid {
+	box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.20);
+	border: 1px solid #f97070;
+}
 
 select { 
 &.form {

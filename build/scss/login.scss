@@ -1,0 +1,97 @@
+/* login */
+@mixin login-alt-color($base-color, $color-gradient-top, $color-gradient-bottom-hover) {
+	background-image: linear-gradient($color-gradient-top, $base-color);
+	background-color: $base-color;	
+	border: 1px solid $base-color;
+	&:hover {
+		background-image: linear-gradient($color-gradient-top, $color-gradient-bottom-hover);
+		background-color: $color-gradient-bottom-hover;
+	}
+}
+
+.login {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__content {
+		width: 400px;
+		background-color: white;
+		border: 1px solid $default-border-color;
+		border-radius: 4px;
+		overflow: hidden;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	&__head {
+		padding: 20px;
+		text-align: center;
+		background-color: #f9f9f9;
+		border-bottom: 1px solid $default-border-color;
+
+		& img {
+			width: 50%;
+		}
+
+		& p {
+			margin-bottom: 0px;
+			color: #565656;
+		}
+	}
+
+	&__form {
+		padding: 20px;
+
+		& .input-group .input-group__prepend .input-group__text {
+			background-color: white;
+		}
+
+		& .fa-envelope {
+			font-size: 11pt;
+		}
+
+		& .fa-lock {
+			font-size: 16pt;
+		}
+
+		&-action {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		& a.btn--link {
+			padding-left: 0px;
+		}
+	}
+
+	&__alt {
+		padding: 20px;
+		padding-top: 10px;
+		display: flex;
+		flex-direction: column;
+
+		&-google,
+		&-facebook {
+			width: 100%;
+			color: #fcfcfc;
+			text-align: center;
+			border-radius: 4px;
+		}
+
+		&-google:hover,
+		&-facebook:hover {
+			color: white;
+		}
+
+		&-google {
+			@include login-alt-color(#e92706, #f43113, #d61d08);
+		}
+
+		&-facebook {
+			@include login-alt-color(#3c5a99, #4667a8, #324e87);
+		}
+	}
+}

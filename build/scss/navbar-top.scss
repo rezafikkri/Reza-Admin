@@ -1,4 +1,11 @@
 /* Navbar Top */
+@mixin navbar-notification-color($background-color, $part-class-color) {
+	&.navbar__notification-number--#{$part-class-color} {
+		background-color: $background-color;
+		color: white;
+	}
+}
+
 .navbar--white {
 	position: fixed;
 	top: 0;
@@ -45,13 +52,6 @@
 			border-top: 1px solid #ddd;
 			padding-top: 15px;
 		}
-	}
-}
-
-@mixin navbar-notification-color($background-color, $part-class-color) {
-	&.navbar__notification-number--#{$part-class-color} {
-		background-color: $background-color;
-		color: white;
 	}
 }
 

@@ -1,5 +1,5 @@
 /* card */
-@mixin card($background-color-badge, $background-color-card-action, $name-color) {
+@mixin card-color($background-color-badge, $background-color-card-action, $name-color) {
 	&--#{$name-color} {
 		& .card__badge {
 			background-color: $background-color-badge;
@@ -74,10 +74,10 @@
 		}
 	}
 
-	@include card($orange-reiran, #fffbf7, 'orange');
-	@include card($blue-reiran, #f7fcff, 'blue');
-	@include card($green-reiran, #f7fff8, 'green');
-	@include card($red-reiran, #fff7f7, 'red');
+	@include card-color($orange-reiran, #fffbf7, 'orange');
+	@include card-color($blue-reiran, #f7fcff, 'blue');
+	@include card-color($green-reiran, #f7fff8, 'green');
+	@include card-color($red-reiran, #fff7f7, 'red');
 
 	& .loading-circle {
 		position: absolute;
