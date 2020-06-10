@@ -1,0 +1,141 @@
+/* login and register */
+@mixin login-register-alt-color($base-color, $color-gradient-top, $color-gradient-bottom-hover) {
+	background-image: linear-gradient($color-gradient-top, $base-color);
+	background-color: $base-color;	
+	border: 1px solid $base-color;
+	&:hover {
+		background-image: linear-gradient($color-gradient-top, $color-gradient-bottom-hover);
+		background-color: $color-gradient-bottom-hover;
+	}
+}
+
+.login,
+.register {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	& a:hover {
+		text-decoration: none;
+	}
+}
+
+.login__content,
+.register__content {
+	background-color: white;
+	border: 1px solid $default-border-color;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.login__content {
+	width: 400px;
+
+	@media (max-width: 440px) {
+		& {
+			width: auto;
+		}
+	}
+}
+
+.register__content {
+	width: 600px;
+
+	@media (max-width: 640px) {
+		& {
+			width: auto;
+		}
+	}
+}
+
+.login__head,
+.register__head {
+	padding: 20px;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid $default-border-color;
+
+	& p,
+	& h5 {
+		margin-bottom: 0px;
+		color: #565656;
+	}
+}
+
+.login__head img {
+	width: 50%;	
+}
+
+.register__head img {
+	width: 30%;
+}
+
+.login__form,
+.register__form {
+	padding: 20px;
+
+	& .input-group .input-group__prepend .input-group__text {
+		background-color: white;
+	}
+
+	& .fa-envelope {
+		font-size: 11pt;
+	}
+
+	& .fa-lock {
+		font-size: 16pt;
+	}
+
+	& a.btn--link {
+		padding-left: 0px;
+	}
+
+	& .form-check {
+		margin-top: 8px;
+	}
+}
+
+.login__form-action,
+.register__form-action {
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 360px) {
+		& {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+.login__alt,
+.register__alt {
+	padding: 20px;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+
+	&-google,
+	&-facebook {
+		width: 100%;
+		color: #fcfcfc;
+		text-align: center;
+		border-radius: 4px;
+	}
+
+	&-google:hover,
+	&-facebook:hover{
+		color: white;
+	}
+
+	&-google,
+	&-google {
+		@include login-register-alt-color(#e92706, #f43113, #d61d08);
+	}
+
+	&-facebook,
+	&-facebook {
+		@include login-register-alt-color(#3c5a99, #4667a8, #324e87);
+	}
+}

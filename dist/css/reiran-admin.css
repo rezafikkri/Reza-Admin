@@ -1184,74 +1184,122 @@ small {
     transform: translate(0px, -30px); }
   100% {
     transform: translate(0px, 0px); } }
-/* login */
-.login {
+/* login and register */
+.login,
+.register {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .login__content {
-    width: 400px;
-    background-color: white;
-    border: 1px solid #e8e8e8;
-    border-radius: 4px;
-    overflow: hidden; }
-    @media (max-width: 440px) {
-      .login__content {
-        width: auto; } }
-  .login__head {
-    padding: 20px;
+  .login a:hover,
+  .register a:hover {
+    text-decoration: none; }
+
+.login__content,
+.register__content {
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  overflow: hidden; }
+
+.login__content {
+  width: 400px; }
+  @media (max-width: 440px) {
+    .login__content {
+      width: auto; } }
+
+.register__content {
+  width: 600px; }
+  @media (max-width: 640px) {
+    .register__content {
+      width: auto; } }
+
+.login__head,
+.register__head {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e8e8e8; }
+  .login__head p, .login__head h5,
+  .register__head p,
+  .register__head h5 {
+    margin-bottom: 0px;
+    color: #565656; }
+
+.login__head img {
+  width: 50%; }
+
+.register__head img {
+  width: 30%; }
+
+.login__form,
+.register__form {
+  padding: 20px; }
+  .login__form .input-group .input-group__prepend .input-group__text,
+  .register__form .input-group .input-group__prepend .input-group__text {
+    background-color: white; }
+  .login__form .fa-envelope,
+  .register__form .fa-envelope {
+    font-size: 11pt; }
+  .login__form .fa-lock,
+  .register__form .fa-lock {
+    font-size: 16pt; }
+  .login__form a.btn--link,
+  .register__form a.btn--link {
+    padding-left: 0px; }
+  .login__form .form-check,
+  .register__form .form-check {
+    margin-top: 8px; }
+
+.login__form-action,
+.register__form-action {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 360px) {
+    .login__form-action,
+    .register__form-action {
+      flex-direction: column-reverse; } }
+
+.login__alt,
+.register__alt {
+  padding: 20px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column; }
+  .login__alt-google, .login__alt-facebook,
+  .register__alt-google,
+  .register__alt-facebook {
+    width: 100%;
+    color: #fcfcfc;
     text-align: center;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #e8e8e8; }
-    .login__head img {
-      width: 50%; }
-    .login__head p {
-      margin-bottom: 0px;
-      color: #565656; }
-  .login__form {
-    padding: 20px; }
-    .login__form .input-group .input-group__prepend .input-group__text {
-      background-color: white; }
-    .login__form .fa-envelope {
-      font-size: 11pt; }
-    .login__form .fa-lock {
-      font-size: 16pt; }
-    .login__form-action {
-      display: flex;
-      justify-content: space-between; }
-    .login__form a.btn--link {
-      padding-left: 0px; }
-    @media (max-width: 360px) {
-      .login__form-action {
-        flex-direction: column-reverse; } }
-  .login__alt {
-    padding: 20px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column; }
-    .login__alt-google, .login__alt-facebook {
-      width: 100%;
-      color: #fcfcfc;
-      text-align: center;
-      border-radius: 4px; }
-    .login__alt-google:hover, .login__alt-facebook:hover {
-      color: white; }
-    .login__alt-google {
-      background-image: linear-gradient(#f43113, #e92706);
-      background-color: #e92706;
-      border: 1px solid #e92706; }
-      .login__alt-google:hover {
-        background-image: linear-gradient(#f43113, #d61d08);
-        background-color: #d61d08; }
-    .login__alt-facebook {
-      background-image: linear-gradient(#4667a8, #3c5a99);
-      background-color: #3c5a99;
-      border: 1px solid #3c5a99; }
-      .login__alt-facebook:hover {
-        background-image: linear-gradient(#4667a8, #324e87);
-        background-color: #324e87; }
+    border-radius: 4px; }
+  .login__alt-google:hover, .login__alt-facebook:hover,
+  .register__alt-google:hover,
+  .register__alt-facebook:hover {
+    color: white; }
+  .login__alt-google, .login__alt-google,
+  .register__alt-google,
+  .register__alt-google {
+    background-image: linear-gradient(#f43113, #e92706);
+    background-color: #e92706;
+    border: 1px solid #e92706; }
+    .login__alt-google:hover, .login__alt-google:hover,
+    .register__alt-google:hover,
+    .register__alt-google:hover {
+      background-image: linear-gradient(#f43113, #d61d08);
+      background-color: #d61d08; }
+  .login__alt-facebook, .login__alt-facebook,
+  .register__alt-facebook,
+  .register__alt-facebook {
+    background-image: linear-gradient(#4667a8, #3c5a99);
+    background-color: #3c5a99;
+    border: 1px solid #3c5a99; }
+    .login__alt-facebook:hover, .login__alt-facebook:hover,
+    .register__alt-facebook:hover,
+    .register__alt-facebook:hover {
+      background-image: linear-gradient(#4667a8, #324e87);
+      background-color: #324e87; }
 
 /* utilities */
 .text--hover-red:hover {
