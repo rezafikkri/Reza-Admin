@@ -1196,9 +1196,10 @@ small {
     background-color: white;
     border: 1px solid #e8e8e8;
     border-radius: 4px;
-    overflow: hidden;
-    margin-top: 15px;
-    margin-bottom: 15px; }
+    overflow: hidden; }
+    @media (max-width: 440px) {
+      .login__content {
+        width: auto; } }
   .login__head {
     padding: 20px;
     text-align: center;
@@ -1222,6 +1223,9 @@ small {
       justify-content: space-between; }
     .login__form a.btn--link {
       padding-left: 0px; }
+    @media (max-width: 360px) {
+      .login__form-action {
+        flex-direction: column-reverse; } }
   .login__alt {
     padding: 20px;
     padding-top: 10px;
