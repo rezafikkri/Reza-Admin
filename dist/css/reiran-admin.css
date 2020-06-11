@@ -1218,20 +1218,16 @@ small {
 .login__head,
 .register__head {
   padding: 20px;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #e8e8e8; }
+  text-align: center; }
   .login__head p, .login__head h5,
   .register__head p,
   .register__head h5 {
     margin-bottom: 0px;
     color: #565656; }
 
-.login__head img {
-  width: 50%; }
-
+.login__head img,
 .register__head img {
-  width: 30%; }
+  width: 130px; }
 
 .login__form,
 .register__form {

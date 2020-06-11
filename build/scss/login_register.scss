@@ -54,8 +54,6 @@
 .register__head {
 	padding: 20px;
 	text-align: center;
-	background-color: #f9f9f9;
-	border-bottom: 1px solid $default-border-color;
 
 	& p,
 	& h5 {
@@ -64,12 +62,9 @@
 	}
 }
 
-.login__head img {
-	width: 50%;	
-}
-
+.login__head img,
 .register__head img {
-	width: 30%;
+	width: 130px;
 }
 
 .login__form,
