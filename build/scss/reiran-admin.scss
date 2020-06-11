@@ -42,7 +42,7 @@ footer {
 }
 
 .main {
-	padding: $pt-sidebar-main-konten 16px;
+	padding: $pt-sidebar-main-konten 25px;
 	padding-bottom: 100px;
 	position: relative;
 	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
@@ -74,5 +74,5 @@ footer {
 @import "table.scss";
 @import "alert.scss";
 @import "modal.scss";
-@import "login_register.scss";
+@import "login-register-forgotpassword.scss";
 @import "utilities.scss";

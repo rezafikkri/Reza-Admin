@@ -14,8 +14,9 @@
 	background-color: white;
 	border-bottom: 1px solid #ddd;
 	font-family: open_sanssemibold, sans-serif;
-	box-shadow: 0 0 5px rgba(0,0,0,.1);
+	box-shadow: 0 0 10px rgba(0,0,0,.05);
 	z-index: 101;
+	padding: 8px 25px;
 
 	& .navbar__sidebar-toggler {
 		font-size: 1.25rem;
