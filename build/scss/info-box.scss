@@ -10,8 +10,13 @@
 	}
 
 	&--#{$name-color} &__btn-detail {
+		background-image: -webkit-gradient(linear, left top, right top, from($color-gradient-l), to($base-color));
+		background-image: -o-linear-gradient(left, $color-gradient-l, $base-color);
 		background-image: linear-gradient(90deg, $color-gradient-l, $base-color);
+
 		&:hover {
+			background-image: -webkit-gradient(linear, left top, right top, from($color-gradient-l), to($color-gradient-r-hover));
+			background-image: -o-linear-gradient(left, $color-gradient-l, $color-gradient-r-hover);
 			background-image: linear-gradient(90deg, $color-gradient-l, $color-gradient-r-hover);
 		}
 	}
@@ -19,14 +24,22 @@
 
 .info-box {
 	background-color: white;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	padding: 15px;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+
+	padding: 15px;
 	border-radius: 4px;
 	position: relative;
 	overflow: hidden;
 
 	&__icon {
+		-ms-flex-preferred-size: 40%;
 		flex-basis: 40%;
 	}
 
@@ -37,6 +50,7 @@
 	}
 
 	&__ket {
+		-ms-flex-preferred-size: 50%;
 		flex-basis: 50%;
 
 		& h1 {
@@ -58,14 +72,26 @@
 		top: 0;
 		bottom: 0;
 		padding: 10px;
+
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+
 		color: white;
 		border-bottom-left-radius: 50px;
 		border-top-left-radius: 50px;
 
 		& span {
+			-webkit-transform: translate(0px, 0px);
+			-ms-transform: translate(0px, 0px);
 			transform: translate(0px, 0px);
+
+			-webkit-transition: .1s ease-in-out;
+			-o-transition: .1s ease-in-out;
 			transition: .1s ease-in-out;
 		}
 
@@ -74,6 +100,8 @@
 			color: white;
 
 			& span {
+				-webkit-transform: translate(2px, 0px);
+				-o-transform: translate(2px, 0px);
 				transform: translate(2px, 0px);
 			}
 		}
@@ -81,12 +109,18 @@
 
 	@media (max-width: 1199.98px) {
 		& {
-			flex-direction: column;
+			-webkit-box-orient: vertical;
+    		-webkit-box-direction: normal;
+        	-ms-flex-direction: column;
+            flex-direction: column;
+
 			text-align: center;
 		}
 
 		&__icon, &__ket {
-			align-self: stretch;
+			-ms-flex-item-align: stretch;
+    		-ms-grid-row-align: stretch;
+    		align-self: stretch;
 		}
 
 		&__icon {
@@ -102,12 +136,21 @@
 
 	@media (max-width: 767.98px) {
 		& {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
 			flex-direction: row;
-			text-align: left;
+
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
+
+			text-align: left;
 		}
 
 		&__icon, &__ket {
+			-ms-flex-item-align: auto;
+			-ms-grid-row-align: auto;
 			align-self: auto;
 		}
 

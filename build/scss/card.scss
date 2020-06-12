@@ -21,7 +21,10 @@
 
 	&__badge {
 		padding: 5px;
-		align-self: flex-start;
+
+		-ms-flex-item-align: start;
+        align-self: flex-start;
+
 		margin-top: 5px;
 		position: relative;
 		background-color: #4c4c4c;
@@ -87,8 +90,17 @@
 		left: 0;
 		background-color: rgba(245,245,245,.9);
 		z-index: 1;
+
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 }
