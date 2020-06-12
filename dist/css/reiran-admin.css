@@ -1310,6 +1310,21 @@ small {
   padding-top: 4px;
   padding-bottom: 4px; }
 
+/* 404 page */
+.page-not-found {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .page-not-found a:hover {
+    text-decoration: none; }
+  .page-not-found__head h1 {
+    font-size: 150px;
+    font-family: open_sansbold;
+    color: #7c7c7c;
+    text-align: center; }
+
 /* utilities */
 .text--hover-red:hover {
   color: #ea2a2a !important; }

@@ -1,0 +1,19 @@
+/* 404 page */
+.page-not-found {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	& a:hover {
+		text-decoration: none;
+	}
+
+	&__head h1 {
+		font-size: 150px;
+		font-family: open_sansbold;
+		color: #7c7c7c;
+		text-align: center;
+	}
+}
