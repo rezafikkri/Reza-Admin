@@ -5,68 +5,14 @@
 	}
 
 	&--#{$name-color} &__icon span {
-		font-size: 20pt;
-		padding: 32%;
-		border-radius: 50%;
 		background-color: $bg-span;
 		color: $base-color;
 	}
 
 	&--#{$name-color} &__btn-detail {
-		position: absolute;
-		right: 0;
-		top: 0;
-		bottom: 0;
 		background-image: linear-gradient(90deg, $color-gradient-l, $base-color);
-		padding: 10px;
-		display: flex;
-		align-items: center;
-		color: white;
-		border-bottom-left-radius: 50px;
-		border-top-left-radius: 50px;
-			
-		& span {
-			transform: translate(0px, 0px);
-			transition: .1s ease-in-out;
-		}
-
 		&:hover {
-			text-decoration: none;
 			background-image: linear-gradient(90deg, $color-gradient-l, $color-gradient-r-hover);
-			& span {
-				transform: translate(2px, 0px);
-			}
-		}
-	}
-
-	@media (max-width: 1199.98px) {
-		&--#{$name-color} &__icon span {
-			padding: 22%;
-		}
-
-		&--#{$name-color} &__btn-detail {
-			position: static;
-			border-radius: 50px;
-			padding: 10px 30px;
-		}
-	}
-
-	@media (max-width: 850px) {
-		&--#{$name-color} &__icon span {
-			padding: 40%;
-		}
-	}
-
-	@media (max-width: 767.98px) {
-		&--#{$name-color} &__icon span {
-			padding: 32%;
-		}
-
-		&--#{$name-color} &__btn-detail {
-			position: absolute;
-			border-top-right-radius: 0px;
-			border-bottom-right-radius: 0px;
-			padding: 10px;
 		}
 	}
 }
@@ -84,8 +30,15 @@
 		flex-basis: 40%;
 	}
 
+	&__icon span {
+		padding: 35px;
+		font-size: 20pt;
+		border-radius: 50%;
+	}
+
 	&__ket {
 		flex-basis: 50%;
+
 		& h1 {
 			font-size: 25pt;
 			font-family: open_sansbold;
@@ -96,6 +49,33 @@
 		}
 		& p {
 			font-size: 10pt;
+		}
+	}
+
+	&__btn-detail {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		color: white;
+		border-bottom-left-radius: 50px;
+		border-top-left-radius: 50px;
+
+		& span {
+			transform: translate(0px, 0px);
+			transition: .1s ease-in-out;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: white;
+
+			& span {
+				transform: translate(2px, 0px);
+			}
 		}
 	}
 
@@ -112,6 +92,12 @@
 		&__icon {
 			margin-bottom: 20px;
 		}
+
+		&__btn-detail {
+			position: static;
+			border-radius: 50px;
+			padding: 10px 30px;
+		}
 	}
 
 	@media (max-width: 767.98px) {
@@ -127,6 +113,13 @@
 
 		&__icon {
 			margin-bottom: 0px;
+		}
+
+		&__btn-detail {
+			position: absolute;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			padding: 10px;
 		}
 	}
 
