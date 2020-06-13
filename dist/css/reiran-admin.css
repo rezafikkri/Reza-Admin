@@ -272,7 +272,7 @@ footer.footer {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   width: calc(100% - 228px); }
   footer.footer p {
     margin: 0px; }
@@ -280,6 +280,9 @@ footer.footer {
     footer.footer {
       width: 100%;
       margin-left: 0px; } }
+  @media (max-width: 575.98px) {
+    footer.footer {
+      flex-direction: column; } }
 
 /* button */
 .btn {

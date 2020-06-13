@@ -3,11 +3,12 @@ footer.footer {
 	background-color: white;
 	padding: 20px 25px;
 	border-top: 1px solid $default-border-color;
+
 	display: flex;
 	justify-content: space-between;
 
 	position: absolute;
-	bottom: 0;
+	bottom: -100px;
 	width: calc(100% - 228px);
 
 	& p {
@@ -18,6 +19,12 @@ footer.footer {
 		& {
 			width: 100%;
 			margin-left: 0px;
+		}
+	}
+
+	@media (max-width: 575.98px) {
+		& {
+			flex-direction: column;
 		}
 	}
 }
