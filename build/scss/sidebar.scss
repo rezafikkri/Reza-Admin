@@ -70,15 +70,15 @@
 		}
 	}
 
-	&__item a.nav-link,
-	&__item.sidebar--new-div {
+	&__item a.nav-link {
 		padding: 12px 16px;
 	}
 
 	&__item.sidebar--new-div {
 		font-family: open_sansregular, sans-serif;
-		color: #f4f4f4;
-		margin-top: 20px;
+		color: #ccdde5;
+		font-size: 12pt;
+		padding: 5px 16px;
 	}
 
 	&__item &--active {
@@ -125,7 +125,7 @@
 		padding: 5px 0px;
 		color: #ccdde5;
 		position: relative;
-		
+
 		-webkit-transition: unset;
 		-o-transition: unset;
 		transition: unset;
