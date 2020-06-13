@@ -2,7 +2,6 @@
 @mixin navbar-notification-color($background-color, $part-class-color) {
 	&.navbar__notification-number--#{$part-class-color} {
 		background-color: $background-color;
-		color: white;
 	}
 }
 
@@ -14,7 +13,10 @@
 	background-color: white;
 	border-bottom: 1px solid #ddd;
 	font-family: open_sanssemibold, sans-serif;
+
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.05);
 	box-shadow: 0 0 10px rgba(0,0,0,.05);
+
 	z-index: 101;
 	padding: 8px 25px;
 
@@ -47,8 +49,15 @@
 
 	@media (max-width: 575.98px) {
 		& .collapse .navbar-nav {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
 			flex-direction: row;
+			
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
 			justify-content: center;
+
 			margin-top: 7px;
 			border-top: 1px solid #ddd;
 			padding-top: 15px;
@@ -62,26 +71,27 @@
 	& a {
 		margin-top: 2px;
 	}
-}
 
-span.navbar__notification-number {
-	position: absolute;
-	font-size: 8pt;
-	display: inline-block;
-	padding: 1px;
-	padding-top: 0px;
-	width: 19px;
-	height: 19px;
-	border-radius: 50%;
-	text-align: center;
-	left: 0px;
-	top: -5px;
-	border: 2px solid #fff;
+	.navbar__notification-number {
+		position: absolute;
+		font-size: 8pt;
+		display: inline-block;
+		padding: 1px;
+		padding-top: 0px;
+		width: 19px;
+		height: 19px;
+		border-radius: 50%;
+		text-align: center;
+		left: 0px;
+		top: -5px;
+		border: 2px solid #fff;
+		color: white;
 
-	@include navbar-notification-color($red-reiran, 'red');
-	@include navbar-notification-color($blue-reiran, 'blue');
-	@include navbar-notification-color($orange-reiran, 'orange');
-	@include navbar-notification-color($green-reiran, 'green');
+		@include navbar-notification-color($red-reiran, 'red');
+		@include navbar-notification-color($blue-reiran, 'blue');
+		@include navbar-notification-color($orange-reiran, 'orange');
+		@include navbar-notification-color($green-reiran, 'green');
+	}
 }
 
 .navbar__avatar img {

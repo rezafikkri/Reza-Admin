@@ -71,6 +71,7 @@ footer {
   background-color: white;
   border-bottom: 1px solid #ddd;
   font-family: open_sanssemibold, sans-serif;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   z-index: 101;
   padding: 8px 25px; }
@@ -91,7 +92,12 @@ footer {
     padding-right: 0px; }
   @media (max-width: 575.98px) {
     .navbar--white .collapse .navbar-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       margin-top: 7px;
       border-top: 1px solid #ddd;
@@ -101,32 +107,28 @@ footer {
   position: relative; }
   .navbar__notification a {
     margin-top: 2px; }
-
-span.navbar__notification-number {
-  position: absolute;
-  font-size: 8pt;
-  display: inline-block;
-  padding: 1px;
-  padding-top: 0px;
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  text-align: center;
-  left: 0px;
-  top: -5px;
-  border: 2px solid #fff; }
-  span.navbar__notification-number.navbar__notification-number--red {
-    background-color: #ea2a2a;
+  .navbar__notification .navbar__notification-number {
+    position: absolute;
+    font-size: 8pt;
+    display: inline-block;
+    padding: 1px;
+    padding-top: 0px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    text-align: center;
+    left: 0px;
+    top: -5px;
+    border: 2px solid #fff;
     color: white; }
-  span.navbar__notification-number.navbar__notification-number--blue {
-    background-color: #2597e0;
-    color: white; }
-  span.navbar__notification-number.navbar__notification-number--orange {
-    background-color: #f9a022;
-    color: white; }
-  span.navbar__notification-number.navbar__notification-number--green {
-    background-color: #1bd741;
-    color: white; }
+    .navbar__notification .navbar__notification-number.navbar__notification-number--red {
+      background-color: #ea2a2a; }
+    .navbar__notification .navbar__notification-number.navbar__notification-number--blue {
+      background-color: #2597e0; }
+    .navbar__notification .navbar__notification-number.navbar__notification-number--orange {
+      background-color: #f9a022; }
+    .navbar__notification .navbar__notification-number.navbar__notification-number--green {
+      background-color: #1bd741; }
 
 .navbar__avatar img {
   width: 30px;
