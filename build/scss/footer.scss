@@ -4,12 +4,21 @@ footer.footer {
 	padding: 20px 25px;
 	border-top: 1px solid $default-border-color;
 
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 
 	position: absolute;
 	bottom: -100px;
 	width: calc(100% - 228px);
+	
+	-webkit-transition: .5s cubic-bezier(.99, .01, .57, 1.01);
+	-o-transition: .5s cubic-bezier(.99, .01, .57, 1.01);
+	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 
 	& p {
 		margin: 0px;
@@ -24,6 +33,9 @@ footer.footer {
 
 	@media (max-width: 575.98px) {
 		& {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
 			flex-direction: column;
 		}
 	}

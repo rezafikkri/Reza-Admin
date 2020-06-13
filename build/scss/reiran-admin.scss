@@ -45,6 +45,9 @@ footer {
 	padding: $pt-sidebar-main-konten 25px;
 	padding-bottom: 100px;
 	position: relative;
+	
+	-webkit-transition: .5s cubic-bezier(.99, .01, .57, 1.01);
+	-o-transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 
 	@media (max-width: 767.98px) {
