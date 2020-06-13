@@ -30,7 +30,9 @@
 		border: 5px solid transparent;
 		border-left-color: transparent;
 		border-bottom-color: transparent;
-		animation: loading-circle-rotate 1s linear infinite;
+
+		-webkit-animation: loading-circle-rotate 1s linear infinite;
+        animation: loading-circle-rotate 1s linear infinite;
 	}
 
 	@include loading-circle-color('gray', #a8a8a8);
@@ -64,17 +66,39 @@
 		right: 0;
 		z-index: 9999;
 		background-color: rgba(252,252,252,.9);
+
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+	}
+}
+
+@-webkit-keyframes loading-circle-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
 	}
 }
 
 @keyframes loading-circle-rotate {
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 	}
 	100% {
-		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
 	}
 }

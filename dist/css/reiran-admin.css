@@ -607,6 +607,7 @@ small {
   border: 5px solid transparent;
   border-left-color: transparent;
   border-bottom-color: transparent;
+  -webkit-animation: loading-circle-rotate 1s linear infinite;
   animation: loading-circle-rotate 1s linear infinite; }
 .loading-circle--gray .loading-circle__fill::after {
   border-top-color: #a8a8a8;
@@ -641,14 +642,29 @@ small {
   right: 0;
   z-index: 9999;
   background-color: rgba(252, 252, 252, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
-@keyframes loading-circle-rotate {
+@-webkit-keyframes loading-circle-rotate {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes loading-circle-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 /* info box */
 .info-box {
@@ -939,13 +955,19 @@ small {
 
 /* alert */
 .alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
   padding: 2px 15px;
   margin-bottom: 0px; }
   .alert__icon {
+    -ms-flex-preferred-size: 50px;
     flex-basis: 50px;
     font-size: 20pt;
     position: relative; }
@@ -957,8 +979,11 @@ small {
       bottom: 5px;
       width: 1px; }
   .alert__description {
-    flex: 8.5; }
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5; }
   .alert__action {
+    -ms-flex-preferred-size: 20px;
     flex-basis: 20px;
     text-align: right;
     font-family: open_sansbold, sans-serif;
@@ -1023,6 +1048,7 @@ small {
     bottom: 10px;
     right: 10px;
     width: 600px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
     @media (max-width: 991.98px) {
       .alert--fixed-rb {
@@ -1045,7 +1071,7 @@ small {
     margin-bottom: 28px;
     border-radius: 4px;
     padding: 30px; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 575.98px) {
       .modal__content {
         width: auto;
         margin-left: 15px;
@@ -1119,34 +1145,50 @@ small {
     .modal__title h3 {
       font-family: open_sansbold, sans-serif; }
   .modal__action {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
     .modal__action .btn--link {
       padding-left: 0px; }
     @media (max-width: 575.98px) {
-      .modal__action {
-        flex-direction: column-reverse;
-        justify-content: center; }
       .modal__action .btn {
         width: 100%; }
       .modal__action .btn--link {
         padding-left: 15px; } }
   .modal--fade-in {
     display: block;
+    -webkit-animation: modal-fade-in .2s linear;
     animation: modal-fade-in .2s linear; }
     .modal--fade-in .modal__content {
+      -webkit-animation: modal-content-fade-in .3s linear;
       animation: modal-content-fade-in .3s linear; }
 
+@-webkit-keyframes modal-fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes modal-fade-in {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@keyframes modal-content-fade-in {
+@-webkit-keyframes modal-content-fade-in {
   0% {
+    -webkit-transform: translate(0px, -30px);
     transform: translate(0px, -30px); }
   100% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px); } }
+@keyframes modal-content-fade-in {
+  0% {
+    -webkit-transform: translate(0px, -30px);
+    transform: translate(0px, -30px); }
+  100% {
+    -webkit-transform: translate(0px, 0px);
     transform: translate(0px, 0px); } }
 /* login, register and forgot password */
 .login,
