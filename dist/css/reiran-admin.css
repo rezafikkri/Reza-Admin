@@ -152,15 +152,9 @@ footer {
   z-index: 100;
   background-color: #2597e0;
   padding: 80px 0 0;
-  font-family: open_sanssemibold;
+  font-family: open_sanssemibold, sans-serif;
   transition: transform 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
   transform: translate(0px, 0px); }
-  @media (min-width: 992px) {
-    .sidebar--hide-lg {
-      transform: translate(-16.66%, 0%); } }
-  @media (min-width: 768px) {
-    .sidebar--hide-lg {
-      transform: translate(-25%, 0%); } }
   @media (max-width: 767.98px) {
     .sidebar {
       transform: translate(-233px, 0px);
@@ -188,7 +182,7 @@ footer {
   .sidebar__item a.nav-link, .sidebar__item.sidebar--new-div {
     padding: 12px 16px; }
   .sidebar__item.sidebar--new-div {
-    font-family: open_sansregular;
+    font-family: open_sansregular, sans-serif;
     color: #f4f4f4;
     margin-top: 20px; }
   .sidebar__item .sidebar--active {
@@ -664,10 +658,10 @@ small {
     flex-basis: 50%; }
     .info-box__ket h1 {
       font-size: 25pt;
-      font-family: open_sansbold; }
+      font-family: open_sansbold, sans-serif; }
     .info-box__ket h2 {
       font-size: 20pt;
-      font-family: open_sanssemibold; }
+      font-family: open_sanssemibold, sans-serif; }
     .info-box__ket p {
       font-size: 10pt; }
   .info-box__btn-detail {
@@ -821,7 +815,7 @@ small {
       margin: 0px;
       color: white; }
   .card__decription h3 {
-    font-family: open_sansbold; }
+    font-family: open_sansbold, sans-serif; }
   .card__decription time {
     font-size: 10pt; }
   .card__action {

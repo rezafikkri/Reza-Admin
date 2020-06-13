@@ -14,21 +14,9 @@
 	z-index: 100;
 	background-color: $blue-reiran;
 	padding: $pt-sidebar-main-konten 0 0;
-	font-family: open_sanssemibold;
+	font-family: open_sanssemibold, sans-serif;
 	transition: transform .5s cubic-bezier(.99, .01, .57, 1.01);
 	transform: translate(0px, 0px);
-
-	@media (min-width: 992px) {
-		&--hide-lg {
-			transform: translate(-16.66%, 0%);
-		}
-	}
-
-	@media (min-width: 768px) {
-		&--hide-lg {
-			transform: translate(-25%, 0%);
-		}
-	}
 
 	@media (max-width: 767.98px) {
 		& {
@@ -71,7 +59,7 @@
 	}
 
 	&__item.sidebar--new-div {
-		font-family: open_sansregular;
+		font-family: open_sansregular, sans-serif;
 		color: #f4f4f4;
 		margin-top: 20px;
 	}
