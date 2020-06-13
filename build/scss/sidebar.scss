@@ -15,17 +15,30 @@
 	background-color: $blue-reiran;
 	padding: $pt-sidebar-main-konten 0 0;
 	font-family: open_sanssemibold, sans-serif;
+
+	-webkit-transition: -webkit-transform .5s cubic-bezier(.99, .01, .57, 1.01);
+	transition: -webkit-transform .5s cubic-bezier(.99, .01, .57, 1.01);
+	-o-transition: transform .5s cubic-bezier(.99, .01, .57, 1.01);
 	transition: transform .5s cubic-bezier(.99, .01, .57, 1.01);
+	transition: transform .5s cubic-bezier(.99, .01, .57, 1.01), -webkit-transform .5s cubic-bezier(.99, .01, .57, 1.01);
+
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
 	transform: translate(0px, 0px);
 
 	@media (max-width: 767.98px) {
 		& {
+			-webkit-transform: translate(-233px, 0px);
+			-ms-transform: translate(-233px, 0px);
 			transform: translate(-233px, 0px);
-			width: 228px;
+
+			-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
 			box-shadow: 0 0 5px rgba(0,0,0,.2);
 		}
 
 		&--show-sm {
+			-webkit-transform: translate(0px, 0px);
+			-ms-transform: translate(0px, 0px);
 			transform: translate(0px, 0px);
 		}
 	}
@@ -46,7 +59,11 @@
 
 	&__item a {
 		color: #f4f4f4;
+
+		-webkit-transition: .1s cubic-bezier(.55,.09,.68,.53);
+		-o-transition: .1s cubic-bezier(.55,.09,.68,.53);
 		transition: .1s cubic-bezier(.55,.09,.68,.53);
+
 		&:hover {
 			color: #333;
 			background-color: #fcfcfc;
@@ -87,6 +104,8 @@
 	top: 35%;
 
 	&--rotate {
+		-webkit-transform: rotateZ(90deg);
+		-ms-transform: rotate(90deg);
 		transform: rotateZ(90deg);
 	}
 }
@@ -106,6 +125,9 @@
 		padding: 5px 0px;
 		color: #ccdde5;
 		position: relative;
+		
+		-webkit-transition: unset;
+		-o-transition: unset;
 		transition: unset;
 
 		&::before {
