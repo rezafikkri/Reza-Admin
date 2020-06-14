@@ -1321,6 +1321,9 @@ small {
   font-size: 15pt; }
 .login__form a.btn--link {
   padding-left: 0px; }
+  @media (max-width: 360px) {
+    .login__form a.btn--link {
+      padding-left: 16px; } }
 .login__form .form-check {
   margin-top: 8px; }
 
