@@ -21,7 +21,7 @@
 }
 
 @mixin text-color($name-color, $color) {
-	.text--#{$name-color} {
+	.text-#{$name-color} {
 		color: $color;
 	}
 }
@@ -92,7 +92,7 @@ select {
 	}
 }
 
-label.label--right {
+label.label-right {
 	float: right;
 	color: #878787;
 }
@@ -118,7 +118,7 @@ small {
 		margin-top: .3rem;
 	}
 
-	& label.label--check {
+	& label.label-check {
 		display: inline-block;
 		margin-bottom: 0px;
 	}

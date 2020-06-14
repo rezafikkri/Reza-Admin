@@ -543,23 +543,23 @@ select[disabled].form {
   background-size: 15px;
   background-color: #f2f2f2; }
 
-label.label--right {
+label.label-right {
   float: right;
   color: #878787; }
 
 small {
   font-size: 10pt; }
 
-.text--green {
+.text-green {
   color: #15c639; }
 
-.text--blue {
+.text-blue {
   color: #198ad1; }
 
-.text--red {
+.text-red {
   color: #d62020; }
 
-.text--orange {
+.text-orange {
   color: #ff990a; }
 
 .form-check {
@@ -570,7 +570,7 @@ small {
     position: absolute;
     left: 0;
     margin-top: .3rem; }
-  .form-check label.label--check {
+  .form-check label.label-check {
     display: inline-block;
     margin-bottom: 0px; }
   .form-check input[type="checkbox"][disabled].form ~ label.label--check, .form-check input[type="radio"][disabled].form ~ label.label--check {
