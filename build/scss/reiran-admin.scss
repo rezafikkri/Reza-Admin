@@ -61,6 +61,11 @@ footer {
 		background-color: white;
 		border: 1px solid $default-border-color;
 		border-radius: 4px;
+		overflow: hidden;
+
+		&:not(&--hover-not-overflow-auto):hover {
+			overflow-x: auto;
+		}
 	}
 }
 

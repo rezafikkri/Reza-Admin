@@ -62,7 +62,10 @@ footer {
     padding: 15px;
     background-color: white;
     border: 1px solid #e8e8e8;
-    border-radius: 4px; }
+    border-radius: 4px;
+    overflow: hidden; }
+    .main__box:not(.main__box--hover-not-overflow-auto):hover {
+      overflow-x: auto; }
 
 /* Navbar Top */
 .navbar--white {
@@ -1000,8 +1003,8 @@ small {
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: -15px;
+      right: -15px;
       z-index: 9999;
       background-color: rgba(252, 252, 252, 0.9);
       display: flex;
