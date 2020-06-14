@@ -3,7 +3,9 @@
 	&--#{$color-name} {
 		border: 1px solid $color-gradient-bottom;
 		background-color: $base-color;
-		background-image: linear-gradient($base-color, $color-gradient-bottom);
+		background-image: -webkit-gradient(linear, left top, left bottom, from($base-color), to($color-gradient-bottom));
+    	background-image: -o-linear-gradient($base-color, $color-gradient-bottom);
+    	background-image: linear-gradient($base-color, $color-gradient-bottom);
 
 		@if $color-name == "link" {
 			color: #007bff;
@@ -12,7 +14,9 @@
 			}
 		} @else {
 			&:hover {
-				background-image: linear-gradient($base-color, $color-gradient-bottom-hover);
+				background-image: -webkit-gradient(linear, left top, left bottom, from($base-color), to($color-gradient-bottom-hover));
+    			background-image: -o-linear-gradient($base-color, $color-gradient-bottom-hover);
+    			background-image: linear-gradient($base-color, $color-gradient-bottom-hover);
 			}
 		}
 		
@@ -26,7 +30,10 @@
 		&:hover {
 			color: #fff;
 			background-color: $base-color;
-			background-image: linear-gradient($base-color, $color-gradient-bottom);
+
+			background-image: -webkit-gradient(linear, left top, left bottom, from($base-color), to($color-gradient-bottom));
+    		background-image: -o-linear-gradient($base-color, $color-gradient-bottom);
+    		background-image: linear-gradient($base-color, $color-gradient-bottom);
 		}
 	}
 }
@@ -41,6 +48,7 @@
 	}
 
 	&:focus {
+		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
 
@@ -74,8 +82,17 @@
 			right: 0px;
 			left: 0px;
 			background-color: rgba(252,252,252,.9);
+
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
 			justify-content: center;
+			
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
 		}
 	}
