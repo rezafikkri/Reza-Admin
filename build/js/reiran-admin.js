@@ -9,7 +9,7 @@ const main = document.querySelector("main.main");
 /* show hide menu sidebar */
 const navbarSidebarToggler = document.querySelector("a.navbar__sidebar-toggler");
 if(navbarSidebarToggler !== null) {
-	navbarSidebarToggler.addEventListener('click', function(e){
+	navbarSidebarToggler.addEventListener('click', e => {
 		// not aktifkan fungsi default link
 		e.preventDefault();
 
@@ -19,7 +19,7 @@ if(navbarSidebarToggler !== null) {
 
 /* sidebar dropdown */
 if(sidebar !== null) {
-	sidebar.addEventListener('click', function(e){
+	sidebar.addEventListener('click', e =>{
 		let targetDropdown = e.target;
 		if(!targetDropdown.classList.contains("sidebar__btn-dropdown")) targetDropdown = e.target.parentElement;
 		if(targetDropdown.classList.contains("sidebar__btn-dropdown")) {
@@ -35,7 +35,7 @@ if(sidebar !== null) {
 /* navbar toggler */
 const btnNavbarToggler = document.querySelector("button.navbar-toggler");
 if(btnNavbarToggler !== null) {
-	btnNavbarToggler.addEventListener('click', function(){
+	btnNavbarToggler.addEventListener('click', () => {
 		const navbarTarget = document.querySelector(`div${btnNavbarToggler.getAttribute("target")}`);
 		navbarTarget.classList.toggle("d-block");
 	});
@@ -43,7 +43,7 @@ if(btnNavbarToggler !== null) {
 
 /* alert close */
 if(main !== null) {
-	main.addEventListener('click', function(e){
+	main.addEventListener('click', e => {
 		const btnClose = e.target;
 		if(btnClose.classList.contains("alert__close-btn")) {
 			btnClose.parentElement.parentElement.remove();

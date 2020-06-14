@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "edge": "12",
+          "firefox": "38",
+          "chrome": "45",
+          "safari": "9",
+          "explorer": "10",
+          "android": "4.4",
+          "opera": "30"
+        },
+        "useBuiltIns": "usage",
+      }
+    ]
+  ]
+}
