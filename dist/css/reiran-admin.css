@@ -1258,11 +1258,20 @@ small {
 .login,
 .register,
 .forgot-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  align-items: center; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh; }
   .login a:hover,
   .register a:hover,
   .forgot-password a:hover {
@@ -1330,19 +1339,31 @@ small {
 .login__form-action,
 .register__form-action,
 .forgot-password__form-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
   @media (max-width: 360px) {
     .login__form-action,
     .register__form-action,
     .forgot-password__form-action {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse; } }
 
 .login__alt,
 .register__alt {
   padding: 20px;
   padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
   .login__alt-google, .login__alt-facebook,
   .register__alt-google,
@@ -1358,23 +1379,31 @@ small {
   .login__alt-google, .login__alt-google,
   .register__alt-google,
   .register__alt-google {
+    background-image: -webkit-gradient(linear, #f43113, from(#e92706));
+    background-image: -o-linear-gradient(#f43113, #e92706);
     background-image: linear-gradient(#f43113, #e92706);
     background-color: #e92706;
     border: 1px solid #e92706; }
     .login__alt-google:hover, .login__alt-google:hover,
     .register__alt-google:hover,
     .register__alt-google:hover {
+      background-image: -webkit-gradient(linear, #f43113, from(#d61d08));
+      background-image: -o-linear-gradient(#f43113, #d61d08);
       background-image: linear-gradient(#f43113, #d61d08);
       background-color: #d61d08; }
   .login__alt-facebook, .login__alt-facebook,
   .register__alt-facebook,
   .register__alt-facebook {
+    background-image: -webkit-gradient(linear, #4667a8, from(#3c5a99));
+    background-image: -o-linear-gradient(#4667a8, #3c5a99);
     background-image: linear-gradient(#4667a8, #3c5a99);
     background-color: #3c5a99;
     border: 1px solid #3c5a99; }
     .login__alt-facebook:hover, .login__alt-facebook:hover,
     .register__alt-facebook:hover,
     .register__alt-facebook:hover {
+      background-image: -webkit-gradient(linear, #4667a8, from(#324e87));
+      background-image: -o-linear-gradient(#4667a8, #324e87);
       background-image: linear-gradient(#4667a8, #324e87);
       background-color: #324e87; }
 
