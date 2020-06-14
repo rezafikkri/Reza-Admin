@@ -3,6 +3,7 @@
 	&--#{$color-name} {
 		border: 1px solid $color-gradient-bottom;
 		background-color: $base-color;
+		
 		background-image: -webkit-gradient(linear, left top, left bottom, from($base-color), to($color-gradient-bottom));
     	background-image: -o-linear-gradient($base-color, $color-gradient-bottom);
     	background-image: linear-gradient($base-color, $color-gradient-bottom);
@@ -66,7 +67,7 @@
 	@include btn-outline-color('red', $red-reiran, #d11b1b);
 
 	&[disabled],
-	&.disabled {
+	&--disabled {
 		pointer-events: none;
 		opacity: 0.5;
 	}
@@ -90,7 +91,7 @@
 			-webkit-box-pack: center;
 			-ms-flex-pack: center;
 			justify-content: center;
-			
+
 			-webkit-box-align: center;
 			-ms-flex-align: center;
 			align-items: center;
