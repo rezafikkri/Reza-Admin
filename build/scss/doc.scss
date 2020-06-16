@@ -1,1 +1,21 @@
 /* docs reiran-admin v1.0 */
+@for $i from 4 through 6 {
+	.main__box h#{$i} {
+		font-family: open_sanssemibold;
+		color: #333;
+	}
+}
+
+pre {
+	margin-bottom: 0px !important;
+}
+
+pre code {
+	font-size: 12pt;
+	padding: 10px 20px !important;
+	border-radius: 4px;
+}
+
+strong {
+	font-weight: 300;
+}
