@@ -59,7 +59,7 @@ footer {
     .main {
       margin-left: 0px; } }
   .main__box {
-    padding: 15px;
+    padding: 20px;
     background-color: white;
     border: 1px solid #e8e8e8;
     border-radius: 4px;
@@ -877,7 +877,7 @@ small {
 
 /* chart */
 .chart {
-  padding: 15px;
+  padding: 20px;
   height: 350px;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
@@ -1003,8 +1003,8 @@ small {
       position: absolute;
       top: 0;
       bottom: 0;
-      left: -15px;
-      right: -15px;
+      left: -20px;
+      right: -20px;
       z-index: 9999;
       background-color: rgba(252, 252, 252, 0.9);
       display: -webkit-box;
