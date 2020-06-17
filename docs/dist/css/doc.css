@@ -22,6 +22,10 @@ pre code {
 strong {
   font-weight: 300; }
 
+.main__box ul,
+.main__box ol {
+  margin-bottom: 0px; }
+
 .doc-index {
   display: -webkit-box;
   display: -ms-flexbox;
