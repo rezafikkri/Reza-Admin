@@ -2,7 +2,8 @@
 	"name": "Reiran-Admin",
 	"version": "1.0.0",
 	"scripts": {
-		"build": "babel build/js -d dist/js"
+		"build-reiran-admin": "babel build/js/reiran-admin.js -d dist/js/",
+		"build-doc": "babel build/js/doc.js -d docs/dist/js/"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.10.1",
