@@ -195,7 +195,7 @@ footer {
       background-color: #fcfcfc; }
   .sidebar__item a.nav-link {
     padding: 12px 16px; }
-  .sidebar__item.sidebar--new-div {
+  .sidebar__item.sidebar--header {
     font-family: open_sansregular, sans-serif;
     color: #ccdde5;
     font-size: 12pt;
