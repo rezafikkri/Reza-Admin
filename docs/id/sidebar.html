@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Social network metas -->
-	<meta property="og:title" content="Reiran Admin . Instalasi">
+	<meta property="og:title" content="Reiran Admin . Ketergantungan & Plugin">
 	<meta property="og:url" content="">
 	<meta property="image" content="">
 	<meta property="og:image" content="">
 	<meta property="description" content="Open source responsive admin template with bootstrap framework">
 
-	<title>Reiran Admin . Instalasi</title>
+	<title>Ketergantungan & Plugin</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
@@ -29,7 +29,7 @@
 <body>
 
     <!-- navbar top -->
-    <nav class="navbar navbar-expand-lg navbar--white">
+    <nav class="navbar navbar-expand-sm navbar--white">
         <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
         <a class="navbar-brand" href="index.html"><img src="../../dist/img/reiran-admin-new.png" width="180" alt="logo reiran"></a>
         <button class="navbar-toggler" target="#navbarNav" type="button">
@@ -46,13 +46,13 @@
     <!-- sidebar -->
     <aside class="sidebar">
         <ul class="sidebar__ul">
-            <li class="sidebar__item"><a class="nav-link sidebar--active" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
 
             <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
-            <li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
-                <ul class="sidebar__dropdown">
+            <li class="sidebar__item"><a class="nav-link sidebar__btn-dropdown sidebar--active" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
                     <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
-                    <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="sidebar.html" class="sidebar__dropdown--active">Sidebar</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Main</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Footer</a></li>
                 </ul>
@@ -91,75 +91,17 @@
         <div class="row">
             <header class="main__header col-md-12 mb-2">
                 <div class="main__title">
-                    <h4>Instalasi</h4>
+                    <h4>Sidebar</h4>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Instalasi</li>
+                        <li class="breadcrumb-item active">Sidebar</li>
                     </ul>
                 </div>              
             </header>
 
             <div class="col-md-12">
                 <div class="main__box">
-                    <h4 class="mb-4">Assalamualaikum Warohmatulloh Wabarokatuh</h4>
-                    <h4>Unduh</h4>
-                    <h5>Dari Google Drive</h5>
-                    <p>Jika kamu mengunduh dari google drive maka didalammnya terdapat file-file inti dari template, tidak terdapat dokumentasi offline. Sehingga ukuran file nya kecil.</p>
-                    <a href="" class="btn btn--blue">Unduh</a>
-
-                    <h5 class="mt-4">Dari Github</h5>
-                    <p>Jika kamu mengunduh dari github maka didalamnya terdapat file secara lengkap, termasuk didalamnya dokumentasi offline, dan pastinya ukuran file cukup besar.</p>
-                    <a href="" class="btn btn--blue-outline">Unduh Sumber</a>
-
-                    <h4 class="mt-5">Command Line</h4>
-                    <h5>Menggunakan Git</h5>
-                    <p>Jika kamu tidak mengerti menggunakan Git VCS, saya tidak menyarankan untuk menggunakan cara ini.</p>
-                    <ol>
-                        <li>Fork Repository</li>
-                        <li>Clone Repository ke komputer kamu
-                            <pre class="mt-1"><code class="plainText">git clone https://github.com/YOUR_USERNAME/Reiran-Admin.git</code></pre>
-                        </li>
-                    </ol>
-
-                    <h4 class="mt-5">Instal</h4>
-                    <ol>
-                        <li>Kamu hanya membutuhkan apa yang ada didalam folder <strong>dist</strong> dan <strong>plugins</strong>,</li>
-                        <li>Copy dan paste dua folder itu ke projek kamu,</li>
-                        <li>dan Reiran Admin berhasil di instal.</li>
-                    </ol>
-
-                    <h4 class="mt-5 mb-3">Struktur Dasar Template</h4>
-                    <p>Ini adalah struktur dasar template Reiran Admin, selebihnya kamu bisa menambahkan sendiri, sesuai dokumentasi.</p>
-                    <pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;!-- Required meta tags --&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
-
-    &lt;title&gt;Reiran Admin . Dashboard&lt;/title&gt;
-
-    &lt;!-- Bootstrap CSS --&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;[your path]/dist/css/bootstrap.min.css&quot;&gt;
-    &lt;!-- Font awesome --&gt;
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;[your path]/plugins/font-awesome-4.7.0/css/font-awesome.min.css&quot;&gt;
-    &lt;!-- Reiran Admin CSS --&gt;
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;[your path]/dist/css/reiran-admin.min.css&quot;&gt;
-    &lt;!-- Favicon --&gt;
-    &lt;link rel=&quot;icon&quot; href=&quot;[your path]/dist/img/favicon-(80x80).png&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-    &lt;h1&gt;Hello World&lt;/h1&gt;
-
-    &lt;!-- Optional JavaScript --&gt;
-    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS, then Reiran Admin JS --&gt;
-    &lt;script src=&quot;[your path]/dist/js/jquery-3.5.1.slim.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;[your path]/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;[your path]/dist/js/reiran-admin.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-                </div>
+                </div><!-- main__box -->
             </div>
         </div><!-- row -->
     </main>
