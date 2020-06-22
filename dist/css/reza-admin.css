@@ -91,7 +91,7 @@ footer {
     padding: 0px 12px; }
     .navbar--white .nav-item .nav-link:hover {
       color: #2597e0; }
-    .navbar--white .nav-item .nav-link.nav-link--red-hover:hover {
+    .navbar--white .nav-item .nav-link.nav-link--hover-red:hover {
       color: #ea2a2a; }
   .navbar--white .nav-item:last-child .nav-link {
     padding-right: 0px; }
@@ -174,16 +174,16 @@ footer {
       -webkit-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
       transform: translate(0px, 0px); } }
-  .sidebar__ul {
+  .sidebar__nav {
     list-style-type: none;
     padding: 0px;
     position: relative;
     top: 0;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 90px);
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: transparent; }
-    .sidebar__ul:hover {
+    .sidebar__nav:hover {
       overflow-y: auto; }
   .sidebar__item a {
     color: #f4f4f4;
@@ -194,22 +194,22 @@ footer {
       color: #333;
       background-color: #fcfcfc; }
   .sidebar__item a.nav-link {
-    padding: 12px 16px; }
-  .sidebar__item.sidebar--header {
+    padding: 12px 16px;
+    position: relative; }
+  .sidebar__item--header {
     font-family: open_sansregular, sans-serif;
     color: #ccdde5;
     font-size: 12pt;
     padding: 5px 16px; }
-  .sidebar__item .sidebar--active {
+  .sidebar__item--active > a {
     background-color: #fcfcfc;
-    color: #333; }
-    .sidebar__item .sidebar--active:hover {
-      color: #333; }
+    color: #3d3d3d;
+    font-family: open_sansbold, sans-serif; }
+    .sidebar__item--active > a:hover {
+      color: #3d3d3d; }
 
-.sidebar__btn-dropdown {
-  position: relative; }
-  .sidebar__btn-dropdown--active {
-    background-color: #2388c6; }
+.sidebar__item--dropdown-active > a {
+  background-color: #2388c6; }
 
 .sidebar__span-dropdown {
   position: absolute;
@@ -249,8 +249,9 @@ footer {
       color: white; }
       .sidebar__dropdown-item a:hover::before {
         background-color: white; }
-    .sidebar__dropdown-item a.sidebar__dropdown--active {
-      color: white; }
+  .sidebar__dropdown-item--active a {
+    color: white;
+    font-family: open_sansbold, sans-serif; }
 
 /* header */
 .main__title {
@@ -1430,4 +1431,4 @@ small {
 .font-size-12 {
   font-size: 12pt !important; }
 
-/*# sourceMappingURL=reiran-admin.css.map */
+/*# sourceMappingURL=reza-admin.css.map */
