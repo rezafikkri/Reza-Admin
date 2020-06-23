@@ -50,3 +50,11 @@ if(main !== null) {
 		}
 	});
 }
+
+/* add class 'footer--b-100' to footer if document height more than window height */
+const footer = document.querySelector("footer.footer");
+const documentH = document.scrollingElement.offsetHeight;
+const windowH = window.innerHeight;
+if(footer !== null && documentH > windowH) {
+	footer.classList.add("footer--b-100");
+}

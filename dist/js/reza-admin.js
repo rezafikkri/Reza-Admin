@@ -56,3 +56,13 @@ if (main !== null) {
     }
   });
 }
+/* add class 'footer--b-100' to footer if document height more than window height */
+
+
+var footer = document.querySelector("footer.footer");
+var documentH = document.scrollingElement.offsetHeight;
+var windowH = window.innerHeight;
+
+if (footer !== null && documentH > windowH) {
+  footer.classList.add("footer--b-100");
+}

@@ -77,10 +77,16 @@ strong {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   background-color: #fcfcfc;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative; }
 .pre-code-box .main__box h5 {
   font-family: open_sansregular; }
+.pre-code-box .footer {
+  width: calc(100% - 268px); }
+  @media (max-width: 767.98px) {
+    .pre-code-box .footer {
+      width: calc(100% - 40px); } }
 
 .doc-index {
   display: -webkit-box;

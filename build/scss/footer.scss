@@ -1,5 +1,5 @@
 /* footer */
-footer.footer {
+.footer {
 	background-color: white;
 	padding: 20px 25px;
 	border-top: 1px solid $default-border-color;
@@ -13,12 +13,16 @@ footer.footer {
 	justify-content: space-between;
 
 	position: absolute;
-	bottom: -100px;
+	bottom: 0px;
 	width: calc(100% - 228px);
 	
-	-webkit-transition: .5s cubic-bezier(.99, .01, .57, 1.01);
-	-o-transition: .5s cubic-bezier(.99, .01, .57, 1.01);
-	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
+	-webkit-transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
+	-o-transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
+	transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
+
+	&--b-100 {
+		bottom: -100px;
+	}
 
 	p {
 		margin: 0px;

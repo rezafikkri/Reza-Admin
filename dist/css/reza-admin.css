@@ -45,7 +45,7 @@ time {
   display: inline-block; }
 
 .main,
-footer {
+.footer {
   margin-left: 228px; }
 
 .main {
@@ -305,7 +305,7 @@ footer {
         justify-content: flex-start; } }
 
 /* footer */
-footer.footer {
+.footer {
   background-color: white;
   padding: 20px 25px;
   border-top: 1px solid #e8e8e8;
@@ -316,19 +316,21 @@ footer.footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
   width: calc(100% - 228px);
-  -webkit-transition: 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
-  -o-transition: 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
-  transition: 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01); }
-  footer.footer p {
+  -webkit-transition: margin 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
+  -o-transition: margin 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
+  transition: margin 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01); }
+  .footer--b-100 {
+    bottom: -100px; }
+  .footer p {
     margin: 0px; }
   @media (max-width: 767.98px) {
-    footer.footer {
+    .footer {
       width: 100%;
       margin-left: 0px; } }
   @media (max-width: 575.98px) {
-    footer.footer {
+    .footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
