@@ -31,7 +31,7 @@
     <!-- navbar top -->
     <nav class="navbar navbar-expand-sm navbar--white">
         <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
-        <a class="navbar-brand ml-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
         <button class="navbar-toggler" target="#navbarNav" type="button">
             <span class="fa fa-navicon"></span>
         </button>
@@ -53,7 +53,7 @@
                 <ul class="sidebar__dropdown sidebar__dropdown--show">
                     <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="navbar.html">Navbar</a></li>
                     <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
-                    <li class="sidebar__dropdown-item"><a href="">Main</a></li>
+                    <li class="sidebar__dropdown-item"><a href="main.html">Main</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Footer</a></li>
                 </ul>
             </li>
@@ -89,7 +89,7 @@
     <!-- main -->
     <main class="main">
         <div class="row">
-            <header class="main__header col-md-12 mb-2">
+            <header class="main__header col-12 mb-2">
                 <div class="main__title">
                     <h4>Navbar</h4>
                     <ul class="breadcrumb">
@@ -99,7 +99,7 @@
                 </div>              
             </header>
 
-            <div class="col-md-12">
+            <div class="col-12">
                 <div class="main__box">
                     <h4>Brand</h4>
                     <p class="mb-4">Sama seperti membuat navbar di <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/components/navbar/">dokumentasi bootstrap</a>, hanya saja perlu menambahkan class <span class="text-green">.navbar--white</span>. Jika kamu ingin menggunakan gambar brand, kamu hanya perlu meng-ubah nilai dari attribute width, dan sesuaikan ukurannya.</p>
@@ -160,27 +160,31 @@
                             </nav>
                         </div><!-- pre-code-box__preview -->
                         <pre><code class="html">&lt;nav class=&quot;navbar navbar-expand-sm navbar--white&quot;&gt;
-    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+        &lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;
+    &lt;/a&gt;
     &lt;button class=&quot;navbar-toggler&quot; target=&quot;#navbarNav1&quot; type=&quot;button&quot;&gt;
         &lt;span class=&quot;fa fa-navicon&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
     &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav1&quot;&gt;
         &lt;ul class=&quot;navbar-nav&quot;&gt;
             &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Medsos&lt;/a&gt;
-            &lt;/li&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Medsos&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
 &lt;/nav&gt;
-&lt;nav class=&quot;navbar navbar-expand-sm navbar--white&quot;&gt;
-    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;&lt;/a&gt;
+&lt;nav class=&quot;navbar navbar-expand-sm navbar--white mt-3&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+        &lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;
+    &lt;/a&gt;
     &lt;button class=&quot;navbar-toggler&quot; target=&quot;#navbarNav2&quot; type=&quot;button&quot;&gt;
         &lt;span class=&quot;fa fa-navicon&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
     &lt;div class=&quot;collapse navbar-collapse justify-content-end&quot; id=&quot;navbarNav2&quot;&gt;
         &lt;ul class=&quot;navbar-nav&quot;&gt;
             &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout&lt;/a&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout&lt;/a&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
@@ -232,7 +236,9 @@
                             </nav>
                         </div><!-- pre-code-box__preview -->
                         <pre><code class="html">&lt;nav class=&quot;navbar navbar-expand-sm navbar--white&quot;&gt;
-    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+        &lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;
+    &lt;/a&gt;
     &lt;button class=&quot;navbar-toggler&quot; target=&quot;#navbarNav3&quot; type=&quot;button&quot;&gt;
         &lt;span class=&quot;fa fa-navicon&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
@@ -263,7 +269,9 @@
                 &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout&lt;/a&gt;
+                &lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout
+                &lt;/a&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
@@ -295,7 +303,9 @@
                             </nav>
                         </div><!-- pre-code-box__preview -->
                         <pre><code class="html">&lt;nav class=&quot;navbar navbar-expand-sm navbar--white&quot;&gt;
-    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+        &lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;
+    &lt;/a&gt;
     &lt;button class=&quot;navbar-toggler&quot; target=&quot;#navbarNav4&quot; type=&quot;button&quot;&gt;
         &lt;span class=&quot;fa fa-navicon&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
@@ -308,7 +318,9 @@
                 &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout&lt;/a&gt;
+                &lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout
+                &lt;/a&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
@@ -316,10 +328,10 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Toggler</h4>
-                    <p>Membuat navbar toggle sama dengan <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/components/navbar/#toggler">dokumentasi bootstrap</a>, tapi pada <span class="text-green">button.navbar-toggler</span> kamu hanya membutuhkan attribute <span class="text-green">target</span> dengan value id dari navbar collapse.</p>
+                    <p>Membuat navbar toggler sama dengan <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/components/navbar/#toggler">dokumentasi bootstrap</a>, tapi pada <span class="text-green">button.navbar-toggler</span> kamu hanya membutuhkan attribute <span class="text-green">target</span> dengan value id dari navbar collapse.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <nav class="navbar navbar-expand-sm navbar--white">
+                            <nav class="navbar navbar-expand-lg navbar--white">
                                 <a class="navbar-brand" href="#"><img src="../../dist/img/Reza_logo.ico" width="30" alt="logo reza"></a>
                                 <button class="navbar-toggler" target="#navbarNav5" type="button">
                                     <span class="fa fa-navicon"></span>
@@ -351,8 +363,10 @@
                                 </div>
                             </nav>
                         </div><!-- pre-code-box__preview -->
-                        <pre><code class="html">&lt;nav class=&quot;navbar navbar-expand-sm navbar--white&quot;&gt;
-    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;&lt;/a&gt;
+                        <pre><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar--white&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+        &lt;img src=&quot;[your path]/dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;
+    &lt;/a&gt;
     &lt;button class=&quot;navbar-toggler&quot; target=&quot;#navbarNav5&quot; type=&quot;button&quot;&gt;
         &lt;span class=&quot;fa fa-navicon&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
@@ -377,7 +391,9 @@
                 &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout&lt;/a&gt;
+                &lt;a class=&quot;nav-link nav-link--hover-red&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt; Logout
+                &lt;/a&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
@@ -390,7 +406,7 @@
 
     <!-- footer -->
     <footer class="footer">
-        <p class="mb-2 mb-ms-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
+        <p class="mb-2 mb-sm-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
         <p>Version 1.0</p>
     </footer>
 

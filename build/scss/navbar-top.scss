@@ -5,6 +5,21 @@
 	}
 }
 
+@mixin style-navbar-nav-when-expand {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+			
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	margin-top: 7px;
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+}
+
 .navbar--white {
 	position: fixed;
 	top: 0;
@@ -20,17 +35,17 @@
 	z-index: 101;
 	padding: 8px 25px;
 
-	& .navbar__sidebar-toggler {
+	.navbar__sidebar-toggler {
 		font-size: 1.25rem;
 		color: #333;
 		padding-right: 24px;
 	}
 
-	& .navbar-brand {
+	.navbar-brand {
 		color: $blue-reiran;
 	}
 
-	& .nav-item .nav-link {
+	.nav-item .nav-link {
 		color: #333;
 		padding: 0px 12px;
 
@@ -38,37 +53,38 @@
 			color: $blue-reiran;
 		}
 
-		&.nav-link--hover-red:hover {
+		&--hover-red:hover {
 			color: $red-reiran;
 		}
 	}
 
-	& .nav-item:last-child .nav-link {
+	.nav-item:last-child .nav-link {
 		padding-right: 0px;
 	}
+}
 
-	@media (max-width: 575.98px) {
-		& .collapse .navbar-nav {
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: row;
-			flex-direction: row;
-			
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			justify-content: center;
+@media (max-width: 991.98px) {
+	.navbar-expand-lg .collapse .navbar-nav {
+		@include style-navbar-nav-when-expand;
+	}
+}
 
-			margin-top: 7px;
-			border-top: 1px solid #ddd;
-			padding-top: 15px;
-		}
+@media (max-width: 767.98px) {
+	.navbar-expand-md .collapse .navbar-nav {
+		@include style-navbar-nav-when-expand;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.navbar-expand-sm .collapse .navbar-nav {
+		@include style-navbar-nav-when-expand;
 	}
 }
 
 .navbar__notification {
 	position: relative;
 
-	& a {
+	a {
 		margin-top: 2px;
 	}
 

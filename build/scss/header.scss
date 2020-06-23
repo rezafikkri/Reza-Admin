@@ -4,12 +4,12 @@
 	justify-content: space-between;
 
 	@for $i from 1 through 6 {
-		& h#{$i} {
+		h#{$i} {
 			flex: 1;
 		}
 	}
 
-	& .breadcrumb {
+	.breadcrumb {
 		flex: 1;
 		justify-content: flex-end;
 		background-color: transparent;
@@ -17,11 +17,9 @@
 	}
 
 	@media (max-width: 575.98px) {
-		& {
-			flex-direction: column-reverse;
-		}
+		flex-direction: column-reverse;
 
-		& .breadcrumb {
+		.breadcrumb {
 			justify-content: flex-start;
 		}
 	}

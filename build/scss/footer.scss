@@ -20,23 +20,19 @@ footer.footer {
 	-o-transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 
-	& p {
+	p {
 		margin: 0px;
 	}
 
 	@media (max-width: 767.98px) {
-		& {
-			width: 100%;
-			margin-left: 0px;
-		}
+		width: 100%;
+		margin-left: 0px;
 	}
 
 	@media (max-width: 575.98px) {
-		& {
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
-			flex-direction: column;
-		}
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 }

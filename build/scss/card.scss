@@ -1,7 +1,7 @@
 /* card */
 @mixin card-color($background-color-badge, $background-color-card-action, $name-color) {
 	&--#{$name-color} {
-		& .card__badge {
+		.card__badge {
 			background-color: $background-color-badge;
 
 			&::before {
@@ -9,7 +9,7 @@
 			}	
 		}
 
-		& .card__action {
+		.card__action {
 			background-color: $background-color-card-action;
 		}
 	}
@@ -39,7 +39,7 @@
 			top: 0;
 		}
 
-		& h6 {
+		h6 {
 			margin: 0px;
 			color: white;
 		}
@@ -58,7 +58,7 @@
 		border-top: 1px solid #f2f2f2;
 		padding: 5px 10px;
 
-		& a {
+		a {
 			padding: 10px;
 			color: #333;
 			font-size: 14pt;
@@ -68,7 +68,7 @@
 			}
 		}
 
-		& &--not-link {
+		&--not-link {
 			font-size: 12pt;
 		}
 
@@ -82,7 +82,7 @@
 	@include card-color($green-reiran, #f7fff8, 'green');
 	@include card-color($red-reiran, #fff7f7, 'red');
 
-	& .loading-circle {
+	.loading-circle {
 		position: absolute;
 		top: 0;
 		bottom: 0;

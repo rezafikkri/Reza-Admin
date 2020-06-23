@@ -1,13 +1,13 @@
 /* docs reiran-admin v1.0 */
-.main__box h4 {
+.main__box > h4 {
   font-family: open_sanssemibold;
   color: #333; }
 
-.main__box h5 {
+.main__box > h5 {
   font-family: open_sanssemibold;
   color: #333; }
 
-.main__box h6 {
+.main__box > h6 {
   font-family: open_sanssemibold;
   color: #333; }
 
@@ -28,7 +28,7 @@ pre code {
 strong {
   font-weight: 300; }
 
-.main__box ul,
+.main__box ul:not(.breadcrumb),
 .main__box ol {
   margin-bottom: 0px; }
 
@@ -37,24 +37,35 @@ strong {
 
 .main__box .sidebar {
   position: static;
-  z-index: 1; }
+  z-index: 1;
+  padding: 10px 0px; }
   .main__box .sidebar__nav {
     height: auto; }
-  .main__box .sidebar {
-    padding: 10px 0px; }
   @media (max-width: 767.98px) {
     .main__box .sidebar {
+      -webkit-transform: translate(-253px, 0px);
+      -ms-transform: translate(-253px, 0px);
       transform: translate(-253px, 0px); }
-    .main__box .sidebar--show-sm {
-      -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-      transform: translate(0px, 0px); }
-    .main__box .sidebar--no-hide-sm {
-      transform: none;
-      box-shadow: none; } }
+      .main__box .sidebar--show-sm {
+        -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px); }
+      .main__box .sidebar--no-hide-sm {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        -webkit-box-shadow: none;
+        box-shadow: none; } }
   @media (max-width: 360px) {
     .main__box .sidebar--no-hide-sm {
       width: 100%; } }
+
+.main__box .main {
+  padding-top: 25px;
+  top: 77px;
+  left: 20px;
+  right: 20px;
+  position: absolute; }
 
 .pre-code-box pre {
   border-top-left-radius: 0px;
@@ -66,7 +77,8 @@ strong {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   background-color: #fcfcfc;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .doc-index {
   display: -webkit-box;

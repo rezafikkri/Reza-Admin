@@ -110,21 +110,21 @@ small {
 	padding-left: 20px;
 	margin-bottom: 2px;
 
-	& input[type="checkbox"].form,
-	& input[type="radio"].form {
+	input[type="checkbox"].form,
+	input[type="radio"].form {
 		width: auto;
 		position: absolute;
 		left: 0;
 		margin-top: .3rem;
 	}
 
-	& label.label-check {
+	label.label-check {
 		display: inline-block;
 		margin-bottom: 0px;
 	}
 
-	& input[type="checkbox"][disabled].form ~ label.label--check,
-	& input[type="radio"][disabled].form ~ label.label--check {
+	input[type="checkbox"][disabled].form ~ label.label--check,
+	input[type="radio"][disabled].form ~ label.label--check {
 		color: #6c757d;
 		pointer-events: none;
 	}
@@ -137,8 +137,8 @@ small {
 	&--not-label {
 		padding-left: 0px;
 
-		& input[type="checkbox"].form,
-		& input[type="radio"].form {
+		input[type="checkbox"].form,
+		input[type="radio"].form {
 			margin-top: 0px;
 			position: static;
 		}
@@ -216,7 +216,7 @@ small {
 		}
 	}
 
-	& .form {
+	.form {
 		border-radius: 0px;
 		position: relative;
 		width: 0%;

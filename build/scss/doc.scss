@@ -6,7 +6,7 @@
 }
 
 @for $i from 4 through 6 {
-	.main__box h#{$i} {
+	.main__box > h#{$i} {
 		font-family: open_sanssemibold;
 		color: #333;
 	}
@@ -32,7 +32,7 @@ strong {
 	font-weight: 300;
 }
 
-.main__box ul,
+.main__box ul:not(.breadcrumb),
 .main__box ol {
 	margin-bottom: 0px;
 }
@@ -42,21 +42,18 @@ strong {
 }
 
 .main__box .sidebar {
-	position: static;
+	position: static; 
 	z-index: 1;
+	padding: 10px 0px;
 
 	&__nav {
 		height: auto;
 	}
 
-	& {
-		padding: 10px 0px;
-	}
-
 	@media (max-width: 767.98px) {
-		& {
-			transform: translate(-253px, 0px);
-		}
+		-webkit-transform: translate(-253px, 0px);
+        -ms-transform: translate(-253px, 0px);
+        transform: translate(-253px, 0px);
 
 		&--show-sm {
 			-webkit-transform: translate(0px, 0px);
@@ -65,8 +62,11 @@ strong {
 		}
 
 		&--no-hide-sm {
-			transform: none;
-			box-shadow: none;
+			-webkit-transform: none;
+        	-ms-transform: none;
+            transform: none;
+			-webkit-box-shadow: none;
+		    box-shadow: none;
 		}
 	}
 
@@ -75,6 +75,14 @@ strong {
 			width: 100%;
 		}
 	}
+}
+
+.main__box .main {
+	padding-top: 25px;
+	top: 77px;
+	left: 20px;
+	right: 20px;
+	position: absolute;
 }
 
 .pre-code-box {
@@ -91,6 +99,7 @@ strong {
 		border-top-right-radius: 4px;
 		background-color: #fcfcfc;
 		overflow: hidden;
+		position: relative;
 	}
 }
 

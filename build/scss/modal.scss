@@ -27,11 +27,9 @@
 		padding: 30px;
 
 		@media (max-width: 575.98px) {
-			& {
-				width: auto;
-				margin-left: 15px;
-				margin-right: 15px; 
-			}
+			width: auto;
+			margin-left: 15px;
+			margin-right: 15px;
 		}
 	}
 
@@ -43,13 +41,13 @@
 	&__title {
 		text-align: center;
 
-		& span {
+		span {
 			padding: 5%;
 			border-radius: 50%;
 			font-size: 20pt;
 		}
 
-		& h3 {
+		h3 {
 			font-family: open_sansbold, sans-serif;
 		}
 	}
@@ -63,16 +61,16 @@
 		-ms-flex-pack: justify;
 		justify-content: space-between;
 
-		& .btn--link {
+		.btn--link {
 			padding-left: 0px;
 		}
 
 		@media (max-width: 575.98px) {
-			& .btn {
+			.btn {
 				width: 100%;
 			}
 
-			& .btn--link {
+			.btn--link {
 				padding-left: 15px;
 			}
 		}
@@ -84,7 +82,7 @@
 		-webkit-animation: modal-fade-in .2s linear;
         animation: modal-fade-in .2s linear;
 
-		& .modal__content {
+		.modal__content {
 			-webkit-animation: modal-content-fade-in .3s linear;
         	animation: modal-content-fade-in .3s linear;
 		}

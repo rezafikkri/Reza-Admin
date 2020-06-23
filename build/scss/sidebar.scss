@@ -27,14 +27,12 @@
 	transform: translate(0px, 0px);
 
 	@media (max-width: 767.98px) {
-		& {
-			-webkit-transform: translate(-233px, 0px);
-			-ms-transform: translate(-233px, 0px);
-			transform: translate(-233px, 0px);
+		-webkit-transform: translate(-233px, 0px);
+		-ms-transform: translate(-233px, 0px);
+		transform: translate(-233px, 0px);
 
-			-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
-			box-shadow: 0 0 5px rgba(0,0,0,.2);
-		}
+		-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
+		box-shadow: 0 0 5px rgba(0,0,0,.2);
 
 		&--show-sm {
 			-webkit-transform: translate(0px, 0px);

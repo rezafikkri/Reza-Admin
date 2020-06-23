@@ -51,9 +51,7 @@ footer {
 	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 
 	@media (max-width: 767.98px) {
-		& {
-			margin-left: 0px;
-		}
+		margin-left: 0px;
 	}
 
 	&__box {
