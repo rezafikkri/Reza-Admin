@@ -79,6 +79,8 @@ strong {
   background-color: #fcfcfc;
   overflow: hidden;
   position: relative; }
+.pre-code-box .main__box h5 {
+  font-family: open_sansregular; }
 
 .doc-index {
   display: -webkit-box;
