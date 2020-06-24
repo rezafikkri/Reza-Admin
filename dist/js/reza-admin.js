@@ -1,8 +1,8 @@
 "use strict";
 
 /*
-	Reiran-admin: v1.0
-	Copyright 2020 Reiran
+	Reza-admin: v1.0
+	Copyright 2020 Reza Sariful Fikri
 */
 var sidebar = document.querySelector("aside.sidebar");
 var main = document.querySelector("main.main");

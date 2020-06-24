@@ -1,6 +1,6 @@
 /*
-	Reiran-admin: v1.0
-	Copyright 2020 Reiran
+	Reza-admin: v1.0
+	Copyright 2020 Reza Sariful Fikri
 */
 
 const sidebar = document.querySelector("aside.sidebar");

@@ -1,21 +1,23 @@
-/* docs reiran-admin v1.0 */
+/* docs reza-admin v1.0 */
 .main__box > h4 {
-  font-family: open_sanssemibold;
+  font-family: open_sanssemibold, sans-serif;
   color: #333; }
 
 .main__box > h5 {
-  font-family: open_sanssemibold;
+  font-family: open_sanssemibold, sans-serif;
   color: #333; }
 
 .main__box > h6 {
-  font-family: open_sanssemibold;
+  font-family: open_sanssemibold, sans-serif;
   color: #333; }
 
 pre {
   margin-bottom: 0px !important;
   background-color: #2E3440 !important;
   padding: 20px;
-  border-radius: 4px; }
+  padding-top: 25px;
+  border-radius: 4px;
+  position: relative; }
 
 pre code {
   background-color: transparent !important;
@@ -67,6 +69,14 @@ strong {
   right: 20px;
   position: absolute; }
 
+blockquote.blockquote {
+  padding: 15px 20px;
+  margin: 20px 0px;
+  font-size: 12pt;
+  border: 1px solid #f2f2f2;
+  border-left: 4px solid #f9a022;
+  border-radius: 4px; }
+
 .pre-code-box pre {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px; }
@@ -80,6 +90,23 @@ strong {
   overflow-x: hidden;
   overflow-y: auto;
   position: relative; }
+.pre-code-box__action {
+  position: absolute;
+  top: 1px;
+  right: 1px; }
+  .pre-code-box__action a.language,
+  .pre-code-box__action a.clipboard {
+    padding: 3px 10px;
+    font-family: open_sansregular;
+    font-size: 12px;
+    color: #ddd;
+    background-color: #373d49; }
+  .pre-code-box__action a.clipboard {
+    border-right: 1px solid #2e3440;
+    border-bottom-left-radius: 4px; }
+  .pre-code-box__action a.clipboard:hover {
+    cursor: pointer;
+    background-color: #262b35; }
 .pre-code-box .main__box h5 {
   font-family: open_sansregular; }
 .pre-code-box .footer {

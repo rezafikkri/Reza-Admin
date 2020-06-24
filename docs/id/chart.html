@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Chart . Reza Admin</title>
+
+    <!-- Social network metas -->
+    <meta property="description" content="Open source responsive admin template with bootstrap framework">
+    <meta property="image" content="">
+    <meta property="og:title" content="Chart . Reza Admin">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reza Admin CSS and Doc css -->
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../../dist/img/Reza_logo.ico">
+    <!-- higlight css -->
+    <link rel="stylesheet" href="../dist/plugin/highlight/styles/nord.css">
+</head>
+<body>
+
+    <!-- navbar top -->
+    <nav class="navbar navbar-expand-sm navbar--white">
+        <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <button class="navbar-toggler" target="#navbarNav" type="button">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rezafikkri/Reza-Admin" class="nav-link"><span class="fa fa-github fa-lg"></span></a></li>
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fikkrireza" class="nav-link"><span class="fa fa-twitter fa-lg"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar__nav">
+            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+
+            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="main.html">Main</a></li>
+                    <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
+                </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
+                    <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="chart.html">Chart</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Info Box</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Card</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Button</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Alert</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Modal</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Loading</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Form</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Table</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href=""><span class="fa fa-building"></span> Halaman <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="">Login</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Daftar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Lupa Password</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman 404</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman Kosong</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-file-text"></span> Licensie</a></li>
+        </ul>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+        <div class="row">
+            <header class="main__header col-12 mb-2">
+                <div class="main__title">
+                    <h4>Chart</h4>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Chart</li>
+                    </ul>
+                </div>              
+            </header>
+
+            <div class="col-12">
+                <div class="main__box">
+                    <h4>Dasar</h4>
+                    <p>Membuat chart tidak jauh berbeda dengan <a href="https://www.chartjs.org/docs/latest/">dokumentasi resmi</a> chart js, namun kamu perlu tag <i>div</i> atau <i>section</i> dengan class <span class="text-green">.chart</span>, lalu kamu letakkan chart di dalamnya. Standar tinggi dari chart adalah 350px, kamu juga bisa mengaturnya dengan menggunakan attribute <span class="text-green">height</span> pada tag <i>canvas</i>.</p>
+                    <blockquote class="blockquote">
+                       Jika kamu belum pernah menggunakan Chart js sebelumnya, saya sarankan untuk membaca dokumentasi resmi dari Chart js!. Disana sudah dijelaskan dengan detail.
+                    </blockquote>
+                    <h6>Area Chart</h6>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="chart">
+                                <canvas id="area_chart"></canvas>
+                            </div>
+                        </div>
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
+    &lt;canvas id=&quot;area_chart&quot;&gt;&lt;/canvas&gt;
+&lt;/section&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                    <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Area Chart
+const areaChart = document.querySelector("#area_chart").getContext('2d');
+let configAreaChart = {
+    type: 'line',
+    data: {
+        labels: ['Sunday, 11','Monday, 12','Tuesday, 13','Wednesday, 14','Thursday, 15','Friday, 16'],
+        datasets: [{
+            label: 'Visitors',
+            data: [10,6,7,5,1,14],
+            fill: 'boundary',
+            backgroundColor: 'rgba(37,151,224,.7)',
+            borderColor: '#2597e0'
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        title: {
+            display: true,
+            text: 'Visitors January 2020',
+            fontSize: 14
+        }
+    }
+}
+new Chart(areaChart, configAreaChart);</code></pre>
+
+                    <h6 class="mt-4">Pie Chart</h6>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <section class="chart">
+                                <canvas id="pie_chart"></canvas>                    
+                            </section>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
+    &lt;canvas id=&quot;pie_chart&quot;&gt;&lt;/canvas&gt;                  
+&lt;/section&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                    <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Pie Chart
+const pieChart = document.querySelector("#pie_chart").getContext('2d');
+let configPieChart = {
+    type: 'pie',
+    data: {
+        labels: ['Chrome','Mozilla','Uc Browser','Opera Mini'],
+        datasets: [{
+            data: [10,6,7,5],
+            backgroundColor: [
+                "#1bd741",
+                "#2597e0",
+                "#f9a022",
+                "#dd2525"
+            ]
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+            display: true
+        },
+        title: {
+            display: true,
+            text: 'Browser Usage January 2020',
+            fontSize: 14
+        }
+    }
+}
+new Chart(pieChart, configPieChart);</code></pre>
+
+                    <h6 class="mt-4">Bar Chart</h6>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <section class="chart">
+                                <canvas id="bar_chart"></canvas>
+                            </section>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
+    &lt;canvas id=&quot;bar_chart&quot;&gt;&lt;/canvas&gt;
+&lt;/section&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                    <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Bar Chart
+const barChart = document.querySelector("#bar_chart").getContext('2d');
+let configBarChart = {
+    type: 'bar',
+    data: {
+        labels: ['January','February','Maret','April','May','Juni'],
+        datasets: [{
+            data: [20,30,15,40,70,60],
+            backgroundColor: "#2597e0"
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+            display: false
+        },
+        title: {
+            display: true,
+            text: 'Visitors 2020',
+            fontSize: 14
+        }
+    }
+}
+new Chart(barChart, configBarChart);</code></pre>
+
+                    <h6 class="mt-4">Doughnut Chart</h6>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <section class="chart">
+                                <canvas id="doughnut_chart"></canvas>                   
+                            </section>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
+    &lt;canvas id=&quot;doughnut_chart&quot;&gt;&lt;/canvas&gt;                 
+&lt;/section&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                    <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Doughnut Chart
+const doughnutChart = document.querySelector("#doughnut_chart").getContext('2d');
+let configDoughnutChart = {
+    type: 'doughnut',
+    data: {
+        labels: ['Mozilla','Chrome','Uc Browser','Opera Mini'],
+        datasets: [{
+            data: [20,15,7,10],
+            backgroundColor: [
+                "#2597e0",
+                "#1bd741",
+                "#f9a022",
+                "#dd2525"
+            ]
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+            display: true
+        },
+        title: {
+            display: true,
+            text: 'Browser Usage January 2020',
+            fontSize: 14
+        }
+    }
+}
+new Chart(doughnutChart, configDoughnutChart);</code></pre>
+                </div><!-- main__box -->
+            </div>
+        </div><!-- row -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="mb-2 mb-sm-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
+        <p>Version 1.0</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS-->
+    <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../dist/js/doc.js"></script>
+    <script src="../../plugins/Chart.js/Chart.bundle.min.js"></script>
+    <script src="../dist/plugin/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script type="text/javascript">
+        "use strict";
+
+        // Area Chart
+        var areaChart = document.querySelector("#area_chart").getContext('2d');
+        var configAreaChart = {
+            type: 'line',
+            data: {
+                labels: ['Sunday, 11','Monday, 12','Tuesday, 13','Wednesday, 14','Thursday, 15','Friday, 16'],
+                datasets: [{
+                    label: 'Visitors',
+                    data: [10,6,7,5,1,14],
+                    fill: 'boundary',
+                    backgroundColor: 'rgba(37,151,224,.7)',
+                    borderColor: '#2597e0'
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Visitors January 2020',
+                    fontSize: 14
+                }
+            }
+        }
+        new Chart(areaChart, configAreaChart);
+
+        // Pie Chart
+        var pieChart = document.querySelector("#pie_chart").getContext('2d');
+        var configPieChart = {
+            type: 'pie',
+            data: {
+                labels: ['Chrome','Mozilla','Uc Browser','Opera Mini'],
+                datasets: [{
+                    data: [10,6,7,5],
+                    backgroundColor: [
+                        "#1bd741",
+                        "#2597e0",
+                        "#f9a022",
+                        "#dd2525"
+                    ]
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: true
+                },
+                title: {
+                    display: true,
+                    text: 'Browser Usage January 2020',
+                    fontSize: 14
+                }
+            }
+        }
+        new Chart(pieChart, configPieChart);
+
+        // Bar Chart
+        var barChart = document.querySelector("#bar_chart").getContext('2d');
+        var configBarChart = {
+            type: 'bar',
+            data: {
+                labels: ['January','February','Maret','April','May','Juni'],
+                datasets: [{
+                    data: [20,30,15,40,70,60],
+                    backgroundColor: "#2597e0"
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Visitors 2020',
+                    fontSize: 14
+                }
+            }
+        }
+        new Chart(barChart, configBarChart);
+
+        // Doughnut Chart
+        var doughnutChart = document.querySelector("#doughnut_chart").getContext('2d');
+        var configDoughnutChart = {
+            type: 'doughnut',
+            data: {
+                labels: ['Mozilla','Chrome','Uc Browser','Opera Mini'],
+                datasets: [{
+                    data: [20,15,7,10],
+                    backgroundColor: [
+                        "#2597e0",
+                        "#1bd741",
+                        "#f9a022",
+                        "#dd2525"
+                    ]
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: true
+                },
+                title: {
+                    display: true,
+                    text: 'Browser Usage January 2020',
+                    fontSize: 14
+                }
+            }
+        }
+        new Chart(doughnutChart, configDoughnutChart);
+    </script>
+</body>
+</html>

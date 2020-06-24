@@ -1,6 +1,6 @@
 "use strict";
 
-/* navbar toggler */
+/* docs reza-admin v1.0 */
 var mainBox = document.querySelector(".main__box");
 
 if (mainBox !== null) {
@@ -32,6 +32,30 @@ if (mainBox !== null) {
     if (targetSidebarToggler.classList.contains("navbar__sidebar-toggler")) {
       e.preventDefault();
       targetSidebarToggler.parentElement.nextElementSibling.classList.toggle("sidebar--show-sm");
+    } // copy to clipboard
+
+
+    var targetClipboard = e.target;
+
+    if (targetClipboard.classList.contains("clipboard")) {
+      var textCode = targetClipboard.parentElement.nextElementSibling.textContent; // make textarea element then append and remove when copied to clipboard
+
+      var input = document.createElement('textarea');
+      input.value = textCode;
+      input.style.position = "absolute";
+      input.style.left = "-999px";
+      input.style.opacity = "0";
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      input.remove(); // change text btn copy in 1 second
+
+      targetClipboard.innerText = "Copied";
+      targetClipboard.style.pointerEvents = "none";
+      setTimeout(function () {
+        targetClipboard.innerText = "Copy";
+        targetClipboard.style.pointerEvents = "auto";
+      }, 500);
     }
   });
 }

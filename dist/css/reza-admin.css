@@ -1,6 +1,6 @@
 /*
-	Reiran-Admin v1.0
-	Copyright 2020 Reiran
+	Reza-Admin v1.0
+	Copyright 2020 Reza Sariful Fikri
 */
 @font-face {
   font-family: "open_sansbold";
@@ -907,7 +907,7 @@ small {
 /* chart */
 .chart {
   padding: 20px;
-  height: 350px;
+  min-height: 350px;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   background-color: white; }
