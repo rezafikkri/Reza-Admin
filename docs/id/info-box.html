@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Info Box . Reza Admin</title>
+
+    <!-- Social network metas -->
+    <meta property="description" content="Open source responsive admin template with bootstrap framework">
+    <meta property="image" content="">
+    <meta property="og:title" content="Info Box . Reza Admin">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reza Admin CSS and Doc css -->
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../../dist/img/Reza_logo.ico">
+    <!-- higlight css -->
+    <link rel="stylesheet" href="../dist/plugin/highlight/styles/nord.css">
+</head>
+<body>
+
+    <!-- navbar top -->
+    <nav class="navbar navbar-expand-sm navbar--white">
+        <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <button class="navbar-toggler" target="#navbarNav" type="button">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rezafikkri/Reza-Admin" class="nav-link"><span class="fa fa-github fa-lg"></span></a></li>
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fikkrireza" class="nav-link"><span class="fa fa-twitter fa-lg"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar__nav">
+            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+
+            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="main.html">Main</a></li>
+                    <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
+                </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
+                    <li class="sidebar__dropdown-item"><a href="chart.html">Chart</a></li>
+                    <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="info-box.html">Info Box</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Card</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Button</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Alert</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Modal</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Loading</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Form</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Table</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href=""><span class="fa fa-building"></span> Halaman <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="">Login</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Daftar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Lupa Password</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman 404</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman Kosong</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-file-text"></span> Licensie</a></li>
+        </ul>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+        <div class="row">
+            <header class="main__header col-12 mb-2">
+                <div class="main__title">
+                    <h4>Info Box</h4>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Info Box</li>
+                    </ul>
+                </div>              
+            </header>
+
+            <div class="col-12">
+                <div class="main__box">
+                    <p>Membuat Info Box kamu membutuhkan tag <i>section</i> atau <i>div</i> dengan class <span class="text-green">.info-box</span> dan class untuk warna Info Box-nya, ada class <span class="text-green">.info-box--blue</span>, <span class="text-green">.info-box--green</span>, <span class="text-green">.info-box--orange</span> dan <span class="text-green">.info-box--red</span>. Didalamnya ada beberapa bagian, yaitu <b>Icon</b>, <b>Keterangan</b>, dan <b>button</b>.</p>
+                    <p><b>Pertama</b>, Icon. Membuat Icon kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.info-box__icon</span>, didalamnya kamu bisa meletakkan icon dari font awesome menggunakan tag <i>span</i>.</p>
+
+                    <p><b>Kedua</b>, Keterangan. Membuat Keterangan kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.info-box__ket</span>. Didalamnya kamu bisa menambahkan judul dari Info Box dengan tag <i>h2</i>. Kemudian dibawah judul kamu bisa menambahkan semacam informasi utama dari judul menggunakan tag <i>h1</i>, misalnya kamu punya judul <b>Anggota</b> dan informasi utamanya adalah jumlah Anggota, yang biasanya ditulis dalam bentuk angka. Terakhir dibawah informasi utama kamu juga bisa menambahkan keterangan waktu dengan menggunakan tag <i>time</i>. Dan yang paling penting letakkan Keterangan setelah Icon!.</p>
+
+                    <p><b>Ketiga</b>, Button. Membuat button untuk detail dari Info Box, kamu hanya perlu tag <i>a</i> dengan class <span class="text-green">.info-box__btn-detail</span>, didalamnya kamu bisa meletakkan icon dari font awesome menggunakan tag <i>span</i>. Dan jangan lupa untuk meletakkan Button setelah Keterangan!.</p>
+                    <blockquote class="blockquote blockquote--green">
+                        Jika kamu merasa Info Box-nya terlalu lebar, kamu bisa meletakkannya didalam Grid Sistem bootstrap.
+                    </blockquote>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <section class="info-box info-box--blue">
+                                    <div class="info-box__icon"><span class="fa fa-shopping-bag"></span></div>
+                                    <div class="info-box__ket">
+                                        <h2>Pesanan</h2>
+                                        <h1>1200</h1>
+                                        <time>2 Menit yang lalu</time>
+                                    </div>
+                                    <a class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
+                                </section>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <section class="info-box info-box--green">
+                                    <div class="info-box__icon"><span class="fa fa-shopping-cart"></span></div>
+                                    <div class="info-box__ket">
+                                        <h2>Produk</h2>
+                                        <h1>520</h1>
+                                        <time>5 Menit yang lalu</time>
+                                    </div>
+                                    <a class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
+                                </section>
+                            </div>
+                            <div class="col-md-6 mb-2 mb-sm-0">
+                                <section class="info-box info-box--orange">
+                                    <div class="info-box__icon"><span class="fa fa-thumbs-up"></span></div>
+                                    <div class="info-box__ket">
+                                        <h2>Like</h2>
+                                        <h1>400</h1>
+                                        <time>2 Minutes ago</time>
+                                    </div>
+                                    <a class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="info-box info-box--red">
+                                    <div class="info-box__icon"><span class="fa fa-users"></span></div>
+                                    <div class="info-box__ket">
+                                        <h2>Anggota</h2>
+                                        <h1>120</h1>
+                                        <time>2 Minutes ago</time>
+                                    </div>
+                                    <a class="info-box__btn-detail" href=""><span class="fa fa-arrow-right"></span></a>
+                                </section>
+                            </div>
+                            </div><!-- row -->
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;section class=&quot;info-box info-box--blue&quot;&gt;
+            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-shopping-bag&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;info-box__ket&quot;&gt;
+                &lt;h2&gt;Pesanan&lt;/h2&gt;
+                &lt;h1&gt;1200&lt;/h1&gt;
+                &lt;time&gt;2 Menit yang lalu&lt;/time&gt;
+            &lt;/div&gt;
+            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;section class=&quot;info-box info-box--green&quot;&gt;
+            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;info-box__ket&quot;&gt;
+                &lt;h2&gt;Produk&lt;/h2&gt;
+                &lt;h1&gt;520&lt;/h1&gt;
+                &lt;time&gt;5 Menit yang lalu&lt;/time&gt;
+            &lt;/div&gt;
+            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;section class=&quot;info-box info-box--orange&quot;&gt;
+            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-thumbs-up&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;info-box__ket&quot;&gt;
+                &lt;h2&gt;Like&lt;/h2&gt;
+                &lt;h1&gt;400&lt;/h1&gt;
+                &lt;time&gt;2 Minutes ago&lt;/time&gt;
+            &lt;/div&gt;
+            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;section class=&quot;info-box info-box--red&quot;&gt;
+            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-users&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;info-box__ket&quot;&gt;
+                &lt;h2&gt;Anggota&lt;/h2&gt;
+                &lt;h1&gt;120&lt;/h1&gt;
+                &lt;time&gt;2 Minutes ago&lt;/time&gt;
+            &lt;/div&gt;
+            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- row --&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                </div><!-- main__box -->
+            </div>
+        </div><!-- row -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="mb-2 mb-sm-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
+        <p>Version 1.0</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS-->
+    <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../dist/js/doc.js"></script>
+    <script src="../../plugins/Chart.js/Chart.bundle.min.js"></script>
+    <script src="../dist/plugin/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

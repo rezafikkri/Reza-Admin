@@ -39,8 +39,8 @@
 	overflow: hidden;
 
 	&__icon {
-		-ms-flex-preferred-size: 40%;
-		flex-basis: 40%;
+		-ms-flex-preferred-size: 37%;
+		flex-basis: 37%;
 	}
 
 	&__icon span {
@@ -52,6 +52,7 @@
 	&__ket {
 		-ms-flex-preferred-size: 50%;
 		flex-basis: 50%;
+		padding: 0px 15px;
 
 		h1 {
 			font-size: 25pt;
@@ -61,7 +62,7 @@
 			font-size: 20pt;
 			font-family: open_sanssemibold, sans-serif;
 		}
-		p {
+		time {
 			font-size: 10pt;
 		}
 	}
@@ -125,6 +126,10 @@
 			margin-bottom: 20px;
 		}
 
+		&__ket time {
+			margin-bottom: 16px;
+		}
+
 		&__btn-detail {
 			position: static;
 			border-radius: 50px;
@@ -151,6 +156,10 @@
 		}
 
 		&__icon {
+			margin-bottom: 0px;
+		}
+
+		&__ket time {
 			margin-bottom: 0px;
 		}
 

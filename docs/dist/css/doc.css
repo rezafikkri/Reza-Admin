@@ -74,8 +74,11 @@ blockquote.blockquote {
   margin: 20px 0px;
   font-size: 12pt;
   border: 1px solid #f2f2f2;
-  border-left: 4px solid #f9a022;
   border-radius: 4px; }
+  blockquote.blockquote--orange {
+    border-left: 4px solid #f9a022; }
+  blockquote.blockquote--green {
+    border-left: 4px solid #1bd741; }
 
 .pre-code-box pre {
   border-top-left-radius: 0px;
