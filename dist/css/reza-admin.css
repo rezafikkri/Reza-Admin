@@ -773,17 +773,17 @@ small {
     padding: 35px;
     font-size: 20pt;
     border-radius: 50%; }
-  .info-box__ket {
+  .info-box__description {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     padding: 0px 15px; }
-    .info-box__ket h1 {
+    .info-box__description h1 {
       font-size: 25pt;
       font-family: open_sansbold, sans-serif; }
-    .info-box__ket h2 {
+    .info-box__description h2 {
       font-size: 20pt;
       font-family: open_sanssemibold, sans-serif; }
-    .info-box__ket time {
+    .info-box__description time {
       font-size: 10pt; }
   .info-box__btn-detail {
     position: absolute;
@@ -821,13 +821,13 @@ small {
       -ms-flex-direction: column;
       flex-direction: column;
       text-align: center; }
-      .info-box__icon, .info-box__ket {
+      .info-box__icon, .info-box__description {
         -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
         align-self: stretch; }
       .info-box__icon {
         margin-bottom: 20px; }
-      .info-box__ket time {
+      .info-box__description time {
         margin-bottom: 16px; }
       .info-box__btn-detail {
         position: static;
@@ -843,13 +843,13 @@ small {
       -ms-flex-align: center;
       align-items: center;
       text-align: left; }
-      .info-box__icon, .info-box__ket {
+      .info-box__icon, .info-box__description {
         -ms-flex-item-align: auto;
         -ms-grid-row-align: auto;
         align-self: auto; }
       .info-box__icon {
         margin-bottom: 0px; }
-      .info-box__ket time {
+      .info-box__description time {
         margin-bottom: 0px; }
       .info-box__btn-detail {
         position: absolute;

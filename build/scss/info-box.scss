@@ -49,7 +49,7 @@
 		border-radius: 50%;
 	}
 
-	&__ket {
+	&__description {
 		-ms-flex-preferred-size: 50%;
 		flex-basis: 50%;
 		padding: 0px 15px;
@@ -116,7 +116,7 @@
 
 		text-align: center;
 
-		&__icon, &__ket {
+		&__icon, &__description {
 			-ms-flex-item-align: stretch;
     		-ms-grid-row-align: stretch;
     		align-self: stretch;
@@ -126,7 +126,7 @@
 			margin-bottom: 20px;
 		}
 
-		&__ket time {
+		&__description time {
 			margin-bottom: 16px;
 		}
 
@@ -149,7 +149,7 @@
 
 		text-align: left;
 
-		&__icon, &__ket {
+		&__icon, &__description {
 			-ms-flex-item-align: auto;
 			-ms-grid-row-align: auto;
 			align-self: auto;
@@ -159,7 +159,7 @@
 			margin-bottom: 0px;
 		}
 
-		&__ket time {
+		&__description time {
 			margin-bottom: 0px;
 		}
 
