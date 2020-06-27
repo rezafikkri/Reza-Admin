@@ -61,6 +61,10 @@
 		-webkit-box-flex: 5;
 		-ms-flex: 5;
 		flex: 5;
+
+		p {
+			margin: 0;
+		}
 	}
 
 	&__action {

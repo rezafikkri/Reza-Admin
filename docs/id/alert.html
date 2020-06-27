@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Ketergantungan & Plugin . Reza Admin</title>
+	<title>Alert . Reza Admin</title>
 
-	<!-- Social network metas -->
+    <!-- Social network metas -->
     <meta property="description" content="Open source responsive admin template with bootstrap framework">
     <meta property="image" content="">
-	<meta property="og:title" content="Ketergantungan & Plugin . Reza Admin">
-	<meta property="og:url" content="">
-	<meta property="og:image" content="">
+    <meta property="og:title" content="Alert . Reza Admin">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
@@ -23,13 +23,15 @@
 	<link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
 	<!-- Favicon -->
 	<link rel="icon" href="../../dist/img/Reza_logo.ico">
+    <!-- higlight css -->
+    <link rel="stylesheet" href="../dist/plugin/highlight/styles/nord.css">
 </head>
 <body>
 
     <!-- navbar top -->
     <nav class="navbar navbar-expand-sm navbar--white">
         <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
-       <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
         <button class="navbar-toggler" target="#navbarNav" type="button">
             <span class="fa fa-navicon"></span>
         </button>
@@ -46,7 +48,7 @@
         <ul class="sidebar__nav">
             <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
 
-            <li class="sidebar__item sidebar__item--active"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
             <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
                 <ul class="sidebar__dropdown">
                     <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
@@ -55,13 +57,13 @@
                     <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
                 </ul>
             </li>
-            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
-                <ul class="sidebar__dropdown">
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
                     <li class="sidebar__dropdown-item"><a href="chart.html">Chart</a></li>
                     <li class="sidebar__dropdown-item"><a href="info-box.html">Info Box</a></li>
                     <li class="sidebar__dropdown-item"><a href="card.html">Card</a></li>
                     <li class="sidebar__dropdown-item"><a href="button.html">Button</a></li>
-                    <li class="sidebar__dropdown-item"><a href="alert.html">Alert</a></li>
+                    <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="alert.html">Alert</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Modal</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Loading</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Form</a></li>
@@ -86,32 +88,22 @@
     <!-- main -->
     <main class="main">
         <div class="row">
-            <header class="main__header col-md-12 mb-2">
+            <header class="main__header col-12 mb-2">
                 <div class="main__title">
-                    <h4>Ketergantungan & Plugin</h4>
+                    <h4>Alert</h4>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Ketergantungan & Plugin</li>
+                        <li class="breadcrumb-item active">Alert</li>
                     </ul>
                 </div>              
             </header>
 
-            <div class="col-md-12">
+            <div class="col-12">
                 <div class="main__box">
-                    <h4>Ketergantungan</h4>
-                    <p>Reza Admin bergantung pada framework Bootstrap dan Library Jquery, dikarenakan bootstrap 4.5 masih menggunakan Jquery. Bootstrap dan Jquery sudah ada didalam template, jadi kamu tidak perlu mengunduh nya lagi.</p>
-                    <ol>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">Bootstrap 4.5</a></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://jquery.com/">Jquery 3.5.1</a></li>
-                    </ol>
-
-                    <h4 class="mt-5">Plugin</h4>
-                    <p>Reza Admin dibuat dengan menggunakan beberapa plugin. Untuk dokumentasi lengkap, update terbaru atau informasi licensie, kunjungi link!.</p>
-                    <ol>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://fontawesome.com/v4.7.0/">Font Awesome 4.7</a></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.chartjs.org/">Chart js</a></li>
-                    </ol>
-                </div>
+                    <h4>Dasar</h4>
+                    <p>Membuat alert kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert</span> diikuti class style dari alert-nya, seperti alert--danger. Didalamnya ada bebrapa bagian yaitu <b>Icon</b>, <b>Deskripsi</b>, dan Aksi.</p>
+                    <p><b>Pertama</b>, Icon. Membuat Icon kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert__icon</span>, lalu didalamya kamu bisa meletakkan icon dari fontawesome menggunakan tag <i>span</i>. Saya sangat menyarankan membaca <a href="">dokumentasi resmi</a> font awesome, jika kamu belum pernah memakai font awesome sebelumnya.</p>
+                </div><!-- main__box -->
             </div>
         </div><!-- row -->
     </main>
@@ -123,9 +115,13 @@
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS, then higlight js -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS-->
     <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
     <script src="../../dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../dist/js/doc.js"></script>
+    <script src="../../plugins/Chart.js/Chart.bundle.min.js"></script>
+    <script src="../dist/plugin/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

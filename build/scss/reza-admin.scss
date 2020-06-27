@@ -64,6 +64,13 @@ time {
 		&:not(&--hover-not-overflow-auto):hover {
 			overflow-x: auto;
 		}
+
+		@for $i from 1 through 6 {
+			> h#{$i} {
+				font-family: open_sanssemibold, sans-serif;
+				color: #333;
+			}
+		}
 	}
 }
 

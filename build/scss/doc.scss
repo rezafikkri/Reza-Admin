@@ -12,13 +12,6 @@
 	}
 }
 
-@for $i from 4 through 6 {
-	.main__box > h#{$i} {
-		font-family: open_sanssemibold, sans-serif;
-		color: #333;
-	}
-}
-
 pre {
 	margin-bottom: 0px !important;
 	background-color: #2E3440 !important;

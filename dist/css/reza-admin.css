@@ -66,6 +66,24 @@ time {
     overflow: hidden; }
     .main__box:not(.main__box--hover-not-overflow-auto):hover {
       overflow-x: auto; }
+    .main__box > h1 {
+      font-family: open_sanssemibold, sans-serif;
+      color: #333; }
+    .main__box > h2 {
+      font-family: open_sanssemibold, sans-serif;
+      color: #333; }
+    .main__box > h3 {
+      font-family: open_sanssemibold, sans-serif;
+      color: #333; }
+    .main__box > h4 {
+      font-family: open_sanssemibold, sans-serif;
+      color: #333; }
+    .main__box > h5 {
+      font-family: open_sanssemibold, sans-serif;
+      color: #333; }
+    .main__box > h6 {
+      font-family: open_sanssemibold, sans-serif;
+      color: #333; }
 
 /* Navbar Top */
 .navbar--white {
@@ -1083,6 +1101,8 @@ small {
     -webkit-box-flex: 5;
     -ms-flex: 5;
     flex: 5; }
+    .alert__description p {
+      margin: 0; }
   .alert__action {
     -ms-flex-preferred-size: 20px;
     flex-basis: 20px;
