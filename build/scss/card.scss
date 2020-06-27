@@ -1,7 +1,7 @@
 /* card */
 @mixin card-color($background-color-badge, $background-color-card-action, $name-color) {
 	&--#{$name-color} {
-		.card__badge {
+		.card__label {
 			background-color: $background-color-badge;
 
 			&::before {
@@ -19,8 +19,8 @@
 	border-color: $default-border-color;
 	position: relative;
 
-	&__badge {
-		padding: 5px;
+	&__label {
+		padding: 2.7px 5px;
 
 		-ms-flex-item-align: start;
         align-self: flex-start;
@@ -35,12 +35,11 @@
 			height: 29.2px;
 			border: 10px solid transparent;
 			border-left-color: #4c4c4c;
-			right: -20px;
+			right: -19px;
 			top: 0;
 		}
 
-		h6 {
-			margin: 0px;
+		span {
 			color: white;
 		}
 	}
@@ -70,6 +69,7 @@
 
 		&--not-link {
 			font-size: 12pt;
+			pointer-events: none !important;
 		}
 
 		&--not-link span {

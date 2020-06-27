@@ -921,23 +921,22 @@ small {
 .card {
   border-color: #e8e8e8;
   position: relative; }
-  .card__badge {
-    padding: 5px;
+  .card__label {
+    padding: 2.7px 5px;
     -ms-flex-item-align: start;
     align-self: flex-start;
     margin-top: 5px;
     position: relative;
     background-color: #4c4c4c; }
-    .card__badge::before {
+    .card__label::before {
       content: "";
       position: absolute;
       height: 29.2px;
       border: 10px solid transparent;
       border-left-color: #4c4c4c;
-      right: -20px;
+      right: -19px;
       top: 0; }
-    .card__badge h6 {
-      margin: 0px;
+    .card__label span {
       color: white; }
   .card__decription h3 {
     font-family: open_sansbold, sans-serif; }
@@ -954,30 +953,31 @@ small {
       .card__action a:hover:not(.card__action--not-link) {
         color: #2597e0; }
     .card__action--not-link {
-      font-size: 12pt; }
+      font-size: 12pt;
+      pointer-events: none !important; }
     .card__action--not-link span {
       font-size: 14pt; }
-  .card--orange .card__badge {
+  .card--orange .card__label {
     background-color: #f9a022; }
-    .card--orange .card__badge::before {
+    .card--orange .card__label::before {
       border-left-color: #f9a022; }
   .card--orange .card__action {
     background-color: #fffbf7; }
-  .card--blue .card__badge {
+  .card--blue .card__label {
     background-color: #2597e0; }
-    .card--blue .card__badge::before {
+    .card--blue .card__label::before {
       border-left-color: #2597e0; }
   .card--blue .card__action {
     background-color: #f7fcff; }
-  .card--green .card__badge {
+  .card--green .card__label {
     background-color: #1bd741; }
-    .card--green .card__badge::before {
+    .card--green .card__label::before {
       border-left-color: #1bd741; }
   .card--green .card__action {
     background-color: #f7fff8; }
-  .card--red .card__badge {
+  .card--red .card__label {
     background-color: #ea2a2a; }
-    .card--red .card__badge::before {
+    .card--red .card__label::before {
       border-left-color: #ea2a2a; }
   .card--red .card__action {
     background-color: #fff7f7; }
