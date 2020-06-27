@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Button . Reza Admin</title>
+
+    <!-- Social network metas -->
+    <meta property="description" content="Open source responsive admin template with bootstrap framework">
+    <meta property="image" content="">
+    <meta property="og:title" content="Button . Reza Admin">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reza Admin CSS and Doc css -->
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../../dist/img/Reza_logo.ico">
+    <!-- higlight css -->
+    <link rel="stylesheet" href="../dist/plugin/highlight/styles/nord.css">
+</head>
+<body>
+
+    <!-- navbar top -->
+    <nav class="navbar navbar-expand-sm navbar--white">
+        <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <button class="navbar-toggler" target="#navbarNav" type="button">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rezafikkri/Reza-Admin" class="nav-link"><span class="fa fa-github fa-lg"></span></a></li>
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fikkrireza" class="nav-link"><span class="fa fa-twitter fa-lg"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar__nav">
+            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+
+            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="main.html">Main</a></li>
+                    <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
+                </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
+                    <li class="sidebar__dropdown-item"><a href="chart.html">Chart</a></li>
+                    <li class="sidebar__dropdown-item"><a href="info-box.html">Info Box</a></li>
+                    <li class="sidebar__dropdown-item"><a href="card.html">Card</a></li>
+                    <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="button.html">Button</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Alert</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Modal</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Loading</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Form</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Table</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href=""><span class="fa fa-building"></span> Halaman <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="">Login</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Daftar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Lupa Password</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman 404</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman Kosong</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-file-text"></span> Licensie</a></li>
+        </ul>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+        <div class="row">
+            <header class="main__header col-12 mb-2">
+                <div class="main__title">
+                    <h4>Button</h4>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Button</li>
+                    </ul>
+                </div>              
+            </header>
+
+            <div class="col-12">
+                <div class="main__box">
+                    <h4>Normal</h4>
+                    <p>Membuat button sangat mudah, yaitu kamu membutuhkan tag <i>a</i> atau tag <i>button</i> dengan class <span class="text-green">.btn</span> dan diikuti class style dari button-nya, seperti <span class="text-green">.btn--blue</span>.</p>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <a href="#" class="btn btn--gray mr-3 mt-2 mb-2">Gray Normal</a>
+                            <a href="#" class="btn btn--blue mr-3 mt-2 mb-2">Blue Normal</a>
+                            <a href="#" class="btn btn--green mr-3 mt-2 mb-2">Green Normal</a>
+                            <a href="#" class="btn btn--orange mr-3 mt-2 mb-2">Orange Normal</a>
+                            <a href="#" class="btn btn--red mr-3 mt-2 mb-2">Red Normal</a>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a href=&quot;#&quot; class=&quot;btn btn--gray&quot;&gt;Gray Normal&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot;&gt;Blue Normal&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--green&quot;&gt;Green Normal&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--orange&quot;&gt;Orange Normal&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--red&quot;&gt;Red Normal&lt;/a&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Outline</h4>
+                    <p>Membuat outline button kamu hanya perlu menambahkan kata <i>outline</i> pada akhiran class style button-nya. Contoh yang sebelumnya <span class="text-green">.btn--blue</span> menjadi <span class="text-green">.btn--blue-outline</span>.</p>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <a href="#" class="btn btn--gray-outline mr-3 mt-2 mb-2">Gray Outline</a>
+                            <a href="#" class="btn btn--blue-outline mr-3 mt-2 mb-2">Blue Outline</a>
+                            <a href="#" class="btn btn--green-outline mr-3 mt-2 mb-2">Green Outline</a>
+                            <a href="#" class="btn btn--orange-outline mr-3 mt-2 mb-2">Orange Outline</a>
+                            <a href="#" class="btn btn--red-outline mr-3 mt-2 mb-2">Red Outline</a>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a href=&quot;#&quot; class=&quot;btn btn--gray-outline&quot;&gt;Gray Outline&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--blue-outline&quot;&gt;Blue Outline&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--green-outline&quot;&gt;Green Outline&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--orange-outline&quot;&gt;Orange Outline&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--red-outline&quot;&gt;Red Outline&lt;/a&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Disabled</h4>
+                    <p>Jika kamu membuat button menggunakan tag <i>a</i>, maka kamu perlu menambahkan class <span class="text-green">.btn--disabled</span> setelah class style button-nya. Jika kamu membuat button menggunakan tag <i>button</i>, maka kamu perlu menambahkan attribute <span class="text-green">disabled=""</span> pada tag <i>button</i>-nya.</p>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <a class="btn btn--blue btn--disabled mr-3 mt-2 mb-2" href="#">Blue Disabled</a>
+                            <button class="btn btn--blue mr-3 mt-2 mb-2" disabled="">Blue Disabled</button>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a class=&quot;btn btn--blue btn--disabled&quot; href=&quot;#&quot;&gt;Blue Disabled&lt;/a&gt;
+&lt;button class=&quot;btn btn--blue&quot; disabled=&quot;&quot;&gt;Blue Disabled&lt;/button&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Loading</h4>
+                    <p>Membuat Button Loading kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">btn-loading</span>. Lalu didalamnya kamu bisa menambahkan script dibawah ini untuk loading.</p>
+                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;loading-circle loading-circle--blue&quot;&gt;
+    &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <p class="mt-3">Dan jangan lupa meletakkan script untuk button-nya setelah script untuk loading. Penjelasan detail mengenai loading kamu bisa baca bagian <a href="loading.html">dokumentasi Loading</a></p>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="btn-loading">
+                                <div class="loading-circle loading-circle--blue">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                                <a href="#" class="btn btn--blue">Blue Loading</a>
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;btn-loading&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--blue&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot;&gt;Blue Loading&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                </div><!-- main__box -->
+            </div>
+        </div><!-- row -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="mb-2 mb-sm-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
+        <p>Version 1.0</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS-->
+    <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../dist/js/doc.js"></script>
+    <script src="../../plugins/Chart.js/Chart.bundle.min.js"></script>
+    <script src="../dist/plugin/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
