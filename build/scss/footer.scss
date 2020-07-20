@@ -20,10 +20,6 @@
 	-o-transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
 	transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
 
-	&--b-100 {
-		bottom: -100px;
-	}
-
 	p {
 		margin: 0px;
 	}
@@ -38,5 +34,6 @@
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
+		margin-bottom: -100px;
 	}
 }

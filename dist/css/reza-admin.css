@@ -41,6 +41,9 @@ body.stop-scrolling {
 strong {
   font-family: open_sansbold, sans-serif; }
 
+b {
+  font-family: open_sanssemibold, sans-serif; }
+
 time {
   display: inline-block; }
 
@@ -339,8 +342,6 @@ time {
   -webkit-transition: margin 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
   -o-transition: margin 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
   transition: margin 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01); }
-  .footer--b-100 {
-    bottom: -100px; }
   .footer p {
     margin: 0px; }
   @media (max-width: 767.98px) {
@@ -352,7 +353,8 @@ time {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: -100px; } }
 
 /* button */
 .btn {

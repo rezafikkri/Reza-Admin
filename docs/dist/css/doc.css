@@ -63,6 +63,8 @@ blockquote.blockquote {
   font-size: 12pt;
   border: 1px solid #f2f2f2;
   border-radius: 4px; }
+  blockquote.blockquote p:last-child {
+    margin-bottom: 0px; }
   blockquote.blockquote--orange {
     border-left: 4px solid #f9a022; }
   blockquote.blockquote--green {
