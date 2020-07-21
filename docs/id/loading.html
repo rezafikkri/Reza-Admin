@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Loading . Reza Admin</title>
+
+    <!-- Social network metas -->
+    <meta property="description" content="Open source responsive admin template with bootstrap framework">
+    <meta property="image" content="">
+    <meta property="og:title" content="Loading . Reza Admin">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reza Admin CSS and Doc css -->
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../../dist/img/Reza_logo.ico">
+    <!-- higlight css -->
+    <link rel="stylesheet" href="../dist/plugin/highlight/styles/nord.css">
+</head>
+<body>
+
+    <!-- navbar top -->
+    <nav class="navbar navbar-expand-sm navbar--white">
+        <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <button class="navbar-toggler" target="#navbarNav" type="button">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rezafikkri/Reza-Admin" class="nav-link"><span class="fa fa-github fa-lg"></span></a></li>
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fikkrireza" class="nav-link"><span class="fa fa-twitter fa-lg"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar__nav">
+            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+
+            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="main.html">Main</a></li>
+                    <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
+                </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
+                    <li class="sidebar__dropdown-item"><a href="chart.html">Chart</a></li>
+                    <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="loading.html">Loading</a></li>
+                    <li class="sidebar__dropdown-item"><a href="info-box.html">Info Box</a></li>
+                    <li class="sidebar__dropdown-item"><a href="card.html">Card</a></li>
+                    <li class="sidebar__dropdown-item"><a href="button.html">Button</a></li>
+                    <li class="sidebar__dropdown-item"><a href="alert.html">Alert</a></li>
+                    <li class="sidebar__dropdown-item"><a href="modal.html">Modal</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Form</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Table</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href=""><span class="fa fa-building"></span> Halaman <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="">Login</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Daftar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Lupa Password</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman 404</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman Kosong</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-file-text"></span> Licensie</a></li>
+        </ul>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+        <div class="row">
+            <header class="main__header col-12 mb-2">
+                <div class="main__title">
+                    <h4>Loading</h4>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Loading</li>
+                    </ul>
+                </div>              
+            </header>
+
+            <div class="col-12">
+                <div class="main__box">
+                    <h4>Dasar</h4>
+                    <p>Membuat loading kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.loading-circle</span> diikuti class style dari loading-nya, ada <span class="text-green">.loading-circle--gray</span>, <span class="text-green">.loading-circle--blue</span>, <span class="text-green">.loading-circle--red</span>, <span class="text-green">.loading-circle--orange</span>, dan <span class="text-green">.loading-circle--green</span>. Untuk membuat loading yang lebih besar kamu perlu menambahkan class <span class="text-green">.loading-circle--lg</span> setelah class <span class="text-green">.loading-circle</span>.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="row">
+                            <!-- loading circle gray -->
+                            <div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--gray">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--lg loading-circle--gray">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <!-- loading circle gray end -->
+                            <!-- loading circle blue -->
+                            <div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--blue">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--lg loading-circle--blue">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <!-- loading circle blue end -->
+                            <!-- loading circle red -->
+                            <div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--red">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--lg loading-circle--red">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <!-- loading circle red end -->
+                            <!-- loading circle green -->
+                            <div class="col-lg-1 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--green">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 mb-3 mt-3">
+                                <div class="loading-circle loading-circle--lg loading-circle--green">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <!-- loading circle green end -->
+                            <!-- loading circle orange -->
+                            <div class="col-lg-1 col-md-2 col-sm-2 mb-2 mt-3">
+                                <div class="loading-circle loading-circle--orange">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 mb-2 mt-3">
+                                <div class="loading-circle loading-circle--lg loading-circle--orange">
+                                    <div class="loading-circle__fill"></div>
+                                </div>
+                            </div>
+                            <!-- loading circle orange end -->
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;!-- loading circle gray --&gt;
+&lt;div class=&quot;col-lg-1 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--gray&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--lg loading-circle--gray&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- loading circle gray end --&gt;
+&lt;!-- loading circle blue --&gt;
+&lt;div class=&quot;col-lg-1 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--blue&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--lg loading-circle--blue&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- loading circle blue end --&gt;
+&lt;!-- loading circle red --&gt;
+&lt;div class=&quot;col-lg-1 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--red&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--lg loading-circle--red&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- loading circle red end --&gt;
+&lt;!-- loading circle green --&gt;
+&lt;div class=&quot;col-lg-1 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--green&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2 col-md-2 col-sm-2 mb-3 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--lg loading-circle--green&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- loading circle green end --&gt;
+&lt;!-- loading circle orange --&gt;
+&lt;div class=&quot;col-lg-1 col-md-2 col-sm-2 mb-2 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--orange&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2 col-md-2 col-sm-2 mb-2 mt-3&quot;&gt;
+    &lt;div class=&quot;loading-circle loading-circle--lg loading-circle--orange&quot;&gt;
+        &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- loading circle orange end --&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Fixed</h4>
+                    <p>Membuat Fixed Loading kamu hanya perlu menambahkan class <span class="text-green">.loading-circle--fixed</span> setelah class untuk style loading-nya atau setelah class <span class="text-green">.loading-circle--lg</span> jika kamu menggunakan loading yang besar. Kamu bisa menyembunyikan loading-nya dengan menambahkan class utilities milik bootstrap untuk display none <span class="text-green">.d-none</span> setelah class <span class="text-green">.loading-circle--fixed</span>. Gunakan Javascript & DOM untuk menghapus atau menambahkan class.</p>
+
+                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;loading-circle loading-circle--gray loading-circle--lg loading-circle--fixed&quot;&gt;
+    &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div><!-- main__box -->
+            </div>
+        </div><!-- row -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="mb-2 mb-sm-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
+        <p>Version 1.0</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS-->
+    <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../dist/js/doc.js"></script>
+    <script src="../dist/plugin/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
