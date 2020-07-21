@@ -353,57 +353,58 @@
     <script src="../dist/js/reza-admin.js"></script>
 
     <script type="text/javascript">
-    	const mainBox = document.querySelector(".main__box");
-    	if(mainBox !== null) {
-    		mainBox.addEventListener('click', function(e){
-    			/* show hide modal */
-    			let btnShowModal = e.target;
-    			if(btnShowModal.classList.contains("btn-show-modal")) {
-    				e.preventDefault();
+    	"use strict";
+    	
+    	var mainBox = document.querySelector(".main__box");
+    	if (mainBox !== null) {
+		  mainBox.addEventListener('click', function (e) {
+		    /* show hide modal */
+		    var btnShowModal = e.target;
 
-    				// stop body scrolling
-    				document.querySelector("body").classList.add("stop-scrolling");
+		    if (btnShowModal.classList.contains("btn-show-modal")) {
+		      e.preventDefault(); // stop body scrolling
 
-    				// show modal
-    				const targetModal = btnShowModal.getAttribute("target-modal");
-    				const modal = document.querySelector(targetModal);
-    				modal.classList.add("modal--fade-in");
-    			}
+		      document.querySelector("body").classList.add("stop-scrolling"); // show modal
 
-    			let btnCloseModal = e.target;
-    			if(btnCloseModal.classList.contains("close-modal")) {
-    				e.preventDefault();
+		      var targetModal = btnShowModal.getAttribute("target-modal");
+		      var modal = document.querySelector(targetModal);
+		      modal.classList.add("modal--fade-in");
+		    }
 
-    				// make body scrolling agian
-    				document.querySelector("body").classList.remove("stop-scrolling");
+		    var btnCloseModal = e.target;
 
-    				// hide modal
-    				btnCloseModal.parentElement.parentElement.parentElement.classList.remove("modal--fade-in");
-    			}
-    			/* show hide modal end */
+		    if (btnCloseModal.classList.contains("close-modal")) {
+		      e.preventDefault(); // make body scrolling agian
 
-    			/* show hide loading circle fixed */
-    			let btnShowLoadingCircle = e.target;
-    			if(btnShowLoadingCircle.classList.contains("show-loading-circle")) {
-    				e.preventDefault();
+		      document.querySelector("body").classList.remove("stop-scrolling"); // hide modal
 
-    				// stop body scrolling
-    				document.querySelector("body").classList.add("stop-scrolling");
+		      btnCloseModal.parentElement.parentElement.parentElement.classList.remove("modal--fade-in");
+		    }
+		    /* show hide modal end */
 
-    				const targetLoading = btnShowLoadingCircle.getAttribute("target-loading");
-    				const loading = document.querySelector(targetLoading);
-    				loading.classList.remove("d-none");
+		    /* show hide loading circle fixed */
 
-    				// if more from 5 second add class d-none again
-    				setTimeout(function(){
-						loading.classList.add("d-none");  
-						// stop body scrolling again
-    					document.querySelector("body").classList.remove("stop-scrolling");  					
-    				}, 1000);
-    			}
-    			/* show hide loading circle fixed end */
-    		});
-    	}
+
+		    var btnShowLoadingCircle = e.target;
+
+		    if (btnShowLoadingCircle.classList.contains("show-loading-circle")) {
+		      e.preventDefault(); // stop body scrolling
+
+		      document.querySelector("body").classList.add("stop-scrolling");
+		      var targetLoading = btnShowLoadingCircle.getAttribute("target-loading");
+		      var loading = document.querySelector(targetLoading);
+		      loading.classList.remove("d-none"); // if more from 5 second add class d-none again
+
+		      setTimeout(function () {
+		        loading.classList.add("d-none"); // stop body scrolling again
+
+		        document.querySelector("body").classList.remove("stop-scrolling");
+		      }, 1000);
+		    }
+		    /* show hide loading circle fixed end */
+
+		  });
+		}
     </script>
 </body>
 </html>

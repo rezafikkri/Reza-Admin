@@ -64,7 +64,7 @@
                     <li class="sidebar__dropdown-item"><a href="card.html">Card</a></li>
                     <li class="sidebar__dropdown-item"><a href="button.html">Button</a></li>
                     <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="alert.html">Alert</a></li>
-                    <li class="sidebar__dropdown-item"><a href="">Modal</a></li>
+                    <li class="sidebar__dropdown-item"><a href="modal.html">Modal</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Loading</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Form</a></li>
                     <li class="sidebar__dropdown-item"><a href="">Table</a></li>
@@ -101,7 +101,7 @@
             <div class="col-12">
                 <div class="main__box">
                     <h4>Dasar</h4>
-                    <p>Membuat alert kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert</span> diikuti class style dari alert-nya, seperti alert--danger. Didalamnya ada beberapa bagian yaitu <b>Icon</b>, <b>Deskripsi</b>, dan <b>Aksi</b>.</p>
+                    <p>Membuat alert kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert</span> diikuti class style dari alert-nya, seperti <span class="text-green">.alert--danger</span>. Didalamnya ada beberapa bagian yaitu <b>Icon</b>, <b>Deskripsi</b>, dan <b>Aksi</b>.</p>
                     <p><b>Pertama</b>, Icon. Membuat Icon kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert__icon</span>, lalu didalamya kamu bisa meletakkan icon dari fontawesome menggunakan tag <i>span</i>. Saya sangat menyarankan membaca <a href="">dokumentasi resmi</a> font awesome, jika kamu belum pernah memakai font awesome sebelumnya.</p>
                     <p><b>Kedua</b>, Deskripsi. Deskripsi adalah tempat kamu meletakkan pesan yang ingin kamu sampaikan. Membuat Deskripsi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert__description</span>, lalu didalamnya kamu bisa menggunakan tag <i>p</i> dan meletakkan pesan-mu didalam tag <i>p</i> itu. Jangan lupa untuk meletakkan Deskripsi setelah Icon.</p>
                     <p><b>Ketiga</b>, Aksi. Aksi adalah tempat dimana kamu meletakkan tombol untuk menutup alert. Membuat Aksi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert__action</span>, lalu didalamnya buat tag <i>a</i> dengan class <span class="text-green">.alert__close-btn</span> dan tambahkan code entity HTML Unicode UTF-8 ini <span class="text-green">&amp;times;</span> untuk membuat tanda (&times;). Jangan lupa untuk meletakkan Aksi setelah Deskripsi.</p>
@@ -119,7 +119,7 @@
                                         <span class="fa fa-ban"></span>
                                     </div>
                                     <div class="alert__description">
-                                        <p>Danger alert preview. This alert is dismissable.</p>
+                                        <p>Pratinjau alert danger. Alert ini dapat diabaikan.</p>
                                     </div>
                                     <div class="alert__action">
                                         <a class="alert__close-btn">&times;</a>
@@ -133,7 +133,7 @@
                                         <span class="fa fa-info-circle"></span>
                                     </div>
                                     <div class="alert__description">
-                                        <p>Danger alert preview. This alert is dismissable.</p>
+                                        <p>Pratinjau alert info. Alert ini dapat diabaikan.</p>
                                     </div>
                                     <div class="alert__action">
                                         <a class="alert__close-btn">&times;</a>
@@ -147,7 +147,7 @@
                                         <span class="fa fa-warning"></span>
                                     </div>
                                     <div class="alert__description">
-                                        <p>Danger alert preview. This alert is dismissable.</p>
+                                        <p>Pratinjau alert warning. Alert ini dapat diabaikan.</p>
                                     </div>
                                     <div class="alert__action">
                                         <a class="alert__close-btn">&times;</a>
@@ -161,7 +161,7 @@
                                         <span class="fa fa-check-circle"></span>
                                     </div>
                                     <div class="alert__description">
-                                        <p>Danger alert preview. This alert is dismissable.</p>
+                                        <p>Pratinjau alert success. Alert ini dapat diabaikan.</p>
                                     </div>
                                     <div class="alert__action">
                                         <a class="alert__close-btn">&times;</a>
@@ -170,13 +170,12 @@
                             </div>
                             </div><!-- row -->
                         </div><!-- pre-code-box__preview -->
-                    </div><!-- pre-code-box -->
-                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code>&lt;div class=&quot;alert alert--danger&quot;&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;alert alert--danger&quot;&gt;
     &lt;div class=&quot;alert__icon&quot;&gt;
         &lt;span class=&quot;fa fa-ban&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__description&quot;&gt;
-        &lt;p&gt;Danger alert preview. This alert is dismissable.&lt;/p&gt;
+        &lt;p&gt;Pratinjau alert danger. Alert ini dapat diabaikan.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__action&quot;&gt;
         &lt;a class=&quot;alert__close-btn&quot;&gt;&amp;times;&lt;/a&gt;
@@ -188,7 +187,7 @@
         &lt;span class=&quot;fa fa-info-circle&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__description&quot;&gt;
-        &lt;p&gt;Danger alert preview. This alert is dismissable.&lt;/p&gt;
+        &lt;p&gt;Pratinjau alert info. Alert ini dapat diabaikan.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__action&quot;&gt;
         &lt;a class=&quot;alert__close-btn&quot;&gt;&amp;times;&lt;/a&gt;
@@ -200,7 +199,7 @@
         &lt;span class=&quot;fa fa-warning&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__description&quot;&gt;
-        &lt;p&gt;Danger alert preview. This alert is dismissable.&lt;/p&gt;
+        &lt;p&gt;Pratinjau alert warning. Alert ini dapat diabaikan.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__action&quot;&gt;
         &lt;a class=&quot;alert__close-btn&quot;&gt;&amp;times;&lt;/a&gt;
@@ -212,21 +211,22 @@
         &lt;span class=&quot;fa fa-check-circle&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__description&quot;&gt;
-        &lt;p&gt;Danger alert preview. This alert is dismissable.&lt;/p&gt;
+        &lt;p&gt;Pratinjau alert success. Alert ini dapat diabaikan.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__action&quot;&gt;
         &lt;a class=&quot;alert__close-btn&quot;&gt;&amp;times;&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;&lt;!-- alert --&gt;</code></pre>
+                    </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Fixed</h4>
                     <p>Kamu juga bisa membuat fixed alert dengan menambahkan class <span class="text-green">.alert--fixed-rb</span> setelah class untuk style alert atau bisa juga setelah class <span class="text-green">.alert</span>.</p>
-                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code>&lt;div class=&quot;alert alert--danger alert--fixed-rb&quot;&gt;
+                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;alert alert--danger alert--fixed-rb&quot;&gt;
     &lt;div class=&quot;alert__icon&quot;&gt;
         &lt;span class=&quot;fa fa-ban&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__description&quot;&gt;
-        &lt;p&gt;Danger alert preview. This alert is dismissable.&lt;/p&gt;
+        &lt;p&gt;Pratinjau alert danger. Alert ini dapat diabaikan.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;alert__action&quot;&gt;
         &lt;a class=&quot;alert__close-btn&quot;&gt;&amp;times;&lt;/a&gt;
