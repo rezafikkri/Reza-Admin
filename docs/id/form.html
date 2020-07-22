@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Form . Reza Admin</title>
+
+    <!-- Social network metas -->
+    <meta property="description" content="Open source responsive admin template with bootstrap framework">
+    <meta property="image" content="">
+    <meta property="og:title" content="Form . Reza Admin">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reza Admin CSS and Doc css -->
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../../dist/img/Reza_logo.ico">
+    <!-- higlight css -->
+    <link rel="stylesheet" href="../dist/plugin/highlight/styles/nord.css">
+</head>
+<body>
+
+    <!-- navbar top -->
+    <nav class="navbar navbar-expand-sm navbar--white">
+        <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <button class="navbar-toggler" target="#navbarNav" type="button">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rezafikkri/Reza-Admin" class="nav-link"><span class="fa fa-github fa-lg"></span></a></li>
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fikkrireza" class="nav-link"><span class="fa fa-twitter fa-lg"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar__nav">
+            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+
+            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="main.html">Main</a></li>
+                    <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
+                </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
+                    <li class="sidebar__dropdown-item"><a href="chart.html">Chart</a></li>
+                    <li class="sidebar__dropdown-item"><a href="loading.html">Loading</a></li>
+                    <li class="sidebar__dropdown-item"><a href="info-box.html">Info Box</a></li>
+                    <li class="sidebar__dropdown-item"><a href="card.html">Card</a></li>
+                    <li class="sidebar__dropdown-item"><a href="button.html">Button</a></li>
+                    <li class="sidebar__dropdown-item"><a href="alert.html">Alert</a></li>
+                    <li class="sidebar__dropdown-item"><a href="modal.html">Modal</a></li>
+                    <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="form.html">Form</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Table</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href=""><span class="fa fa-building"></span> Halaman <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="">Login</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Daftar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Lupa Password</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman 404</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman Kosong</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-file-text"></span> Licensie</a></li>
+        </ul>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+        <div class="row">
+            <header class="main__header col-12 mb-2">
+                <div class="main__title">
+                    <h4>Form</h4>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Form</li>
+                    </ul>
+                </div>              
+            </header>
+
+            <div class="col-12">
+                <div class="main__box">
+                    <h4>Dasar</h4>
+                    <p>Membuat form input kamu perlu menambahkan class <span class="text-green">.form</span> pada tag <i>input</i>, <i>select</i> atau <i>textarea</i>, diikuti dengan class untuk style form input-nya ketika focus/aktif. Ada class <span class="text-green">.form--focus-blue</span>, <span class="text-green">.form--focus-green</span>, <span class="text-green">.form--focus-red</span>, dan <span class="text-green">.form--focus-orange</span>.</p>
+                    <p>Jika kamu ingin menambahkan label pada input, kamu perlu menambahkan tag <i>label</i> sebelum input, bungkus label dan input menggunakan tag <i>div</i> dengan class <span class="text-green">.form-group</span>, supaya script kita lebih rapi.</p>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <input type="text" name="nama" placeholder="Nama ..." class="form form--focus-blue">
+                            <div class="form-group">
+                                <label>Input label</label>
+                                <label class="label-right">Wajib</label>
+                                <input type="text" name="umur" placeholder="Umur ..." class="form form--focus-blue">
+                            </div>
+                            <select name="country" class="form form--focus-blue">
+                                <option disabled="disabled" selected="selected">Negara ...</option>
+                                <option>Indonesia</option>
+                                <option>Palestina</option>
+                                <option>Arab Saudi</option>
+                            </select>
+                            <textarea name="nama" class="form form--focus-blue" placeholder="Tentang ..."></textarea>                            
+                            <input type="file" name="file" class="form form--focus-blue">
+                        </div><!-- pre-code-box__preview -->
+
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+    
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label&gt;Input label&lt;/label&gt;
+    &lt;label class=&quot;label-right&quot;&gt;Wajib&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;umur&quot; placeholder=&quot;Umur ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+&lt;/div&gt;
+
+&lt;select name=&quot;country&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;option disabled=&quot;disabled&quot; selected=&quot;selected&quot;&gt;Negara ...&lt;/option&gt;
+    &lt;option&gt;Indonesia&lt;/option&gt;
+    &lt;option&gt;Palestina&lt;/option&gt;
+    &lt;option&gt;Arab Saudi&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;textarea name=&quot;nama&quot; class=&quot;form form--focus-blue&quot; placeholder=&quot;Tentang ...&quot;&gt;&lt;/textarea&gt;   
+
+&lt;input type=&quot;file&quot; name=&quot;file&quot; class=&quot;form form--focus-blue&quot;&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Checkbox dan Radio</h4>
+                    <p>Membuat Input Checkbox dan Radio kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.form-check</span>, didalamnya kamu letakkan input checkbox atau input radio dengan class <span class="text-green">.form</span> diikuti class untuk style form input-nya ketika focus/aktif, lalu dibawhnya kamu buat label menggunakan tag <i>label</i> dengan class <span class="text-green">.label-check</span> dan didalam tag <i>label</i>-nya kamu masukkan text keterangan untuk input-nya.</p>
+                    <p>Jika kamu ingin membuat input Checkbox dan Radio tanpa label, kamu perlu menambahkan class <span class="text-green">.form-check--not-label</span> setelah class <span class="text-green">.form-check</span>. Jika kamu ingin membuat input Checkbox dan Radio sejajar atau inline kamu perlu menambahkan class <span class="text-green">.form-check--inline</span> setelah class <span class="text-green">.form-check</span>.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <!-- input checkbox dengan label -->
+                            <div class="form-check">
+                                <input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
+                                <label for="input_check" class="label-check">Checkbox</label>
+                            </div>
+
+                            <!-- input checkbox tanpa label -->
+                            <div class="form-check form-check--not-label">
+                                <input type="checkbox" name="input_check_disabled" class="form form--focus-blue">
+                            </div>
+
+                            <!-- input radio dengan label -->
+                            <div class="form-check">
+                                <input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
+                                <label for="input_radio" class="label-check">Radio</label>
+                            </div>
+
+                            <!-- input radio tanpa label -->
+                            <div class="form-check form-check--not-label">
+                                <input type="radio" name="input_radio" class="form form--focus-blue">
+                            </div>
+
+                            <!-- input checkbox dan radio sejajar atau inline -->
+                            <div class="form-check form-check--inline">
+                                <input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
+                                <label for="input_check" class="label-check">Inline Checkbox</label>
+                            </div>
+                            <div class="form-check form-check--inline">
+                                <input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
+                                <label for="input_radio" class="label-check">Inline Radio</label>
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;!-- input checkbox dengan label --&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;input_check&quot; id=&quot;input_check&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;label for=&quot;input_check&quot; class=&quot;label-check&quot;&gt;Checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input checkbox tanpa label --&gt;
+&lt;div class=&quot;form-check form-check--not-label&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;input_check_disabled&quot; class=&quot;form form--focus-blue&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- input radio dengan label --&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;input_radio&quot; id=&quot;input_radio&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;label for=&quot;input_radio&quot; class=&quot;label-check&quot;&gt;Radio&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input radio tanpa label --&gt;
+&lt;div class=&quot;form-check form-check--not-label&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;input_radio&quot; class=&quot;form form--focus-blue&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- input checkbox dan radio sejajar atau inline --&gt;
+&lt;div class=&quot;form-check form-check--inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;input_check&quot; id=&quot;input_check&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;label for=&quot;input_check&quot; class=&quot;label-check&quot;&gt;Inline Checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-check--inline&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;input_radio&quot; id=&quot;input_radio&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;label for=&quot;input_radio&quot; class=&quot;label-check&quot;&gt;Inline Radio&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Disabled</h4>
+                    <p>Membuat input checkbox dan radio disabled kamu perlu menambahkan attribute <span class="text-green">disabled=""</span> pada tag <i>input</i>, <i>select</i>, <i>textarea</i>, <i>input checkbox</i>, atau <i>input radio</i>.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <input type="text" name="nama" placeholder="Nama ..." disabled="" class="form form--focus-blue">
+                            <select name="country" disabled="" class="form form--focus-blue">
+                                <option>Negara ...</option>
+                            </select>
+                            <textarea class="form form--focus-blue" disabled="" placeholder="Tentang ..."></textarea>
+
+                            <div class="form-check">
+                                <input type="checkbox" name="input_check" id="input_check_disabled" class="form form--focus-blue" disabled="">
+                                <label for="input_check_disabled" class="label-check">Disabled Checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="input_radio_disabled" id="input_radio_disabled" class="form form--focus-blue" disabled="">
+                                <label for="input_radio_disabled" class="label-check">Disabled Radio</label>
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama ...&quot; disabled=&quot;&quot; class=&quot;form form--focus-blue&quot;&gt;
+
+&lt;select name=&quot;country&quot; disabled=&quot;&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;option&gt;Negara ...&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;textarea class=&quot;form form--focus-blue&quot; disabled=&quot;&quot; placeholder=&quot;Tentang ...&quot;&gt;&lt;/textarea&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;input_check&quot; id=&quot;input_check_disabled&quot; class=&quot;form form--focus-blue&quot; disabled=&quot;&quot;&gt;
+    &lt;label for=&quot;input_check_disabled&quot; class=&quot;label-check&quot;&gt;Disabled Checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;input_radio_disabled&quot; id=&quot;input_radio_disabled&quot; class=&quot;form form--focus-blue&quot; disabled=&quot;&quot;&gt;
+    &lt;label for=&quot;input_radio_disabled&quot; class=&quot;label-check&quot;&gt;Disabled Radio&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Text Bantuan</h4>
+                    <p>Membuat text bantuan kamu perlu tag <i>small</i> dengan class <span class="text-green">.form-text</span> dan <span class="text-green">.text-muted</span>, jika pada tag <i>input</i>, <i>select</i>, <i>textarea</i>, kamu perlu membungkus input dan text bantuan menggunakan tag <i>div</i> dengan class <span class="text-green">.form-group</span> dan letakkan text bantuan setelah input, jika pada tag <i>input checkbox</i> dan <i>input radio</i> kamu letakkan text bantuan didalam tag <i>div</i> dengan class <span class="text-green">.form-check</span> dan letakkan text bantuan setelah label(<i>jika menggunakan label</i>) atau letakkan text bantuan setelah input(<i>jika tidak menggunakan label</i>). Jika kamu membuat input checkbox atau radio tanpa label, kamu tidak perlu menambahkan class <span class="text-green">.form-text</span> pada tag <i>small</i>.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="form-group">
+                                <input type="text" name="nama" placeholder="Nama ..." class="form form--focus-blue">
+                                <small class="form-text text-muted">Text bantuan</small>
+                            </div>
+                            <div class="form-group">
+                                <select class="form form--focus-blue" name="country">
+                                    <option>Negara ...</option>
+                                </select>
+                                <small class="form-text text-muted">Text bantuan</small>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form form--focus-blue" placeholder="Tentang"></textarea>
+                                <small class="form-text text-muted">Text bantuan</small>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" name="check" id="check" class="form form--focus-blue">
+                                <label class="label-check" for="check">Checkbox</label>
+                                <small class="form-text text-muted">Text bantuan</small>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="radio" id="radio" class="form form--focus-blue">
+                                <label class="label-check" for="radio">Radio</label>
+                                <small class="form-text text-muted">Text bantuan</small>
+                            </div>
+
+                            <div class="form-check form-check--not-label">
+                                <input type="checkbox" name="check" class="form form--focus-blue">
+                                <small class="text-muted">Text bantuan</small>
+                            </div>
+                            <div class="form-check form-check--not-label">
+                                <input type="radio" name="radio" class="form form--focus-blue">
+                                <small class="text-muted">Text bantuan</small>
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;select class=&quot;form form--focus-blue&quot; name=&quot;country&quot;&gt;
+    &lt;option&gt;Negara ...&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;textarea class=&quot;form form--focus-blue&quot; placeholder=&quot;Tentang&quot;&gt;&lt;/textarea&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;check&quot; id=&quot;check&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;label class=&quot;label-check&quot; for=&quot;check&quot;&gt;Checkbox&lt;/label&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;label class=&quot;label-check&quot; for=&quot;radio&quot;&gt;Radio&lt;/label&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check form-check--not-label&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;check&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;small class=&quot;text-muted&quot;&gt;Text bantuan&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-check--not-label&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;small class=&quot;text-muted&quot;&gt;Text bantuan&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Pesan Info</h4>
+                    <p>Membuat Pesan Info hampir sama dengan membuat Text Bantuan, kamu hanya perlu menambahkan class <span class="text-green">.form--success</span>, <span class="text-green">.form--info</span>, <span class="text-green">.form--warning</span>, atau <span class="text-green">.form--danger</span> pada tag <i>input</i>, <i>select</i> atau <i>textarea</i> setelah class untuk style form inputnya ketika focus/aktif, dan mengganti class <span class="text-green">.text-muted</span> pada tag <i>small</i> dengan class <span class="text-green">.text-green</span>, <span class="text-green">.text-blue</span>, <span class="text-green">.text-orange</span>, atau <span class="text-green">.text-red</span>.</p>
+
+                    <blockquote class="blockquote blockquote--orange">
+                        <p>Kamu hanya bisa membuat Pesan Info menggunakan input, select, dan textarea.</p>
+                    </blockquote>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="form-group">
+                                <label>Input success</label>
+                                <input name="nama" class="form form--focus-green form--success" placeholder="Nama ...">
+                                <small class="form-text text-green">Data berhasil diedit!</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Input info</label>
+                                <input name="nama" class="form form--focus-blue form--info" placeholder="Nama ...">
+                                <small class="form-text text-blue">Ini benar!</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Input danger</label>
+                                <input name="nama" class="form form--focus-red form--danger" placeholder="Nama ...">
+                                <small class="form-text text-red">Data tidak valid!</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Input warning</label>
+                                <input name="nama" class="form form--focus-orange form--warning" placeholder="Nama ...">
+                                <small class="form-text text-orange">Data harus 5 karakter atau lebih!</small>
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label&gt;Input success&lt;/label&gt;
+    &lt;input name=&quot;nama&quot; class=&quot;form form--focus-green form--success&quot; placeholder=&quot;Nama ...&quot;&gt;
+    &lt;small class=&quot;form-text text-green&quot;&gt;Data berhasil diedit!&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label&gt;Input info&lt;/label&gt;
+    &lt;input name=&quot;nama&quot; class=&quot;form form--focus-blue form--info&quot; placeholder=&quot;Nama ...&quot;&gt;
+    &lt;small class=&quot;form-text text-blue&quot;&gt;Ini benar!&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label&gt;Input danger&lt;/label&gt;
+    &lt;input name=&quot;nama&quot; class=&quot;form form--focus-red form--danger&quot; placeholder=&quot;Nama ...&quot;&gt;
+    &lt;small class=&quot;form-text text-red&quot;&gt;Data tidak valid!&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label&gt;Input warning&lt;/label&gt;
+    &lt;input name=&quot;nama&quot; class=&quot;form form--focus-orange form--warning&quot; placeholder=&quot;Nama ...&quot;&gt;
+    &lt;small class=&quot;form-text text-orange&quot;&gt;Data harus 5 karakter atau lebih!&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Input Addon</h4>
+                    <p>Membuat Input Addon kamu perlu tag <i>div</i> dengan class <span class="text-green">.input-group</span>, didalamnya ada 3 bagian yaitu <b>prepend</b>, <b>(input, textarea, select)</b>, dan <b>append</b>. Prepend dan append adalah tempat dimana kamu bisa meletakkan text, input checkbox atau radio, dan button. Prepend disebelah kiri dan Append disebelah kanan. Kamu bisa menggunakan salah satu atau keduanya.</p>
+                    <p>Membuat prepend kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.input-group__prepend</span>, didalamnya untuk menambahkan text kamu perlu tag <i>span</i> dengan class <span class="text-green">.input-group__text</span> dan letakkan text-nya didalam tag <i>span</i>. Untuk menambahkan input(checkbox atau radio) kamu perlu tag <i>div</i> dengan class <span class="text-green">.input-group__text</span>, lalu didalamnya kamu bisa meletakkan input(checkbox atau radio)-nya. Untuk menambahkan button kamu bisa meletakkan button-nya langsung didalam tag <i>div</i> dengan class <span class="text-green">.input-group__prepend</span>. Letakkan prepend sebelum input.</p>
+                    <p>Membuat append kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.input-group__append</span>, didalamnya untuk menambahkan button, input(checkbox atau radio) dan text caranya sama seperti prepend. Letakkan append setelah input.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="input-group">
+                                <div class="input-group__prepend">
+                                    <span class="input-group__text">Alamat</span>
+                                </div>
+                                <textarea type="text" name="alamat" placeholder="Alamat ..." class="form form--focus-blue"></textarea>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group__prepend">
+                                    <span class="input-group__text">Rp</span>
+                                </div>
+                                <input type="text" name="harga" placeholder="Harga ..." class="form form--focus-blue">
+                                <div class="input-group__append">
+                                    <span class="input-group__text">,00</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group__prepend">
+                                    <div class="input-group__text">
+                                        <input type="checkbox" name="checkbox" class="form form--focus-blue">
+                                    </div>
+                                </div>
+                                <input type="text" name="text" placeholder="Text ..." class="form form--focus-blue">
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group__prepend">
+                                    <a href="#" class="btn btn--blue"><span class="fa fa-envelope"></span></a>
+                                </div>
+                                <input type="text" name="addon_4" placeholder="Email ..." class="form form--focus-blue">
+                                <div class="input-group__append">
+                                    <span class="input-group__text">@reza.com</span>
+                                </div>
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-group__prepend&quot;&gt;
+        &lt;span class=&quot;input-group__text&quot;&gt;Alamat&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;textarea type=&quot;text&quot; name=&quot;alamat&quot; placeholder=&quot;Alamat ...&quot; class=&quot;form form--focus-blue&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-group__prepend&quot;&gt;
+        &lt;span class=&quot;input-group__text&quot;&gt;Rp&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;text&quot; name=&quot;harga&quot; placeholder=&quot;Harga ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;div class=&quot;input-group__append&quot;&gt;
+        &lt;span class=&quot;input-group__text&quot;&gt;,00&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-group__prepend&quot;&gt;
+        &lt;div class=&quot;input-group__text&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; class=&quot;form form--focus-blue&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;text&quot; name=&quot;text&quot; placeholder=&quot;Text ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-group__prepend&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot;&gt;&lt;span class=&quot;fa fa-envelope&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;text&quot; name=&quot;addon_4&quot; placeholder=&quot;Email ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+    &lt;div class=&quot;input-group__append&quot;&gt;
+        &lt;span class=&quot;input-group__text&quot;&gt;@reza.com&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                </div><!-- main__box -->
+            </div>
+        </div><!-- row -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="mb-2 mb-sm-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
+        <p>Version 1.0</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS-->
+    <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../dist/js/doc.js"></script>
+    <script src="../dist/plugin/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
