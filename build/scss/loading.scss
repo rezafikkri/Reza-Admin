@@ -35,11 +35,11 @@
         animation: loading-circle-rotate 1s linear infinite;
 	}
 
-	@include loading-circle-color('gray', $gray-reiran);
-	@include loading-circle-color('blue', $blue-reiran);
-	@include loading-circle-color('red', $red-reiran);
-	@include loading-circle-color('green', $green-reiran);
-	@include loading-circle-color('orange', $orange-reiran);
+	@include loading-circle-color('gray', $gray-reza);
+	@include loading-circle-color('blue', $blue-reza);
+	@include loading-circle-color('red', $red-reza);
+	@include loading-circle-color('green', $green-reza);
+	@include loading-circle-color('orange', $orange-reza);
 
 	&--lg &__fill,
 	&--lg &__fill::after {

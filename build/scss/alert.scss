@@ -80,10 +80,10 @@
 		}
 	}
 
-	@include alert-color('danger', $red-reiran, #e22424, #ff5b5b, #cc1e1e, #ffefef, #9b0f0f, #750707);
-	@include alert-color('info', $blue-reiran, #2190d1, #5bc0ff, #1784c4, #eff9ff, #0e6093, #07446b);
-	@include alert-color('warning', $orange-reiran, #ed9821, #ffbc70, #d3871d, #fff8ef, #965b09, #724304);
-	@include alert-color('success', $green-reiran, #1ec93a, #41f25e, #15bf37, #f2fff3, #0e9128, #076819);
+	@include alert-color('danger', $red-reza, #e22424, #ff5b5b, #cc1e1e, #ffefef, #9b0f0f, #750707);
+	@include alert-color('info', $blue-reza, #2190d1, #5bc0ff, #1784c4, #eff9ff, #0e6093, #07446b);
+	@include alert-color('warning', $orange-reza, #ed9821, #ffbc70, #d3871d, #fff8ef, #965b09, #724304);
+	@include alert-color('success', $green-reza, #1ec93a, #41f25e, #15bf37, #f2fff3, #0e9128, #076819);
 
 	&--fixed-rb {
 		position: fixed;

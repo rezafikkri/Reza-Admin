@@ -42,7 +42,7 @@
 	}
 
 	.navbar-brand {
-		color: $blue-reiran;
+		color: $blue-reza;
 	}
 
 	.nav-item .nav-link {
@@ -50,11 +50,11 @@
 		padding: 0px 12px;
 
 		&:hover {
-			color: $blue-reiran;
+			color: $blue-reza;
 		}
 
 		&--hover-red:hover {
-			color: $red-reiran;
+			color: $red-reza;
 		}
 	}
 
@@ -102,10 +102,10 @@
 		border: 2px solid #fff;
 		color: white;
 
-		@include navbar-notification-color($red-reiran, 'red');
-		@include navbar-notification-color($blue-reiran, 'blue');
-		@include navbar-notification-color($orange-reiran, 'orange');
-		@include navbar-notification-color($green-reiran, 'green');
+		@include navbar-notification-color($red-reza, 'red');
+		@include navbar-notification-color($blue-reza, 'blue');
+		@include navbar-notification-color($orange-reza, 'orange');
+		@include navbar-notification-color($green-reza, 'green');
 	}
 }
 

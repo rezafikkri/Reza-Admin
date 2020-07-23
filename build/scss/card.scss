@@ -63,7 +63,7 @@
 			font-size: 14pt;
 
 			&:hover:not(.card__action--not-link) {
-				color: $blue-reiran;
+				color: $blue-reza;
 			}
 		}
 
@@ -77,10 +77,10 @@
 		}
 	}
 
-	@include card-color($orange-reiran, #fffbf7, 'orange');
-	@include card-color($blue-reiran, #f7fcff, 'blue');
-	@include card-color($green-reiran, #f7fff8, 'green');
-	@include card-color($red-reiran, #fff7f7, 'red');
+	@include card-color($orange-reza, #fffbf7, 'orange');
+	@include card-color($blue-reza, #f7fcff, 'blue');
+	@include card-color($green-reza, #f7fff8, 'green');
+	@include card-color($red-reza, #fff7f7, 'red');
 
 	.loading-circle {
 		position: absolute;

@@ -33,10 +33,10 @@
 		}
 	}
 
-	@include modal-content-color('danger', $red-reiran, #fff2f2);
-	@include modal-content-color('success', $green-reiran, #edfff0);
-	@include modal-content-color('info', $blue-reiran, #edf8ff);
-	@include modal-content-color('warning', $orange-reiran, #fff8ef);
+	@include modal-content-color('danger', $red-reza, #fff2f2);
+	@include modal-content-color('success', $green-reza, #edfff0);
+	@include modal-content-color('info', $blue-reza, #edf8ff);
+	@include modal-content-color('warning', $orange-reza, #fff8ef);
 
 	&__title {
 		text-align: center;

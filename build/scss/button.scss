@@ -53,18 +53,18 @@
 		box-shadow: none;
 	}
 
-	@include btn-normal-color('gray', $gray-reiran, #8e8e8e, #777777);
-	@include btn-normal-color('blue', $blue-reiran, #1c87c9, #1474a8);
-	@include btn-normal-color('green', $green-reiran, #19c13a, #14aa30);
-	@include btn-normal-color('orange', $orange-reiran, #e88b12, #d17112);
-	@include btn-normal-color('red', $red-reiran, #d11b1b, #b51515);
+	@include btn-normal-color('gray', $gray-reza, #8e8e8e, #777777);
+	@include btn-normal-color('blue', $blue-reza, #1c87c9, #1474a8);
+	@include btn-normal-color('green', $green-reza, #19c13a, #14aa30);
+	@include btn-normal-color('orange', $orange-reza, #e88b12, #d17112);
+	@include btn-normal-color('red', $red-reza, #d11b1b, #b51515);
 	@include btn-normal-color('link', transparent, transparent, transparent);
 
-	@include btn-outline-color('gray', $gray-reiran, #8e8e8e);
-	@include btn-outline-color('blue', $blue-reiran, #1c87c9);
-	@include btn-outline-color('green', $green-reiran, #19c13a);
-	@include btn-outline-color('orange', $orange-reiran, #e88b12);
-	@include btn-outline-color('red', $red-reiran, #d11b1b);
+	@include btn-outline-color('gray', $gray-reza, #8e8e8e);
+	@include btn-outline-color('blue', $blue-reza, #1c87c9);
+	@include btn-outline-color('green', $green-reza, #19c13a);
+	@include btn-outline-color('orange', $orange-reza, #e88b12);
+	@include btn-outline-color('red', $red-reza, #d11b1b);
 
 	&[disabled],
 	&--disabled {

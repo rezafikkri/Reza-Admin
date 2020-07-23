@@ -8,6 +8,22 @@
 	}
 }
 
+@mixin pagination-color($color-name, $bg-color, $text-color) {
+	&--#{$color-name} .page-item .page-link {
+		color: #333;
+	}
+
+	&--#{$color-name} .page-item.disabled .page-link {
+		color: #6c757d;
+	}
+
+	&--#{$color-name} .page-item.active .page-link {
+		background-color: $bg-color;
+		border-color: $bg-color;
+		color: white;
+	}
+}
+
 .table {
 	margin-bottom: 0px;
 	background-color: white;
@@ -36,7 +52,7 @@
 		color: #333;
 
 		&:hover {
-			color: $blue-reiran;
+			color: $blue-reza;
 		}
 	}
 
@@ -69,4 +85,25 @@
 			align-items: center;
 		}
 	}
+}
+
+.pagination {
+	margin-bottom: 0rem;
+
+	.page-item .page-link {
+		border-color: #e2e2e2;
+
+		&:hover {
+			background-color: #e0e0e0;
+			border-color: #e2e2e2;
+		}
+
+		&:active,
+		&:link {
+			box-shadow: none;
+		}
+	}
+
+	@include pagination-color('blue', $blue-reza, #198ad1);
+	@include pagination-color('green', $green-reza, #15c639);
 }

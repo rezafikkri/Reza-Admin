@@ -171,8 +171,8 @@
 		}
 	}
 
-	@include info-box-color(#dbf1ff, #edf8ff, $blue-reiran, #59b7f2, #167ebf, 'blue');
-	@include info-box-color(#c6ffd0, #edfff0, $green-reiran, #35e859, #16aa31, 'green');
-	@include info-box-color(#ffeddd, #fff8ef, $orange-reiran, #ffbd60, #d67c00, 'orange');
-	@include info-box-color(#ffe5e5, #fff2f2, $red-reiran, #ff5959, #ce1616, 'red');
+	@include info-box-color(#dbf1ff, #edf8ff, $blue-reza, #59b7f2, #167ebf, 'blue');
+	@include info-box-color(#c6ffd0, #edfff0, $green-reza, #35e859, #16aa31, 'green');
+	@include info-box-color(#ffeddd, #fff8ef, $orange-reza, #ffbd60, #d67c00, 'orange');
+	@include info-box-color(#ffe5e5, #fff2f2, $red-reza, #ff5959, #ce1616, 'red');
 }

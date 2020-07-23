@@ -158,8 +158,7 @@
 				<h5>Table Products</h5>
 
 				<section class="main__box">
-				<div class="table-box">
-					<div class="input-group mb-3">
+					<div class="input-group mt-0 mb-3">
 						<input type="text" class="form form--focus-blue" name="search" placeholder="Keyword ...">
 						<div class="input-group__append">
 							<a href="#" class="btn btn--blue"><span class="fa fa-search"></span></a>
@@ -218,11 +217,19 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="#" class="show-more-btn font-size-12">Show more <span class="fa fa-angle-down"></span></a>
-					<div class="loading-circle loading-circle--lg loading-circle--blue d-none">
-						<div class="loading-circle__fill"></div>
-					</div>
-				</div><!-- table-box -->
+					<ul class="pagination pagination--blue">
+						<li class="page-item disabled">
+							<a class="page-link" href="#">Previous</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active">
+							<a class="page-link" href="#">2</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">Next</a>
+						</li>
+					</ul>
 				</section><!-- main__box -->
 			</div>
 

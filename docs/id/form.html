@@ -103,9 +103,17 @@
                     <h4>Dasar</h4>
                     <p>Membuat form input kamu perlu menambahkan class <span class="text-green">.form</span> pada tag <i>input</i>, <i>select</i> atau <i>textarea</i>, diikuti dengan class untuk style form input-nya ketika focus/aktif. Ada class <span class="text-green">.form--focus-blue</span>, <span class="text-green">.form--focus-green</span>, <span class="text-green">.form--focus-red</span>, dan <span class="text-green">.form--focus-orange</span>.</p>
                     <p>Jika kamu ingin menambahkan label pada input, kamu perlu menambahkan tag <i>label</i> sebelum input, bungkus label dan input menggunakan tag <i>div</i> dengan class <span class="text-green">.form-group</span>, supaya script kita lebih rapi.</p>
+                    <p>Kamu juga bisa implementasikan grid sistem bootstrap untuk membuat form dengan kolom. Kamu perlu tag <i>div</i> dengan class <span class="text-green">.form-row</span>, lalu didalamnya buat tag <i>div</i> dengan class <span class="text-green">.col-md-6</span>, kamu bisa menyesuaikan ukuran kolomnya, <a href="https://getbootstrap.com/docs/4.5/layout/grid/" target="_blank" rel="noopener noreferrer">lihat dokumentasi grid sistem bootstrap!</a>, dan kamu letakkan input-nya didalam tag <i>div</i> dengan class <span class="text-green">.col-md-6</span>.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <input type="text" name="nama" placeholder="Nama ..." class="form form--focus-blue">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <input type="text" name="nama" placeholder="Nama Depan ..." class="form form--focus-blue mt-0">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="nama" placeholder="Nama Belakang ..." class="form form--focus-blue mt-3 mt-md-0">
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label>Input label</label>
                                 <label class="label-right">Wajib</label>
@@ -121,7 +129,14 @@
                             <input type="file" name="file" class="form form--focus-blue">
                         </div><!-- pre-code-box__preview -->
 
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama Depan ...&quot; class=&quot;form form--focus-blue mt-0&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama Belakang ...&quot; class=&quot;form form--focus-blue mt-3 mt-md-0&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
     
 &lt;div class=&quot;form-group&quot;&gt;
     &lt;label&gt;Input label&lt;/label&gt;
@@ -148,7 +163,7 @@
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <!-- input checkbox dengan label -->
-                            <div class="form-check">
+                            <div class="form-check mt-0">
                                 <input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
                                 <label for="input_check" class="label-check">Checkbox</label>
                             </div>
@@ -181,7 +196,7 @@
                         </div><!-- pre-code-box__preview -->
 
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;!-- input checkbox dengan label --&gt;
-&lt;div class=&quot;form-check&quot;&gt;
+&lt;div class=&quot;form-check mt-0&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;input_check&quot; id=&quot;input_check&quot; class=&quot;form form--focus-blue&quot;&gt;
     &lt;label for=&quot;input_check&quot; class=&quot;label-check&quot;&gt;Checkbox&lt;/label&gt;
 &lt;/div&gt;
@@ -218,7 +233,7 @@
 
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <input type="text" name="nama" placeholder="Nama ..." disabled="" class="form form--focus-blue">
+                            <input type="text" name="nama" placeholder="Nama ..." disabled="" class="form form--focus-blue mt-0">
                             <select name="country" disabled="" class="form form--focus-blue">
                                 <option>Negara ...</option>
                             </select>
@@ -234,7 +249,7 @@
                             </div>
                         </div><!-- pre-code-box__preview -->
 
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama ...&quot; disabled=&quot;&quot; class=&quot;form form--focus-blue&quot;&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama ...&quot; disabled=&quot;&quot; class=&quot;form form--focus-blue mt-0&quot;&gt;
 
 &lt;select name=&quot;country&quot; disabled=&quot;&quot; class=&quot;form form--focus-blue&quot;&gt;
     &lt;option&gt;Negara ...&lt;/option&gt;
@@ -258,7 +273,7 @@
 
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <div class="form-group">
+                            <div class="form-group mt-0">
                                 <input type="text" name="nama" placeholder="Nama ..." class="form form--focus-blue">
                                 <small class="form-text text-muted">Text bantuan</small>
                             </div>
@@ -293,7 +308,7 @@
                                 <small class="text-muted">Text bantuan</small>
                             </div>
                         </div><!-- pre-code-box__preview -->
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-group&quot;&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-group mt-0&quot;&gt;
     &lt;input type=&quot;text&quot; name=&quot;nama&quot; placeholder=&quot;Nama ...&quot; class=&quot;form form--focus-blue&quot;&gt;
     &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
 &lt;/div&gt;
@@ -338,7 +353,7 @@
 
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <div class="form-group">
+                            <div class="form-group mt-0">
                                 <label>Input success</label>
                                 <input name="nama" class="form form--focus-green form--success" placeholder="Nama ...">
                                 <small class="form-text text-green">Data berhasil diedit!</small>
@@ -359,7 +374,7 @@
                                 <small class="form-text text-orange">Data harus 5 karakter atau lebih!</small>
                             </div>
                         </div><!-- pre-code-box__preview -->
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-group&quot;&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-group mt-0&quot;&gt;
     &lt;label&gt;Input success&lt;/label&gt;
     &lt;input name=&quot;nama&quot; class=&quot;form form--focus-green form--success&quot; placeholder=&quot;Nama ...&quot;&gt;
     &lt;small class=&quot;form-text text-green&quot;&gt;Data berhasil diedit!&lt;/small&gt;
@@ -388,7 +403,7 @@
 
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <div class="input-group">
+                            <div class="input-group mt-0">
                                 <div class="input-group__prepend">
                                     <span class="input-group__text">Alamat</span>
                                 </div>
@@ -422,7 +437,7 @@
                                 </div>
                             </div>
                         </div><!-- pre-code-box__preview -->
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;input-group&quot;&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;input-group mt-0&quot;&gt;
     &lt;div class=&quot;input-group__prepend&quot;&gt;
         &lt;span class=&quot;input-group__text&quot;&gt;Alamat&lt;/span&gt;
     &lt;/div&gt;
