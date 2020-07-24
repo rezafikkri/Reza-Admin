@@ -67,7 +67,7 @@
                     <li class="sidebar__dropdown-item"><a href="alert.html">Alert</a></li>
                     <li class="sidebar__dropdown-item"><a href="modal.html">Modal</a></li>
                     <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="form.html">Form</a></li>
-                    <li class="sidebar__dropdown-item"><a href="">Table</a></li>
+                    <li class="sidebar__dropdown-item"><a href="table.html">Table</a></li>
                 </ul>
             </li>
 
@@ -104,6 +104,7 @@
                     <p>Membuat form input kamu perlu menambahkan class <span class="text-green">.form</span> pada tag <i>input</i>, <i>select</i> atau <i>textarea</i>, diikuti dengan class untuk style form input-nya ketika focus/aktif. Ada class <span class="text-green">.form--focus-blue</span>, <span class="text-green">.form--focus-green</span>, <span class="text-green">.form--focus-red</span>, dan <span class="text-green">.form--focus-orange</span>.</p>
                     <p>Jika kamu ingin menambahkan label pada input, kamu perlu menambahkan tag <i>label</i> sebelum input, bungkus label dan input menggunakan tag <i>div</i> dengan class <span class="text-green">.form-group</span>, supaya script kita lebih rapi.</p>
                     <p>Kamu juga bisa implementasikan grid sistem bootstrap untuk membuat form dengan kolom. Kamu perlu tag <i>div</i> dengan class <span class="text-green">.form-row</span>, lalu didalamnya buat tag <i>div</i> dengan class <span class="text-green">.col-md-6</span>, kamu bisa menyesuaikan ukuran kolomnya, <a href="https://getbootstrap.com/docs/4.5/layout/grid/" target="_blank" rel="noopener noreferrer">lihat dokumentasi grid sistem bootstrap!</a>, dan kamu letakkan input-nya didalam tag <i>div</i> dengan class <span class="text-green">.col-md-6</span>.</p>
+
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <div class="form-row">
@@ -343,6 +344,10 @@
     &lt;small class=&quot;text-muted&quot;&gt;Text bantuan&lt;/small&gt;
 &lt;/div&gt;</code></pre>
                     </div><!-- pre-code-box -->
+
+                    <blockquote class="blockquote blockquote--green">
+                        <p>Perlu kamu ketahui bahwa input baik menggunakan tag <i>input</i>, <i>select</i>, <i>textarea</i> dengan class <span class="text-green">.form</span>, input yang menggunakan label dan text bantuan yang dibungkus menggunakan <i>div</i> dengan class <span class="text-green">.form-group</span>, dan input addon, secara standar memiliki margin top sebesar <b>1rem</b>. sedangkan <i>input type checkbox</i>, <i>input type radio</i> yang dibungkus menggunakan div dengan class <span class="text-green">.form-check</span>, secara standar memiliki margin top sebesar <b>.5rem</b>.</p>
+                    </blockquote>
 
                     <h4 class="mt-5">Pesan Info</h4>
                     <p>Membuat Pesan Info hampir sama dengan membuat Text Bantuan, kamu hanya perlu menambahkan class <span class="text-green">.form--success</span>, <span class="text-green">.form--info</span>, <span class="text-green">.form--warning</span>, atau <span class="text-green">.form--danger</span> pada tag <i>input</i>, <i>select</i> atau <i>textarea</i> setelah class untuk style form inputnya ketika focus/aktif, dan mengganti class <span class="text-green">.text-muted</span> pada tag <i>small</i> dengan class <span class="text-green">.text-green</span>, <span class="text-green">.text-blue</span>, <span class="text-green">.text-orange</span>, atau <span class="text-green">.text-red</span>.</p>

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Table . Reza Admin</title>
+
+    <!-- Social network metas -->
+    <meta property="description" content="Open source responsive admin template with bootstrap framework">
+    <meta property="image" content="">
+    <meta property="og:title" content="Table . Reza Admin">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Reza Admin CSS and Doc css -->
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
+	<!-- Favicon -->
+	<link rel="icon" href="../../dist/img/Reza_logo.ico">
+    <!-- higlight css -->
+    <link rel="stylesheet" href="../dist/plugin/highlight/styles/nord.css">
+</head>
+<body>
+
+    <!-- navbar top -->
+    <nav class="navbar navbar-expand-sm navbar--white">
+        <a class="navbar__sidebar-toggler" href="#"><span class="fa fa-bars"></span></a>
+        <a class="navbar-brand ml-md-3" href="index.html"><img src="../../dist/img/Reza_Admin.svg" width="120" alt="logo reza"></a>
+        <button class="navbar-toggler" target="#navbarNav" type="button">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rezafikkri/Reza-Admin" class="nav-link"><span class="fa fa-github fa-lg"></span></a></li>
+                <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fikkrireza" class="nav-link"><span class="fa fa-twitter fa-lg"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar__nav">
+            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+
+            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="sidebar.html">Sidebar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="main.html">Main</a></li>
+                    <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
+                </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                <ul class="sidebar__dropdown sidebar__dropdown--show">
+                    <li class="sidebar__dropdown-item"><a href="chart.html">Chart</a></li>
+                    <li class="sidebar__dropdown-item"><a href="loading.html">Loading</a></li>
+                    <li class="sidebar__dropdown-item"><a href="info-box.html">Info Box</a></li>
+                    <li class="sidebar__dropdown-item"><a href="card.html">Card</a></li>
+                    <li class="sidebar__dropdown-item"><a href="button.html">Button</a></li>
+                    <li class="sidebar__dropdown-item"><a href="alert.html">Alert</a></li>
+                    <li class="sidebar__dropdown-item"><a href="modal.html">Modal</a></li>
+                    <li class="sidebar__dropdown-item"><a href="form.html">Form</a></li>
+                    <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="table.html">Table</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href=""><span class="fa fa-building"></span> Halaman <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown-item"><a href="">Login</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Daftar</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Lupa Password</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman 404</a></li>
+                    <li class="sidebar__dropdown-item"><a href="">Halaman Kosong</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-file-text"></span> Licensie</a></li>
+        </ul>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+        <div class="row">
+            <header class="main__header col-12 mb-2">
+                <div class="main__title">
+                    <h4>Table</h4>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Table</li>
+                    </ul>
+                </div>              
+            </header>
+
+            <div class="col-12">
+                <section class="main__box">
+                    <h4>Dasar</h4>
+                    <p>Membuat table kamu membutuhkan tag <i>table</i> dengan class <span class="text-green">.table</span>, diikuti dengan class untuk style table-nya, ada class <span class="text-green">.table--gray</span>, <span class="text-green">.table--blue</span>, dan <span class="text-green">.table--green</span>. Kemudian didalam tag <i>table</i>, kamu perlu membuat tag <i>thead</i> (<i>untuk Table Head</i>) dan tag <i>tbody</i> (<i>untuk Table Body</i></p>
+                    <p>Didalam tag <i>thead</i>, buat tag <i>tr</i> lalu didalam tag <i>tr</i> buat tag <i>th</i> dan didalam tag <i>th</i> masukkan text untuk judul dari setiap kolom pada table-nya. Didalam tag <i>tbody</i>, buat tag <i>tr</i> lalu didalam tag <i>tr</i> buat tag <i>td</i> dan didalam tag <i>td</i> masukkan text, icon atau link menggunakan tag <i>a</i>, untuk isi dari setiap baris dan kolom table-nya. Setiap cell pada table memiliki style text align left, jika kamu ingin merubah text align menjadi center, kamu perlu menambahkan class <span class="text-green">.text-center</span> pada tag <i>td</i> atau tag <i>th</i>.</p>
+                    <p>Jika kamu membuat link didalam table, warna ketika link dihover adalah biru, namun jika kamu membuat link untuk delete data misalnya, kamu bisa mengubah warna ketika link dihover menjadi merah, dengan menambahkan class <span class="text-green">.text-hover-red</span> pada tag <i>a</i>.</p>
+                    <p>Kamu bisa membungkus table menggunakan Box, <a target="_blank" href="main.html">lihat dokumentasi Box!</a>. Jika kamu merasa table terlalu lebar, kamu bisa membungkusnya dengan Drid Sistem bootstrap. Kamu juga bisa menambahkan keterangan judul dari table-nya, membuat judul kamu perlu tag <i>h5</i> (<i>tempat judul table-nya</i>) dan tag <i>hr</i> (<i>untuk membuat garis horizontal</i>), letakkan tag <i>h5</i> dan <i>hr</i> sebelum tag <i>table</i>.</p>
+
+                    <blockquote class="blockquote blockquote--green">
+                        <p>Table secara standar table akan menyesuaikan dengan ukuran container-nya, saya sangat menyarankan kamu untuk membungkus table menggunakan Box, karena ketika lebar table tidak bisa mengecil lagi atau tidak bisa lagi menyesuaikan lebar dengan container-nya, maka table akan terlihat keluar dari container-nya, namun jika kamu membungkus table menggunakan Box, itu tidak akan terjadi, yang akan terjadi adalah, akan ada horizontal scroll pada Box ketika kamu hover Box-nya.</p>
+                    </blockquote>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="row">
+                                <div class="col-lg-6 mb-3">
+                                    <div class="main__box">
+                                        <h5>Table Anggota</h5>
+                                        <hr>
+                                        <table class="table table--gray">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No</th>
+                                                    <th>Nama</th>
+                                                    <th>Umur</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>Reza Sariful Fikri</td>
+                                                    <td>19</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>Dian Pranata</td>
+                                                    <td>13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>Adelina Damayanti</td>
+                                                    <td>19</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div><!-- col-lg-6 -->
+                                <div class="col-lg-6 mb-3">
+                                    <div class="main__box">
+                                        <h5>Table Barang</h5>
+                                        <hr>
+                                        <table class="table table--blue">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No</th>
+                                                    <th>Nama Barang</th>
+                                                    <th>Jumlah</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>Mouse Logitech</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>Keyboard</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>Kipas Pendingin</td>
+                                                    <td>3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div><!-- col-lg-6 -->
+                                <div class="col-12">
+                                    <div class="main__box">
+                                        <h5>Table Anggota</h5>
+                                        <hr>
+                                        <table class="table table--green">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No</th>
+                                                    <th>Nama</th>
+                                                    <th>Hobi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>Reza Sariful Fikri</td>
+                                                    <td>Programming</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>Dian Pranata</td>
+                                                    <td>Game</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>Adelina Damayanti</td>
+                                                    <td>Membaca</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div><!-- col-12 -->
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-6 mb-3&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Anggota&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;table class=&quot;table table--gray&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                        &lt;th&gt;Nama&lt;/th&gt;
+                        &lt;th&gt;Umur&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                        &lt;td&gt;Reza Sariful Fikri&lt;/td&gt;
+                        &lt;td&gt;19&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                        &lt;td&gt;Dian Pranata&lt;/td&gt;
+                        &lt;td&gt;13&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                        &lt;td&gt;Adelina Damayanti&lt;/td&gt;
+                        &lt;td&gt;19&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-lg-6 --&gt;
+    &lt;div class=&quot;col-lg-6 mb-3&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Barang&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;table class=&quot;table table--blue&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                        &lt;th&gt;Nama Barang&lt;/th&gt;
+                        &lt;th&gt;Jumlah&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                        &lt;td&gt;Mouse Logitech&lt;/td&gt;
+                        &lt;td&gt;5&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                        &lt;td&gt;Keyboard&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                        &lt;td&gt;Kipas Pendingin&lt;/td&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-lg-6 --&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Anggota&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;table class=&quot;table table--green&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                        &lt;th&gt;Nama&lt;/th&gt;
+                        &lt;th&gt;Hobi&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                        &lt;td&gt;Reza Sariful Fikri&lt;/td&gt;
+                        &lt;td&gt;Programming&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                        &lt;td&gt;Dian Pranata&lt;/td&gt;
+                        &lt;td&gt;Game&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                        &lt;td&gt;Adelina Damayanti&lt;/td&gt;
+                        &lt;td&gt;Membaca&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-12 --&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Input Filter</h4>
+                    <p>Kamu juga bisa menambahkan input, yang bisa kamu gunakan untuk filter data yang ada pada table. Membuat input filter kamu hanya perlu meletakkan input filter-nya sebelum tag <i>table</i>, kamu bisa menggunakan tag <i>input</i>, <i>select</i>, dan kamu juga bisa menggunakan Input Addon. Selain itu kamu juga bisa menerapkan grid sistem bootstrap untuk membuat form dengan kolom, sama seperti pada <a target="_blank" href="form.html">dokumentasi form</a>.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="main__box">
+                                        <h5>Table Anggota</h5>
+                                        <hr>
+                                        <!-- input filter -->
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <select name="limit" class="form form--focus-blue mt-0 mb-3">
+                                                    <option>Limit ...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select name="umur" class="form form--focus-blue mt-0 mb-3">
+                                                    <option>Umur ...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <table class="table table--gray">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No</th>
+                                                    <th>Nama</th>
+                                                    <th>Umur</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>Reza Sariful Fikri</td>
+                                                    <td>19</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>Dian Pranata</td>
+                                                    <td>13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>Adelina Damayanti</td>
+                                                    <td>19</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div><!-- col-12 -->
+                                <div class="col-12 mb-3">
+                                    <div class="main__box">
+                                        <h5>Table Barang</h5>
+                                        <hr>
+                                        <!-- input filter -->
+                                        <div class="input-group mb-3">
+                                            <input type="text" name="addon_3" placeholder="Cari dengan nama ..." class="form form--focus-blue">
+                                            <div class="input-group__append">
+                                                <a href="#" class="btn btn--blue"><span class="fa fa-search"></span></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table--blue">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No</th>
+                                                    <th>Nama Barang</th>
+                                                    <th>Jumlah</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>Mouse Logitech</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>Keyboard</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>Kipas Pendingin</td>
+                                                    <td>3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div><!-- col-12 -->
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12 mb-3&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Anggota&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;!-- input filter --&gt;
+            &lt;div class=&quot;form-row&quot;&gt;
+                &lt;div class=&quot;col-md-6&quot;&gt;
+                    &lt;select name=&quot;limit&quot; class=&quot;form form--focus-blue mt-0 mb-3&quot;&gt;
+                        &lt;option&gt;Limit ...&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-6&quot;&gt;
+                    &lt;select name=&quot;umur&quot; class=&quot;form form--focus-blue mt-0 mb-3&quot;&gt;
+                        &lt;option&gt;Umur ...&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;table class=&quot;table table--gray&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                        &lt;th&gt;Nama&lt;/th&gt;
+                        &lt;th&gt;Umur&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                        &lt;td&gt;Reza Sariful Fikri&lt;/td&gt;
+                        &lt;td&gt;19&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                        &lt;td&gt;Dian Pranata&lt;/td&gt;
+                        &lt;td&gt;13&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                        &lt;td&gt;Adelina Damayanti&lt;/td&gt;
+                        &lt;td&gt;19&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-12 --&gt;
+    &lt;div class=&quot;col-12 mb-3&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Barang&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;!-- input filter --&gt;
+            &lt;div class=&quot;input-group mb-3&quot;&gt;
+                &lt;input type=&quot;text&quot; name=&quot;addon_3&quot; placeholder=&quot;Search with name ...&quot; class=&quot;form form--focus-blue&quot;&gt;
+                &lt;div class=&quot;input-group__append&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot;&gt;&lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;table class=&quot;table table--blue&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                        &lt;th&gt;Nama Barang&lt;/th&gt;
+                        &lt;th&gt;Jumlah&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                        &lt;td&gt;Mouse Logitech&lt;/td&gt;
+                        &lt;td&gt;5&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                        &lt;td&gt;Keyboard&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                        &lt;td&gt;Kipas Pendingin&lt;/td&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-12 --&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Pagination</h4>
+                    <p>Membuat pagination kamu membutuhkan tag <i>ul</i> dengan class <span class="text-green">.pagination</span>, diikuti dengan class untuk style pagination-nya, ada class <span class="text-green">.pagination--blue</span> dan <span class="text-green">.pagination--green</span>. Didalam tag <i>ul</i> kamu buat tag <i>li</i> dengan class <span class="text-green">.page-item</span>, didalam tag <i>li</i> buat tag <i>a</i> dengan class <span class="text-green">.page-link</span>, didalam tag <i>a</i> kamu bisa meletakkan text seperti 'previous', 'next' dan angka.</p>
+                    <p>Jika kamu ingin disabled salah satu link dari pagination-nya, kamu perlu menambahkan class <span class="text-green">.disabled</span> setelah class <span class="text-green">.page-item</span> pada tag <i>li</i>. Jika kamu ingin menambahkan efek yang menandakan bahwa link pagination itu aktif, kamu bisa menambahkan class <span class="text-green">.active</span> setelah class <span class="text-green">.page-item</span> pada tag <i>li</i>. Dan jangan lupa untuk meletakkan pagination setelah table.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="main__box">
+                                        <h5>Table Barang</h5>
+                                        <hr>
+                                        <table class="table table--blue mb-3">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No</th>
+                                                    <th>Nama Barang</th>
+                                                    <th>Jumlah</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>Mouse Logitech</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>Keyboard</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>Kipas Pendingin</td>
+                                                    <td>3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- pagination -->
+                                        <ul class="pagination pagination--blue">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!-- col-12 -->
+                                <div class="col-12">
+                                    <div class="main__box">
+                                        <h5>Table Anggota</h5>
+                                        <hr>
+                                        <table class="table table--green mb-3">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No</th>
+                                                    <th>Nama</th>
+                                                    <th>Hobi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>Reza Sariful Fikri</td>
+                                                    <td>Programming</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>Dian Pranata</td>
+                                                    <td>Game</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>Adelina Damayanti</td>
+                                                    <td>Membaca</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- pagination -->
+                                        <ul class="pagination pagination--green">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!-- col-12 -->
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12 mb-3&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Barang&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;table class=&quot;table table--blue mb-3&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                        &lt;th&gt;Nama Barang&lt;/th&gt;
+                        &lt;th&gt;Jumlah&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                        &lt;td&gt;Mouse Logitech&lt;/td&gt;
+                        &lt;td&gt;5&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                        &lt;td&gt;Keyboard&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                        &lt;td&gt;Kipas Pendingin&lt;/td&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;!-- pagination --&gt;
+            &lt;ul class=&quot;pagination pagination--blue&quot;&gt;
+                &lt;li class=&quot;page-item disabled&quot;&gt;
+                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;page-item active&quot;&gt;
+                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;page-item&quot;&gt;
+                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-12 --&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Anggota&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;table class=&quot;table table--green mb-3&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                        &lt;th&gt;Nama&lt;/th&gt;
+                        &lt;th&gt;Hobi&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                        &lt;td&gt;Reza Sariful Fikri&lt;/td&gt;
+                        &lt;td&gt;Programming&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                        &lt;td&gt;Dian Pranata&lt;/td&gt;
+                        &lt;td&gt;Game&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                        &lt;td&gt;Adelina Damayanti&lt;/td&gt;
+                        &lt;td&gt;Membaca&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;!-- pagination --&gt;
+            &lt;ul class=&quot;pagination pagination--green&quot;&gt;
+                &lt;li class=&quot;page-item disabled&quot;&gt;
+                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;page-item active&quot;&gt;
+                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;page-item&quot;&gt;
+                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-12 --&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
+                    <h4 class="mt-5">Loading</h4>
+                    <p>Membuat loading pada table kamu harus membungkus table beserta input filter dan pagination menggunakan tag <i>div</i> dengan class <span class="text-green">.table-box</span> (<i>agar ketika loading ditampilkan, loading tidak ikut menutupi judul table-nya</i>), lalu untuk membuat loading sama seperti pada <a href="loading.html" target="_blank">dokumentasi loading</a>, masukkan loading didalam tag <i>div</i> dengan class <span class="text-green">.table-box</span>, dan letakkan loading sebelum input filter (<i>jika menggunakan input filter</i>) atau sebelum table. Kamu bisa menyembunyikan loading dengan menambahkan class utilities milik bootstrap untuk display none <span class="text-green">.d-none</span> setelah class untuk style loading. Gunakan Javascript & DOM untuk menghapus atau menambahkan class.</p>
+
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="main__box">
+                                        <h5>Table Barang</h5>
+                                        <hr>
+                                        <div class="table-box">
+                                            <div class="loading-circle loading-circle--lg loading-circle--blue">
+                                                <div class="loading-circle__fill"></div>
+                                            </div>
+                                            <select name="limit" class="form form--focus-blue mt-0 mb-3">
+                                                <option>Limit ...</option>
+                                            </select>
+                                            <table class="table table--blue mb-3">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="10">No</th>
+                                                        <th>Nama Barang</th>
+                                                        <th>Jumlah</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>Mouse Logitech</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>Keyboard</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>Kipas Pendingin</td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <ul class="pagination pagination--blue">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#">Previous</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- col-12 -->
+                            </div>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;main__box&quot;&gt;
+            &lt;h5&gt;Table Barang&lt;/h5&gt;
+            &lt;hr&gt;
+            &lt;div class=&quot;table-box&quot;&gt;
+                &lt;div class=&quot;loading-circle loading-circle--lg loading-circle--blue&quot;&gt;
+                    &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;select name=&quot;limit&quot; class=&quot;form form--focus-blue mt-0 mb-3&quot;&gt;
+                    &lt;option&gt;Limit ...&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;table class=&quot;table table--blue mb-3&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th width=&quot;10&quot;&gt;No&lt;/th&gt;
+                            &lt;th&gt;Nama Barang&lt;/th&gt;
+                            &lt;th&gt;Jumlah&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
+                            &lt;td&gt;Mouse Logitech&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;text-center&quot;&gt;2&lt;/td&gt;
+                            &lt;td&gt;Keyboard&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;text-center&quot;&gt;3&lt;/td&gt;
+                            &lt;td&gt;Kipas Pendingin&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+                &lt;ul class=&quot;pagination pagination--blue&quot;&gt;
+                    &lt;li class=&quot;page-item disabled&quot;&gt;
+                        &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;page-item active&quot;&gt;
+                        &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;page-item&quot;&gt;
+                        &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- col-12 --&gt;
+&lt;/div&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+                </section><!-- main__box -->
+            </div>
+        </div><!-- row -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="mb-2 mb-sm-0">Copyright &copy; Reza Admin 2020. All rights reserved</p>
+        <p>Version 1.0</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Reza Admin JS-->
+    <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../dist/js/doc.js"></script>
+    <script src="../dist/plugin/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

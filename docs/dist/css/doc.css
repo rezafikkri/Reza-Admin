@@ -107,6 +107,8 @@ blockquote.blockquote {
     background-color: #262b35; }
 .pre-code-box .main__box h5 {
   font-family: open_sansregular; }
+.pre-code-box .pre-code-box__preview .main__box h5 {
+  font-family: open_sanssemibold; }
 .pre-code-box .footer {
   width: calc(100% - 268px); }
   @media (max-width: 767.98px) {
