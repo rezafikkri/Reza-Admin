@@ -75,47 +75,45 @@ blockquote.blockquote {
   blockquote.blockquote--green {
     border-left: 4px solid #1bd741; }
 
-.pre-code-box {
-  margin-bottom: -7px; }
-  .pre-code-box pre {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px; }
-  .pre-code-box__preview {
-    border: 1px solid #e8e8e8;
-    border-bottom: 0px;
-    padding: 20px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    background-color: #fcfcfc;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: relative; }
-  .pre-code-box__action {
-    position: absolute;
-    top: 1px;
-    right: 1px; }
-    .pre-code-box__action a.language,
-    .pre-code-box__action a.clipboard {
-      padding: 3px 10px;
-      font-family: open_sansregular;
-      font-size: 12px;
-      color: #ddd;
-      background-color: #373d49; }
-    .pre-code-box__action a.clipboard {
-      border-right: 1px solid #2e3440;
-      border-bottom-left-radius: 4px; }
-    .pre-code-box__action a.clipboard:hover {
-      cursor: pointer;
-      background-color: #262b35; }
-  .pre-code-box .main__box h5 {
-    font-family: open_sansregular; }
-  .pre-code-box .pre-code-box__preview .main__box h5 {
-    font-family: open_sanssemibold; }
-  .pre-code-box .footer {
-    width: calc(100% - 268px); }
-    @media (max-width: 767.98px) {
-      .pre-code-box .footer {
-        width: calc(100% - 40px); } }
+.pre-code-box pre {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+.pre-code-box__preview {
+  border: 1px solid #e8e8e8;
+  border-bottom: 0px;
+  padding: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative; }
+.pre-code-box__action {
+  position: absolute;
+  top: 1px;
+  right: 1px; }
+  .pre-code-box__action a.language,
+  .pre-code-box__action a.clipboard {
+    padding: 3px 10px;
+    font-family: open_sansregular;
+    font-size: 12px;
+    color: #ddd;
+    background-color: #373d49; }
+  .pre-code-box__action a.clipboard {
+    border-right: 1px solid #2e3440;
+    border-bottom-left-radius: 4px; }
+  .pre-code-box__action a.clipboard:hover {
+    cursor: pointer;
+    background-color: #262b35; }
+.pre-code-box .main__box h5 {
+  font-family: open_sansregular; }
+.pre-code-box .pre-code-box__preview .main__box h5 {
+  font-family: open_sanssemibold; }
+.pre-code-box .footer {
+  width: calc(100% - 268px); }
+  @media (max-width: 767.98px) {
+    .pre-code-box .footer {
+      width: calc(100% - 40px); } }
 
 .doc-index {
   display: -webkit-box;
