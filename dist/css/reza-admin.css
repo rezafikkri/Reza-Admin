@@ -952,10 +952,17 @@ small {
 /* chart */
 .chart {
   padding: 20px;
-  min-height: 350px;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   background-color: white; }
+  .chart__body {
+    min-height: 350px; }
+  .chart__header {
+    margin-bottom: 1.5rem; }
+  .chart h6 {
+    text-align: center;
+    font-family: open_sanssemibold;
+    color: #595959; }
 
 /* card */
 .card {

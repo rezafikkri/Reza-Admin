@@ -110,25 +110,45 @@
 			<div class="mb-3 col-lg-8">
 				<h5>Area Chart</h5>
 				<section class="chart">
-					<canvas id="area_chart"></canvas>
+					<div class="chart__header">
+						<h6>Visitors, January 2020</h6>
+					</div>
+					<div class="chart__body">
+						<canvas id="area_chart"></canvas>
+					</div>
 				</section>
 			</div>
 			<div class="mb-3 col-lg-4">
 				<h5>Pie Chart</h5>
 				<section class="chart">
-					<canvas id="pie_chart"></canvas>					
+					<div class="chart__header">
+						<h6>Browser Usage, January 2020</h6>
+					</div>
+					<div class="chart__body">
+						<canvas id="pie_chart"></canvas>
+					</div>
 				</section>
 			</div>
 			<div class="mb-3 col-lg-8">
 				<h5>Bar Chart</h5>
 				<section class="chart">
-					<canvas id="bar_chart"></canvas>					
+					<div class="chart__header">
+						<h6>Visitors, 2020</h6>
+					</div>
+					<div class="chart__body">
+						<canvas id="bar_chart"></canvas>
+					</div>
 				</section>
 			</div>
 			<div class="mb-3 col-lg-4">
 				<h5>Doughnut Chart</h5>
 				<section class="chart">
-					<canvas id="doughnut_chart"></canvas>					
+					<div class="chart__header">
+						<h6>Browser Usage, January 2020</h6>
+					</div>
+					<div class="chart__body">
+						<canvas id="doughnut_chart"></canvas>
+					</div>	
 				</section>
 			</div>
 		</div><!-- row -->
@@ -166,11 +186,6 @@
 		    	maintainAspectRatio: false,
 		    	legend: {
 		    		display: false
-		        },
-		        title: {
-		        	display: true,
-		        	text: 'Visitors, January 2020',
-		        	fontSize: 14
 		        }
 		    }
 		}
@@ -197,11 +212,6 @@
 		    	responsive: true,
 		    	legend: {
 		    		display: true
-		        },
-		        title: {
-		        	display: true,
-		        	text: 'Browser Usage, January 2020',
-		        	fontSize: 14
 		        }
 		    }
 		}
@@ -223,11 +233,6 @@
 		    	responsive: true,
 		    	legend: {
 		    		display: false
-		        },
-		        title: {
-		        	display: true,
-		        	text: 'Visitors, 2020',
-		        	fontSize: 14
 		        }
 		    }
 		}
@@ -254,11 +259,6 @@
 		    	responsive: true,
 		    	legend: {
 		    		display: true
-		        },
-		        title: {
-		        	display: true,
-		        	text: 'Browser Usage, January 2020',
-		        	fontSize: 14
 		        }
 		    }
 		}

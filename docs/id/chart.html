@@ -100,19 +100,29 @@
 
             <div class="col-12">
                 <div class="main__box">
-                    <p>Membuat chart tidak jauh berbeda dengan <a href="https://www.chartjs.org/docs/latest/">dokumentasi resmi</a> chart js, namun kamu perlu tag <i>div</i> atau <i>section</i> dengan class <span class="text-green">.chart</span>, lalu kamu letakkan chart di dalamnya. Standar tinggi dari chart adalah 350px, kamu juga bisa mengaturnya dengan menggunakan attribute <span class="text-green">height</span> pada tag <i>canvas</i>.</p>
+                    <p>Membuat chart tidak jauh berbeda dengan <a href="https://www.chartjs.org/docs/latest/">dokumentasi resmi</a> chart js, namun kamu perlu tag <i>div</i> atau <i>section</i> dengan class <span class="text-green">.chart</span>, didalamnya ada dua bagian yaitu <b>chart header</b> (<i>tempat judul dari chart</i>) dan <b>chart body</b> (<i>tempat chart</i>), untuk membuat chart header kamu perlu tag <i>div</i> dengan class <span class="text-green">.chart__header</span>, dan letakkan judul dari chart didalamnya menggunakan tag <i>h6</i>. Untuk membuat chart body kamu perlu tag <i>div</i> dengan class <span class="text-green">.chart__body</span>, letakkan chart body dibawah chart header, dan kamu letakkan chart di dalamnya. Standar tinggi dari chart adalah 350px, kamu juga bisa mengaturnya dengan menggunakan attribute <span class="text-green">height</span> pada tag <i>canvas</i>.</p>
                     <blockquote class="blockquote blockquote--green">
                        Jika kamu belum pernah menggunakan Chart js sebelumnya, saya sarankan untuk membaca dokumentasi resmi dari Chart js!. Disana sudah dijelaskan dengan detail.
                     </blockquote>
-                    <h4>Area Chart</h4>
+                    <h4 class="mt-5">Area Chart</h4>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <div class="chart">
-                                <canvas id="area_chart"></canvas>
-                            </div>
+                            <section class="chart">
+                                <div class="chart__header">
+                                    <h6>Pengunjung, Januari 2020</h6>
+                                </div>
+                                <div class="chart__body">
+                                    <canvas id="area_chart"></canvas>
+                                </div>
+                            </section>
                         </div>
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
-    &lt;canvas id=&quot;area_chart&quot;&gt;&lt;/canvas&gt;
+    &lt;div class=&quot;chart__header&quot;&gt;
+        &lt;h6&gt;Pengunjung, Januari 2020&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;chart__body&quot;&gt;
+        &lt;canvas id=&quot;area_chart&quot;&gt;&lt;/canvas&gt;
+    &lt;/div&gt;
 &lt;/section&gt;</code></pre>
                     </div><!-- pre-code-box -->
                     <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Area Chart
@@ -133,25 +143,30 @@ let configAreaChart = {
         maintainAspectRatio: false,
         legend: {
             display: false
-        },
-        title: {
-            display: true,
-            text: 'Pengunjung, Januari 2020',
-            fontSize: 14
         }
     }
 }
 new Chart(areaChart, configAreaChart);</code></pre>
 
-                    <h4 class="mt-4">Pie Chart</h4>
+                    <h4 class="mt-5">Pie Chart</h4>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <section class="chart">
-                                <canvas id="pie_chart"></canvas>                    
+                                <div class="chart__header">
+                                    <h6>Pemakaian Browser, Januari 2020</h6>
+                                </div>
+                                <div class="chart__body">
+                                    <canvas id="pie_chart"></canvas>
+                                </div>
                             </section>
                         </div><!-- pre-code-box__preview -->
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
-    &lt;canvas id=&quot;pie_chart&quot;&gt;&lt;/canvas&gt;                  
+    &lt;div class=&quot;chart__header&quot;&gt;
+        &lt;h6&gt;Pemakaian Browser, Januari 2020&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;chart__body&quot;&gt;
+        &lt;canvas id=&quot;pie_chart&quot;&gt;&lt;/canvas&gt;
+    &lt;/div&gt;
 &lt;/section&gt;</code></pre>
                     </div><!-- pre-code-box -->
                     <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Pie Chart
@@ -175,25 +190,30 @@ let configPieChart = {
         responsive: true,
         legend: {
             display: true
-        },
-        title: {
-            display: true,
-            text: 'Pemakaian Browser, Januari 2020',
-            fontSize: 14
         }
     }
 }
 new Chart(pieChart, configPieChart);</code></pre>
 
-                    <h4 class="mt-4">Bar Chart</h4>
+                    <h4 class="mt-5">Bar Chart</h4>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <section class="chart">
-                                <canvas id="bar_chart"></canvas>
+                                <div class="chart__header">
+                                    <h6>Pengunjung 2020</h6>
+                                </div>
+                                <div class="chart__body">
+                                    <canvas id="bar_chart"></canvas>
+                                </div>                                
                             </section>
                         </div><!-- pre-code-box__preview -->
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
-    &lt;canvas id=&quot;bar_chart&quot;&gt;&lt;/canvas&gt;
+    &lt;div class=&quot;chart__header&quot;&gt;
+        &lt;h6&gt;Pengunjung 2020&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;chart__body&quot;&gt;
+        &lt;canvas id=&quot;bar_chart&quot;&gt;&lt;/canvas&gt;
+    &lt;/div&gt;                                
 &lt;/section&gt;</code></pre>
                     </div><!-- pre-code-box -->
                     <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Bar Chart
@@ -209,14 +229,8 @@ let configBarChart = {
     },
     options: {
         maintainAspectRatio: false,
-        responsive: true,
         legend: {
             display: false
-        },
-        title: {
-            display: true,
-            text: 'Pengunjung 2020',
-            fontSize: 14
         }
     }
 }
@@ -226,11 +240,21 @@ new Chart(barChart, configBarChart);</code></pre>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <section class="chart">
-                                <canvas id="doughnut_chart"></canvas>                   
+                                <div class="chart__header">
+                                    <h6>Pemakaian browser, Januari 2020</h6>
+                                </div>
+                                <div class="chart__body">
+                                    <canvas id="doughnut_chart"></canvas>
+                                </div>
                             </section>
                         </div><!-- pre-code-box__preview -->
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;section class=&quot;chart&quot;&gt;
-    &lt;canvas id=&quot;doughnut_chart&quot;&gt;&lt;/canvas&gt;                 
+    &lt;div class=&quot;chart__header&quot;&gt;
+        &lt;h6&gt;Pemakaian browser, Januari 2020&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;chart__body&quot;&gt;
+        &lt;canvas id=&quot;doughnut_chart&quot;&gt;&lt;/canvas&gt;
+    &lt;/div&gt;
 &lt;/section&gt;</code></pre>
                     </div><!-- pre-code-box -->
                     <pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">// Doughnut Chart
@@ -251,14 +275,8 @@ let configDoughnutChart = {
     },
     options: {
         maintainAspectRatio: false,
-        responsive: true,
         legend: {
             display: true
-        },
-        title: {
-            display: true,
-            text: 'Pemakaian browser, Januari 2020',
-            fontSize: 14
         }
     }
 }
@@ -285,11 +303,9 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
     <script>hljs.initHighlightingOnLoad();</script>
 
     <script type="text/javascript">
-        "use strict";
-
         // Area Chart
-        var areaChart = document.querySelector("#area_chart").getContext('2d');
-        var configAreaChart = {
+        const areaChart = document.querySelector("#area_chart").getContext('2d');
+        let configAreaChart = {
             type: 'line',
             data: {
                 labels: ['Ahad, 11','Senin, 12','Selasa, 13','Rabu, 14','Kamis, 15','Jum\'at, 16'],
@@ -305,19 +321,14 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
                 maintainAspectRatio: false,
                 legend: {
                     display: false
-                },
-                title: {
-                    display: true,
-                    text: 'Pengunjung, Januari 2020',
-                    fontSize: 14
                 }
             }
         }
         new Chart(areaChart, configAreaChart);
 
         // Pie Chart
-        var pieChart = document.querySelector("#pie_chart").getContext('2d');
-        var configPieChart = {
+        const pieChart = document.querySelector("#pie_chart").getContext('2d');
+        let configPieChart = {
             type: 'pie',
             data: {
                 labels: ['Chrome','Mozilla','Uc Browser','Opera Mini'],
@@ -336,19 +347,14 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
                 responsive: true,
                 legend: {
                     display: true
-                },
-                title: {
-                    display: true,
-                    text: 'Pemakaian Browser, Januari 2020',
-                    fontSize: 14
                 }
             }
         }
         new Chart(pieChart, configPieChart);
 
         // Bar Chart
-        var barChart = document.querySelector("#bar_chart").getContext('2d');
-        var configBarChart = {
+        const barChart = document.querySelector("#bar_chart").getContext('2d');
+        let configBarChart = {
             type: 'bar',
             data: {
                 labels: ['Januari','Februari','Maret','April','Mai','Juni'],
@@ -359,22 +365,16 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
             },
             options: {
                 maintainAspectRatio: false,
-                responsive: true,
                 legend: {
                     display: false
-                },
-                title: {
-                    display: true,
-                    text: 'Pengunjung 2020',
-                    fontSize: 14
                 }
             }
         }
         new Chart(barChart, configBarChart);
 
         // Doughnut Chart
-        var doughnutChart = document.querySelector("#doughnut_chart").getContext('2d');
-        var configDoughnutChart = {
+        const doughnutChart = document.querySelector("#doughnut_chart").getContext('2d');
+        let configDoughnutChart = {
             type: 'doughnut',
             data: {
                 labels: ['Mozilla','Chrome','Uc Browser','Opera Mini'],
@@ -390,14 +390,8 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
             },
             options: {
                 maintainAspectRatio: false,
-                responsive: true,
                 legend: {
                     display: true
-                },
-                title: {
-                    display: true,
-                    text: 'Pemakaian browser, Januari 2020',
-                    fontSize: 14
                 }
             }
         }

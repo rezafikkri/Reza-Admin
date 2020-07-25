@@ -142,12 +142,22 @@
 			<!-- charts -->
 			<div class="mb-3 col-lg-8">
 				<section class="chart">
-					<canvas id="visitor_chart"></canvas>
+					<div class="chart__header">
+						<h6>Visitors, January 2020</h6>
+					</div>
+					<div class="chart__body">
+						<canvas id="visitor_chart"></canvas>
+					</div>
 				</section>
 			</div>
 			<div class="mb-3 col-lg-4">
 				<section class="chart">
-					<canvas id="browser_usage_chart"></canvas>					
+					<div class="chart__header">
+						<h6>Browser Usage, January 2020</h6>
+					</div>
+					<div class="chart__body">
+						<canvas id="browser_usage_chart"></canvas>
+					</div>
 				</section>
 			</div>
 
@@ -280,11 +290,6 @@
 		    	maintainAspectRatio: false,
 		    	legend: {
 		    		display: false
-		        },
-		        title: {
-		        	display: true,
-		        	text: 'Visitors, January 2020',
-		        	fontSize: 14
 		        }
 		    }
 		}
@@ -308,14 +313,8 @@
 		    },
 		    options: {
 		    	maintainAspectRatio: false,
-		    	responsive: true,
 		    	legend: {
 		    		display: true
-		        },
-		        title: {
-		        	display: true,
-		        	text: 'Browser Usage, January 2020',
-		        	fontSize: 14
 		        }
 		    }
 		}

@@ -295,15 +295,13 @@ closeModal.addEventListener('click', e => {
     <script src="../dist/plugin/highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript">
-    	"use strict";
-
 		/**
 		 * Modal
 		 */
 
-		var btnShowModal = document.querySelector("a#show-modal");
-		var modal = document.querySelector("div#modal-success");
-		var closeModal = modal.querySelector("a#close-modal");
+		const btnShowModal = document.querySelector("a#show-modal");
+		const modal = document.querySelector("div#modal-success");
+		const closeModal = modal.querySelector("a#close-modal");
 		btnShowModal.addEventListener('click', function (e) {
 		    // hilangkan fungsi default dari tag a
 		    e.preventDefault(); 
@@ -326,16 +324,16 @@ closeModal.addEventListener('click', e => {
 		});
 		
 		// Show hide More modal
-		var moreModal = document.querySelector("div#more-modal");
+		const moreModal = document.querySelector("div#more-modal");
 
 		moreModal.addEventListener('click', function (e) {
-		    var targetBtnShowModal = e.target;
+		    const targetBtnShowModal = e.target;
 
 		    if (targetBtnShowModal.classList.contains("btn-show-modal")) {
 		      e.preventDefault();
-		      var targetModal = document.querySelector(targetBtnShowModal.getAttribute("target-modal"));
+		      const targetModal = document.querySelector(targetBtnShowModal.getAttribute("target-modal"));
 
-		      var closeModal = targetModal.querySelector("a.close-modal");
+		      const closeModal = targetModal.querySelector("a.close-modal");
 
 		      targetModal.classList.add("modal--fade-in");
 		      document.body.classList.add("stop-scrolling");
