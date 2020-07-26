@@ -32,15 +32,6 @@ if(sidebar !== null) {
 	});
 }
 
-/* navbar toggler */
-const btnNavbarToggler = document.querySelector("button.navbar-toggler");
-if(btnNavbarToggler !== null) {
-	btnNavbarToggler.addEventListener('click', () => {
-		const navbarTarget = document.querySelector(`div${btnNavbarToggler.getAttribute("target")}`);
-		navbarTarget.classList.toggle("d-block");
-	});
-}
-
 /* alert close */
 if(main !== null) {
 	main.addEventListener('click', e => {

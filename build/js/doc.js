@@ -3,16 +3,6 @@
 const mainBox = document.querySelector(".main__box");
 if(mainBox !== null) {
 	mainBox.addEventListener('click', e => {
-		// navbar toggler
-		let targetNavbarToggler = e.target;
-
-		if(!targetNavbarToggler.classList.contains("navbar-toggler")) targetNavbarToggler = e.target.parentElement;
-
-		if(targetNavbarToggler.classList.contains("navbar-toggler")) {
-			const navbarTarget = document.querySelector(`div${targetNavbarToggler.getAttribute("target")}`);
-			navbarTarget.classList.toggle("d-block");
-		}
-
 		// sidebar dropdown
 		let targetSidebarDropdown = e.target;
         if(!targetSidebarDropdown.classList.contains("sidebar-btn-dropdown")) targetSidebarDropdown = e.target.parentElement;

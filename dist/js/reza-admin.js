@@ -33,17 +33,6 @@ if (sidebar !== null) {
     }
   });
 }
-/* navbar toggler */
-
-
-var btnNavbarToggler = document.querySelector("button.navbar-toggler");
-
-if (btnNavbarToggler !== null) {
-  btnNavbarToggler.addEventListener('click', function () {
-    var navbarTarget = document.querySelector("div".concat(btnNavbarToggler.getAttribute("target")));
-    navbarTarget.classList.toggle("d-block");
-  });
-}
 /* alert close */
 
 
