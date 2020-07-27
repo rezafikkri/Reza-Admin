@@ -41,8 +41,8 @@ time {
 	display: inline-block;
 }
 
-.main,
-.footer {
+.main.ml-sidebar-width,
+.footer.ml-sidebar-width {
 	margin-left: 228px;
 }
 
@@ -56,7 +56,9 @@ time {
 	transition: .5s cubic-bezier(.99, .01, .57, 1.01);
 
 	@media (max-width: 767.98px) {
-		margin-left: 0px;
+		&.ml-sidebar-width {
+			margin-left: 0px;
+		}
 	}
 
 	&__box {

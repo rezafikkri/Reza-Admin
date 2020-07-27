@@ -63,8 +63,8 @@
 		transition: .1s cubic-bezier(.55,.09,.68,.53);
 
 		&:hover {
-			color: #333;
-			background-color: #fcfcfc;
+			color: #fff;
+			background-color: #2187c6;
 		}
 	}
 
@@ -81,13 +81,9 @@
 	}
 
 	&__item--active > a {
-		background-color: #fcfcfc;
-		color: #3d3d3d;
+		background-color: #1a7cba;
+		color: #fff;
 		font-family: open_sansbold, sans-serif;
-		
-		&:hover {
-			color: #3d3d3d;
-		}
 	}	
 }
 

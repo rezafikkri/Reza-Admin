@@ -14,19 +14,27 @@
 
 	position: absolute;
 	bottom: 0px;
-	width: calc(100% - 228px);
+	width: 100%;
 	
-	-webkit-transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
-	-o-transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
-	transition: margin .5s cubic-bezier(.99, .01, .57, 1.01);
+	-webkit-transition: margin-left .5s cubic-bezier(.99, .01, .57, 1.01);
+	-o-transition: margin-left .5s cubic-bezier(.99, .01, .57, 1.01);
+	transition: margin-left .5s cubic-bezier(.99, .01, .57, 1.01);
 
 	p {
 		margin: 0px;
 	}
 
+	@media (min-width: 768px) {
+		&.ml-sidebar-width {
+			width: calc(100% - 228px);
+		}
+	}
+
 	@media (max-width: 767.98px) {
-		width: 100%;
-		margin-left: 0px;
+		&.ml-sidebar-width {
+			width: 100%;
+			margin-left: 0px;
+		}
 	}
 
 	@media (max-width: 575.98px) {

@@ -110,9 +110,13 @@ blockquote.blockquote {
 .pre-code-box .pre-code-box__preview .main__box h5 {
   font-family: open_sanssemibold; }
 .pre-code-box .footer {
-  width: calc(100% - 268px); }
+  width: calc(100% - 40px);
+  bottom: 20px; }
+  @media (min-width: 768px) {
+    .pre-code-box .footer.ml-sidebar-width {
+      width: calc(100% - 268px); } }
   @media (max-width: 767.98px) {
-    .pre-code-box .footer {
+    .pre-code-box .footer.ml-sidebar-width {
       width: calc(100% - 40px); } }
 
 .doc-index {

@@ -160,10 +160,19 @@ blockquote.blockquote {
 	}
 
 	.footer {
-		width: calc(100% - 268px);
+		width: calc(100% - 40px);
+		bottom: 20px;
+		
+		@media (min-width: 768px) {
+			&.ml-sidebar-width {
+				width: calc(100% - 268px);
+			}
+		}
 
 		@media (max-width: 767.98px) {
-			width: calc(100% - 40px);
+			&.ml-sidebar-width {
+				width: calc(100% - 40px);
+			}
 		}
 	}
 }
