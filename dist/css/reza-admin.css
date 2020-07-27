@@ -120,6 +120,8 @@ time {
       color: #ea2a2a; }
   .navbar--white .nav-item:last-child .nav-link {
     padding-right: 0px; }
+  .navbar--white .nav-item.dropdown.show .nav-link {
+    color: #2597e0; }
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg .navbar-nav {
@@ -189,6 +191,13 @@ time {
   border-radius: 50%;
   margin-right: 3px;
   border: 1px solid #ddd; }
+
+.dropdown-menu {
+  margin-top: .5rem; }
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: #2597e0; }
 
 /* Sidebar */
 @media (min-width: 768px) {
@@ -1132,7 +1141,7 @@ small {
   .pagination .page-item .page-link {
     border-color: #e2e2e2; }
     .pagination .page-item .page-link:hover {
-      background-color: #e0e0e0;
+      background-color: #e5e5e5;
       border-color: #e2e2e2; }
     .pagination .page-item .page-link:active, .pagination .page-item .page-link:link {
       box-shadow: none; }
@@ -1566,5 +1575,11 @@ small {
 /* utilities */
 .text-hover-red:hover {
   color: #ea2a2a !important; }
+
+.mb-6 {
+  margin-bottom: 4rem; }
+
+.mb-7 {
+  margin-bottom: 6rem; }
 
 /*# sourceMappingURL=reza-admin.css.map */

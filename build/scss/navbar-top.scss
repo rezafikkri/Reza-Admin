@@ -72,6 +72,10 @@
 	.nav-item:last-child .nav-link {
 		padding-right: 0px;
 	}
+
+	.nav-item.dropdown.show .nav-link {
+		color: $blue-reza;
+	}
 }
 
 @media (max-width: 991.98px) {
@@ -126,4 +130,13 @@
 	border-radius: 50%;
 	margin-right: 3px;
 	border: 1px solid #ddd;
+}
+
+.dropdown-menu {
+	margin-top: .5rem;
+}
+
+.dropdown-item:hover {
+	background-color: transparent;
+	color: $blue-reza;
 }

@@ -45,14 +45,16 @@
 						<span class="navbar__notification-number navbar__notification-number--orange">2</span>
 					</a>
 				</li>
-				<li class="nav-item navbar__avatar">
-					<a class="nav-link" href="#">
+				<li class="nav-item navbar__avatar dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
 						<img src="dist/img/reza.jpg" alt="avatar image">
 						<span>Reza Sariful Fikri</span>
 					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link nav-link--hover-red" href="#"><span class="fa fa-sign-out"></span></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="" class="dropdown-item">Settings Account</a>
+						<div class="dropdown-divider"></div>
+						<a href="" class="dropdown-item text-hover-red">Logout <span class="fa fa-sign-out"></span></a>
+					</div>
 				</li>
 			</ul>
 		</div>

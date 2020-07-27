@@ -311,6 +311,7 @@
     &lt;/button&gt;
     &lt;div class=&quot;collapse navbar-collapse justify-content-end&quot; id=&quot;navbarNav4&quot;&gt;
         &lt;ul class=&quot;navbar-nav&quot;&gt;
+        &lt;!-- navbar avatar --&gt;
             &lt;li class=&quot;nav-item navbar__avatar&quot;&gt;
                 &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
                     &lt;img src=&quot;[your path]/dist/img/reza.jpg&quot; alt=&quot;avatar image&quot;&gt;
@@ -327,16 +328,90 @@
 &lt;/nav&gt;</code></pre>
                     </div><!-- pre-code-box -->
 
+                    <h4 class="mt-5">Dropdown</h4>
+                    <p>Membuat dropdown sama dengan <a href="https://getbootstrap.com/docs/4.5/components/dropdowns/" target="_blank" rel="noopener noreferrer">dokumentasi bootstrap</a>.</p>
+                    <div class="pre-code-box">
+                        <div class="pre-code-box__preview">
+                            <nav class="navbar navbar-expand-sm navbar--white mb-7">
+                                <a class="navbar-brand" href="#"><img src="../../dist/img/Reza_logo.ico" width="30" alt="logo reza"></a>
+                                <button class="navbar-toggler" data-target="#navbarNav5" data-toggle="collapse" type="button">
+                                    <span class="fa fa-navicon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarNav5">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item navbar__notification">
+                                            <a class="nav-link" href="#">
+                                                <span class="fa fa-bookmark"></span>
+                                                <span class="navbar__notification-number navbar__notification-number--blue">2</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item navbar__notification">
+                                            <a class="nav-link " href="#">
+                                                <span class="fa fa-bell"></span>
+                                                <span class="navbar__notification-number navbar__notification-number--orange">2</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item navbar__avatar dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                                <img src="../../dist/img/reza.jpg" alt="avatar image">
+                                                <span>Reza Sariful Fikri</span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="" class="dropdown-item">Settings Account</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="" class="dropdown-item text-hover-red">Logout <span class="fa fa-sign-out"></span></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div><!-- pre-code-box__preview -->
+                        <pre><code class="html">&lt;nav class=&quot;navbar navbar-expand-sm navbar--white&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../../dist/img/Reza_logo.ico&quot; width=&quot;30&quot; alt=&quot;logo reza&quot;&gt;&lt;/a&gt;
+    &lt;button class=&quot;navbar-toggler&quot; data-target=&quot;#navbarNav5&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;
+        &lt;span class=&quot;fa fa-navicon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;collapse navbar-collapse justify-content-end&quot; id=&quot;navbarNav5&quot;&gt;
+        &lt;ul class=&quot;navbar-nav&quot;&gt;
+            &lt;li class=&quot;nav-item navbar__notification&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fa fa-bookmark&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;navbar__notification-number navbar__notification-number--blue&quot;&gt;2&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item navbar__notification&quot;&gt;
+                &lt;a class=&quot;nav-link &quot; href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;fa fa-bell&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;navbar__notification-number navbar__notification-number--orange&quot;&gt;2&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;!-- dropdown --&gt;
+            &lt;li class=&quot;nav-item navbar__avatar dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;
+                    &lt;img src=&quot;../../dist/img/reza.jpg&quot; alt=&quot;avatar image&quot;&gt;
+                    &lt;span&gt;Reza Sariful Fikri&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+                    &lt;a href=&quot;&quot; class=&quot;dropdown-item&quot;&gt;Settings Account&lt;/a&gt;
+                    &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+                    &lt;a href=&quot;&quot; class=&quot;dropdown-item text-hover-red&quot;&gt;Logout &lt;span class=&quot;fa fa-sign-out&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                    </div><!-- pre-code-box -->
+
                     <h4 class="mt-5">Toggler</h4>
                     <p>Membuat navbar toggler sama dengan <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/components/navbar/#toggler">dokumentasi bootstrap</a>.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <nav class="navbar navbar-expand-lg navbar--white">
                                 <a class="navbar-brand" href="#"><img src="../../dist/img/Reza_logo.ico" width="30" alt="logo reza"></a>
-                                <button class="navbar-toggler" data-target="#navbarNav5" data-toggle="collapse" type="button">
+                                <button class="navbar-toggler" data-target="#navbarNav6" data-toggle="collapse" type="button">
                                     <span class="fa fa-navicon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse justify-content-end" id="navbarNav5">
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarNav6">
                                     <ul class="navbar-nav">
                                         <li class="nav-item navbar__notification">
                                             <a class="nav-link" href="#">
