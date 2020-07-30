@@ -19,8 +19,8 @@
     <!-- then Font awesome -->
     <link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- then Reza Admin CSS and Doc css -->
-    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
-    <link rel="stylesheet" type="text/css" href="../dist/css/doc.css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/doc.min.css">
     <!-- Favicon -->
     <link rel="icon" href="../../dist/img/Reza_logo.ico">
     <!-- higlight css -->
@@ -80,8 +80,6 @@
                     <li class="sidebar__dropdown-item"><a href="blank.html">Halaman Kosong</a></li>
                 </ul>
             </li>
-
-            <li class="sidebar__item"><a class="nav-link" href=""><span class="fa fa-file-text"></span> Licensie</a></li>
         </ul>
     </aside>
 
@@ -103,7 +101,7 @@
                 	<p>Membuat Modal kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.modal</span> diikuti dengan class untuk style modal-nya ada <span class="text-green">.modal--success</span>, <span class="text-green">.modal--info</span>, <span class="text-green">.modal--danger</span>, dan <span class="text-green">.modal--warning</span>. Lalu didalamnya ada tag <i>div</i> dengan class <span class="text-green">.modal__content</span>, didalamnya lagi ada 3 bagian yaitu, <b>Judul</b>, <b>Deskripsi</b>, dan <b>Aksi</b>.</p>
                 	<p><b>Pertama</b>, Judul. Bagian judul diisi dengan judul dari Modal-nya, seperti 'Data ditambahkan' atau 'Konfirmasi hapus' dan lain-lain. Membuat judul kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.modal__title</span>, tambahkan juga class utilities untuk margin milik-nya bootstrap yaitu <span class="text-green">.mb-5</span>. Didalamnya kamu bisa menambahkan icon dari fontawesome, dan dibawah icon kamu letakkan judul dari Modal-nya menggunakan tag <i>h3</i>.</p>
                 	<p><b>Kedua</b>, Deskripsi. Bagian Deskripsi diisi dengan penjelasan detail dari modal-nya, kamu juga bisa menambahkan input jika diperlukan. Membuat Deskripsi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.modal__description</span>, tambahkan juga class <span class="text-green">.mb-5</span>. Didalamnya kamu bisa menambahkan text menggunakan tag <i>p</i>, atau input.</p>
-                	<p><b>Ketiga</b>, Aksi. Bagian Aksi diisi dengan button seperti button untuk menutup modal. Membuat Aksi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.modal__action</span>, lalu didalamnya kamu bisa membuat button seperti pada <a href="button.html">dokumentasi button</a>.</p>
+                	<p><b>Ketiga</b>, Aksi. Bagian Aksi diisi dengan button seperti button untuk menutup modal. Membuat Aksi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.modal__action</span>, lalu didalamnya kamu bisa membuat button seperti pada <a href="button.html" target="_blank">dokumentasi button</a>.</p>
                 	<p>Modal secara standar disembunyikan, kamu bisa menampilkannya dengan menambahkan class <span class="text-green">.modal--fade-in</span> setelah class untuk style modal atau setelah class <span class="text-green">.modal</span>. Jika kamu ingin menutup modal-nya maka cukup hapus class <span class="text-green">.modal--fade-in</span>, itu semua bisa kamu lakukan menggunakan Javascript & DOM.</p>
 
                 	<div class="pre-code-box">
@@ -289,10 +287,10 @@ closeModal.addEventListener('click', e => {
     <!-- jQuery first, then Bootstrap JS, and Reza Admin JS-->
     <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../dist/js/reza-admin.js"></script>
+    <script src="../../dist/js/reza-admin.min.js"></script>
 
     <!-- Optional Javascript -->
-    <script src="../dist/js/doc.js"></script>
+    <script src="../dist/js/doc.min.js"></script>
     <script src="../dist/plugin/highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript">

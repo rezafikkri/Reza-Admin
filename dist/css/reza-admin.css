@@ -250,7 +250,7 @@ time {
     transition: 0.1s cubic-bezier(0.55, 0.09, 0.68, 0.53); }
     .sidebar__item a:hover {
       color: #fff;
-      background-color: #2187c6; }
+      background-color: #1e8ac9; }
   .sidebar__item a.nav-link {
     padding: 12px 16px;
     position: relative; }
@@ -260,12 +260,14 @@ time {
     font-size: 12pt;
     padding: 5px 16px; }
   .sidebar__item--active > a {
-    background-color: #1a7cba;
+    background-color: #1780c1;
     color: #fff;
     font-family: open_sansbold, sans-serif; }
+    .sidebar__item--active > a:hover {
+      background-color: #1780c1; }
 
 .sidebar__item--dropdown-active > a {
-  background-color: #2388c6; }
+  background-color: #1e8ac9; }
 
 .sidebar__span-dropdown {
   position: absolute;
@@ -278,7 +280,7 @@ time {
 
 .sidebar__dropdown {
   list-style-type: none;
-  background-color: #1a7cba;
+  background-color: #1979b5;
   padding-left: 40px;
   display: none; }
   .sidebar__dropdown--show {

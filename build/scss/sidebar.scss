@@ -64,7 +64,7 @@
 
 		&:hover {
 			color: #fff;
-			background-color: #2187c6;
+			background-color: #1e8ac9;
 		}
 	}
 
@@ -81,14 +81,18 @@
 	}
 
 	&__item--active > a {
-		background-color: #1a7cba;
+		background-color: #1780c1;
 		color: #fff;
 		font-family: open_sansbold, sans-serif;
+
+		&:hover {
+			background-color: #1780c1;
+		}
 	}	
 }
 
 .sidebar__item--dropdown-active > a {
-	background-color: #2388c6;
+	background-color: #1e8ac9;
 }
 
 .sidebar__span-dropdown {
@@ -105,7 +109,7 @@
 
 .sidebar__dropdown {
 	list-style-type: none;
-	background-color: #1a7cba;
+	background-color: #1979b5;
 	padding-left: 40px;
 	display: none;
 
