@@ -164,13 +164,13 @@ blockquote.blockquote {
 		bottom: 20px;
 		
 		@media (min-width: 768px) {
-			&.ml-sidebar-width {
+			&--ml-sidebar-width {
 				width: calc(100% - 268px);
 			}
 		}
 
 		@media (max-width: 767.98px) {
-			&.ml-sidebar-width {
+			&--ml-sidebar-width {
 				width: calc(100% - 40px);
 			}
 		}

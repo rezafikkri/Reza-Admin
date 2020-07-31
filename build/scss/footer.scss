@@ -24,14 +24,14 @@
 		margin: 0px;
 	}
 
-	@media (min-width: 768px) {
-		&.ml-sidebar-width {
+	&--ml-sidebar-width {
+		margin-left: 228px;
+
+		@media (min-width: 768px) {
 			width: calc(100% - 228px);
 		}
-	}
 
-	@media (max-width: 767.98px) {
-		&.ml-sidebar-width {
+		@media (max-width: 767.98px) {
 			width: 100%;
 			margin-left: 0px;
 		}
