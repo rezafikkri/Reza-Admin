@@ -348,21 +348,18 @@ time {
   justify-content: space-between;
   position: absolute;
   bottom: 0px;
-  width: 100%;
-  -webkit-transition: margin-left 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
-  -o-transition: margin-left 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01);
-  transition: margin-left 0.5s cubic-bezier(0.99, 0.01, 0.57, 1.01); }
+  left: 0px;
+  right: 0px;
+  -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1); }
   .footer p {
     margin: 0px; }
   .footer--ml-sidebar-width {
-    margin-left: 228px; }
-    @media (min-width: 768px) {
-      .footer--ml-sidebar-width {
-        width: calc(100% - 228px); } }
+    left: 228px; }
     @media (max-width: 767.98px) {
       .footer--ml-sidebar-width {
-        width: 100%;
-        margin-left: 0px; } }
+        left: 0px; } }
   @media (max-width: 575.98px) {
     .footer {
       -webkit-box-orient: vertical;

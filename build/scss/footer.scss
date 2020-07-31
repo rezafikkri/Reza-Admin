@@ -14,26 +14,22 @@
 
 	position: absolute;
 	bottom: 0px;
-	width: 100%;
+	left: 0px;
+	right: 0px;
 	
-	-webkit-transition: margin-left .5s cubic-bezier(.99, .01, .57, 1.01);
-	-o-transition: margin-left .5s cubic-bezier(.99, .01, .57, 1.01);
-	transition: margin-left .5s cubic-bezier(.99, .01, .57, 1.01);
+	-webkit-transition: 0.5s cubic-bezier(.65,.05,.36,1);
+    -o-transition: 0.5s cubic-bezier(.65,.05,.36,1);
+    transition: 0.5s cubic-bezier(.65,.05,.36,1);
 
 	p {
 		margin: 0px;
 	}
 
 	&--ml-sidebar-width {
-		margin-left: 228px;
-
-		@media (min-width: 768px) {
-			width: calc(100% - 228px);
-		}
+		left: 228px;
 
 		@media (max-width: 767.98px) {
-			width: 100%;
-			margin-left: 0px;
+			left: 0px;
 		}
 	}
 
