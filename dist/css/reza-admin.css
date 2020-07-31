@@ -160,9 +160,8 @@ time {
     .navbar-expand-sm .navbar-nav .navbar__notification-number {
       left: .4rem; } }
 .navbar__notification {
-  position: relative; }
-  .navbar__notification a {
-    margin-top: 2px; }
+  position: relative;
+  margin-top: 2px; }
   .navbar__notification .navbar__notification-number {
     position: absolute;
     font-size: 8pt;
