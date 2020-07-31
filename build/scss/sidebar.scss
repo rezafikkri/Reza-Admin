@@ -16,11 +16,7 @@
 	padding: $pt-sidebar-main-konten 0 0;
 	font-family: open_sanssemibold, sans-serif;
 
-	-webkit-transition: -webkit-transform .5s cubic-bezier(.99, .01, .57, 1.01);
-	transition: -webkit-transform .5s cubic-bezier(.99, .01, .57, 1.01);
-	-o-transition: transform .5s cubic-bezier(.99, .01, .57, 1.01);
-	transition: transform .5s cubic-bezier(.99, .01, .57, 1.01);
-	transition: transform .5s cubic-bezier(.99, .01, .57, 1.01), -webkit-transform .5s cubic-bezier(.99, .01, .57, 1.01);
+	transition: transform 0.5s cubic-bezier(.65,.05,.36,1);
 
 	-webkit-transform: translate(0px, 0px);
 	-ms-transform: translate(0px, 0px);
