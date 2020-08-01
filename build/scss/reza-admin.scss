@@ -26,7 +26,6 @@ body {
 
 body.stop-scrolling {
 	overflow: hidden;
-	padding-right: 14px;
 }
 
 strong {
@@ -49,6 +48,11 @@ time {
 	-webkit-transition: margin-left 0.5s cubic-bezier(.65,.05,.36,1);
     -o-transition: margin-left 0.5s cubic-bezier(.65,.05,.36,1);
     transition: margin-left 0.5s cubic-bezier(.65,.05,.36,1);
+
+    @media (max-width: 767.98px) {
+    	padding-left: 15px;
+    	padding-right: 15px;
+    }
 
     &--ml-sidebar-width {
 		margin-left: 228px;

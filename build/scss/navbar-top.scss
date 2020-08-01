@@ -41,6 +41,11 @@
 	z-index: 101;
 	padding: 8px 25px;
 
+	@media (max-width: 767.98px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	.navbar__sidebar-toggler {
 		font-size: 1.25rem;
 		color: #333;

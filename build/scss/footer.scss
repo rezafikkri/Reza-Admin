@@ -21,6 +21,11 @@
     -o-transition: 0.5s cubic-bezier(.65,.05,.36,1);
     transition: 0.5s cubic-bezier(.65,.05,.36,1);
 
+    @media (max-width: 767.98px) {
+    	padding-right: 15px;
+    	padding-left: 15px;
+    }
+
 	p {
 		margin: 0px;
 	}
