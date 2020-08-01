@@ -68,9 +68,11 @@
 	overflow: hidden;
 
 	&__icon {
-		flex-basis: 6.5rem;
+		-ms-flex-preferred-size: 6.5rem;
+        flex-basis: 6.5rem;
 
 		@media (min-width: 1366.98px) {
+			-ms-flex-preferred-size: 30%;
 			flex-basis: 30%;
 		}
 	}
@@ -164,7 +166,8 @@
 
 		&__icon {
 			margin-bottom: 0px;
-			flex-basis: 30%;
+			-ms-flex-preferred-size: 30%;
+        	flex-basis: 30%;
 		}
 
 		&__description time {
