@@ -32,11 +32,11 @@
 		&::before {
 			content: "";
 			position: absolute;
-			height: 29.2px;
 			border: 10px solid transparent;
 			border-left-color: #4c4c4c;
 			right: -19px;
 			top: 0;
+			bottom: 0;
 		}
 
 		span {
@@ -44,12 +44,16 @@
 		}
 	}
 
-	&__decription h3 {
-		font-family: open_sansbold, sans-serif;
-	}
+	&__decription {
+		padding: 1.25rem;
 
-	&__decription time {
-		font-size: 10pt;
+		h3 {
+			font-family: open_sansbold, sans-serif;
+		}
+
+		time {
+			font-size: 10pt;
+		}
 	}
 
 	&__action {
