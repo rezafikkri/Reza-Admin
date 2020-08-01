@@ -632,16 +632,16 @@ label.label-right {
 small {
   font-size: 10pt; }
 
-.text-green {
+.form-text--green {
   color: #15c639; }
 
-.text-blue {
+.form-text--blue {
   color: #198ad1; }
 
-.text-red {
+.form-text--red {
   color: #d62020; }
 
-.text-orange {
+.form-text--orange {
   color: #ff990a; }
 
 .form-check {
@@ -655,11 +655,11 @@ small {
     margin-top: .3rem; }
   .form-check input[type="radio"].form {
     margin-left: -1.25px; }
-  .form-check label.label-check {
+  .form-check label.form-check__label {
     display: inline-block;
     margin-bottom: 0px; }
-  .form-check input[type="checkbox"][disabled].form ~ label.label-check,
-  .form-check input[type="radio"][disabled].form ~ label.label-check {
+  .form-check input[type="checkbox"][disabled].form ~ label.form-check__label,
+  .form-check input[type="radio"][disabled].form ~ label.form-check__label {
     color: #6c757d;
     pointer-events: none; }
   .form-check--inline {

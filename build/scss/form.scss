@@ -20,8 +20,8 @@
 	}
 }
 
-@mixin text-color($name-color, $color) {
-	.text-#{$name-color} {
+@mixin form-text-color($name-color, $color) {
+	.form-text--#{$name-color} {
 		color: $color;
 	}
 }
@@ -114,10 +114,10 @@ small {
 	font-size: 10pt;
 }
 
-@include text-color('green', #15c639);
-@include text-color('blue', #198ad1);
-@include text-color('red', #d62020);
-@include text-color('orange', #ff990a);
+@include form-text-color('green', #15c639);
+@include form-text-color('blue', #198ad1);
+@include form-text-color('red', #d62020);
+@include form-text-color('orange', #ff990a);
 
 .form-check {
 	padding-left: 20px;
@@ -135,13 +135,13 @@ small {
 		margin-left: -1.25px;
 	}
 
-	label.label-check {
+	label#{&}__label {
 		display: inline-block;
 		margin-bottom: 0px;
 	}
 
-	input[type="checkbox"][disabled].form ~ label.label-check,
-	input[type="radio"][disabled].form ~ label.label-check {
+	input[type="checkbox"][disabled].form ~ label#{&}__label,
+	input[type="radio"][disabled].form ~ label#{&}__label {
 		color: #6c757d;
 		pointer-events: none;
 	}

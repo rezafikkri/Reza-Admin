@@ -156,7 +156,7 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Checkbox dan Radio</h4>
-                    <p>Membuat Input Checkbox dan Radio kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.form-check</span>, didalamnya kamu letakkan input checkbox atau input radio dengan class <span class="text-green">.form</span> diikuti class untuk style form input-nya ketika focus/aktif, lalu dibawhnya kamu buat label menggunakan tag <i>label</i> dengan class <span class="text-green">.label-check</span> dan didalam tag <i>label</i>-nya kamu masukkan text keterangan untuk input-nya.</p>
+                    <p>Membuat Input Checkbox dan Radio kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.form-check</span>, didalamnya kamu letakkan input checkbox atau input radio dengan class <span class="text-green">.form</span> diikuti class untuk style form input-nya ketika focus/aktif, lalu dibawhnya kamu buat label menggunakan tag <i>label</i> dengan class <span class="text-green">.form-check__label</span> dan didalam tag <i>label</i>-nya kamu masukkan text keterangan untuk input-nya.</p>
                     <p>Jika kamu ingin membuat input Checkbox dan Radio tanpa label, kamu perlu menambahkan class <span class="text-green">.form-check--not-label</span> setelah class <span class="text-green">.form-check</span>. Jika kamu ingin membuat input Checkbox dan Radio sejajar atau inline kamu perlu menambahkan class <span class="text-green">.form-check--inline</span> setelah class <span class="text-green">.form-check</span>.</p>
 
                     <div class="pre-code-box">
@@ -164,7 +164,7 @@
                             <!-- input checkbox dengan label -->
                             <div class="form-check mt-0">
                                 <input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
-                                <label for="input_check" class="label-check">Checkbox</label>
+                                <label for="input_check" class="form-check__label">Checkbox</label>
                             </div>
 
                             <!-- input checkbox tanpa label -->
@@ -175,7 +175,7 @@
                             <!-- input radio dengan label -->
                             <div class="form-check">
                                 <input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
-                                <label for="input_radio" class="label-check">Radio</label>
+                                <label for="input_radio" class="form-check__label">Radio</label>
                             </div>
 
                             <!-- input radio tanpa label -->
@@ -186,18 +186,18 @@
                             <!-- input checkbox dan radio sejajar atau inline -->
                             <div class="form-check form-check--inline">
                                 <input type="checkbox" name="input_check" id="input_check" class="form form--focus-blue">
-                                <label for="input_check" class="label-check">Inline Checkbox</label>
+                                <label for="input_check" class="form-check__label">Inline Checkbox</label>
                             </div>
                             <div class="form-check form-check--inline">
                                 <input type="radio" name="input_radio" id="input_radio" class="form form--focus-blue">
-                                <label for="input_radio" class="label-check">Inline Radio</label>
+                                <label for="input_radio" class="form-check__label">Inline Radio</label>
                             </div>
                         </div><!-- pre-code-box__preview -->
 
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;!-- input checkbox dengan label --&gt;
 &lt;div class=&quot;form-check mt-0&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;input_check&quot; id=&quot;input_check&quot; class=&quot;form form--focus-blue&quot;&gt;
-    &lt;label for=&quot;input_check&quot; class=&quot;label-check&quot;&gt;Checkbox&lt;/label&gt;
+    &lt;label for=&quot;input_check&quot; class=&quot;form-check__label&quot;&gt;Checkbox&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;!-- input checkbox tanpa label --&gt;
@@ -208,7 +208,7 @@
 &lt;!-- input radio dengan label --&gt;
 &lt;div class=&quot;form-check&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;input_radio&quot; id=&quot;input_radio&quot; class=&quot;form form--focus-blue&quot;&gt;
-    &lt;label for=&quot;input_radio&quot; class=&quot;label-check&quot;&gt;Radio&lt;/label&gt;
+    &lt;label for=&quot;input_radio&quot; class=&quot;form-check__label&quot;&gt;Radio&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;!-- input radio tanpa label --&gt;
@@ -219,11 +219,11 @@
 &lt;!-- input checkbox dan radio sejajar atau inline --&gt;
 &lt;div class=&quot;form-check form-check--inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;input_check&quot; id=&quot;input_check&quot; class=&quot;form form--focus-blue&quot;&gt;
-    &lt;label for=&quot;input_check&quot; class=&quot;label-check&quot;&gt;Inline Checkbox&lt;/label&gt;
+    &lt;label for=&quot;input_check&quot; class=&quot;form-check__label&quot;&gt;Inline Checkbox&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-check form-check--inline&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;input_radio&quot; id=&quot;input_radio&quot; class=&quot;form form--focus-blue&quot;&gt;
-    &lt;label for=&quot;input_radio&quot; class=&quot;label-check&quot;&gt;Inline Radio&lt;/label&gt;
+    &lt;label for=&quot;input_radio&quot; class=&quot;form-check__label&quot;&gt;Inline Radio&lt;/label&gt;
 &lt;/div&gt;</code></pre>
                     </div><!-- pre-code-box -->
 
@@ -240,11 +240,11 @@
 
                             <div class="form-check">
                                 <input type="checkbox" name="input_check" id="input_check_disabled" class="form form--focus-blue" disabled="">
-                                <label for="input_check_disabled" class="label-check">Disabled Checkbox</label>
+                                <label for="input_check_disabled" class="form-check__label">Disabled Checkbox</label>
                             </div>
                             <div class="form-check">
                                 <input type="radio" name="input_radio_disabled" id="input_radio_disabled" class="form form--focus-blue" disabled="">
-                                <label for="input_radio_disabled" class="label-check">Disabled Radio</label>
+                                <label for="input_radio_disabled" class="form-check__label">Disabled Radio</label>
                             </div>
                         </div><!-- pre-code-box__preview -->
 
@@ -258,12 +258,12 @@
 
 &lt;div class=&quot;form-check&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;input_check&quot; id=&quot;input_check_disabled&quot; class=&quot;form form--focus-blue&quot; disabled=&quot;&quot;&gt;
-    &lt;label for=&quot;input_check_disabled&quot; class=&quot;label-check&quot;&gt;Disabled Checkbox&lt;/label&gt;
+    &lt;label for=&quot;input_check_disabled&quot; class=&quot;form-check__label&quot;&gt;Disabled Checkbox&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;form-check&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;input_radio_disabled&quot; id=&quot;input_radio_disabled&quot; class=&quot;form form--focus-blue&quot; disabled=&quot;&quot;&gt;
-    &lt;label for=&quot;input_radio_disabled&quot; class=&quot;label-check&quot;&gt;Disabled Radio&lt;/label&gt;
+    &lt;label for=&quot;input_radio_disabled&quot; class=&quot;form-check__label&quot;&gt;Disabled Radio&lt;/label&gt;
 &lt;/div&gt;</code></pre>
                     </div><!-- pre-code-box -->
 
@@ -289,12 +289,12 @@
 
                             <div class="form-check">
                                 <input type="checkbox" name="check" id="check" class="form form--focus-blue">
-                                <label class="label-check" for="check">Checkbox</label>
+                                <label class="form-check__label" for="check">Checkbox</label>
                                 <small class="form-text text-muted">Text bantuan</small>
                             </div>
                             <div class="form-check">
                                 <input type="radio" name="radio" id="radio" class="form form--focus-blue">
-                                <label class="label-check" for="radio">Radio</label>
+                                <label class="form-check__label" for="radio">Radio</label>
                                 <small class="form-text text-muted">Text bantuan</small>
                             </div>
 
@@ -324,12 +324,12 @@
 
 &lt;div class=&quot;form-check&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;check&quot; id=&quot;check&quot; class=&quot;form form--focus-blue&quot;&gt;
-    &lt;label class=&quot;label-check&quot; for=&quot;check&quot;&gt;Checkbox&lt;/label&gt;
+    &lt;label class=&quot;form-check__label&quot; for=&quot;check&quot;&gt;Checkbox&lt;/label&gt;
     &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-check&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio&quot; class=&quot;form form--focus-blue&quot;&gt;
-    &lt;label class=&quot;label-check&quot; for=&quot;radio&quot;&gt;Radio&lt;/label&gt;
+    &lt;label class=&quot;form-check__label&quot; for=&quot;radio&quot;&gt;Radio&lt;/label&gt;
     &lt;small class=&quot;form-text text-muted&quot;&gt;Text bantuan&lt;/small&gt;
 &lt;/div&gt;
 
@@ -351,7 +351,7 @@
                     <p>Membuat Pesan Info hampir sama dengan membuat Text Bantuan, kamu hanya perlu menambahkan class <span class="text-green">.form--success</span>, <span class="text-green">.form--info</span>, <span class="text-green">.form--warning</span>, atau <span class="text-green">.form--danger</span> pada tag <i>input</i>, <i>select</i> atau <i>textarea</i> setelah class untuk style form inputnya ketika focus/aktif, dan mengganti class <span class="text-green">.text-muted</span> pada tag <i>small</i> dengan class <span class="text-green">.text-green</span>, <span class="text-green">.text-blue</span>, <span class="text-green">.text-orange</span>, atau <span class="text-green">.text-red</span>.</p>
 
                     <blockquote class="blockquote blockquote--orange">
-                        <p>Kamu hanya bisa membuat Pesan Info menggunakan input, select, dan textarea.</p>
+                        <p>Kamu hanya bisa membuat Pesan Info menggunakan tag <i>input</i>, <i>select</i>, dan <i>textarea</i>.</p>
                     </blockquote>
 
                     <div class="pre-code-box">
@@ -359,43 +359,43 @@
                             <div class="form-group mt-0">
                                 <label>Input success</label>
                                 <input name="nama" class="form form--focus-green form--success" placeholder="Nama ...">
-                                <small class="form-text text-green">Data berhasil diedit!</small>
+                                <small class="form-text form-text--green">Data berhasil diedit!</small>
                             </div>
                             <div class="form-group">
                                 <label>Input info</label>
                                 <input name="nama" class="form form--focus-blue form--info" placeholder="Nama ...">
-                                <small class="form-text text-blue">Ini benar!</small>
+                                <small class="form-text form-text--blue">Ini benar!</small>
                             </div>
                             <div class="form-group">
                                 <label>Input danger</label>
                                 <input name="nama" class="form form--focus-red form--danger" placeholder="Nama ...">
-                                <small class="form-text text-red">Data tidak valid!</small>
+                                <small class="form-text form-text--red">Data tidak valid!</small>
                             </div>
                             <div class="form-group">
                                 <label>Input warning</label>
                                 <input name="nama" class="form form--focus-orange form--warning" placeholder="Nama ...">
-                                <small class="form-text text-orange">Data harus 5 karakter atau lebih!</small>
+                                <small class="form-text form-text--orange">Data harus 5 karakter atau lebih!</small>
                             </div>
                         </div><!-- pre-code-box__preview -->
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;form-group mt-0&quot;&gt;
     &lt;label&gt;Input success&lt;/label&gt;
     &lt;input name=&quot;nama&quot; class=&quot;form form--focus-green form--success&quot; placeholder=&quot;Nama ...&quot;&gt;
-    &lt;small class=&quot;form-text text-green&quot;&gt;Data berhasil diedit!&lt;/small&gt;
+    &lt;small class=&quot;form-text form-text--green&quot;&gt;Data berhasil diedit!&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
     &lt;label&gt;Input info&lt;/label&gt;
     &lt;input name=&quot;nama&quot; class=&quot;form form--focus-blue form--info&quot; placeholder=&quot;Nama ...&quot;&gt;
-    &lt;small class=&quot;form-text text-blue&quot;&gt;Ini benar!&lt;/small&gt;
+    &lt;small class=&quot;form-text form-text--blue&quot;&gt;Ini benar!&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
     &lt;label&gt;Input danger&lt;/label&gt;
     &lt;input name=&quot;nama&quot; class=&quot;form form--focus-red form--danger&quot; placeholder=&quot;Nama ...&quot;&gt;
-    &lt;small class=&quot;form-text text-red&quot;&gt;Data tidak valid!&lt;/small&gt;
+    &lt;small class=&quot;form-text form-text--red&quot;&gt;Data tidak valid!&lt;/small&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
     &lt;label&gt;Input warning&lt;/label&gt;
     &lt;input name=&quot;nama&quot; class=&quot;form form--focus-orange form--warning&quot; placeholder=&quot;Nama ...&quot;&gt;
-    &lt;small class=&quot;form-text text-orange&quot;&gt;Data harus 5 karakter atau lebih!&lt;/small&gt;
+    &lt;small class=&quot;form-text form-text--orange&quot;&gt;Data harus 5 karakter atau lebih!&lt;/small&gt;
 &lt;/div&gt;</code></pre>
                     </div><!-- pre-code-box -->
 
