@@ -108,7 +108,7 @@
 
                     <p><b>Untuk membuat Login Form</b> kamu perlu tag <i>div</i> dengan class <span class="text-green">.login__form</span> lalu didalamnya buat tag <i>form</i>, kemudian didalam tag <i>form</i> kamu bisa menambahkan Input Addon seperti pada <a href="form.html" target="_blank">dokumentasi Input Addon</a> dan menambahkan button seperti pada <a href="button.html" target="_blank">dokumentasi Button</a>, namun kamu harus membungkus button-nya menggunakan tag <i>div</i> dengan class <span class="text-green">.login__form-action</span>. Letakkan Login Form setelah Login Head.</p>
 
-                    <p><b>Untuk membuat Login Alt</b>, kamu perlu tag <i>div</i> dengan class <span class="text-green">.login__alt</span>, lalu didalamnya kamu bisa membuat button 'login dengan Facebook' menggunakan tag <i>a</i> dengan class <span class="text-green">.login__alt-facebook</span>, jika ingin membuat button 'login dengan Google' gunakan tag <i>a</i> dengan class <span class="text-green">.login__alt-google</span>. Letakkan Login Alt setelah Login Form.</p>
+                    <p><b>Untuk membuat Login Alt</b>, kamu perlu tag <i>div</i> dengan class <span class="text-green">.login__alt</span>, lalu didalamnya kamu bisa membuat button 'login dengan Facebook' menggunakan tag <i>a</i> dengan class <span class="text-green">.btn</span> lalu diikuti dengan class style untuk button-nya <span class="text-green">.btn--login-alt-facebook</span>, jika ingin membuat button 'login dengan Google' caranya hampir sama dengan membuat button 'login dengan Facebook' hanya saja kamu perlu merubah class style untuk buttonnya menjadi class <span class="text-green">.btn--login-alt-google</span>. Letakkan Login Alt setelah Login Form.</p>
 
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
@@ -128,7 +128,7 @@
     &lt;!-- Kemudian Font awesome --&gt;
     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;[host mu]/plugins/font-awesome-4.7.0/css/font-awesome.min.css&quot;&gt;
     &lt;!-- dan Reza Admin CSS --&gt;
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;[host mu]/dist/css/reza-admin.min.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;[host mu]/dist/css/reza-admin.min.css&quot;&gt;
     &lt;!-- Favicon --&gt;
     &lt;link rel=&quot;icon&quot; href=&quot;[host mu]/dist/img/Reza_logo.ico&quot;&gt;
 &lt;/head&gt;
@@ -162,8 +162,8 @@
                     &lt;/form&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;login__alt&quot;&gt;
-                    &lt;a href=&quot;&quot; class=&quot;btn login__alt-google mb-2&quot;&gt;&lt;span class=&quot;fa fa-google&quot;&gt;&lt;/span&gt; Login dengan Google&lt;/a&gt;
-                    &lt;a href=&quot;&quot; class=&quot;btn login__alt-facebook&quot;&gt;&lt;span class=&quot;fa fa-facebook&quot;&gt;&lt;/span&gt; Login dengan Facebook&lt;/a&gt;
+                    &lt;a href=&quot;&quot; class=&quot;btn btn--login-alt-google mb-2&quot;&gt;&lt;span class=&quot;fa fa-google&quot;&gt;&lt;/span&gt; Login dengan Google&lt;/a&gt;
+                    &lt;a href=&quot;&quot; class=&quot;btn btn--login-alt-facebook&quot;&gt;&lt;span class=&quot;fa fa-facebook&quot;&gt;&lt;/span&gt; Login dengan Facebook&lt;/a&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
             &lt;a href=&quot;&quot; class=&quot;btn btn--link mb-3&quot;&gt;Buat Akun&lt;/a&gt;

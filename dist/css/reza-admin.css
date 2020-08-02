@@ -1456,14 +1456,14 @@ small {
 .login__content,
 .forgot-password__content {
   width: 400px; }
-  @media (max-width: 440px) {
+  @media (max-width: 430px) {
     .login__content,
     .forgot-password__content {
       width: 100%; } }
 
 .register__content {
   width: 600px; }
-  @media (max-width: 640px) {
+  @media (max-width: 630px) {
     .register__content {
       width: 100%; } }
 
@@ -1532,47 +1532,41 @@ small {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .login__alt-google, .login__alt-facebook,
-  .register__alt-google,
-  .register__alt-facebook {
-    width: 100%;
-    color: #fcfcfc;
-    text-align: center;
-    border-radius: 4px; }
-  .login__alt-google:hover, .login__alt-facebook:hover,
-  .register__alt-google:hover,
-  .register__alt-facebook:hover {
-    color: white; }
-  .login__alt-google, .login__alt-google,
-  .register__alt-google,
-  .register__alt-google {
-    background-image: -webkit-gradient(linear, #f43113, from(#e92706));
-    background-image: -o-linear-gradient(#f43113, #e92706);
-    background-image: linear-gradient(#f43113, #e92706);
-    background-color: #e92706;
-    border: 1px solid #e92706; }
-    .login__alt-google:hover, .login__alt-google:hover,
-    .register__alt-google:hover,
-    .register__alt-google:hover {
-      background-image: -webkit-gradient(linear, #f43113, from(#d61d08));
-      background-image: -o-linear-gradient(#f43113, #d61d08);
-      background-image: linear-gradient(#f43113, #d61d08);
-      background-color: #d61d08; }
-  .login__alt-facebook, .login__alt-facebook,
-  .register__alt-facebook,
-  .register__alt-facebook {
-    background-image: -webkit-gradient(linear, #4667a8, from(#3c5a99));
-    background-image: -o-linear-gradient(#4667a8, #3c5a99);
-    background-image: linear-gradient(#4667a8, #3c5a99);
-    background-color: #3c5a99;
-    border: 1px solid #3c5a99; }
-    .login__alt-facebook:hover, .login__alt-facebook:hover,
-    .register__alt-facebook:hover,
-    .register__alt-facebook:hover {
-      background-image: -webkit-gradient(linear, #4667a8, from(#324e87));
-      background-image: -o-linear-gradient(#4667a8, #324e87);
-      background-image: linear-gradient(#4667a8, #324e87);
-      background-color: #324e87; }
+
+.btn--login-alt-google,
+.btn--login-alt-facebook {
+  width: 100%;
+  color: #fcfcfc;
+  text-align: center;
+  border-radius: 4px; }
+
+.btn--login-alt-google:hover,
+.btn--login-alt-facebook:hover {
+  color: white; }
+
+.btn--login-alt-google,
+.btn--login-alt-google {
+  background-image: -webkit-gradient(linear, #f43113, from(#e92706));
+  background-image: -o-linear-gradient(#f43113, #e92706);
+  background-image: linear-gradient(#f43113, #e92706);
+  border: 1px solid #e92706; }
+  .btn--login-alt-google:hover,
+  .btn--login-alt-google:hover {
+    background-image: -webkit-gradient(linear, #f43113, from(#d61d08));
+    background-image: -o-linear-gradient(#f43113, #d61d08);
+    background-image: linear-gradient(#f43113, #d61d08); }
+
+.btn--login-alt-facebook,
+.btn--login-alt-facebook {
+  background-image: -webkit-gradient(linear, #4667a8, from(#3c5a99));
+  background-image: -o-linear-gradient(#4667a8, #3c5a99);
+  background-image: linear-gradient(#4667a8, #3c5a99);
+  border: 1px solid #3c5a99; }
+  .btn--login-alt-facebook:hover,
+  .btn--login-alt-facebook:hover {
+    background-image: -webkit-gradient(linear, #4667a8, from(#324e87));
+    background-image: -o-linear-gradient(#4667a8, #324e87);
+    background-image: linear-gradient(#4667a8, #324e87); }
 
 .forgot-password > a.btn {
   padding-top: 4px;
