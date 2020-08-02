@@ -1440,10 +1440,6 @@ small {
   -ms-flex-align: center;
   align-items: center;
   min-height: 100vh; }
-  .login a:hover,
-  .register a:hover,
-  .forgot-password a:hover {
-    text-decoration: none; }
 
 .login__content,
 .register__content,
@@ -1534,36 +1530,39 @@ small {
   flex-direction: column; }
 
 .btn--login-alt-google,
-.btn--login-alt-facebook {
+.btn--login-alt-facebook
+.btn--register-alt-google,
+.btn--register-alt-facebook {
   width: 100%;
   color: #fcfcfc;
   text-align: center;
   border-radius: 4px; }
-
-.btn--login-alt-google:hover,
-.btn--login-alt-facebook:hover {
-  color: white; }
+  .btn--login-alt-google:hover,
+  .btn--login-alt-facebook
+  .btn--register-alt-google:hover,
+  .btn--register-alt-facebook:hover {
+    color: white; }
 
 .btn--login-alt-google,
-.btn--login-alt-google {
+.btn--register-alt-google {
   background-image: -webkit-gradient(linear, #f43113, from(#e92706));
   background-image: -o-linear-gradient(#f43113, #e92706);
   background-image: linear-gradient(#f43113, #e92706);
   border: 1px solid #e92706; }
   .btn--login-alt-google:hover,
-  .btn--login-alt-google:hover {
+  .btn--register-alt-google:hover {
     background-image: -webkit-gradient(linear, #f43113, from(#d61d08));
     background-image: -o-linear-gradient(#f43113, #d61d08);
     background-image: linear-gradient(#f43113, #d61d08); }
 
 .btn--login-alt-facebook,
-.btn--login-alt-facebook {
+.btn--register-alt-facebook {
   background-image: -webkit-gradient(linear, #4667a8, from(#3c5a99));
   background-image: -o-linear-gradient(#4667a8, #3c5a99);
   background-image: linear-gradient(#4667a8, #3c5a99);
   border: 1px solid #3c5a99; }
   .btn--login-alt-facebook:hover,
-  .btn--login-alt-facebook:hover {
+  .btn--register-alt-facebook:hover {
     background-image: -webkit-gradient(linear, #4667a8, from(#324e87));
     background-image: -o-linear-gradient(#4667a8, #324e87);
     background-image: linear-gradient(#4667a8, #324e87); }
