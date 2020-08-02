@@ -1104,9 +1104,7 @@ small {
   .table tbody tr td {
     padding: 14px;
     text-align: left;
-    vertical-align: middle;
     border: 1px solid #e2e2e2;
-    line-height: 20px;
     font-size: 12pt; }
   .table thead tr th {
     border-bottom-width: 2px; }
@@ -1153,29 +1151,40 @@ small {
 
 .pagination {
   margin-bottom: 0rem; }
-  .pagination .page-item .page-link {
-    border-color: #e2e2e2; }
-    .pagination .page-item .page-link:hover {
+  .pagination__item a {
+    border: 1px solid #e2e2e2;
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    text-decoration: none;
+    background-color: white;
+    line-height: 1.25;
+    color: #333; }
+    .pagination__item a:hover {
       background-color: #e5e5e5;
       border-color: #e2e2e2; }
-    .pagination .page-item .page-link:active, .pagination .page-item .page-link:link {
+    .pagination__item a:active, .pagination__item a:link {
+      -webkit-box-shadow: none;
       box-shadow: none; }
-  .pagination--blue .page-item .page-link {
-    color: #333; }
-  .pagination--blue .page-item.disabled .page-link {
-    color: #6c757d; }
-  .pagination--blue .page-item.active .page-link {
+  .pagination__item:last-child a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .pagination__item:first-child a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .pagination__item.pagination__item--disabled a {
+    color: #6c757d;
+    pointer-events: none; }
+  .pagination__item.pagination__item--active a {
+    color: white;
+    z-index: 3; }
+  .pagination--blue .pagination__item.pagination__item--active a {
     background-color: #2597e0;
-    border-color: #2597e0;
-    color: white; }
-  .pagination--green .page-item .page-link {
-    color: #333; }
-  .pagination--green .page-item.disabled .page-link {
-    color: #6c757d; }
-  .pagination--green .page-item.active .page-link {
+    border-color: #2597e0; }
+  .pagination--green .pagination__item.pagination__item--active a {
     background-color: #1bd741;
-    border-color: #1bd741;
-    color: white; }
+    border-color: #1bd741; }
 
 /* alert */
 .alert {

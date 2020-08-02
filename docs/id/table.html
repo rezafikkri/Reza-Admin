@@ -490,8 +490,8 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Pagination</h4>
-                    <p>Membuat pagination kamu membutuhkan tag <i>ul</i> dengan class <span class="text-green">.pagination</span>, diikuti dengan class untuk style pagination-nya, ada class <span class="text-green">.pagination--blue</span> dan <span class="text-green">.pagination--green</span>. Didalam tag <i>ul</i> kamu buat tag <i>li</i> dengan class <span class="text-green">.page-item</span>, didalam tag <i>li</i> buat tag <i>a</i> dengan class <span class="text-green">.page-link</span>, didalam tag <i>a</i> kamu bisa meletakkan text seperti 'previous', 'next' dan angka.</p>
-                    <p>Jika kamu ingin disabled salah satu link dari pagination-nya, kamu perlu menambahkan class <span class="text-green">.disabled</span> setelah class <span class="text-green">.page-item</span> pada tag <i>li</i>. Jika kamu ingin menambahkan efek yang menandakan bahwa link pagination itu aktif, kamu bisa menambahkan class <span class="text-green">.active</span> setelah class <span class="text-green">.page-item</span> pada tag <i>li</i>. Dan jangan lupa untuk meletakkan pagination setelah table.</p>
+                    <p>Membuat pagination kamu membutuhkan tag <i>ul</i> dengan class <span class="text-green">.pagination</span>, diikuti dengan class untuk style pagination-nya, ada class <span class="text-green">.pagination--blue</span> dan <span class="text-green">.pagination--green</span>. Didalam tag <i>ul</i> kamu buat tag <i>li</i> dengan class <span class="text-green">.pagination__item</span>, didalam tag <i>li</i> buat tag <i>a</i> dengan text seperti 'previous', 'next' dan angka.</p>
+                    <p>Jika kamu ingin disabled salah satu link dari pagination-nya, kamu perlu menambahkan class <span class="text-green">.pagination__item--disabled</span> setelah class <span class="text-green">.pagination__item</span> pada tag <i>li</i>. Jika kamu ingin menambahkan efek yang menandakan bahwa link pagination itu aktif, kamu bisa menambahkan class <span class="text-green">.pagination__item--active</span> setelah class <span class="text-green">.pagination__item</span> pada tag <i>li</i>. Dan jangan lupa untuk meletakkan pagination setelah table.</p>
 
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
@@ -528,16 +528,16 @@
                                         </table>
                                         <!-- pagination -->
                                         <ul class="pagination pagination--blue">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#">Previous</a>
+                                            <li class="pagination__item pagination__item--disabled">
+                                                <a href="#">Previous</a>
                                             </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active">
-                                                <a class="page-link" href="#">2</a>
+                                            <li class="pagination__item"><a href="#">1</a></li>
+                                            <li class="pagination__item pagination__item--active">
+                                                <a href="#">2</a>
                                             </li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
+                                            <li class="pagination__item"><a href="#">3</a></li>
+                                            <li class="pagination__item">
+                                                <a href="#">Next</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -574,16 +574,16 @@
                                         </table>
                                         <!-- pagination -->
                                         <ul class="pagination pagination--green">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#">Previous</a>
+                                            <li class="pagination__item pagination__item--disabled">
+                                                <a href="#">Previous</a>
                                             </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active">
-                                                <a class="page-link" href="#">2</a>
+                                            <li class="pagination__item"><a href="#">1</a></li>
+                                            <li class="pagination__item pagination__item--active">
+                                                <a href="#">2</a>
                                             </li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
+                                            <li class="pagination__item"><a href="#">3</a></li>
+                                            <li class="pagination__item">
+                                                <a href="#">Next</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -623,16 +623,16 @@
             &lt;/table&gt;
             &lt;!-- pagination --&gt;
             &lt;ul class=&quot;pagination pagination--blue&quot;&gt;
-                &lt;li class=&quot;page-item disabled&quot;&gt;
-                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;
+                &lt;li class=&quot;pagination__item pagination__item--disabled&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;
                 &lt;/li&gt;
-                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&quot;page-item active&quot;&gt;
-                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+                &lt;li class=&quot;pagination__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;pagination__item pagination__item--active&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
                 &lt;/li&gt;
-                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&quot;page-item&quot;&gt;
-                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                &lt;li class=&quot;pagination__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;pagination__item&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
@@ -669,16 +669,16 @@
             &lt;/table&gt;
             &lt;!-- pagination --&gt;
             &lt;ul class=&quot;pagination pagination--green&quot;&gt;
-                &lt;li class=&quot;page-item disabled&quot;&gt;
-                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;
+                &lt;li class=&quot;pagination__item pagination__item--disabled&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;
                 &lt;/li&gt;
-                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&quot;page-item active&quot;&gt;
-                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+                &lt;li class=&quot;pagination__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;pagination__item pagination__item--active&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
                 &lt;/li&gt;
-                &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&quot;page-item&quot;&gt;
-                    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                &lt;li class=&quot;pagination__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;pagination__item&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
@@ -731,16 +731,16 @@
                                                 </tbody>
                                             </table>
                                             <ul class="pagination pagination--blue">
-                                                <li class="page-item disabled">
-                                                    <a class="page-link" href="#">Previous</a>
+                                                <li class="pagination__item pagination__item--disabled">
+                                                    <a href="#">Previous</a>
                                                 </li>
-                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                <li class="page-item active">
-                                                    <a class="page-link" href="#">2</a>
+                                                <li class="pagination__item"><a href="#">1</a></li>
+                                                <li class="pagination__item pagination__item--active">
+                                                    <a href="#">2</a>
                                                 </li>
-                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">Next</a>
+                                                <li class="pagination__item"><a href="#">3</a></li>
+                                                <li class="pagination__item">
+                                                    <a href="#">Next</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -787,16 +787,16 @@
                     &lt;/tbody&gt;
                 &lt;/table&gt;
                 &lt;ul class=&quot;pagination pagination--blue&quot;&gt;
-                    &lt;li class=&quot;page-item disabled&quot;&gt;
-                        &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;
+                    &lt;li class=&quot;pagination__item pagination__item--disabled&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;
                     &lt;/li&gt;
-                    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;page-item active&quot;&gt;
-                        &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+                    &lt;li class=&quot;pagination__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;pagination__item pagination__item--active&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
                     &lt;/li&gt;
-                    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;page-item&quot;&gt;
-                        &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                    &lt;li class=&quot;pagination__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;pagination__item&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;
                     &lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/div&gt;
