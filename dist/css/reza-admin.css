@@ -357,9 +357,9 @@ time {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  -o-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1); }
+  -webkit-transition: left 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: left 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: left 0.5s cubic-bezier(0.65, 0.05, 0.36, 1); }
   @media (max-width: 767.98px) {
     .footer {
       padding-right: 15px;
