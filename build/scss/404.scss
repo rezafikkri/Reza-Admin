@@ -1,18 +1,27 @@
 /* 404 page */
 .page-not-found {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
-	a:hover {
-		text-decoration: none;
-	}
+	-webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+	-webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+	min-height: 100vh;
 
 	&__head h1 {
 		font-size: 150px;
-		font-family: open_sansbold;
+		font-family: open_sansbold, sans-serif;
 		color: #7c7c7c;
 		text-align: center;
 	}
