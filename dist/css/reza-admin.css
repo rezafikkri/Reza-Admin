@@ -90,7 +90,7 @@ time {
       font-family: open_sanssemibold, sans-serif;
       color: #333; }
 
-/* Navbar Top */
+/* Navbar */
 .navbar--white {
   position: fixed;
   top: 0;
@@ -125,8 +125,58 @@ time {
       color: #ea2a2a; }
   .navbar--white .nav-item:last-child .nav-link {
     padding-right: 0px; }
-  .navbar--white .nav-item.dropdown.show .nav-link {
+  .navbar--white .nav-item.dropdown.show .nav-link,
+  .navbar--white .nav-item.nav-item--active .nav-link {
     color: #2597e0; }
+  .navbar--white .nav-item.nav-item--active .nav-link--hover-red {
+    color: #ea2a2a; }
+  .navbar--white .navbar__notification {
+    position: relative;
+    margin-top: 2px; }
+    .navbar--white .navbar__notification .navbar__notification-number {
+      position: absolute;
+      font-size: 8pt;
+      display: inline-block;
+      padding: 1px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      left: 0px;
+      top: -7px;
+      border: 2px solid #fff;
+      color: white; }
+      .navbar--white .navbar__notification .navbar__notification-number.navbar__notification-number--red {
+        background-color: #ea2a2a; }
+      .navbar--white .navbar__notification .navbar__notification-number.navbar__notification-number--blue {
+        background-color: #2597e0; }
+      .navbar--white .navbar__notification .navbar__notification-number.navbar__notification-number--orange {
+        background-color: #f9a022; }
+      .navbar--white .navbar__notification .navbar__notification-number.navbar__notification-number--green {
+        background-color: #1bd741; }
+  .navbar--white .navbar__avatar a.nav-link {
+    display: block;
+    padding-left: 37px !important;
+    margin-left: 12px; }
+  .navbar--white .navbar__avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 0;
+    top: -2px; }
+  .navbar--white .dropdown-menu {
+    margin-top: .5rem; }
+  .navbar--white .dropdown-item:hover {
+    background-color: transparent;
+    color: #2597e0; }
+  .navbar--white .dropdown-item--active {
+    color: #2597e0; }
+  .navbar--white .dropdown-item--active.dropdown-item--hover-red {
+    color: #ea2a2a; }
+  .navbar--white .dropdown-item--hover-red:hover {
+    color: #ea2a2a; }
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg .navbar-nav {
@@ -137,7 +187,8 @@ time {
       .navbar-expand-lg .navbar-nav .nav-item:first-child {
         margin-top: .5rem; }
       .navbar-expand-lg .navbar-nav .nav-item .nav-link {
-        padding-left: 0; }
+        padding-left: 0;
+        margin-left: 0px; }
     .navbar-expand-lg .navbar-nav .navbar__notification-number {
       left: .4rem; } }
 @media (max-width: 767.98px) {
@@ -149,7 +200,8 @@ time {
       .navbar-expand-md .navbar-nav .nav-item:first-child {
         margin-top: .5rem; }
       .navbar-expand-md .navbar-nav .nav-item .nav-link {
-        padding-left: 0; }
+        padding-left: 0;
+        margin-left: 0px; }
     .navbar-expand-md .navbar-nav .navbar__notification-number {
       left: .4rem; } }
 @media (max-width: 575.98px) {
@@ -161,48 +213,10 @@ time {
       .navbar-expand-sm .navbar-nav .nav-item:first-child {
         margin-top: .5rem; }
       .navbar-expand-sm .navbar-nav .nav-item .nav-link {
-        padding-left: 0; }
+        padding-left: 0;
+        margin-left: 0px; }
     .navbar-expand-sm .navbar-nav .navbar__notification-number {
       left: .4rem; } }
-.navbar__notification {
-  position: relative;
-  margin-top: 2px; }
-  .navbar__notification .navbar__notification-number {
-    position: absolute;
-    font-size: 8pt;
-    display: inline-block;
-    padding: 1px;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    text-align: center;
-    left: 0px;
-    top: -7px;
-    border: 2px solid #fff;
-    color: white; }
-    .navbar__notification .navbar__notification-number.navbar__notification-number--red {
-      background-color: #ea2a2a; }
-    .navbar__notification .navbar__notification-number.navbar__notification-number--blue {
-      background-color: #2597e0; }
-    .navbar__notification .navbar__notification-number.navbar__notification-number--orange {
-      background-color: #f9a022; }
-    .navbar__notification .navbar__notification-number.navbar__notification-number--green {
-      background-color: #1bd741; }
-
-.navbar__avatar img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 3px;
-  border: 1px solid #ddd; }
-
-.dropdown-menu {
-  margin-top: .5rem; }
-
-.dropdown-item:hover {
-  background-color: transparent;
-  color: #2597e0; }
-
 /* Sidebar */
 @media (min-width: 768px) {
   .navbar__sidebar-toggler {
