@@ -1567,10 +1567,6 @@ small {
     background-image: -o-linear-gradient(#4667a8, #324e87);
     background-image: linear-gradient(#4667a8, #324e87); }
 
-.forgot-password > a.btn {
-  padding-top: 4px;
-  padding-bottom: 4px; }
-
 /* 404 page */
 .page-not-found {
   display: flex;
