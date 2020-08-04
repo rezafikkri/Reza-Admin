@@ -269,9 +269,12 @@ time {
     .sidebar__item a:hover {
       color: #fff;
       background-color: #1e8ac9; }
-  .sidebar__item a.nav-link {
+  .sidebar__item a {
     padding: 12px 15px;
-    position: relative; }
+    position: relative;
+    display: block; }
+    .sidebar__item a:hover {
+      text-decoration: none; }
   .sidebar__item--header {
     font-family: open_sansregular, sans-serif;
     color: #ccdde5;
@@ -283,18 +286,24 @@ time {
     font-family: open_sansbold, sans-serif; }
     .sidebar__item--active > a:hover {
       background-color: #1780c1; }
+  .sidebar__btn-dropdown::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 2px);
+    display: inline-block;
+    vertical-align: .255em;
+    border-top: .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .3em solid transparent;
+    border-left: .3em solid #fff; }
+  .sidebar__item--dropdown-active .sidebar__btn-dropdown::after {
+    -webkit-transform: translate(-4px, 2px) rotateZ(90deg);
+    -ms-transform: translate(-4px, 2px) rotate(90deg);
+    transform: translate(-4px, 2px) rotateZ(90deg); }
 
 .sidebar__item--dropdown-active > a {
   background-color: #1e8ac9; }
-
-.sidebar__span-dropdown {
-  position: absolute;
-  right: 16px;
-  top: 35%; }
-  .sidebar__span-dropdown--rotate {
-    -webkit-transform: rotateZ(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotateZ(90deg); }
 
 .sidebar__dropdown {
   list-style-type: none;

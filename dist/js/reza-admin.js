@@ -23,12 +23,11 @@ if (navbarSidebarToggler !== null) {
 if (sidebar !== null) {
   sidebar.addEventListener('click', function (e) {
     var targetDropdown = e.target;
-    if (!targetDropdown.classList.contains("sidebar-btn-dropdown")) targetDropdown = e.target.parentElement;
+    if (!targetDropdown.classList.contains("sidebar__btn-dropdown")) targetDropdown = e.target.parentElement;
 
-    if (targetDropdown.classList.contains("sidebar-btn-dropdown")) {
+    if (targetDropdown.classList.contains("sidebar__btn-dropdown")) {
       e.preventDefault();
       targetDropdown.parentElement.classList.toggle("sidebar__item--dropdown-active");
-      targetDropdown.querySelector("span.sidebar__span-dropdown").classList.toggle("sidebar__span-dropdown--rotate");
       targetDropdown.nextElementSibling.classList.toggle("sidebar__dropdown--show");
     }
   });

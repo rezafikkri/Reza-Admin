@@ -68,9 +68,14 @@
 		}
 	}
 
-	&__item a.nav-link {
+	&__item a {
 		padding: 12px 15px;
 		position: relative;
+		display: block;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	&__item--header {
@@ -88,23 +93,31 @@
 		&:hover {
 			background-color: #1780c1;
 		}
-	}	
+	}
+
+	&__btn-dropdown::after {
+		content: "";
+		position: absolute;
+		right: 15px;
+		top: calc(50% - 2px);
+
+		display: inline-block;
+		vertical-align: .255em;
+		border-top: .3em solid transparent;
+		border-right: .3em solid transparent;
+		border-bottom: .3em solid transparent;
+		border-left: .3em solid #fff;
+	}
+
+	&__item--dropdown-active &__btn-dropdown::after {
+		-webkit-transform: translate(-4px, 2px) rotateZ(90deg);
+		-ms-transform: translate(-4px, 2px) rotate(90deg);
+		transform: translate(-4px, 2px) rotateZ(90deg);
+	}
 }
 
 .sidebar__item--dropdown-active > a {
 	background-color: #1e8ac9;
-}
-
-.sidebar__span-dropdown {
-	position: absolute;
-	right: 16px;
-	top: 35%;
-
-	&--rotate {
-		-webkit-transform: rotateZ(90deg);
-		-ms-transform: rotate(90deg);
-		transform: rotateZ(90deg);
-	}
 }
 
 .sidebar__dropdown {

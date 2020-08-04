@@ -19,7 +19,7 @@
     <!-- then Font awesome -->
     <link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- then Reza Admin CSS and Doc css -->
-    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.min.css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/doc.min.css">
     <!-- Favicon -->
     <link rel="icon" href="../../dist/img/Reza_logo.ico">
@@ -46,10 +46,10 @@
     <!-- sidebar -->
     <aside class="sidebar">
         <ul class="sidebar__nav">
-            <li class="sidebar__item"><a class="nav-link" href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
+            <li class="sidebar__item"><a href="index.html"><span class="fa fa-wrench"></span> Instalasi</a></li>
 
-            <li class="sidebar__item"><a class="nav-link" href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
-            <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+            <li class="sidebar__item"><a href="dependencies.html"><span class="fa fa-cube"></span> Ketergantungan & Plugin</a></li>
+            <li class="sidebar__item sidebar__item--dropdown-active"><a class="sidebar__btn-dropdown" href="#"><span class="fa fa-columns"></span> Tata Letak</a>
                 <ul class="sidebar__dropdown sidebar__dropdown--show">
                     <li class="sidebar__dropdown-item"><a href="navbar.html">Navbar</a></li>
                     <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="sidebar.html">Sidebar</a></li>
@@ -57,7 +57,7 @@
                     <li class="sidebar__dropdown-item"><a href="footer.html">Footer</a></li>
                 </ul>
             </li>
-            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+            <li class="sidebar__item"><a class="sidebar__btn-dropdown" href="#"><span class="fa fa-puzzle-piece"></span> Komponen</a>
                 <ul class="sidebar__dropdown">
                     <li class="sidebar__dropdown-item"><a href="chart.html">Chart</a></li>
                     <li class="sidebar__dropdown-item"><a href="loading.html">Loading</a></li>
@@ -71,7 +71,7 @@
                 </ul>
             </li>
 
-            <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href=""><span class="fa fa-building"></span> Halaman <span class="fa fa-caret-right sidebar__span-dropdown "></span></a>
+            <li class="sidebar__item"><a class="sidebar__btn-dropdown" href=""><span class="fa fa-building"></span> Halaman</a>
                 <ul class="sidebar__dropdown">
                     <li class="sidebar__dropdown-item"><a href="login.html">Login</a></li>
                     <li class="sidebar__dropdown-item"><a href="register.html">Daftar</a></li>
@@ -99,56 +99,50 @@
             <div class="col-12">
                 <section class="main__box">
                     <h4>Dasar</h4>
-                    <p class="mb-1">Class utama untuk membuat sidebar:</p> 
-                    <ul class="mb-3">
-                        <li><span class="text-green">.sidebar</span> digunakan pada tag <i>aside</i> sebagai container dari sidebar, dan membuat posisi sidebar menjadi tetap di kiri browser walaupun halaman di gulir,</li>
-                        <li><span class="text-green">.sidebar__nav</span> digunakan pada tag <i>ul</i>,</li>
-                        <li><span class="text-green">.sidebar__item</span> digunakan pada tag <i>li</i> sebagai item-item dari sidebar,</li>
-                        <li><span class="text-green">sidebar__item--active</span> digunakan pada tag <i>li</i>, sebagai penanda bahwa item itu sedang aktif.</li>
-                    </ul>
+                    <p>Membuat Sidebar kamu perlu tag <i>&lt;aside&gt;</i> dengan class <span class="text-green">.sidebar</span>, lalu didalam tag <i>&lt;aside&gt;</i> buat element menggunakan tag <i>&lt;ul&gt;</i> dengan class <span class="text-green">.sidebar__nav</span>, didalam tag <i>&lt;ul&gt;</i> buat element menggunakan tag <i>&lt;li&gt;</i> dengan class <span class="text-green">.sidebar__item</span> sebagai item-item dari sidebarnya, didalam tag <i>&lt;li&gt;</i> buat element menggunakan tag <i>&lt;a&gt;</i> dan didalam tag <i>&lt;a&gt;</i> kamu bisa meletakkan text ataupun icon. Untuk membuat penanda bahwa Sidebar Item itu sedang aktif, kamu bisa menambahkan class <span class="text-green">.sidebar__item--active</span> setelah class <span class="text-green">.sidebar__item</span> pada tag <i>&lt;li&gt;</i>.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <aside class="sidebar sidebar--no-hide-sm">
                                 <ul class="sidebar__nav">
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-home"></span> Gambaran</a></li>
-                                    <li class="sidebar__item sidebar__item--active"><a class="nav-link" href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-envelope"></span> Pesan</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-home"></span> Gambaran</a></li>
+                                    <li class="sidebar__item sidebar__item--active"><a href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-envelope"></span> Pesan</a></li>
                                 </ul>
                             </aside>
                         </div><!-- pre-code-box__preview -->
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;aside class=&quot;sidebar&quot;&gt;
     &lt;ul class=&quot;sidebar__nav&quot;&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item sidebar__item--active&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-envelope&quot;&gt;&lt;/span&gt; Pesan&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-envelope&quot;&gt;&lt;/span&gt; Pesan&lt;/a&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/aside&gt;</code></pre>
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Header</h4>
-                    <p>Membuat Header pada sidebar, kamu perlu menambahkan class <span class="text-green">.sidebar__item--header</span> setelah class <span class="text-green">.sidebar__item</span> pada tag <i>li</i>.</p>
+                    <p>Membuat Header pada sidebar, kamu perlu menambahkan class <span class="text-green">.sidebar__item--header</span> setelah class <span class="text-green">.sidebar__item</span> pada tag <i>&lt;li&gt;</i>.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <aside class="sidebar sidebar--no-hide-sm">
                                 <ul class="sidebar__nav">
                                     <li class="sidebar__item sidebar__item--header">Dashboard</li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-home"></span> Gambaran</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-home"></span> Gambaran</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
 
                                     <li class="sidebar__item sidebar__item--header mt-3">Konten</li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-file-text"></span> Artikel</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-video-camera"></span> Video</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-file-text"></span> Artikel</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-video-camera"></span> Video</a></li>
                                 </ul>
                             </aside>
                         </div><!-- pre-code-box__preview -->
@@ -156,50 +150,47 @@
     &lt;ul class=&quot;sidebar__nav&quot;&gt;
         &lt;li class=&quot;sidebar__item sidebar__item--header&quot;&gt;Dashboard&lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
         &lt;/li&gt;
 
         &lt;li class=&quot;sidebar__item sidebar__item--header mt-3&quot;&gt;Konten&lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt; Artikel&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt; Artikel&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-video-camera&quot;&gt;&lt;/span&gt; Video&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-video-camera&quot;&gt;&lt;/span&gt; Video&lt;/a&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/aside&gt;</code></pre>
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Dropdown</h4>
-                    <p>Membuat menu dropdown, kamu harus menambahkan class <span class="text-green">.sidebar-btn-dropdown</span> pada tag <i>a</i>, gunanya untuk menandakan bahwa element itu adalah button untuk menampilkan dan menyembunyikan menu dropdown. Kemudian dalam tag <i>a</i> tambahkan script berikut! untuk membuat icon caret ( <span class="fa fa-caret-right"></span> ).</p>
-                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;span class=&quot;fa fa-caret-right sidebar__span-dropdown&quot;&gt;&lt;/span&gt;</code></pre>
+                    <p>Membuat Dropdown, kamu perlu menambahkan class <span class="text-green">.sidebar__btn-dropdown</span> pada tag <i>&lt;a&gt;</i>. Kemudian dibawah tag <i>&lt;a&gt;</i> buat element menggunakan tag <i>&lt;ul&gt;</i> dengan class <span class="text-green">.sidebar__dropdown</span>, didalamnya buat element menggunakan tag <i>&lt;li&gt;</i> dengan class <span class="text-green">.sidebar__dropdown-item</span>, lalu didalam tag <i>&lt;li&gt;</i> buat element menggunakan tag <i>&lt;a&gt;</i>, dan kamu bisa memasukkan text ataupun icon didalamnya. Untuk membuat penanda bahwa Sidebar Dropdown Item itu sedang aktif kamu bisa menambahkan class <span class="text-green">.sidebar__dropdown-item--active</span> setelah class <span class="text-green">.sidebar__dropdown-item</span> pada tag <i>&lt;li&gt;</i>.</p>
 
-                    <p class="mt-3">Selanjutnya untuk membuat badan dari dropdownnya, buat element <i>ul</i> dalam tag <i>li</i>, dengan class <span class="text-green">.sidebar__dropdown</span>, dalamnya buat item-item dari dropdown dengan tag <i>li</i> class <span class="text-green">.sidebar__dropdown-item</span>, dan jangan lupakan tag <i>a</i>, letakkan itu dalam tag <i>li</i> seperti sebelumnya, namun bedanya adalah kamu tidak perlu menggunakan class <span class="text-green">.nav-link</span>. Kamu juga bisa menambahkan class <span class="text-green">.sidebar__dropdown-item--active</span> pada tag <i>li</i> untuk menandakan bahwa item dropdown itu sedang aktif.</p>
-
-                    <p>Sidebar dropdown standar-nya disembunyikan. Tapi jika kamu ingin standar sidebar dropdown ditampilkan, kamu perlu menambahkan class <span class="text-green">.sidebar__item--dropdown-active</span> pada tag <i>li</i> disebelah class <span class="text-green">.sidebar__item</span>, sebagai penanda bahwa dropdown sedang aktif. Kemudian tambahkan class <span class="text-green">.sidebar__span-dropdown--rotate</span> untuk memutar icon caret 90 derajat dan yang paling penting kamu tambahkan class <span class="text-green">.sidebar__dropdown--show</span> disebelah class <span class="text-green">.sidebar__dropdown</span>, untuk mengubah standar sidebar dropdown menjadi ditampilkan.</p>
+                    <p>Dropdown standar-nya disembunyikan. Tapi jika kamu ingin standar Dropdown ditampilkan, kamu perlu menambahkan class <span class="text-green">.sidebar__item--dropdown-active</span> setelah class <span class="text-green">.sidebar__item</span> pada tag <i>&lt;li&gt;</i>, sebagai penanda bahwa dropdown sedang aktif. Kemudian tambahkan class <span class="text-green">.sidebar__dropdown--show</span> setelah class <span class="text-green">.sidebar__dropdown</span> pada tag <i>&lt;ul&gt;</i>, untuk mengubah standar sidebar dropdown menjadi ditampilkan.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <aside class="sidebar sidebar--no-hide-sm">
                                 <ul class="sidebar__nav">
                                     <li class="sidebar__item sidebar__item--header">Dashboard</li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-home"></span> Gambaran</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-home"></span> Gambaran</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
 
                                     <li class="sidebar__item sidebar__item--header mt-3">Konten</li>
-                                    <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-file-text"></span> Artikel <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                                    <li class="sidebar__item sidebar__item--dropdown-active"><a class="sidebar__btn-dropdown" href="#"><span class="fa fa-file-text"></span> Artikel</a>
                                         <ul class="sidebar__dropdown sidebar__dropdown--show">
                                             <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="#">HTML</a></li>
                                             <li class="sidebar__dropdown-item"><a href="#">CSS</a></li>
                                         </ul>
                                     </li>
-                                    <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-video-camera"></span> Video <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                                    <li class="sidebar__item"><a class="sidebar__btn-dropdown" href="#"><span class="fa fa-video-camera"></span> Video</a>
                                         <ul class="sidebar__dropdown">
                                             <li class="sidebar__dropdown-item"><a href="#">PHP</a></li>
                                             <li class="sidebar__dropdown-item"><a href="#">Javascript</a></li>
@@ -212,20 +203,19 @@
     &lt;ul class=&quot;sidebar__nav&quot;&gt;
         &lt;li class=&quot;sidebar__item sidebar__item--header&quot;&gt;Dashboard&lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
         &lt;/li&gt;
 
         &lt;li class=&quot;sidebar__item sidebar__item--header mt-3&quot;&gt;Konten&lt;/li&gt;
         &lt;li class=&quot;sidebar__item sidebar__item--dropdown-active&quot;&gt;
-            &lt;a class=&quot;nav-link sidebar-btn-dropdown&quot; href=&quot;#&quot;&gt;
-                &lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt; Artikel 
-                &lt;span class=&quot;fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate&quot;&gt;&lt;/span&gt;
+            &lt;a class=&quot;sidebar__btn-dropdown&quot; href=&quot;#&quot;&gt;
+                &lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt; Artikel
             &lt;/a&gt;
             &lt;ul class=&quot;sidebar__dropdown sidebar__dropdown--show&quot;&gt;
                 &lt;li class=&quot;sidebar__dropdown-item sidebar__dropdown-item--active&quot;&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
@@ -233,9 +223,8 @@
             &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link sidebar-btn-dropdown&quot; href=&quot;#&quot;&gt;
-                &lt;span class=&quot;fa fa-video-camera&quot;&gt;&lt;/span&gt; Video 
-                &lt;span class=&quot;fa fa-caret-right sidebar__span-dropdown&quot;&gt;&lt;/span&gt;
+            &lt;a class=&quot;sidebar__btn-dropdown&quot; href=&quot;#&quot;&gt;
+                &lt;span class=&quot;fa fa-video-camera&quot;&gt;&lt;/span&gt; Video
             &lt;/a&gt;
             &lt;ul class=&quot;sidebar__dropdown&quot;&gt;
                 &lt;li class=&quot;sidebar__dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;PHP&lt;/a&gt;&lt;/li&gt;
@@ -247,8 +236,7 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Toggler</h4>
-                    <p>Standarnya sidebar akan disembunyikan jika lebar window <= dari 767.98px. Membuat toggler sidebar kamu hanya perlu menambahkan script berikut pada navbar, letakkan sebelum script Navbar Brand!</p>
-                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a class=&quot;navbar__sidebar-toggler&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-bars&quot;&gt;&lt;/span&gt;&lt;/a&gt;</code></pre>
+                    <p>Standarnya sidebar akan disembunyikan jika lebar viewport lebih kecil sama dengan 767.98px. Membuat Toggler kamu perlu membuat element menggunakan tag <i>&lt;a&gt;</i> dengan class <span class="text-green">.navbar__sidebar-toggler</span>, lalu didalamnya buat element menggunakan tag <i>&lt;span&gt;</i> dengan class <span class="text-green">.fa.fa-bars</span>, dan letakkan sebelum code untuk Navbar Brand.</p>
 
                     <div class="pre-code-box mt-3">
                         <div class="pre-code-box__preview">
@@ -259,18 +247,18 @@
                             <aside class="sidebar">
                                 <ul class="sidebar__nav">
                                     <li class="sidebar__item sidebar__item--header">Dashboard</li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-home"></span> Gambaran</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
-                                    <li class="sidebar__item"><a class="nav-link" href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-home"></span> Gambaran</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-group"></span> Rencana Harian</a></li>
+                                    <li class="sidebar__item"><a href="#"><span class="fa fa-area-chart"></span> Kemajuan</a></li>
 
                                     <li class="sidebar__item sidebar__item--header mt-3">Konten</li>
-                                    <li class="sidebar__item sidebar__item--dropdown-active"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-file-text"></span> Artikel <span class="fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate"></span></a>
+                                    <li class="sidebar__item sidebar__item--dropdown-active"><a class="sidebar__btn-dropdown" href="#"><span class="fa fa-file-text"></span> Artikel</a>
                                         <ul class="sidebar__dropdown sidebar__dropdown--show">
                                             <li class="sidebar__dropdown-item sidebar__dropdown-item--active"><a href="#">HTML</a></li>
                                             <li class="sidebar__dropdown-item"><a href="#">CSS</a></li>
                                         </ul>
                                     </li>
-                                    <li class="sidebar__item"><a class="nav-link sidebar-btn-dropdown" href="#"><span class="fa fa-video-camera"></span> Video <span class="fa fa-caret-right sidebar__span-dropdown"></span></a>
+                                    <li class="sidebar__item"><a class="sidebar__btn-dropdown" href="#"><span class="fa fa-video-camera"></span> Video</a>
                                         <ul class="sidebar__dropdown">
                                             <li class="sidebar__dropdown-item"><a href="#">PHP</a></li>
                                             <li class="sidebar__dropdown-item"><a href="#">Javascript</a></li>
@@ -280,29 +268,30 @@
                             </aside>
                         </div><!-- pre-code-box__preview -->
                         <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;nav class=&quot;navbar justify-content-start navbar--white&quot;&gt;
+    &lt;!-- sidebar toggler --&gt;
     &lt;a class=&quot;navbar__sidebar-toggler&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-bars&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;!-- sidebar toggler --&gt;
     &lt;a class=&quot;navbar-brand ml-md-3&quot; href=&quot;#&quot;&gt;
         &lt;img src=&quot;[host mu]/dist/img/Reza_Admin.svg&quot; width=&quot;120&quot; alt=&quot;logo reza&quot;&gt;
     &lt;/a&gt;
-&lt;/nav&gt;&lt;!-- navbar --&gt;
+&lt;/nav&gt;
 &lt;aside class=&quot;sidebar&quot;&gt;
     &lt;ul class=&quot;sidebar__nav&quot;&gt;
         &lt;li class=&quot;sidebar__item sidebar__item--header&quot;&gt;Dashboard&lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-home&quot;&gt;&lt;/span&gt; Gambaran&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-group&quot;&gt;&lt;/span&gt; Rencana Harian&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-area-chart&quot;&gt;&lt;/span&gt; Kemajuan&lt;/a&gt;
         &lt;/li&gt;
 
         &lt;li class=&quot;sidebar__item sidebar__item--header mt-3&quot;&gt;Konten&lt;/li&gt;
         &lt;li class=&quot;sidebar__item sidebar__item--dropdown-active&quot;&gt;
-            &lt;a class=&quot;nav-link sidebar-btn-dropdown&quot; href=&quot;#&quot;&gt;
-                &lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt; Artikel 
-                &lt;span class=&quot;fa fa-caret-right sidebar__span-dropdown sidebar__span-dropdown--rotate&quot;&gt;&lt;/span&gt;
+            &lt;a class=&quot;sidebar__btn-dropdown&quot; href=&quot;#&quot;&gt;
+                &lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt; Artikel
             &lt;/a&gt;
             &lt;ul class=&quot;sidebar__dropdown sidebar__dropdown--show&quot;&gt;
                 &lt;li class=&quot;sidebar__dropdown-item sidebar__dropdown-item--active&quot;&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
@@ -310,9 +299,8 @@
             &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li class=&quot;sidebar__item&quot;&gt;
-            &lt;a class=&quot;nav-link sidebar-btn-dropdown&quot; href=&quot;#&quot;&gt;
-                &lt;span class=&quot;fa fa-video-camera&quot;&gt;&lt;/span&gt; Video 
-                &lt;span class=&quot;fa fa-caret-right sidebar__span-dropdown&quot;&gt;&lt;/span&gt;
+            &lt;a class=&quot;sidebar__btn-dropdown&quot; href=&quot;#&quot;&gt;
+                &lt;span class=&quot;fa fa-video-camera&quot;&gt;&lt;/span&gt; Video
             &lt;/a&gt;
             &lt;ul class=&quot;sidebar__dropdown&quot;&gt;
                 &lt;li class=&quot;sidebar__dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;PHP&lt;/a&gt;&lt;/li&gt;
@@ -336,7 +324,7 @@
     <!-- jQuery first, then Bootstrap JS, and Reza Admin JS-->
     <script src="../../dist/js/jquery-3.5.1.slim.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../dist/js/reza-admin.min.js"></script>
+    <script src="../../dist/js/reza-admin.js"></script>
 
     <!-- Optional Javascript -->
     <script src="../dist/js/doc.min.js"></script>

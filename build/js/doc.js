@@ -5,12 +5,11 @@ if(mainBox !== null) {
 	mainBox.addEventListener('click', e => {
 		// sidebar dropdown
 		let targetSidebarDropdown = e.target;
-        if(!targetSidebarDropdown.classList.contains("sidebar-btn-dropdown")) targetSidebarDropdown = e.target.parentElement;
-        if(targetSidebarDropdown.classList.contains("sidebar-btn-dropdown")) {
+        if(!targetSidebarDropdown.classList.contains("sidebar__btn-dropdown")) targetSidebarDropdown = e.target.parentElement;
+        if(targetSidebarDropdown.classList.contains("sidebar__btn-dropdown")) {
             e.preventDefault();
 
             targetSidebarDropdown.parentElement.classList.toggle("sidebar__item--dropdown-active");
-            targetSidebarDropdown.querySelector("span.sidebar__span-dropdown").classList.toggle("sidebar__span-dropdown--rotate");
             targetSidebarDropdown.nextElementSibling.classList.toggle("sidebar__dropdown--show");
         }
 
