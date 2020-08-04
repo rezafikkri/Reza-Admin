@@ -45,54 +45,6 @@ strong {
 	margin-bottom: 0px;
 }
 
-.main__box .navbar--white {
-	position: static;
-}
-
-.main__box .sidebar {
-	position: static; 
-	z-index: 1;
-	padding: 10px 0px;
-
-	&__nav {
-		height: auto;
-	}
-
-	@media (max-width: 767.98px) {
-		-webkit-transform: translate(-253px, 0px);
-        -ms-transform: translate(-253px, 0px);
-        transform: translate(-253px, 0px);
-
-		&--show-sm {
-			-webkit-transform: translate(0px, 0px);
-			-ms-transform: translate(0px, 0px);
-			transform: translate(0px, 0px);
-		}
-
-		&--no-hide-sm {
-			-webkit-transform: none;
-        	-ms-transform: none;
-            transform: none;
-			-webkit-box-shadow: none;
-		    box-shadow: none;
-		}
-	}
-
-	@media (max-width: 343px) {
-		&--no-hide-sm {
-			width: 100%;
-		}
-	}
-}
-
-.main__box .main {
-	padding-top: 25px;
-	top: 77px;
-	left: 20px;
-	right: 20px;
-	position: absolute;
-}
-
 blockquote.blockquote {
 	padding: 15px 20px;
 	margin: 20px 0px;
@@ -152,15 +104,65 @@ blockquote.blockquote {
 	}
 
 	.main__box h5 {
-		font-family: open_sansregular;
-	}
-
-	.pre-code-box__preview .main__box h5 {
 		font-family: open_sanssemibold;
 	}
 
+	.navbar--white {
+		position: static;
+	}
+
+	.sidebar {
+		position: static; 
+		z-index: 1;
+		padding: 10px 0px;
+
+		&__nav {
+			height: auto;
+		}
+
+		@media (max-width: 767.98px) {
+			-webkit-transform: translate(-253px, 0px);
+	        -ms-transform: translate(-253px, 0px);
+	        transform: translate(-253px, 0px);
+
+			&--show-sm {
+				-webkit-transform: translate(0px, 0px);
+				-ms-transform: translate(0px, 0px);
+				transform: translate(0px, 0px);
+			}
+
+			&--no-hide-sm {
+				-webkit-transform: none;
+	        	-ms-transform: none;
+	            transform: none;
+				-webkit-box-shadow: none;
+			    box-shadow: none;
+			}
+		}
+
+		@media (max-width: 343px) {
+			&--no-hide-sm {
+				width: 100%;
+			}
+		}
+	}
+
+	.main {
+		padding-top: 25px;
+		top: 77px;
+		left: 20px;
+		right: 20px;
+		position: absolute;
+	}
+
 	.footer {
+		left: 248px;
+		right: 20px;
 		bottom: 20px;
+
+		@media (max-width: 767.98px) {
+			left: 20px;
+		}
 	}
 }
 
