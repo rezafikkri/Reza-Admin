@@ -98,9 +98,9 @@
 
             <div class="col-12">
                 <div class="main__box">
-                    <p>Membuat chart tidak jauh berbeda dengan <a href="https://www.chartjs.org/docs/latest/" target="_blank" rel="noopener noreferrer">dokumentasi resmi</a> chart js, namun kamu perlu tag <i>div</i> atau <i>section</i> dengan class <span class="text-green">.chart</span>, didalamnya ada dua bagian yaitu <b>Chart Header</b> (<i>tempat judul dari chart</i>) dan <b>Chart Body</b> (<i>tempat chart</i>), untuk membuat Chart Header kamu perlu tag <i>div</i> dengan class <span class="text-green">.chart__header</span>, dan letakkan judul dari chart didalamnya menggunakan tag <i>h6</i>. Untuk membuat Chart Body kamu perlu tag <i>div</i> dengan class <span class="text-green">.chart__body</span>, letakkan Chart Body dibawah Chart Header, dan kamu letakkan chart di dalamnya. Standar tinggi dari chart adalah 350px, kamu juga bisa mengaturnya dengan menggunakan attribute <span class="text-green">height</span> pada tag <i>canvas</i>.</p>
+                    <p>Membuat chart tidak jauh berbeda dengan <a href="https://www.chartjs.org/docs/latest/" target="_blank" rel="noopener noreferrer">dokumentasi Chart Js</a>, namun kamu perlu tag <i>&lt;div&gt;</i> atau <i>&lt;section&gt;</i> dengan class <span class="text-green">.chart</span>, didalamnya ada dua bagian yaitu <b>Chart Header</b> (<i>tempat judul dari chart</i>) dan <b>Chart Body</b> (<i>tempat chart</i>). Untuk membuat Chart Header, kamu perlu membuat element menggunakan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.chart__header</span>, dan letakkan judul dari chart didalamnya menggunakan tag <i>&lt;h6&gt;</i>. Untuk membuat Chart Body kamu perlu membuat element menggunakan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.chart__body</span>, didalamnya letakkan code untuk chart, dan letakkan Chart Body dibawah Chart Header. Standar tinggi dari chart adalah 350px, kamu juga bisa mengaturnya dengan menggunakan attribute <span class="text-green">height</span> pada tag <i>canvas</i>.</p>
                     <blockquote class="blockquote blockquote--green">
-                       Jika kamu belum pernah menggunakan Chart js sebelumnya, saya sarankan untuk membaca dokumentasi resmi dari Chart js!. Disana sudah dijelaskan dengan detail.
+                       Jika kamu belum pernah menggunakan Chart js sebelumnya, saya sarankan untuk membaca dokumentasi dari Chart js!. Disana sudah dijelaskan dengan detail. Jika kamu sebelumnya pernah mempelajari cara membuat Main pada menu Tata Letak > Main, kamu bisa meletakkan Chart didalam grid sistem Bootstrap, dan tanpa harus meletakkan Chart didalam Box.
                     </blockquote>
                     <h4 class="mt-5">Area Chart</h4>
                     <div class="pre-code-box">
@@ -132,7 +132,7 @@ let configAreaChart = {
         datasets: [{
             label: 'Pengunjung',
             data: [10,6,7,5,1,14],
-            fill: 'boundary',
+            fill: 'origin',
             backgroundColor: 'rgba(37,151,224,.7)',
             borderColor: '#2597e0'
         }]
@@ -141,6 +141,15 @@ let configAreaChart = {
         maintainAspectRatio: false,
         legend: {
             display: false
+        },
+        tooltips: {
+            titleFontFamily: 'sans-serif',
+            bodyFontFamily: 'sans-serif',
+            backgroundColor: '#fff',
+            titleFontColor: '#333',
+            bodyFontColor: '#333',
+            borderColor: '#e2e2e2',
+            borderWidth: '1',
         }
     }
 }
@@ -188,6 +197,15 @@ let configPieChart = {
         responsive: true,
         legend: {
             display: true
+        },
+        tooltips: {
+            titleFontFamily: 'sans-serif',
+            bodyFontFamily: 'sans-serif',
+            backgroundColor: '#fff',
+            titleFontColor: '#333',
+            bodyFontColor: '#333',
+            borderColor: '#e2e2e2',
+            borderWidth: '1',
         }
     }
 }
@@ -229,6 +247,15 @@ let configBarChart = {
         maintainAspectRatio: false,
         legend: {
             display: false
+        },
+        tooltips: {
+            titleFontFamily: 'sans-serif',
+            bodyFontFamily: 'sans-serif',
+            backgroundColor: '#fff',
+            titleFontColor: '#333',
+            bodyFontColor: '#333',
+            borderColor: '#e2e2e2',
+            borderWidth: '1',
         }
     }
 }
@@ -275,6 +302,15 @@ let configDoughnutChart = {
         maintainAspectRatio: false,
         legend: {
             display: true
+        },
+        tooltips: {
+            titleFontFamily: 'sans-serif',
+            bodyFontFamily: 'sans-serif',
+            backgroundColor: '#fff',
+            titleFontColor: '#333',
+            bodyFontColor: '#333',
+            borderColor: '#e2e2e2',
+            borderWidth: '1',
         }
     }
 }
@@ -297,7 +333,7 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
 
     <!-- Optional Javascript -->
     <script src="../dist/js/doc.min.js"></script>
-    <script src="../../plugins/Chart.js/Chart.bundle.min.js"></script>
+    <script src="../../plugins/Chart.js/Chart.min.js"></script>
     <script src="../dist/plugin/highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -311,7 +347,7 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
                 datasets: [{
                     label: 'Pengunjung',
                     data: [10,6,7,5,1,14],
-                    fill: 'boundary',
+                    fill: 'origin',
                     backgroundColor: 'rgba(37,151,224,.7)',
                     borderColor: '#2597e0'
                 }]
@@ -320,6 +356,15 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
                 maintainAspectRatio: false,
                 legend: {
                     display: false
+                },
+                tooltips: {
+                    titleFontFamily: 'sans-serif',
+                    bodyFontFamily: 'sans-serif',
+                    backgroundColor: '#fff',
+                    titleFontColor: '#333',
+                    bodyFontColor: '#333',
+                    borderColor: '#e2e2e2',
+                    borderWidth: '1',
                 }
             }
         }
@@ -346,6 +391,15 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
                 responsive: true,
                 legend: {
                     display: true
+                },
+                tooltips: {
+                    titleFontFamily: 'sans-serif',
+                    bodyFontFamily: 'sans-serif',
+                    backgroundColor: '#fff',
+                    titleFontColor: '#333',
+                    bodyFontColor: '#333',
+                    borderColor: '#e2e2e2',
+                    borderWidth: '1',
                 }
             }
         }
@@ -366,6 +420,15 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
                 maintainAspectRatio: false,
                 legend: {
                     display: false
+                },
+                tooltips: {
+                    titleFontFamily: 'sans-serif',
+                    bodyFontFamily: 'sans-serif',
+                    backgroundColor: '#fff',
+                    titleFontColor: '#333',
+                    bodyFontColor: '#333',
+                    borderColor: '#e2e2e2',
+                    borderWidth: '1',
                 }
             }
         }
@@ -391,6 +454,15 @@ new Chart(doughnutChart, configDoughnutChart);</code></pre>
                 maintainAspectRatio: false,
                 legend: {
                     display: true
+                },
+                tooltips: {
+                    titleFontFamily: 'sans-serif',
+                    bodyFontFamily: 'sans-serif',
+                    backgroundColor: '#fff',
+                    titleFontColor: '#333',
+                    bodyFontColor: '#333',
+                    borderColor: '#e2e2e2',
+                    borderWidth: '1',
                 }
             }
         }

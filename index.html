@@ -284,7 +284,7 @@
 		        datasets: [{
 		            label: 'Visitors',
 		            data: [10,6,7,5,1,14],
-		            fill: 'boundary',
+		            fill: 'origin',
 		            backgroundColor: 'rgba(37,151,224,.7)',
 		            borderColor: '#2597e0'
 		        }]
@@ -292,8 +292,17 @@
 		    options: {
 		    	maintainAspectRatio: false,
 		    	legend: {
-		    		display: false
-		        }
+		    		display: false,
+		        },
+		        tooltips: {
+                    titleFontFamily: 'sans-serif',
+                    bodyFontFamily: 'sans-serif',
+                    backgroundColor: '#fff',
+                    titleFontColor: '#333',
+                    bodyFontColor: '#333',
+                    borderColor: '#e2e2e2',
+                    borderWidth: '1',
+                }
 		    }
 		}
 		new Chart(visitorChart, configVisitorChart);
@@ -318,7 +327,16 @@
 		    	maintainAspectRatio: false,
 		    	legend: {
 		    		display: true
-		        }
+		        },
+		        tooltips: {
+                    titleFontFamily: 'sans-serif',
+                    bodyFontFamily: 'sans-serif',
+                    backgroundColor: '#fff',
+                    titleFontColor: '#333',
+                    bodyFontColor: '#333',
+                    borderColor: '#e2e2e2',
+                    borderWidth: '1',
+                }
 		    }
 		}
 		new Chart(browserUsageChart, configBrowserUsageChart);
