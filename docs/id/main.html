@@ -97,15 +97,8 @@
             <div class="col-12">
                 <div class="main__box">
                     <h4>Dasar</h4>
-                    <p>Semua konten dari website atau aplikasimu letakkan dalam Main. Membuat Main kamu membutuhkan tag <i>main</i> dengan class <span class="text-green">.main</span>, Jika kamu menggunakan Sidebar, maka kamu harus menambahkan class <span class="text-green">.main--ml-sidebar-width</span> setelah class <span class="text-green">.main</span>, agar lebar Main menyesuaikan dengan lebar Sidebar. Kemudian didalam Main kamu bisa meng-implementasikan Grid Sistem milik bootstrap untuk membuat konten dari website atau aplikasi kamu, lihat <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/layout/grid/">dokumentasi bootstrap!.</a></p>
-                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;main class=&quot;main main--ml-sidebar-width&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12&quot;&gt;
-            &lt;h4&gt;Ini adalah script dasar untuk membuat Main&lt;/h4&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;&lt;!-- row --&gt;
-&lt;/main&gt;</code></pre>
-                    <p class="mt-3">Contoh implementasi dengan navbar dan sidebar.</p>
+                    <p>Semua konten dari website atau aplikasimu letakkan dalam Main. Membuat Main kamu membutuhkan tag <i>&lt;main&gt;</i> dengan class <span class="text-green">.main</span>, Jika kamu menggunakan Sidebar, maka kamu harus menambahkan class <span class="text-green">.main--ml-sidebar-width</span> setelah class <span class="text-green">.main</span>, agar lebar Main menyesuaikan dengan lebar Sidebar. Kemudian didalam Main kamu bisa meng-implementasikan Grid Sistem Bootstrap untuk membuat konten dari website atau aplikasi kamu, lihat <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/layout/grid/">dokumentasi grid sistem Bootstrap!</a>. Letakkan Main setelah Sidebar.</p>
+
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <!-- navbar -->
@@ -140,7 +133,7 @@
                             <main class="main main--ml-sidebar-width">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h5>Ini adalah script dasar untuk membuat Main</h5>
+                                        <h5>Ini adalah code dasar untuk membuat Main</h5>
                                     </div>
                                 </div><!-- row -->
                             </main>
@@ -191,15 +184,16 @@
 &lt;main class=&quot;main main--ml-sidebar-width&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-12&quot;&gt;
-            &lt;h5&gt;Ini adalah script dasar untuk membuat Main&lt;/h5&gt;
+            &lt;h5&gt;Ini adalah code dasar untuk membuat Main&lt;/h5&gt;
         &lt;/div&gt;
     &lt;/div&gt;&lt;!-- row --&gt;
 &lt;/main&gt;</code></pre>
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Header</h4>
-                    <p>Membuat Header kamu harus menambahkan tag <i>header</i> dengan class <span class="text-green">.main__header</span>, dan jangan lupa untuk menambahkan class <span class="text-green">.col-12</span>, serta tambahkan juga class <span class="text-green">.mb-2</span>, untuk memberi jarak element dibawah header. Selanjutnya dalam tag <i>header</i> kamu tambahkan tag <i>div</i> dengan class <span class="text-green">.main__title</span>, didalam main title kamu bisa menambahkan judul dari headernya, kamu bisa menggunakan tag <i>h1</i>, <i>h2</i>, dan seterusnya. Namun saya sarankan untuk memakai tag <i>h4</i>. Selain judul kamu juga bisa menambahkan breadcrumb, cara membuat breadcrumb sama seperti di <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/components/breadcrumb/">dokumentasi bootstrap</a>. Yang penting kamu harus meletakkan breadcrumb di bawah judul.</p>
-                    <p>Jika kamu butuh untuk menambahkan text pada header, didalam tag <i>header</i> kamu bisa menambahkan tag <i>div</i> dengan class <span class="text-green">.main__text</span>, didalam main text kamu bisa menggunakan tag <i>p</i> untuk membuat paragraf, tag <i>a</i> untuk membuat link.</p>
+                    <p>Membuat Header kamu perlu membuat element didalam element <i>&lt;div class="row"&gt;</i> menggunakan tag <i>&lt;header&gt;</i> dengan class <span class="text-green">.main__header</span>, dan jangan lupa untuk menambahkan class <span class="text-green">.col-12</span>, serta tambahkan juga class <span class="text-green">.mb-2</span>, untuk memberi jarak terhadap element dibawah header. Selanjutnya dalam tag <i>&lt;header&gt;</i> buat element menggunakan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.main__title</span>, didalam Main Title kamu bisa menambahkan judul dari headernya, kamu bisa menggunakan tag <i>&lt;h1&gt;</i>, <i>&lt;h2&gt;</i>, dan seterusnya. Namun saya sarankan untuk memakai tag <i>&lt;h4&gt;</i>. Selain judul kamu juga bisa menambahkan Breadcrumb, caranya sama seperti <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/4.5/components/breadcrumb/">dokumentasi breadcrumb Bootstrap</a>. Letakkan breadcrumb di bawah judul.</p>
+
+                    <p>Jika kamu butuh untuk menambahkan text tambahan pada header, didalam tag <i>&lt;header&gt;</i> buat element menggunakan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.main__text</span>, didalam Main Text kamu bisa menggunakan tag <i>&lt;p&gt;</i> untuk membuat paragraf dan tag <i>&lt;a&gt;</i> untuk membuat link. Letakkan Main Text setelah Main Title.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <!-- navbar -->
@@ -310,7 +304,7 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Box</h4>
-                    <p>Box adalah sebuah kotak dengan background putih dan border, dimana kamu bisa meletakkan didalamnya seperti table, form dan lain-lain sesuaikan dengan kebutuhan. Membuatnya sangat mudah, kamu hanya perlu tag <i>div</i> atau <i>section</i> dengan class <span class="text-green">.main__box</span>, jangan lupa letakkan didalam grid sistem bootstrap.</p>
+                    <p>Box adalah sebuah kotak dengan background putih dan border, dimana kamu bisa meletakkan didalamnya seperti table, form dan lain-lain, sesuaikan dengan kebutuhan. Membuatnya kamu perlu membuat element menggunakan tag <i>&lt;div&gt;</i> atau <i>&lt;section&gt;</i> (<i>disarankan</i>) dengan class <span class="text-green">.main__box</span>, jangan lupa letakkan Box didalam grid sistem Bootstrap dan letakkan Box setelah Header.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <!-- navbar -->
@@ -356,7 +350,7 @@
                                 </ul>
                             </aside>
                             <!-- main -->
-                            <main class="main main--ml-sidebar-width">
+                            <main class="main main--ml-sidebar-width pb-3">
                                 <div class="row">
                                     <header class="main__header col-12 mb-2">
                                         <div class="main__title">
