@@ -1,4 +1,8 @@
-/* docs reza-admin v1.0 */
+/**
+ * Reza-Admin v1.0
+ * Copyright 2020 Reza Sariful Fikri
+ * Released under the MIT License
+*/
 
 const mainBox = document.querySelector(".main__box");
 if(mainBox !== null) {

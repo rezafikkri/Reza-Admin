@@ -1,4 +1,8 @@
-/* docs reza-admin v1.0 */
+/**
+ * Reza-Admin v1.0
+ * Copyright 2020 Reza Sariful Fikri
+ * Released under the MIT License
+*/
 
 @mixin text-color($color-name, $color) {
 	.#{$color-name} {

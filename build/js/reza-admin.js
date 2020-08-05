@@ -1,6 +1,7 @@
-/*
-	Reza-admin: v1.0
-	Copyright 2020 Reza Sariful Fikri
+/**
+ * Reza-Admin v1.0
+ * Copyright 2020 Reza Sariful Fikri
+ * Released under the MIT License
 */
 
 const sidebar = document.querySelector("aside.sidebar");
