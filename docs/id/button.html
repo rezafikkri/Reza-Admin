@@ -99,16 +99,16 @@
             <div class="col-12">
                 <div class="main__box">
                     <h4>Normal</h4>
-                    <p>Membuat button sangat mudah, yaitu kamu membutuhkan tag <i>a</i> atau tag <i>button</i> dengan class <span class="text-green">.btn</span> dan diikuti class style dari button-nya, seperti <span class="text-green">.btn--blue</span>.</p>
+                    <p>Membuat kamu membutuhkan tag <i>&lt;button&gt;</i> atau tag <i>&lt;a&gt;</i> dengan class <span class="text-green">.btn</span> dan diikuti class untuk style Button-nya, ada <span class="text-green">.btn--gray</span>, <span class="text-green">.btn--blue</span>, <span class="text-green">.btn--green</span>, <span class="text-green">.btn--orange</span>, dan <span class="text-green">.btn--red</span>.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <a href="#" class="btn btn--gray mr-3 mt-2 mb-2">Gray Normal</a>
+                            <button class="btn btn--gray mr-3 mt-2 mb-2">Gray Normal</button>
                             <a href="#" class="btn btn--blue mr-3 mt-2 mb-2">Blue Normal</a>
                             <a href="#" class="btn btn--green mr-3 mt-2 mb-2">Green Normal</a>
                             <a href="#" class="btn btn--orange mr-3 mt-2 mb-2">Orange Normal</a>
                             <a href="#" class="btn btn--red mr-3 mt-2 mb-2">Red Normal</a>
                         </div><!-- pre-code-box__preview -->
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a href=&quot;#&quot; class=&quot;btn btn--gray&quot;&gt;Gray Normal&lt;/a&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;button class=&quot;btn btn--gray&quot;&gt;Gray Normal&lt;/button&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot;&gt;Blue Normal&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn--green&quot;&gt;Green Normal&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn--orange&quot;&gt;Orange Normal&lt;/a&gt;
@@ -116,16 +116,16 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Outline</h4>
-                    <p>Membuat outline button kamu hanya perlu menambahkan kata <i>outline</i> pada akhiran class style button-nya. Contoh yang sebelumnya <span class="text-green">.btn--blue</span> menjadi <span class="text-green">.btn--blue-outline</span>.</p>
+                    <p>Membuat outline button kamu perlu menambahkan kata <i>outline</i> pada akhiran class untuk style Button-nya. Contoh yang sebelumnya <span class="text-green">.btn--blue</span> menjadi <span class="text-green">.btn--blue-outline</span>.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
-                            <a href="#" class="btn btn--gray-outline mr-3 mt-2 mb-2">Gray Outline</a>
+                            <button class="btn btn--gray-outline mr-3 mt-2 mb-2">Gray Outline</button>
                             <a href="#" class="btn btn--blue-outline mr-3 mt-2 mb-2">Blue Outline</a>
                             <a href="#" class="btn btn--green-outline mr-3 mt-2 mb-2">Green Outline</a>
                             <a href="#" class="btn btn--orange-outline mr-3 mt-2 mb-2">Orange Outline</a>
                             <a href="#" class="btn btn--red-outline mr-3 mt-2 mb-2">Red Outline</a>
                         </div><!-- pre-code-box__preview -->
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a href=&quot;#&quot; class=&quot;btn btn--gray-outline&quot;&gt;Gray Outline&lt;/a&gt;
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;button class=&quot;btn btn--gray-outline&quot;&gt;Gray Outline&lt;/button&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn--blue-outline&quot;&gt;Blue Outline&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn--green-outline&quot;&gt;Green Outline&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn--orange-outline&quot;&gt;Orange Outline&lt;/a&gt;
@@ -133,7 +133,7 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Disabled</h4>
-                    <p>Jika kamu membuat button menggunakan tag <i>a</i>, maka kamu perlu menambahkan class <span class="text-green">.btn--disabled</span> setelah class style button-nya. Jika kamu membuat button menggunakan tag <i>button</i>, maka kamu perlu menambahkan attribute <span class="text-green">disabled=""</span> pada tag <i>button</i>-nya.</p>
+                    <p>Jika kamu membuat button menggunakan tag <i>&lt;button&gt;</i>, maka kamu perlu menambahkan attribute <span class="text-green">disabled=""</span> pada tag <i>&lt;button&gt;</i>. Jika kamu membuat button menggunakan tag <i>&lt;a&gt;</i>, maka kamu perlu menambahkan class <span class="text-green">.btn--disabled</span> setelah class untuk style Button-nya.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <a class="btn btn--blue btn--disabled mr-3 mt-2 mb-2" href="#">Blue Disabled</a>
@@ -144,11 +144,9 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Loading</h4>
-                    <p>Membuat Button Loading kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">btn-loading</span>. Lalu didalamnya kamu bisa menambahkan script dibawah ini untuk loading.</p>
-                    <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;loading-circle loading-circle--blue&quot;&gt;
-    &lt;div class=&quot;loading-circle__fill&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                    <p class="mt-3">Dan jangan lupa meletakkan script untuk button-nya setelah script untuk loading. Untuk menyembunyikan loading, kamu hanya perlu menambahkan class <span class="text-green">.d-none</span> disebelah class <span class="text-green">.loading-circle--blue</span>, untuk menampilkan loading kamu bisa menghapus class <span class="text-green">.d-none</span>. Gunakan Javascript & DOM untuk menghapus atau menambahkan class. Penjelasan detail mengenai loading dan contoh loading yang lain, kamu bisa baca bagian <a href="loading.html">dokumentasi Loading</a>.</p>
+                    <p>Membuat Loading sama dengan <a href="loading.html" target="_blank">dokumentasi Loading</a>, hanya saja kamu perlu membungkus Loading dan Button kedalam tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.btn-loading</span>.</p>
+
+                    <p class="mt-3">Untuk menyembunyikan Loading, kamu perlu menambahkan class utilities Bootstrap untuk display none <span class="text-green">.d-none</span> setelah class <span class="text-green">.loading-circle--blue</span>, untuk menampilkan Loading kamu bisa menghapus class <span class="text-green">.d-none</span>. Gunakan Javascript & DOM untuk menghapus atau menambahkan class. Penjelasan detail mengenai Loading dan contoh Loading yang lain, kamu bisa lihat di dokumentasi Loading.</p>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
                             <div class="btn-loading">
