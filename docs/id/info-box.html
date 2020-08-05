@@ -98,14 +98,14 @@
 
             <div class="col-12">
                 <section class="main__box">
-                    <p>Membuat Info Box kamu membutuhkan tag <i>section</i> atau <i>div</i> dengan class <span class="text-green">.info-box</span> dan class untuk style Info Box-nya, ada class <span class="text-green">.info-box--blue</span>, <span class="text-green">.info-box--green</span>, <span class="text-green">.info-box--orange</span> dan <span class="text-green">.info-box--red</span>. Didalamnya ada beberapa bagian, yaitu <b>Icon</b>, <b>Deskripsi</b>, dan <b>button</b>.</p>
-                    <p><b>Pertama</b>, Icon. Membuat Icon kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.info-box__icon</span>, didalamnya kamu bisa meletakkan icon dari font awesome menggunakan tag <i>span</i>.</p>
+                    <p>Membuat Info Box kamu membutuhkan tag <i>&lt;section&gt;</i> atau <i>&lt;div&gt;</i> dengan class <span class="text-green">.info-box</span> dan class untuk style Info Box-nya, ada class <span class="text-green">.info-box--blue</span>, <span class="text-green">.info-box--green</span>, <span class="text-green">.info-box--orange</span> dan <span class="text-green">.info-box--red</span>. Didalamnya ada beberapa bagian, yaitu <b>Icon</b>, <b>Deskripsi</b>, dan <b>Button</b>.</p>
+                    <p><b>Pertama</b>, Icon. Membuat Icon kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.info-box__icon</span>, didalamnya kamu bisa meletakkan icon dari font awesome menggunakan tag <i>&lt;span&gt;</i>.</p>
 
-                    <p><b>Kedua</b>, Deskripsi. Membuat Deskripsi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.info-box__description</span>. Didalamnya kamu bisa menambahkan judul dari Info Box dengan tag <i>h2</i>. Kemudian dibawah judul kamu bisa menambahkan semacam informasi utama dari judul menggunakan tag <i>h1</i>, misalnya judul Info Box adalah <b>Anggota</b> maka informasi utamanya adalah jumlah Anggota, yang biasanya ditulis dalam bentuk angka. Terakhir dibawah informasi utama kamu juga bisa menambahkan Deskripsi waktu dengan menggunakan tag <i>time</i>. Dan yang paling penting letakkan Deskripsi setelah Icon!.</p>
+                    <p><b>Kedua</b>, Deskripsi. Membuat Deskripsi kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.info-box__description</span>. Didalamnya kamu bisa menambahkan judul dari Info Box dengan tag <i>&lt;h2&gt;</i>. Kemudian dibawah judul kamu bisa menambahkan semacam informasi utama dari judul menggunakan tag <i>&lt;h1&gt;</i>, misalnya judul Info Box adalah <b>Anggota</b> maka informasi utamanya adalah jumlah Anggota, yang biasanya ditulis dalam bentuk angka. Terakhir dibawah informasi utama kamu juga bisa menambahkan waktu dengan menggunakan tag <i>&lt;time&gt;</i>. Dan yang paling penting letakkan Deskripsi setelah Icon!.</p>
 
-                    <p><b>Ketiga</b>, Button. Membuat button untuk detail dari Info Box, kamu hanya perlu tag <i>a</i> dengan class <span class="text-green">.info-box__btn-detail</span>, didalamnya kamu bisa meletakkan icon dari font awesome menggunakan tag <i>span</i>. Dan jangan lupa untuk meletakkan Button setelah Deskripsi!.</p>
+                    <p><b>Ketiga</b>, Button. Membuat button untuk detail dari Info Box, kamu hanya perlu tag <i>&lt;a&gt;</i> dengan class <span class="text-green">.info-box__btn-detail</span>, didalamnya kamu bisa meletakkan icon dari font awesome menggunakan tag <i>&lt;span&gt;</i>. Dan jangan lupa untuk meletakkan Button setelah Deskripsi!.</p>
                     <blockquote class="blockquote blockquote--green">
-                        <p>Jika kamu merasa Info Box-nya terlalu lebar, kamu bisa meletakkannya didalam Grid Sistem bootstrap.</p>
+                        <p>Jika kamu merasa Info Box-nya terlalu lebar, kamu bisa meletakkannya didalam grid gistem Bootstrap.</p>
                     </blockquote>
                     <div class="pre-code-box">
                         <div class="pre-code-box__preview">
@@ -156,52 +156,50 @@
                             </div>
                             </div><!-- row -->
                         </div><!-- pre-code-box__preview -->
-                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-md-6 mb-2&quot;&gt;
-        &lt;section class=&quot;info-box info-box--blue&quot;&gt;
-            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-shopping-bag&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;div class=&quot;info-box__description&quot;&gt;
-                &lt;h2&gt;Pesanan&lt;/h2&gt;
-                &lt;h1&gt;1200&lt;/h1&gt;
-                &lt;time&gt;2 Menit yang lalu&lt;/time&gt;
-            &lt;/div&gt;
-            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-        &lt;/section&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-6 mb-2&quot;&gt;
-        &lt;section class=&quot;info-box info-box--green&quot;&gt;
-            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;div class=&quot;info-box__description&quot;&gt;
-                &lt;h2&gt;Produk&lt;/h2&gt;
-                &lt;h1&gt;520&lt;/h1&gt;
-                &lt;time&gt;5 Menit yang lalu&lt;/time&gt;
-            &lt;/div&gt;
-            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-        &lt;/section&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-6 mb-2 mb-md-0&quot;&gt;
-        &lt;section class=&quot;info-box info-box--orange&quot;&gt;
-            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-thumbs-up&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;div class=&quot;info-box__description&quot;&gt;
-                &lt;h2&gt;Like&lt;/h2&gt;
-                &lt;h1&gt;400&lt;/h1&gt;
-                &lt;time&gt;2 Menit yang lalu&lt;/time&gt;
-            &lt;/div&gt;
-            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-        &lt;/section&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;section class=&quot;info-box info-box--red&quot;&gt;
-            &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-users&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;div class=&quot;info-box__description&quot;&gt;
-                &lt;h2&gt;Anggota&lt;/h2&gt;
-                &lt;h1&gt;120&lt;/h1&gt;
-                &lt;time&gt;2 Menit yang lalu&lt;/time&gt;
-            &lt;/div&gt;
-            &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-        &lt;/section&gt;
-    &lt;/div&gt;
-&lt;/div&gt;&lt;!-- row --&gt;</code></pre>
+                        <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;col-md-6 mb-2&quot;&gt;
+    &lt;section class=&quot;info-box info-box--blue&quot;&gt;
+        &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-shopping-bag&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;info-box__description&quot;&gt;
+            &lt;h2&gt;Pesanan&lt;/h2&gt;
+            &lt;h1&gt;1200&lt;/h1&gt;
+            &lt;time&gt;2 Menit yang lalu&lt;/time&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md-6 mb-2&quot;&gt;
+    &lt;section class=&quot;info-box info-box--green&quot;&gt;
+        &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;info-box__description&quot;&gt;
+            &lt;h2&gt;Produk&lt;/h2&gt;
+            &lt;h1&gt;520&lt;/h1&gt;
+            &lt;time&gt;5 Menit yang lalu&lt;/time&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md-6 mb-2 mb-md-0&quot;&gt;
+    &lt;section class=&quot;info-box info-box--orange&quot;&gt;
+        &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-thumbs-up&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;info-box__description&quot;&gt;
+            &lt;h2&gt;Like&lt;/h2&gt;
+            &lt;h1&gt;400&lt;/h1&gt;
+            &lt;time&gt;2 Menit yang lalu&lt;/time&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;section class=&quot;info-box info-box--red&quot;&gt;
+        &lt;div class=&quot;info-box__icon&quot;&gt;&lt;span class=&quot;fa fa-users&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;info-box__description&quot;&gt;
+            &lt;h2&gt;Anggota&lt;/h2&gt;
+            &lt;h1&gt;120&lt;/h1&gt;
+            &lt;time&gt;2 Menit yang lalu&lt;/time&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;info-box__btn-detail&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-arrow-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/section&gt;
+&lt;/div&gt;</code></pre>
                     </div><!-- pre-code-box -->
                 </section><!-- main__box -->
             </div>
