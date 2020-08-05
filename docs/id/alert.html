@@ -99,13 +99,16 @@
             <div class="col-12">
                 <div class="main__box">
                     <h4>Dasar</h4>
-                    <p>Membuat alert kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert</span> diikuti class style dari alert-nya, seperti <span class="text-green">.alert--danger</span>. Didalamnya ada beberapa bagian yaitu <b>Icon</b>, <b>Deskripsi</b>, dan <b>Aksi</b>.</p>
-                    <p><b>Pertama</b>, Icon. Membuat Icon kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert__icon</span>, lalu didalamya kamu bisa meletakkan icon dari fontawesome menggunakan tag <i>span</i>. Saya sangat menyarankan membaca <a href="">dokumentasi resmi</a> font awesome, jika kamu belum pernah memakai font awesome sebelumnya.</p>
-                    <p><b>Kedua</b>, Deskripsi. Deskripsi adalah tempat kamu meletakkan pesan yang ingin kamu sampaikan. Membuat Deskripsi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert__description</span>, lalu didalamnya kamu bisa menggunakan tag <i>p</i> dan meletakkan pesan-mu didalam tag <i>p</i> itu. Jangan lupa untuk meletakkan Deskripsi setelah Icon.</p>
-                    <p><b>Ketiga</b>, Aksi. Aksi adalah tempat dimana kamu meletakkan tombol untuk menutup alert. Membuat Aksi kamu membutuhkan tag <i>div</i> dengan class <span class="text-green">.alert__action</span>, lalu didalamnya buat tag <i>a</i> dengan class <span class="text-green">.alert__close-btn</span> dan tambahkan code entity HTML Unicode UTF-8 ini <span class="text-green">&amp;times;</span> untuk membuat tanda (&times;). Jangan lupa untuk meletakkan Aksi setelah Deskripsi.</p>
+                    <p>Membuat alert kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.alert</span> diikuti class untuk style alert-nya, ada <span class="text-green">.alert--warning</span>, <span class="text-green">.alert--danger</span>, <span class="text-green">.alert--info</span>, dan <span class="text-green">.alert--success</span>. Didalamnya ada beberapa bagian yaitu <b>Icon</b>, <b>Deskripsi</b>, dan <b>Aksi</b>.</p>
+
+                    <p><b>Pertama</b>, Icon. Membuat Icon kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.alert__icon</span>, lalu didalamya kamu bisa meletakkan icon dari Font Awesome menggunakan tag <i>&lt;span&gt;</i>. Jika kamu belum pernah memakai Font Awesome sebelumnya, saya sangat menyarankan membaca <a href="https://fontawesome.com/v4.7.0/examples/" target="_blank" rel="noopener noreferrer">dokumentasi Font Awesome</a> .</p>
+
+                    <p><b>Kedua</b>, Deskripsi. Deskripsi adalah tempat kamu meletakkan pesan yang ingin kamu sampaikan. Membuat Deskripsi kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.alert__description</span>, lalu didalamnya kamu bisa menggunakan tag <i>&lt;p&gt;</i> dan meletakkan pesan-mu didalam tag <i>&lt;p&gt;</i> itu. Letakkan Deskripsi setelah Icon.</p>
+
+                    <p><b>Ketiga</b>, Aksi. Aksi adalah tempat dimana kamu meletakkan tombol untuk menutup alert. Membuat Aksi kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.alert__action</span>, lalu didalamnya buat element menggunakan tag <i>&lt;a&gt;</i> dengan class <span class="text-green">.alert__close-btn</span> dan tambahkan code entity HTML Unicode UTF-8 <span class="text-green">&amp;times;</span> untuk membuat tanda (&times;). Letakkan Aksi setelah Deskripsi.</p>
 
                     <blockquote class="blockquote blockquote--orange">
-                        <p>Kamu harus meletakkan Alert didalam tag <i>main</i> dengan class <span class="text-green">.main</span> supaya fitur untuk menutup alert-nya bisa bekerja.</p>
+                        <p>Kamu harus meletakkan Alert didalam tag <i>&lt;main&gt;</i> dengan class <span class="text-green">.main</span> supaya fitur untuk menutup alert bisa bekerja.</p>
                     </blockquote>
 
                     <div class="pre-code-box">
@@ -140,7 +143,7 @@
                             </div>
 
                             <div class="col-md-6 mb-3">
-                                <div class="alert alert--warning alert-dismissible">
+                                <div class="alert alert--warning">
                                     <div class="alert__icon">
                                         <span class="fa fa-warning"></span>
                                     </div>
@@ -192,7 +195,7 @@
     &lt;/div&gt;
 &lt;/div&gt;&lt;!-- alert --&gt;
 
-&lt;div class=&quot;alert alert--warning alert-dismissible&quot;&gt;
+&lt;div class=&quot;alert alert--warning&quot;&gt;
     &lt;div class=&quot;alert__icon&quot;&gt;
         &lt;span class=&quot;fa fa-warning&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
@@ -218,7 +221,7 @@
                     </div><!-- pre-code-box -->
 
                     <h4 class="mt-5">Fixed</h4>
-                    <p>Kamu juga bisa membuat fixed alert dengan menambahkan class <span class="text-green">.alert--fixed-rb</span> setelah class untuk style alert atau bisa juga setelah class <span class="text-green">.alert</span>.</p>
+                    <p>Kamu juga bisa membuat alert fixed dengan menambahkan class <span class="text-green">.alert--fixed-rb</span> setelah class untuk style alert atau bisa juga setelah class <span class="text-green">.alert</span>.</p>
                     <pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;div class=&quot;alert alert--danger alert--fixed-rb&quot;&gt;
     &lt;div class=&quot;alert__icon&quot;&gt;
         &lt;span class=&quot;fa fa-ban&quot;&gt;&lt;/span&gt;
