@@ -47,8 +47,13 @@
 	&__decription {
 		padding: 1.25rem;
 
-		h3 {
+		h4 {
 			font-family: open_sansbold, sans-serif;
+			margin-bottom: .3rem;
+		}
+
+		h5 {
+			font-size: 1.1rem;
 		}
 
 		time {
@@ -71,7 +76,7 @@
 			}
 		}
 
-		&--not-link {
+		a#{&}--not-link {
 			font-size: 12pt;
 			pointer-events: none !important;
 		}

@@ -1058,8 +1058,11 @@ small {
       color: white; }
   .card__decription {
     padding: 1.25rem; }
-    .card__decription h3 {
-      font-family: open_sansbold, sans-serif; }
+    .card__decription h4 {
+      font-family: open_sansbold, sans-serif;
+      margin-bottom: .3rem; }
+    .card__decription h5 {
+      font-size: 1.1rem; }
     .card__decription time {
       font-size: 10pt; }
   .card__action {
@@ -1072,7 +1075,7 @@ small {
       font-size: 14pt; }
       .card__action a:hover:not(.card__action--not-link) {
         color: #2597e0; }
-    .card__action--not-link {
+    .card__action a.card__action--not-link {
       font-size: 12pt;
       pointer-events: none !important; }
     .card__action--not-link span {
