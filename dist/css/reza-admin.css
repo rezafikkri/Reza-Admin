@@ -1330,7 +1330,7 @@ small {
     margin-bottom: 28px;
     border-radius: 4px;
     padding: 30px; }
-    @media (max-width: 575.98px) {
+    @media (max-width: 530px) {
       .modal__content {
         width: auto;
         margin-left: 15px;
@@ -1413,10 +1413,13 @@ small {
     .modal__action .btn--link {
       padding-left: 0px; }
     @media (max-width: 575.98px) {
-      .modal__action .btn {
-        width: 100%; }
-      .modal__action .btn--link {
-        padding-left: 15px; } }
+      .modal__action {
+        flex-direction: column-reverse; }
+        .modal__action .btn {
+          width: 100%; }
+        .modal__action .btn--link {
+          padding-left: 15px;
+          padding-bottom: 0px; } }
   .modal--fade-in {
     display: block;
     -webkit-animation: modal-fade-in .2s linear;

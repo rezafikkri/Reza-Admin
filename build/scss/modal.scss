@@ -26,7 +26,7 @@
 		border-radius: 4px;
 		padding: 30px;
 
-		@media (max-width: 575.98px) {
+		@media (max-width: 530px) {
 			width: auto;
 			margin-left: 15px;
 			margin-right: 15px;
@@ -66,12 +66,15 @@
 		}
 
 		@media (max-width: 575.98px) {
+			flex-direction: column-reverse;
+
 			.btn {
 				width: 100%;
 			}
 
 			.btn--link {
 				padding-left: 15px;
+				padding-bottom: 0px;
 			}
 		}
 	}
