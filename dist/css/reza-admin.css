@@ -1261,9 +1261,9 @@ small {
         background-color: #cc1e1e; }
     .alert--danger .alert__description {
       color: #ffefef; }
-    .alert--danger .alert__action {
+    .alert--danger .alert__action a {
       color: #9b0f0f; }
-      .alert--danger .alert__action:hover {
+      .alert--danger .alert__action a:hover {
         color: #750707; }
   .alert--info {
     background-color: #2597e0;
@@ -1274,9 +1274,9 @@ small {
         background-color: #1784c4; }
     .alert--info .alert__description {
       color: #eff9ff; }
-    .alert--info .alert__action {
+    .alert--info .alert__action a {
       color: #0e6093; }
-      .alert--info .alert__action:hover {
+      .alert--info .alert__action a:hover {
         color: #07446b; }
   .alert--warning {
     background-color: #f9a022;
@@ -1287,9 +1287,9 @@ small {
         background-color: #d3871d; }
     .alert--warning .alert__description {
       color: #fff8ef; }
-    .alert--warning .alert__action {
+    .alert--warning .alert__action a {
       color: #965b09; }
-      .alert--warning .alert__action:hover {
+      .alert--warning .alert__action a:hover {
         color: #724304; }
   .alert--success {
     background-color: #1bd741;
@@ -1300,9 +1300,9 @@ small {
         background-color: #15bf37; }
     .alert--success .alert__description {
       color: #f2fff3; }
-    .alert--success .alert__action {
+    .alert--success .alert__action a {
       color: #0e9128; }
-      .alert--success .alert__action:hover {
+      .alert--success .alert__action a:hover {
         color: #076819; }
   .alert--fixed-rb {
     position: fixed;

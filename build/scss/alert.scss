@@ -15,7 +15,7 @@
 			color: $description-color;
 		}
 
-		.alert__action {
+		.alert__action a {
 			color: $action-color;
 			&:hover {
 				color: $action-color-hover;

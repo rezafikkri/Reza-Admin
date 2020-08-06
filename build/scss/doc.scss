@@ -87,10 +87,14 @@ blockquote.blockquote {
 		top: 1px;
 		right: 1px;
 
+		a {
+			text-decoration: none;
+		}
+
 		a.language,
 		a.clipboard {
 			padding: 3px 10px;
-			font-family: open_sansregular;
+			font-family: open_sansregular, sans-serif;
 			font-size: 12px;
 			color: #ddd;			
 			background-color: #373d49;
@@ -108,7 +112,7 @@ blockquote.blockquote {
 	}
 
 	.main__box h5 {
-		font-family: open_sanssemibold;
+		font-family: open_sanssemibold, sans-serif;
 	}
 
 	.navbar--white {
@@ -195,10 +199,10 @@ blockquote.blockquote {
 		padding: 30px;
 		border-radius: 4px;
 		width: 400px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid #ededed;
 
-		-webkit-box-shadow: 0px 2px 10px rgba(0,0,0,.05);
-		box-shadow: 0px 2px 10px rgba(0,0,0,.05);
+		-webkit-box-shadow: 0 0 4px rgba(0,0,0,.05);
+        box-shadow: 0 0 4px rgba(0,0,0,.
 
 		@media (max-width: 440px) {
 			width: 100%;
@@ -210,10 +214,8 @@ blockquote.blockquote {
 	}
 
 	&__list {
-		padding-left: 30px;
-		list-style-type: lower-norwegian;
 		margin-bottom: 0px;
 	}
 }
 
-@include text-color("text-green", #6fd310);
+@include text-color("text-green", #6ddb00);
