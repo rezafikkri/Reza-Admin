@@ -1535,6 +1535,9 @@ small {
 .forgot-password__form {
   padding: 20px; }
 
+@media (max-width: 360px) {
+  .forgot-password__form .btn {
+    width: 100%; } }
 .login__form .input-group .input-group__prepend .input-group__text {
   background-color: white; }
 .login__form .fa-envelope {
