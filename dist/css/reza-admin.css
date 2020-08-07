@@ -1556,14 +1556,20 @@ small {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   @media (max-width: 360px) {
     .login__form-action,
     .register__form-action {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse; } }
+      flex-direction: column-reverse;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; } }
 
 .login__alt,
 .register__alt {
