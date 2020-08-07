@@ -560,6 +560,26 @@ textarea.form {
   .form-group select.form,
   .form-group textarea.form {
     margin-top: 0rem; }
+  .form-group--d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .form-group--d-flex label {
+      -ms-flex-preferred-size: 70%;
+      flex-basis: 70%; }
+    .form-group--d-flex label.optional-label {
+      -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+      text-align: right;
+      color: #878787; }
+    .form-group--d-flex input.form,
+    .form-group--d-flex select.form,
+    .form-group--d-flex textarea.form {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto; }
 
 input[disabled].form,
 select[disabled].form,
@@ -632,26 +652,23 @@ select.form:invalid {
   box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.2); }
 
 select.form {
+  padding-right: 2.5rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" fill="%23565656" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
   background-repeat: no-repeat;
-  background-position-x: calc(100% - .75rem);
+  background-position-x: calc(100% - 1rem);
   background-position-y: center;
-  background-size: 15px;
+  background-size: 13px;
   background-color: white; }
 select[disabled].form {
   background: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" fill="%23b7b7b7" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
   background-repeat: no-repeat;
-  background-position-x: calc(100% - .75rem);
+  background-position-x: calc(100% - 1rem);
   background-position-y: center;
-  background-size: 15px;
+  background-size: 13px;
   background-color: #f2f2f2; }
-
-label.label-right {
-  float: right;
-  color: #878787; }
 
 small {
   font-size: 10pt; }
@@ -1250,8 +1267,9 @@ small {
     text-align: right;
     font-family: open_sansbold, sans-serif;
     font-size: 16pt; }
-    .alert__action:hover {
-      cursor: pointer; }
+    .alert__action a:hover {
+      cursor: pointer;
+      text-decoration: none; }
   .alert--danger {
     background-color: #ea2a2a;
     border: 1px solid #e22424; }
