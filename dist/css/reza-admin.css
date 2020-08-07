@@ -264,18 +264,16 @@ time {
       overflow-y: auto; }
   .sidebar__item a {
     color: #f4f4f4;
+    padding: 12px 15px;
+    position: relative;
+    display: block;
+    text-decoration: none;
     -webkit-transition: 0.1s cubic-bezier(0.55, 0.09, 0.68, 0.53);
     -o-transition: 0.1s cubic-bezier(0.55, 0.09, 0.68, 0.53);
     transition: 0.1s cubic-bezier(0.55, 0.09, 0.68, 0.53); }
     .sidebar__item a:hover {
       color: #fff;
       background-color: #1e8ac9; }
-  .sidebar__item a {
-    padding: 12px 15px;
-    position: relative;
-    display: block; }
-    .sidebar__item a:hover {
-      text-decoration: none; }
   .sidebar__item--header {
     font-family: open_sansregular, sans-serif;
     color: #ccdde5;
@@ -316,6 +314,7 @@ time {
   .sidebar__dropdown-item a {
     display: block;
     padding: 5px 0px;
+    padding-right: 15px;
     color: #ccdde5;
     position: relative;
     -webkit-transition: unset;

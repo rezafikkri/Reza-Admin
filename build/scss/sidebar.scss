@@ -57,6 +57,10 @@
 
 	&__item a {
 		color: #f4f4f4;
+		padding: 12px 15px;
+		position: relative;
+		display: block;
+		text-decoration: none;
 
 		-webkit-transition: .1s cubic-bezier(.55,.09,.68,.53);
 		-o-transition: .1s cubic-bezier(.55,.09,.68,.53);
@@ -65,16 +69,6 @@
 		&:hover {
 			color: #fff;
 			background-color: #1e8ac9;
-		}
-	}
-
-	&__item a {
-		padding: 12px 15px;
-		position: relative;
-		display: block;
-
-		&:hover {
-			text-decoration: none;
 		}
 	}
 
@@ -133,6 +127,7 @@
 	&-item a {
 		display: block;
 		padding: 5px 0px;
+		padding-right: 15px;
 		color: #ccdde5;
 		position: relative;
 
