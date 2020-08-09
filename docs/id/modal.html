@@ -19,7 +19,7 @@
     <!-- then Font Awesome -->
     <link rel="stylesheet" type="text/css" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- then Reza Admin CSS and Doc css -->
-    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.min.css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/reza-admin.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/doc.min.css">
     <!-- Favicon -->
     <link rel="icon" href="../../dist/img/Reza_logo.ico">
@@ -98,52 +98,70 @@
 
             <div class="col-12">
                 <div class="main__box">
-                	<p>Membuat Modal kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal</span> diikuti dengan class untuk style Modal-nya, ada <span class="text-green">.modal--success</span>, <span class="text-green">.modal--info</span>, <span class="text-green">.modal--danger</span>, dan <span class="text-green">.modal--warning</span>, lalu didalamnya buat element menggunakan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__content</span>, didalamnya lagi ada 3 bagian yaitu, <b>Judul</b>, <b>Deskripsi</b>, dan <b>Aksi</b>.</p>
-                	<p><b>Pertama</b>, Judul. Bagian judul diisi dengan judul dari Modal-nya, seperti 'Data ditambahkan' atau 'Konfirmasi hapus' dan lain-lain. Membuat judul kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__title</span>, tambahkan juga class utilities Bootstrap untuk margin bottom <span class="text-green">.mb-5</span>. Didalamnya kamu bisa menambahkan icon dari Font Awesome, dan dibawah icon kamu letakkan judul dari Modal-nya menggunakan tag <i>&lt;h3&gt;</i>.</p>
+                	<p>Membuat Modal kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal</span> diikuti dengan class untuk style Modal-nya, ada <span class="text-green">.modal--success</span>, <span class="text-green">.modal--info</span>, <span class="text-green">.modal--danger</span>, dan <span class="text-green">.modal--warning</span>, lalu didalamnya buat element menggunakan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__content</span>, didalamnya lagi ada 3 bagian yaitu, <b>Header</b>, <b>Body</b>, dan <b>Footer</b>.</p>
 
-                	<p><b>Kedua</b>, Deskripsi. Bagian Deskripsi diisi dengan penjelasan detail dari Modal-nya, kamu juga bisa menambahkan input jika diperlukan. Membuat Deskripsi kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__description</span>, tambahkan juga class utilities Bootstrap untuk margin bottom <span class="text-green">.mb-5</span>. Didalamnya kamu bisa menambahkan text menggunakan tag <i>p</i>, atau input.</p>
+                	<p><b>Pertama</b>, Header. Bagian header diisi dengan icon dan judul dari Modal-nya, seperti 'Data dibuat' atau 'Konfirmasi Penghapusan' dan lain-lain. Membuat Header kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__header</span>. Didalamnya terdapat dua bagian yaitu <b>Icon</b> dan <b>Judul</b>. Membuat Icon kamu perlu tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__icon</span>, dan letakkan icon dari Font Awesome didalamnya. Membuat Judul kamu perlu tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__title</span>, lalu didalamnya gunakan tag <i>&lt;h5&gt;</i> untuk membuat Judul.</p>
 
-                	<p><b>Ketiga</b>, Aksi. Bagian Aksi diisi dengan button seperti button untuk menutup Modal. Membuat Aksi kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__action</span>, lalu didalamnya kamu bisa membuat Button seperti pada <a href="button.html" target="_blank">dokumentasi Button</a>. Jika kamu memiliki dua Button, letakkan code untuk Button <b>Utama</b> di bawah code untuk Button <b>Kurang Penting</b>, Supaya Button Utama berada di sebelah kanan dan Button Kurang Penting disebelah kiri Modal. Tambahkan juga class utilities Bootstrap untuk margin bottom <span class="text-green">.mb-3.mb-sm-0</span> pada Button Utama, karena pada saat lebar viewport lebih kecil sama dengan 575.98px masing-masing Button akan mempunyai lebar 100% dan posisi Button Utama berada diatas Button Kurang Penting, sehingga kita perlu untuk menambahkan jarak kebawah pada Button Utama terhadap Button Kurang Penting.</p>
+                	<p><b>Body</b>, Body. Bagian Body diisi dengan penjelasan detail dari Modal-nya, kamu juga bisa menambahkan input jika diperlukan. Membuat Body kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__body</span>. Didalamnya kamu bisa menambahkan text menggunakan tag <i>p</i>, atau menambahkan Form seperti pada <a href="form.html" target="_blank">dokumentasi Form</a>.</p>
+
+                	<p><b>Footer</b>, Footer. Bagian Footer diisi dengan Button, seperti Button untuk menutup Modal. Membuat Footer kamu membutuhkan tag <i>&lt;div&gt;</i> dengan class <span class="text-green">.modal__footer</span>, lalu didalamnya kamu bisa membuat Button seperti pada <a href="button.html" target="_blank">dokumentasi Button</a>. Jika kamu memiliki dua Button, letakkan code untuk Button <b>Utama</b> di bawah code untuk Button <b>Kurang Penting</b>, Supaya Button Utama berada di sebelah kanan dan Button Kurang Penting disebelah kiri Modal. Tambahkan juga class utilities Bootstrap untuk margin bottom <span class="text-green">.mb-2.mb-sm-0</span> pada Button Utama, karena pada saat lebar viewport lebih kecil sama dengan 575.98px, masing-masing Button akan mempunyai lebar 100% dan posisi Button Utama berada diatas Button Kurang Penting, sehingga kita perlu untuk menambahkan jarak kebawah pada Button Utama terhadap Button Kurang Penting.</p>
 
                 	<p>Modal secara standar disembunyikan, kamu bisa menampilkannya dengan menambahkan class <span class="text-green">.modal--fade-in</span> setelah class untuk style Modal-nya atau setelah class <span class="text-green">.modal</span>. Jika kamu ingin menutup Modal-nya maka cukup hapus class <span class="text-green">.modal--fade-in</span>. Gunakan Javascript & DOM untuk menghapus atau menambahkan class.</p>
 
                 	<div class="pre-code-box">
                 		<div class="pre-code-box__preview">
-                			<a href="#" class="btn btn--green" id="show-modal">Tampilkan Modal Success</a>
-                			<div class="modal modal--success" id="modal-success">
+                			<a href="#" class="btn btn--red" id="show-modal">Tampilkan Modal Danger</a>
+                			<div class="modal modal--danger" id="modal-danger">
 								<div class="modal__content">
-									<div class="modal__title mb-5">
-										<span class="fa fa-check mb-2"></span>
-										<h3>Data ditambahkan</h3>
-									</div>
-									<div class="modal__description mb-5">
-										<p>Selamat, Data-mu berhasil ditambahkan.</p>
-									</div>
-									<div class="modal__action">
-										<a href="#" class="btn btn--green" id="close-modal">Ok, Tutup modal!</a>
-									</div>
+									<div class="modal__header">
+                                        <div class="modal__icon">
+                                            <span class="fa fa-ban"></span>
+                                        </div>
+                                        <div class="modal__title">
+                                            <h5><span>Berbahaya</span>, Apakah kamu yakin?</h5>
+                                        </div>
+                                    </div>
+                                    <div class="modal__body">
+                                        <p>Aksi ini tidak bisa dibatalkan, ini akan menghapus permanen Akun <b>@rezaSarifulFikri</b>.</p>
+                                        <p>Masukkan password untuk konfirmasi penghapusan Akun!</p>
+                                        <input type="password" name="password" class="form form--focus-red mt-0" placeholder="Password ...">
+                                    </div>
+                                    <div class="modal__footer">
+                                        <a href="#" class="btn btn--gray-outline" id="close-modal">Batal</a>
+                                        <a href="#" class="btn btn--red mb-2 mb-sm-0">Hapus Akun</a>
+                                    </div>
 								</div>
-							</div><!-- modal-success -->
+							</div><!-- modal-danger -->
                 		</div><!-- pre-code-box__preview -->
-                		<pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a href=&quot;#&quot; class=&quot;btn btn--green&quot; id=&quot;show-modal&quot;&gt;Tampilkan Modal Success&lt;/a&gt;
-&lt;div class=&quot;modal modal--success&quot; id=&quot;modal-success&quot;&gt;
+                		<pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;!-- button show modal danger --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--red&quot; id=&quot;show-modal-danger&quot;&gt;Tampilkan Modal Danger&lt;/a&gt;
+
+&lt;!-- modal danger --&gt;
+&lt;div class=&quot;modal modal--danger&quot; id=&quot;modal-danger&quot;&gt;
     &lt;div class=&quot;modal__content&quot;&gt;
-    	&lt;div class=&quot;modal__title mb-5&quot;&gt;
-            &lt;span class=&quot;fa fa-check mb-2&quot;&gt;&lt;/span&gt;
-    	    &lt;h3&gt;Data ditambahkan&lt;/h3&gt;
-    	&lt;/div&gt;
-    	&lt;div class=&quot;modal__description mb-5&quot;&gt;
-    	    &lt;p&gt;Selamat, Data-mu berhasil ditambahkan.&lt;/p&gt;
-    	&lt;/div&gt;
-    	&lt;div class=&quot;modal__action&quot;&gt;
-    	    &lt;a href=&quot;#&quot; class=&quot;btn btn--green&quot; id=&quot;close-modal&quot;&gt;Ok, Tutup modal!&lt;/a&gt;
-    	&lt;/div&gt;
+        &lt;div class=&quot;modal__header&quot;&gt;
+            &lt;div class=&quot;modal__icon&quot;&gt;
+                &lt;span class=&quot;fa fa-ban&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal__title&quot;&gt;
+                &lt;h5&gt;&lt;span&gt;Berbahaya&lt;/span&gt;, Apakah kamu yakin?&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__body&quot;&gt;
+            &lt;p&gt;Aksi ini tidak bisa dibatalkan, ini akan menghapus permanen Akun &lt;b&gt;@rezaSarifulFikri&lt;/b&gt;.&lt;/p&gt;
+            &lt;p&gt;Masukkan password untuk konfirmasi penghapusan Akun!&lt;/p&gt;
+            &lt;input type=&quot;password&quot; name=&quot;password&quot; class=&quot;form form--focus-red mt-0&quot; placeholder=&quot;Password ...&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__footer&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn--gray-outline&quot; id=&quot;close-modal&quot;&gt;Batal&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn--red mb-2 mb-sm-0&quot;&gt;Hapus Akun&lt;/a&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;&lt;!-- modal-success --&gt;</code></pre>
+&lt;/div&gt;</code></pre>
                 	</div><!-- pre-code-box -->
                 	
-                	<pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">const btnShowModal = document.querySelector("a#show-modal");
-const modal = document.querySelector("div#modal-success");
+                	<pre class="mt-2"><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">Javascript</a></div><code class="javascript">const btnShowModal = document.querySelector("a#show-modal-danger");
+const modal = document.querySelector("div#modal-danger");
 const closeModal = modal.querySelector("a#close-modal");
 btnShowModal.addEventListener('click', e => {
     // hilangkan fungsi default dari tag a
@@ -174,107 +192,136 @@ closeModal.addEventListener('click', e => {
 							<a href="#" class="btn btn--blue mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-info">Tampilkan Modal Info</a>
 							<div class="modal modal--info" id="modal-info">
 								<div class="modal__content">
-									<div class="modal__title mb-5">
-										<span class="fa fa-info mb-2"></span>
-										<h3>Info Data</h3>
-									</div>
-									<div class="modal__description mb-5">
-										<p>Data ini telah dihapus.</p>
-									</div>
-									<div class="modal__action">
-										<a href="#" class="btn btn--blue close-modal">Ok, Saya mengerti!</a>
-									</div>
+                                    <div class="modal__header">
+                                        <div class="modal__icon">
+                                            <span class="fa fa-info-circle"></span>
+                                        </div>
+                                        <div class="modal__title">
+                                            <h5><span>Info</span>, Perizinan Data</h5>
+                                        </div>
+                                    </div>
+                                    <div class="modal__body">
+                                        <p>Kamu tidak memiliki izin untuk melihat data ini. Silahkan hubungi Admin jika ini salah!.</p>
+                                    </div>
+                                    <div class="modal__footer">
+                                        <a href="#" class="btn btn--blue close-modal">Ok, Saya mengerti</a>
+                                    </div>
 								</div>
 							</div>
 							<!-- modal info end -->
 
-							<!-- modal danger -->
-							<a href="#" class="btn btn--red mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-danger">Tampilkan Modal Danger</a>
-							<div class="modal modal--danger" id="modal-danger">
+							<!-- modal success -->
+							<a href="#" class="btn btn--green mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-success">Tampilkan Modal Success</a>
+							<div class="modal modal--success" id="modal-success">
 								<div class="modal__content">
-									<div class="modal__title mb-5">
-										<span class="fa fa-trash mb-2"></span>
-										<h3>Konfirmasi hapus</h3>
-									</div>
-									<div class="modal__description mb-5">
-										<p>Yakin ingin hapus data ini? kamu akan hapus data secara permanen.</p>
-										<input type="text" class="form form--focus-red" name="password" placeholder="Masukkan password mu ...">
-									</div>
-									<div class="modal__action">
-										<a href="#" class="btn btn--link close-modal">Batal!</a>
-										<a href="#" class="btn btn--red mb-3 mb-sm-0">Hapus!</a>
-									</div>
+                                    <div class="modal__header">
+                                        <div class="modal__icon">
+                                            <span class="fa fa-check-circle"></span>
+                                        </div>
+                                        <div class="modal__title">
+                                            <h5><span>Sukses</span>, Akun dibuat</h5>
+                                        </div>
+                                    </div>
+                                    <div class="modal__body">
+                                        <p>Selamat, Akun <b>@rezaSarifulFikri</b> telah dibuat, sekarang kamu memiliki akses ke semua fitur.</p>
+                                    </div>
+                                    <div class="modal__footer">
+                                        <a href="#" class="btn btn--green close-modal">Ok, Terimakasih</a>
+                                    </div>
 								</div>
 							</div>
-							<!-- modal danger end -->
+							<!-- modal success end -->
 
 							<!-- modal warning -->
 							<a href="#" class="btn btn--orange mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-warning">Tampilkan Modal Warning</a>
 							<div class="modal modal--warning" id="modal-warning">
 								<div class="modal__content">
-									<div class="modal__title mb-5">
-										<span class="fa fa-warning mb-2"></span>
-										<h3>Peringatan Login</h3>
-									</div>
-									<div class="modal__description mb-5">
-										<p>Akun mu login di perangkat baru. <a href="">Beri tahu jika itu bukan kamu!.</a></p>
-									</div>
-									<div class="modal__action">
-										<a href="#" class="btn btn--orange close-modal">Ok, Saya Mengerti!</a>
-									</div>
+                                    <div class="modal__header">
+                                        <div class="modal__icon">
+                                            <span class="fa fa-warning"></span>
+                                        </div>
+                                        <div class="modal__title">
+                                            <h5><span>Peringatan</span>, Login Tidak Dikenali</h5>
+                                        </div>
+                                    </div>
+                                    <div class="modal__body">
+                                        <p>Akun mu login di perangkat baru: <b>Linux, Firefox</b>. <a href="">Beri tahu kami jika itu bukan kamu!</a>.</p>
+                                    </div>
+                                    <div class="modal__footer">
+                                        <a href="#" class="btn btn--orange close-modal">Ok, Itu Saya</a>
+                                    </div>
 								</div>
 							</div>
 							<!-- modal warning end -->
 						</div><!-- pre-code-box__preview -->
-						<pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot; id=&quot;show-modal&quot;&gt;Tampilkan Modal Info&lt;/a&gt;
+						<pre><div class="pre-code-box__action"><a class="clipboard">Copy</a><a class="language">HTML</a></div><code class="html">&lt;!-- button show modal info --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot; id=&quot;show-modal-info&quot;&gt;Tampilkan Modal Info&lt;/a&gt;
+
+&lt;!-- modal info --&gt;
 &lt;div class=&quot;modal modal--info&quot; id=&quot;modal-info&quot;&gt;
     &lt;div class=&quot;modal__content&quot;&gt;
-    	&lt;div class=&quot;modal__title mb-5&quot;&gt;
-            &lt;span class=&quot;fa fa-check mb-2&quot;&gt;&lt;/span&gt;
-    	    &lt;h3&gt;Info Data&lt;/h3&gt;
-    	&lt;/div&gt;
-    	&lt;div class=&quot;modal__description mb-5&quot;&gt;
-    	    &lt;p&gt;Data ini telah dihapus.&lt;/p&gt;
-    	&lt;/div&gt;
-    	&lt;div class=&quot;modal__action&quot;&gt;
-    	    &lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot; id=&quot;close-modal&quot;&gt;Ok, Saya mengerti!&lt;/a&gt;
-    	&lt;/div&gt;
+        &lt;div class=&quot;modal__header&quot;&gt;
+            &lt;div class=&quot;modal__icon&quot;&gt;
+                &lt;span class=&quot;fa fa-info-circle&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal__title&quot;&gt;
+                &lt;h5&gt;&lt;span&gt;Info&lt;/span&gt;, Perizinan Data&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__body&quot;&gt;
+            &lt;p&gt;Kamu tidak memiliki izin untuk melihat data ini. Silahkan hubungi Admin jika ini salah!.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__footer&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn--blue&quot; id=&quot;close-modal&quot;&gt;Ok, Saya mengerti&lt;/a&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;&lt;!-- modal-info --&gt;
+&lt;/div&gt;
 
-&lt;a href=&quot;#&quot; class=&quot;btn btn--red&quot; id=&quot;show-modal&quot;&gt;Tampilkan Modal Danger&lt;/a&gt;
-&lt;div class=&quot;modal modal--danger&quot; id=&quot;modal-danger&quot;&gt;
+&lt;!-- button show modal success --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--green&quot; id=&quot;show-modal-success&quot;&gt;Tampilkan Modal Success&lt;/a&gt;
+
+&lt;!-- modal success --&gt;
+&lt;div class=&quot;modal modal--success&quot; id=&quot;modal-success&quot;&gt;
     &lt;div class=&quot;modal__content&quot;&gt;
-    	&lt;div class=&quot;modal__title mb-5&quot;&gt;
-			&lt;span class=&quot;fa fa-trash mb-2&quot;&gt;&lt;/span&gt;
-    	    &lt;h3&gt;Konfirmasi Hapus&lt;/h3&gt;
-    	&lt;/div&gt;
-    	&lt;div class=&quot;modal__description mb-5&quot;&gt;
-    	    &lt;p&gt;Yakin ingin hapus data ini? kamu akan hapus data secara permanen.&lt;/p&gt;
-    	    &lt;input type=&quot;text&quot; class=&quot;form form--focus-red&quot; name=&quot;password&quot; placeholder=&quot;Masukkan password mu ...&quot;&gt;
-    	&lt;/div&gt;
-    	&lt;div class=&quot;modal__action&quot;&gt;
-    	    &lt;a href=&quot;#&quot; class=&quot;btn btn--link&quot; id=&quot;close-modal&quot;&gt;Batal!&lt;/a&gt;
-    	    &lt;a href=&quot;#&quot; class=&quot;btn btn--red mb-3 mb-sm-0&quot;&gt;Hapus!&lt;/a&gt;
-    	&lt;/div&gt;
+        &lt;div class=&quot;modal__header&quot;&gt;
+            &lt;div class=&quot;modal__icon&quot;&gt;
+                &lt;span class=&quot;fa fa-check-circle&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal__title&quot;&gt;
+                &lt;h5&gt;&lt;span&gt;Sukses&lt;/span&gt;, Akun dibuat&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__body&quot;&gt;
+            &lt;p&gt;Selamat, Akun &lt;b&gt;@rezaSarifulFikri&lt;/b&gt; telah dibuat, sekarang kamu memiliki akses ke semua fitur.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__footer&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn--green&quot; id=&quot;close-modal&quot;&gt;Ok, Terimakasih&lt;/a&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;&lt;!-- modal-danger --&gt;
+&lt;/div&gt;
 
-&lt;a href=&quot;#&quot; class=&quot;btn btn--orange&quot; id=&quot;show-modal&quot;&gt;Tampilkan Modal Warning&lt;/a&gt;
+&lt;!-- button show modal warning --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--orange&quot; id=&quot;show-modal-warning&quot;&gt;Tampilkan Modal Warning&lt;/a&gt;
+
+&lt;!-- modal warning --&gt;
 &lt;div class=&quot;modal modal--warning&quot; id=&quot;modal-warning&quot;&gt;
     &lt;div class=&quot;modal__content&quot;&gt;
-    	&lt;div class=&quot;modal__title mb-5&quot;&gt;
-		&lt;span class=&quot;fa fa-warning mb-2&quot;&gt;&lt;/span&gt;
-			&lt;h3&gt;Peringatan Login&lt;/h3&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;modal__description mb-5&quot;&gt;
-			&lt;p&gt;Akun mu login di perangkat baru. &lt;a href=&quot;&quot;&gt;Beri tahu jika itu bukan kamu!.&lt;/a&gt;&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;modal__action&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;btn btn--orange&quot; id=&quot;close-modal&quot;&gt;Ok, Saya mengerti!&lt;/a&gt;
-		&lt;/div&gt;
+        &lt;div class=&quot;modal__header&quot;&gt;
+            &lt;div class=&quot;modal__icon&quot;&gt;
+                &lt;span class=&quot;fa fa-warning&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal__title&quot;&gt;
+                &lt;h5&gt;&lt;span&gt;Peringatan&lt;/span&gt;, Login Tidak Dikenali&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__body&quot;&gt;
+            &lt;p&gt;Akun mu login di perangkat baru: &lt;b&gt;Linux, Firefox&lt;/b&gt;. &lt;a href=&quot;&quot;&gt;Beri tahu kami jika itu bukan kamu!&lt;/a&gt;.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__footer&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn--orange&quot; id=&quot;close-modal&quot;&gt;Ok, Itu Saya&lt;/a&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;&lt;!-- modal-warning --&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 					</div><!-- pre-code-box -->
                 </div><!-- main__box -->
             </div>
@@ -302,7 +349,7 @@ closeModal.addEventListener('click', e => {
 		 */
 
 		const btnShowModal = document.querySelector("a#show-modal");
-		const modal = document.querySelector("div#modal-success");
+		const modal = document.querySelector("div#modal-danger");
 		const closeModal = modal.querySelector("a#close-modal");
 		btnShowModal.addEventListener('click', function (e) {
 		    // hilangkan fungsi default dari tag a
@@ -333,7 +380,7 @@ closeModal.addEventListener('click', e => {
 
 		    if (targetBtnShowModal.classList.contains("btn-show-modal")) {
 		      e.preventDefault();
-		      const targetModal = document.querySelector(targetBtnShowModal.getAttribute("target-modal"));
+		      const targetModal = targetBtnShowModal.nextElementSibling;
 
 		      const closeModal = targetModal.querySelector("a.close-modal");
 

@@ -176,15 +176,19 @@
 					<a href="#" class="btn btn--green mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-success">Show Modal Success</a>
 					<div class="modal modal--success" id="modal-success">
 						<div class="modal__content">
-							<div class="modal__title mb-5">
-								<span class="fa fa-check mb-2"></span>
-								<h3>Data Created</h3>
+							<div class="modal__header">
+								<div class="modal__icon">
+									<span class="fa fa-check-circle"></span>
+								</div>
+								<div class="modal__title">
+									<h5><span>Success</span>, Account Created</h5>
+								</div>
 							</div>
-							<div class="modal__description mb-5">
-								<p>Congratulation, your data created.</p>
+							<div class="modal__body">
+								<p>Congratulation, Account <b>@rezaSarifulFikri</b> has been created, now you have access for all features.</p>
 							</div>
-							<div class="modal__action">
-								<a href="#" class="btn btn--green close-modal">Ok, Close modal!</a>
+							<div class="modal__footer">
+								<a href="#" class="btn btn--green close-modal">Ok, Thank You</a>
 							</div>
 						</div>
 					</div>
@@ -194,15 +198,19 @@
 					<a href="#" class="btn btn--blue mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-info">Show Modal Info</a>
 					<div class="modal modal--info" id="modal-info">
 						<div class="modal__content">
-							<div class="modal__title mb-5">
-								<span class="fa fa-info mb-2"></span>
-								<h3>Data info</h3>
+							<div class="modal__header">
+								<div class="modal__icon">
+									<span class="fa fa-info-circle"></span>
+								</div>
+								<div class="modal__title">
+									<h5><span>Info</span>, Data Permission</h5>
+								</div>
 							</div>
-							<div class="modal__description mb-5">
-								<p>This data has been deleted.</p>
+							<div class="modal__body">
+								<p>You not have permission for look this data. Please call Admin if this wrong!.</p>
 							</div>
-							<div class="modal__action">
-								<a href="#" class="btn btn--blue close-modal">Ok, I understand!</a>
+							<div class="modal__footer">
+								<a href="#" class="btn btn--blue close-modal">Ok, I Understand!</a>
 							</div>
 						</div>
 					</div>
@@ -212,17 +220,22 @@
 					<a href="#" class="btn btn--red mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-danger">Show Modal Danger</a>
 					<div class="modal modal--danger" id="modal-danger">
 						<div class="modal__content">
-							<div class="modal__title mb-5">
-								<span class="fa fa-trash mb-2"></span>
-								<h3>Deletion Confirm</h3>
+							<div class="modal__header">
+								<div class="modal__icon">
+									<span class="fa fa-ban"></span>
+								</div>
+								<div class="modal__title">
+									<h5><span>Danger</span>, Are you sure?</h5>
+								</div>
 							</div>
-							<div class="modal__description mb-5">
-								<p>Are you sure delete this data? you will delete data permanent.</p>
-								<input type="text" class="form form--focus-red" name="password" placeholder="Enter your password ...">
+							<div class="modal__body">
+								<p>This action can't canceled, this will permanently delete account <b>@rezaSarifulFikri</b>.</p>
+								<p>Enter password for confirm deletion Account!</p>
+								<input type="password" name="password" placeholder="Password ..." class="form form--focus-red mt-0">
 							</div>
-							<div class="modal__action">
-								<a href="#" class="btn btn--link close-modal">Cancel!</a>
-								<a href="#" class="btn btn--red mb-3 mb-sm-0">Delete!</a>
+							<div class="modal__footer">
+								<a href="#" class="btn btn--gray-outline close-modal">Cancel</a>
+								<a href="#" class="btn btn--red mb-2 mb-sm-0">Delete Account</a>
 							</div>
 						</div>
 					</div>
@@ -232,15 +245,19 @@
 					<a href="#" class="btn btn--orange mr-3 mt-2 mb-2 btn-show-modal" target-modal="#modal-warning">Show Modal Warning</a>
 					<div class="modal modal--warning" id="modal-warning">
 						<div class="modal__content">
-							<div class="modal__title mb-5">
-								<span class="fa fa-warning mb-2"></span>
-								<h3>Login Warning</h3>
+							<div class="modal__header">
+								<div class="modal__icon">
+									<span class="fa fa-warning"></span>
+								</div>
+								<div class="modal__title">
+									<h5><span>Warning</span>, Login Unrecognized</h5>
+								</div>
 							</div>
-							<div class="modal__description mb-5">
-								<p>Your account login in new devices. <a href="">Click here if not you!.</a></p>
+							<div class="modal__body">
+								<p>Your account login in new device: <b>Linux, Firefox</b>. <a href="">Tell us if not you!</a>.</p>
 							</div>
-							<div class="modal__action">
-								<a href="#" class="btn btn--orange close-modal">Ok, I understand!</a>
+							<div class="modal__footer">
+								<a href="#" class="btn btn--orange close-modal">Ok, I Understand</a>
 							</div>
 						</div>
 					</div>

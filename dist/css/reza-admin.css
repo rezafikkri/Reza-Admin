@@ -1341,102 +1341,93 @@ small {
   .modal__content {
     width: 500px;
     height: auto;
-    background-color: white;
     margin: auto;
     margin-top: 28px;
-    margin-bottom: 28px;
-    border-radius: 4px;
-    padding: 30px; }
+    margin-bottom: 28px; }
     @media (max-width: 530px) {
       .modal__content {
         width: auto;
         margin-left: 15px;
         margin-right: 15px; } }
-  .modal--danger .modal__title h1 {
-    color: #ea2a2a; }
-  .modal--danger .modal__title h2 {
-    color: #ea2a2a; }
-  .modal--danger .modal__title h3 {
-    color: #ea2a2a; }
-  .modal--danger .modal__title h4 {
-    color: #ea2a2a; }
-  .modal--danger .modal__title h5 {
-    color: #ea2a2a; }
-  .modal--danger .modal__title h6 {
-    color: #ea2a2a; }
-  .modal--danger .modal__title span {
-    background-color: #fff2f2;
-    color: #ea2a2a; }
-  .modal--success .modal__title h1 {
-    color: #1bd741; }
-  .modal--success .modal__title h2 {
-    color: #1bd741; }
-  .modal--success .modal__title h3 {
-    color: #1bd741; }
-  .modal--success .modal__title h4 {
-    color: #1bd741; }
-  .modal--success .modal__title h5 {
-    color: #1bd741; }
-  .modal--success .modal__title h6 {
-    color: #1bd741; }
-  .modal--success .modal__title span {
-    background-color: #edfff0;
-    color: #1bd741; }
-  .modal--info .modal__title h1 {
-    color: #2597e0; }
-  .modal--info .modal__title h2 {
-    color: #2597e0; }
-  .modal--info .modal__title h3 {
-    color: #2597e0; }
-  .modal--info .modal__title h4 {
-    color: #2597e0; }
-  .modal--info .modal__title h5 {
-    color: #2597e0; }
-  .modal--info .modal__title h6 {
-    color: #2597e0; }
-  .modal--info .modal__title span {
-    background-color: #edf8ff;
-    color: #2597e0; }
-  .modal--warning .modal__title h1 {
-    color: #f9a022; }
-  .modal--warning .modal__title h2 {
-    color: #f9a022; }
-  .modal--warning .modal__title h3 {
-    color: #f9a022; }
-  .modal--warning .modal__title h4 {
-    color: #f9a022; }
-  .modal--warning .modal__title h5 {
-    color: #f9a022; }
-  .modal--warning .modal__title h6 {
-    color: #f9a022; }
-  .modal--warning .modal__title span {
-    background-color: #fff8ef;
-    color: #f9a022; }
+  .modal--lg .modal__content {
+    width: 800px; }
+    @media (max-width: 830px) {
+      .modal--lg .modal__content {
+        width: auto;
+        margin-left: 15px;
+        margin-right: 15px; } }
+  .modal__header, .modal__body, .modal__footer {
+    padding: 20px; }
+  .modal__header {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .modal__icon {
+    -ms-flex-preferred-size: 30px;
+    flex-basis: 30px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: relative; }
+    .modal__icon span {
+      font-size: 1.3rem; }
   .modal__title {
-    text-align: center; }
-    .modal__title span {
-      padding: 5%;
-      border-radius: 50%;
-      font-size: 20pt; }
-    .modal__title h3 {
-      font-family: open_sansbold, sans-serif; }
-  .modal__action {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .modal__title h5 {
+      margin-bottom: 0px;
+      font-family: open_sansbold, sans-serif;
+      font-size: 1.1rem;
+      color: #333; }
+  .modal__body, .modal__footer {
+    background-color: white; }
+  .modal__footer {
+    border-top: 1px solid #e8e8e8;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .modal__action .btn--link {
-      padding-left: 0px; }
     @media (max-width: 575.98px) {
-      .modal__action {
-        flex-direction: column-reverse; }
-        .modal__action .btn {
-          width: 100%; }
-        .modal__action .btn--link {
-          padding-left: 15px;
-          padding-bottom: 0px; } }
+      .modal__footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; } }
+  .modal--danger .modal__header {
+    border-bottom: 1px solid #eacece;
+    background-color: #f9f4f2; }
+    .modal--danger .modal__header h5 span {
+      color: #ea2a2a; }
+  .modal--danger .modal__icon span {
+    color: #ea2a2a; }
+  .modal--success .modal__header {
+    border-bottom: 1px solid #cee8d1;
+    background-color: #f2f7f3; }
+    .modal--success .modal__header h5 span {
+      color: #1bd741; }
+  .modal--success .modal__icon span {
+    color: #1bd741; }
+  .modal--info .modal__header {
+    border-bottom: 1px solid #cee0e8;
+    background-color: #f2f8f9; }
+    .modal--info .modal__header h5 span {
+      color: #2597e0; }
+  .modal--info .modal__icon span {
+    color: #2597e0; }
+  .modal--warning .modal__header {
+    border-bottom: 1px solid #e5dacc;
+    background-color: #f7f5f2; }
+    .modal--warning .modal__header h5 span {
+      color: #f9a022; }
+  .modal--warning .modal__icon span {
+    color: #f9a022; }
   .modal--fade-in {
     display: block;
     -webkit-animation: modal-fade-in .2s linear;
@@ -1558,21 +1549,20 @@ small {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
-  @media (max-width: 360px) {
-    .login__form-action,
-    .register__form-action {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      align-items: stretch; } }
+  justify-content: space-between; }
 
+@media (max-width: 575.98px) {
+  .login__form-action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+
+  .register__form-action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 .login__alt,
 .register__alt {
   padding: 20px;
