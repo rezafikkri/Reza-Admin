@@ -10,7 +10,7 @@
           "safari": "9",
           "explorer": "10",
           "android": "4.4",
-          "opera": "30"
+          "opera": "30",
         },
         "useBuiltIns": "usage",
       }
