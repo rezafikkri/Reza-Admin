@@ -16,7 +16,7 @@
 - [Download - with docs](https://github.com/rezafikkri/Reza-Admin/releases/download/v1.0-beta/Reza-Admin-and-doc-v1.0-beta.zip)
 
 ## Bugs and Feature Requests
-Have a bug or a feature request? Please first read the [issue guidelines]() and search for existing and closed issues. If your problem not addresed yet, [please open a new issue](https://github.com/rezafikkri/Reza-Admin/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/rezafikkri/Reza-Admin/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem not addresed yet, [please open a new issue](https://github.com/rezafikkri/Reza-Admin/issues/new).
 
 ## Community
 Get help or stay up to date
