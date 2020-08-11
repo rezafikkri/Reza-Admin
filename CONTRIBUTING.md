@@ -4,7 +4,7 @@ Please take a moment to review this document in order to make contribution proce
 
 ## Issues and Labels
 This is label to help organize and identify issues. Here's what they represent and how we use them:
-- ```browser bug``` - Issues that are reported to us, but actually are the result of a browser-spesific bug.
+- ```browser bug``` - Issues that are reported to us, but actually are the result of a browser-spesific bug. These are diagnosed with reduced test cases and result in an issues openend on that browser's own bug tacker.
 - ```confirmed``` - Issues that have been confirmed with a reduced test case and identify a bug in Reza Admin.
 - ```css``` - Issues stemming from our compiled CSS or source SCSS files.
 - ```docs``` - Issues for improving or updating our documentation.
