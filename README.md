@@ -5,7 +5,7 @@
 <h2 align="center">Reza Admin</h2>
 
 <p align="center">
-  <a href="https://rezafikkri.github.io/Reza-Admin/" target="_blank" title="Reza Admin">Reza Admin</a> is a open source and responsive Admin Template built with Bootstrap Framework, Font Awesome and Chart.js. It was created by <a href="https://twitter.com/fikkrireza" target="_blank">Reza Sariful Fikri</a>.<br><a title="Documentation" href="https://quilljs.com/docs/"><strong>Explore Reza Admin Documentation &raquo;</strong></a>
+  <a href="https://rezafikkri.github.io/Reza-Admin/" target="_blank" title="Reza Admin">Reza Admin</a> is a open source and responsive Admin Template built with Bootstrap Framework, Font Awesome and Chart.js. It was created by <a href="https://twitter.com/fikkrireza" target="_blank">Reza Sariful Fikri</a>.<br><a title="Documentation" href="https://rezafikkri.github.io/Reza-Admin/docs" target="_blank"><strong>Explore Reza Admin Documentation &raquo;</strong></a>
 </p>
 
 ## Status

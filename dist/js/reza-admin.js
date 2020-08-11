@@ -1,8 +1,8 @@
 "use strict";
 
 /**
- * Reza-Admin v1.0
- * Copyright 2020 Reza Sariful Fikri
+ * Reza-Admin v1.0-beta
+ * Copyright (c) 2020 Reza Admin
  * Released under the MIT License
 */
 var sidebar = document.querySelector("aside.sidebar");
