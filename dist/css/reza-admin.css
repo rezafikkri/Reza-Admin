@@ -224,8 +224,7 @@ time {
     display: none; } }
 .sidebar {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  height: 100vh;
   left: 0;
   width: 228px;
   z-index: 100;
@@ -257,8 +256,7 @@ time {
     position: relative;
     top: 0;
     height: calc(100vh - 90px);
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color: transparent; }
     .sidebar__nav:hover {
       overflow-y: auto; }
