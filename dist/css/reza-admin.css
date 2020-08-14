@@ -1050,93 +1050,6 @@ small {
     font-family: open_sanssemibold, sans-serif;
     color: #595959; }
 
-/* card */
-.card {
-  border-color: #e8e8e8;
-  position: relative; }
-  .card__label {
-    padding: 2.7px 5px;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    margin-top: 5px;
-    position: relative;
-    background-color: #4c4c4c; }
-    .card__label::before {
-      content: "";
-      position: absolute;
-      border: 10px solid transparent;
-      border-left-color: #4c4c4c;
-      right: -19px;
-      top: 0;
-      bottom: 0; }
-    .card__label span {
-      color: white; }
-  .card__decription {
-    padding: 1.25rem; }
-    .card__decription h4 {
-      font-family: open_sansbold, sans-serif;
-      margin-bottom: .3rem; }
-    .card__decription h5 {
-      font-size: 1.1rem; }
-    .card__decription time {
-      font-size: 10pt; }
-  .card__action {
-    background-color: #f7f7f7;
-    border-top: 1px solid #f2f2f2;
-    padding: 5px 10px; }
-    .card__action a {
-      padding: 10px;
-      color: #333;
-      font-size: 14pt; }
-      .card__action a:hover:not(.card__action--not-link) {
-        color: #2597e0; }
-    .card__action a.card__action--not-link {
-      font-size: 12pt;
-      pointer-events: none !important; }
-    .card__action--not-link span {
-      font-size: 14pt; }
-  .card--orange .card__label {
-    background-color: #f9a022; }
-    .card--orange .card__label::before {
-      border-left-color: #f9a022; }
-  .card--orange .card__action {
-    background-color: #fffbf7; }
-  .card--blue .card__label {
-    background-color: #2597e0; }
-    .card--blue .card__label::before {
-      border-left-color: #2597e0; }
-  .card--blue .card__action {
-    background-color: #f7fcff; }
-  .card--green .card__label {
-    background-color: #1bd741; }
-    .card--green .card__label::before {
-      border-left-color: #1bd741; }
-  .card--green .card__action {
-    background-color: #f7fff8; }
-  .card--red .card__label {
-    background-color: #ea2a2a; }
-    .card--red .card__label::before {
-      border-left-color: #ea2a2a; }
-  .card--red .card__action {
-    background-color: #fff7f7; }
-  .card .loading-circle {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(245, 245, 245, 0.9);
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-
 /* table */
 .table {
   margin-bottom: 0px;
@@ -1642,5 +1555,9 @@ small {
 
 .mb-7 {
   margin-bottom: 6rem; }
+
+@media (min-width: 992px) {
+  .mb-lg-7 {
+    margin-bottom: 6rem !important; } }
 
 /*# sourceMappingURL=reza-admin.css.map */
