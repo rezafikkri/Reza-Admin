@@ -1,6 +1,6 @@
 {
-	"name": "Reza-Admin",
-	"version": "1.0.0",
+	"name": "reza-admin",
+	"version": "1.0.1-beta",
 	"scripts": {
 		"build-reza-admin": "babel build/js/reza-admin.js -o dist/js/reza-admin.js",
 		"build-doc": "babel build/js/doc.js -o docs/dist/js/doc.js"

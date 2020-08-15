@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Reza-Admin v1.0-beta
+ * Reza-Admin v1.0.1-beta
  * Copyright (c) 2020 Reza Admin
  * Released under the MIT License
 */

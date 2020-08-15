@@ -175,10 +175,17 @@
 				<section class="main__box">
 					<h5>Table Product</h5>
 					<hr>
-					<div class="input-group mt-0 mb-3">
-						<input type="text" class="form form--focus-blue" name="search" placeholder="Search with Name ...">
-						<div class="input-group__append">
-							<a href="#" class="btn btn--blue"><span class="fa fa-search"></span></a>
+					<div class="form-row">
+						<div class="col-12 col-lg-6">
+                            <select name="limit" class="form form--focus-blue mt-0 mb-3">
+                                <option>Limit ...</option>
+                            </select>
+                        </div>
+						<div class="input-group col-12 col-lg-6 mt-0 mb-3">
+							<input type="text" class="form form--focus-blue" name="search" placeholder="Search with Name ...">
+							<div class="input-group__append">
+								<a href="#" class="btn btn--blue"><span class="fa fa-search"></span></a>
+							</div>
 						</div>
 					</div>					
 					<table class="table table--gray mb-3">
@@ -233,7 +240,7 @@
 	<!-- footer -->
 	<footer class="footer footer--ml-sidebar-width">
 		<p class="mb-2 mb-sm-0">Copyright &copy; Your Website 2020. All rights reserved</p>
-		<p>Version 1.0 beta</p>
+		<p>Version 1.0.1 beta</p>
 	</footer>
 
 	<!-- jQuery first, then Bootstrap JS, and Reza Admin JS-->
