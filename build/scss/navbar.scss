@@ -10,15 +10,13 @@
 	border-top: 1px solid #ddd;
 
 	.nav-item {
-		padding: .5rem 0rem;
-
 		&:first-child {
 			margin-top: .5rem;
 		}
 
 		.nav-link {
 			padding-left: 0;
-			margin-left: 0px;
+			margin-left: 0;
 		}
 	}
 
@@ -50,7 +48,9 @@
 	.navbar__sidebar-toggler {
 		font-size: 1.25rem;
 		color: #333;
-		padding-right: 24px;
+		padding: .25rem .75rem;
+		padding-left: 0;
+		line-height: 1;
 	}
 
 	.navbar-brand {
@@ -58,12 +58,11 @@
 	}
 
 	.navbar-toggler {
-		padding-right: 0rem;
+		padding-right: 0;
 	}
 
 	.nav-item .nav-link {
 		color: #333;
-		padding: 0px 12px;
 		position: relative;
 
 		&:hover {
@@ -90,21 +89,25 @@
 
 	.navbar__notification {
 		position: relative;
-		margin-top: 2px;
+
+		.nav-link {
+			margin-left: .2rem;
+		}
 
 		.navbar__notification-number {
 			position: absolute;
-			font-size: 8pt;
+			font-size: 7pt;
 			display: inline-block;
-			padding: 1px;
-			width: 22px;
-			height: 22px;
+			width: 19px;
+			height: 19px;
 			border-radius: 50%;
 			text-align: center;
 			left: 0px;
-			top: -7px;
+			top: 2px;
 			border: 2px solid #fff;
 			color: white;
+			font-family: open_sansbold, sans-serif;
+			line-height: 13.2px;
 
 			@include navbar-notification-color($red-reza, 'red');
 			@include navbar-notification-color($blue-reza, 'blue');
@@ -117,7 +120,7 @@
 		a.nav-link {
 			display: block;
 			padding-left: 37px !important;
-			margin-left: 12px;
+			margin-left: 8px;
 		}
 
 		img {
@@ -127,12 +130,8 @@
 			border: 1px solid #ddd;
 			position: absolute;
 			left: 0;
-			top: -2px;
+			top: calc(50% - 14px);
 		}
-	}
-
-	.dropdown-menu {
-		margin-top: .5rem;
 	}
 
 	.dropdown-item {

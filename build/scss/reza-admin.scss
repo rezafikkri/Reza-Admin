@@ -74,10 +74,32 @@ time {
 			overflow-x: auto;
 		}
 
-		@for $i from 1 through 6 {
-			> h#{$i} {
-				font-family: open_sanssemibold, sans-serif;
-				color: #333;
+		h1, h2, h3, h4, h5, h6 {
+			font-family: open_sanssemibold, sans-serif;
+			color: #333;
+		}
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+
+		h1, h2, h3, h4, h5, h6 {
+			flex: 1;
+		}
+
+		.breadcrumb {
+			flex: 1;
+			justify-content: flex-end;
+			background-color: transparent;
+			padding: 0px;
+		}
+
+		@media (max-width: 575.98px) {
+			flex-direction: column-reverse;
+
+			.breadcrumb {
+				justify-content: flex-start;
 			}
 		}
 	}
@@ -85,7 +107,6 @@ time {
 
 @import "navbar.scss";
 @import "sidebar.scss";
-@import "header.scss";
 @import "footer.scss";
 @import "button.scss";
 @import "form.scss";
