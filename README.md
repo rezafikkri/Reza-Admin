@@ -9,15 +9,15 @@
 </p>
 
 ## Status
-![reza admin version](https://img.shields.io/badge/version-1.0.1%20beta-blue) ![npm version](https://img.shields.io/badge/npm-6.14.7-brightgreen) ![gem version](https://img.shields.io/badge/gem-3.1.4-brightgreen)
+![reza admin version](https://img.shields.io/badge/version-1.0-blue) ![npm version](https://img.shields.io/badge/npm-6.14.7-brightgreen) ![gem version](https://img.shields.io/badge/gem-3.1.4-brightgreen)
 
 ## Preview
 <img alt="Reza Admin Logo" src="https://rezafikkri.github.io/Reza-Admin/dist/img/rezaadmin.jpg">
 <a href="https://rezafikkri.github.io/Reza-Admin/" title="Reza Admin">View Demo</a>
 
 ## Download
-- [Download - ready to use](https://github.com/rezafikkri/Reza-Admin/releases/download/v1.0.1-beta/Reza-Admin-v1.0.1-beta.zip)
-- [Download - with docs](https://github.com/rezafikkri/Reza-Admin/releases/download/v1.0.1-beta/Reza-Admin-and-doc-v1.0.1-beta.zip)
+- [Download - ready to use](https://github.com/rezafikkri/Reza-Admin/releases/download/v1.0/Reza-Admin-v1.0.zip)
+- [Download - with docs](https://github.com/rezafikkri/Reza-Admin/releases/download/v1.0/Reza-Admin-and-doc-v1.0.zip)
 
 ## Feature Available
 - Responsive Design
