@@ -6,9 +6,6 @@
 
 		.alert__icon {
 			color: $icon-color;
-			&::before {
-				background-color: $icon-before-bg-color;
-			}
 		}
 
 		.alert__description {
@@ -41,20 +38,10 @@
 	margin-bottom: 0px;
 
 	&__icon {
-		-ms-flex-preferred-size: 50px;
-		flex-basis: 50px;
+		-ms-flex-preferred-size: 38px;
+		flex-basis: 38px;
 
 		font-size: 20pt;
-		position: relative;
-
-		&::before {
-			content: "";
-			position: absolute;
-			left: 35px;
-			top: 5px;
-			bottom: 5px;
-			width: 1px;
-		}
 	}
 
 	&__description {
@@ -81,10 +68,10 @@
 		}
 	}
 
-	@include alert-color('danger', $red-reza, #e22424, #ff5b5b, #cc1e1e, #ffefef, #9b0f0f, #750707);
-	@include alert-color('info', $blue-reza, #2190d1, #5bc0ff, #1784c4, #eff9ff, #0e6093, #07446b);
-	@include alert-color('warning', $orange-reza, #ed9821, #ffbc70, #d3871d, #fff8ef, #965b09, #724304);
-	@include alert-color('success', $green-reza, #1ec93a, #41f25e, #15bf37, #f2fff3, #0e9128, #076819);
+	@include alert-color('danger', $red-reza, #e22424, #ff5b5b, #cc1e1e, #fff, #9b0f0f, #750707);
+	@include alert-color('info', $blue-reza, #2190d1, #5bc0ff, #1784c4, #fff, #0e6093, #07446b);
+	@include alert-color('warning', $orange-reza, #ed9821, #ffbc70, #d3871d, #fff, #965b09, #724304);
+	@include alert-color('success', $green-reza, #1ec93a, #41f25e, #15bf37, #fff, #0e9128, #076819);
 
 	&--fixed-rb {
 		position: fixed;
@@ -93,8 +80,8 @@
 		right: 10px;
 		width: 600px;
 		
-		-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.3);
-        box-shadow: 0px 1px 5px rgba(0,0,0,.3);
+		-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.2);
+        box-shadow: 0px 1px 5px rgba(0,0,0,.2);
 
 		@media (max-width: 620px) {
 			left: 10px;

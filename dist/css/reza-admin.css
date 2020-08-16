@@ -1122,17 +1122,9 @@ small {
   padding: 2px 15px;
   margin-bottom: 0px; }
   .alert__icon {
-    -ms-flex-preferred-size: 50px;
-    flex-basis: 50px;
-    font-size: 20pt;
-    position: relative; }
-    .alert__icon::before {
-      content: "";
-      position: absolute;
-      left: 35px;
-      top: 5px;
-      bottom: 5px;
-      width: 1px; }
+    -ms-flex-preferred-size: 38px;
+    flex-basis: 38px;
+    font-size: 20pt; }
   .alert__description {
     -webkit-box-flex: 5;
     -ms-flex: 5;
@@ -1153,10 +1145,8 @@ small {
     border: 1px solid #e22424; }
     .alert--danger .alert__icon {
       color: #ff5b5b; }
-      .alert--danger .alert__icon::before {
-        background-color: #cc1e1e; }
     .alert--danger .alert__description {
-      color: #ffefef; }
+      color: #fff; }
     .alert--danger .alert__action a {
       color: #9b0f0f; }
       .alert--danger .alert__action a:hover {
@@ -1166,10 +1156,8 @@ small {
     border: 1px solid #2190d1; }
     .alert--info .alert__icon {
       color: #5bc0ff; }
-      .alert--info .alert__icon::before {
-        background-color: #1784c4; }
     .alert--info .alert__description {
-      color: #eff9ff; }
+      color: #fff; }
     .alert--info .alert__action a {
       color: #0e6093; }
       .alert--info .alert__action a:hover {
@@ -1179,10 +1167,8 @@ small {
     border: 1px solid #ed9821; }
     .alert--warning .alert__icon {
       color: #ffbc70; }
-      .alert--warning .alert__icon::before {
-        background-color: #d3871d; }
     .alert--warning .alert__description {
-      color: #fff8ef; }
+      color: #fff; }
     .alert--warning .alert__action a {
       color: #965b09; }
       .alert--warning .alert__action a:hover {
@@ -1192,10 +1178,8 @@ small {
     border: 1px solid #1ec93a; }
     .alert--success .alert__icon {
       color: #41f25e; }
-      .alert--success .alert__icon::before {
-        background-color: #15bf37; }
     .alert--success .alert__description {
-      color: #f2fff3; }
+      color: #fff; }
     .alert--success .alert__action a {
       color: #0e9128; }
       .alert--success .alert__action a:hover {
@@ -1206,8 +1190,8 @@ small {
     bottom: 10px;
     right: 10px;
     width: 600px;
-    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); }
     @media (max-width: 620px) {
       .alert--fixed-rb {
         left: 10px;
