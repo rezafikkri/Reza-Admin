@@ -1059,7 +1059,7 @@ small {
       bottom: 0;
       left: -20px;
       right: -20px;
-      z-index: 9999;
+      z-index: 10;
       background-color: rgba(252, 252, 252, 0.9);
       display: -webkit-box;
       display: -ms-flexbox;
