@@ -1,5 +1,5 @@
 /**
- * Reza-Admin v1.0.1
+ * Reza-Admin v1.0.2
  * Copyright (c) 2020 Reza Admin
  * Released under the MIT License
 */
